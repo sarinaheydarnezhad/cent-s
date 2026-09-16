@@ -1,0 +1,42 @@
+{
+  "name": "cent-s-mvp",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -n web,api -c cyan,green \"vite --host 0.0.0.0\" \"tsx watch server/index.ts\"",
+    "dev:web": "vite --host 0.0.0.0",
+    "dev:api": "tsx watch server/index.ts",
+    "build": "tsc -b && tsc --noEmit -p tsconfig.server.json && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "react": "latest",
+    "react-dom": "latest",
+    "react-router-dom": "latest",
+    "lucide-react": "latest",
+    "express": "latest",
+    "cors": "latest",
+    "dotenv": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "typescript": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "latest",
+    "@eslint/js": "latest",
+    "typescript-eslint": "latest",
+    "eslint-plugin-react-hooks": "latest",
+    "eslint-plugin-react-refresh": "latest",
+    "vitest": "latest",
+    "tsx": "latest",
+    "concurrently": "latest",
+    "@types/express": "latest",
+    "@types/cors": "latest"
+  }
+}
