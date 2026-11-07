@@ -114,5 +114,5 @@ export const questions: Question[] = [
 export const diagnosticQuestions = questions.filter((q) => q.status === 'active' && (q.kind === 'diagnostic' || q.kind === 'both'))
 export const simulatorQuestions = questions.filter((q) => q.status === 'active' && (q.kind === 'simulator' || q.kind === 'both')).slice(0, 8)
 
-export const subjectLabels = { math: 'ریاضیات', logic: 'منطق' } as const
+export const subjectLabels = { math: 'ریاضیات', logic: 'منطق', biology: 'زیست‌شناسی', chemistry: 'شیمی', physics: 'فیزیک' } as const
 export const difficultyLabels = { easy: 'آسان', medium: 'متوسط', hard: 'دشوار' } as const

@@ -1,0 +1,192 @@
+/* Cent's commerce and study experience; the Lerona frontend is independent. */
+:root { --cent-paper: #f8f9f5; --cent-line: #dfe7e3; }
+.cent-loading { display:flex; gap:12px; justify-content:center; align-items:center; min-height:160px; color:var(--muted); }
+.cent-spinner { width:20px; height:20px; border:2px solid #d5e5de; border-top-color:var(--primary); border-radius:50%; animation:cent-spin 1s linear infinite; }
+@keyframes cent-spin { to { transform:rotate(360deg) } }
+.cent-error { padding:24px; margin:20px 0; background:#fff5ef; border:1px solid #ecd5c4; border-radius:16px; }
+.cent-form { display:flex; flex-direction:column; gap:16px; }
+.cent-form label, .cent-section-select { display:flex; flex-direction:column; gap:7px; font-size:.85rem; font-weight:600; }
+.cent-form input:not([type=checkbox]), .cent-form select, .cent-form textarea, .cent-search, .cent-section-select select { width:100%; border:1px solid var(--cent-line); border-radius:10px; padding:11px 13px; background:#fff; color:var(--ink); font:inherit; }
+.cent-form textarea { min-height:110px; resize:vertical; }
+.cent-form small { color:var(--muted); font-size:.75rem; font-weight:400; }
+.cent-form .cent-checkbox { flex-direction:row; align-items:center; gap:10px; }
+.cent-checkbox input { width:17px; height:17px; accent-color:var(--primary); }
+.cent-form .form-grid { margin:0; }
+.cent-form button { align-self:flex-start; }
+.cent-form .button-block { align-self:stretch; }
+.cent-store-hero { padding:80px 0 92px; background:#143e38; color:#f5f8ed; position:relative; overflow:hidden; }
+.cent-store-hero::after { content:'Aa'; position:absolute; left:8%; bottom:-90px; font-family:Georgia,serif; font-size:400px; line-height:1; opacity:.07; letter-spacing:-40px; pointer-events:none; }
+.cent-store-hero h1 { font-size:clamp(2.8rem,7vw,5.3rem); line-height:1.28; letter-spacing:-2px; margin:25px 0; }
+.cent-store-hero h1 em { font-style:normal; color:#d5ee9e; }
+.cent-store-hero p { max-width:590px; color:#c2d5cd; line-height:2; font-size:1rem; }
+.cent-access-promises { display:flex; flex-wrap:wrap; gap:24px; margin-top:32px; font-size:.8rem; color:#d7e6df; }
+.cent-access-promises span { display:flex; align-items:center; gap:8px; }
+.cent-access-promises svg { width:15px; color:#cbe990; }
+.cent-store-body { padding-top:48px; padding-bottom:65px; }
+.cent-section-head { display:flex; align-items:center; justify-content:space-between; gap:20px; margin-bottom:18px; }
+.cent-section-head h2 { margin:4px 0; }
+.cent-product-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; margin-top:28px; }
+.cent-product { overflow:hidden; display:flex; flex-direction:column; border-radius:19px; padding:0; }
+.cent-product-art { position:relative; min-height:190px; padding:25px; background:#ecf0e3; color:#41654b; display:flex; align-items:center; justify-content:center; }
+.cent-product:nth-child(3n+2) .cent-product-art { background:#ebe7d9; color:#817456; }
+.cent-product:nth-child(3n) .cent-product-art { background:#dde8e5; color:#436d65; }
+.cent-product-art > svg { width:76px; height:76px; stroke-width:1; transform:rotate(-10deg); }
+.cent-product-art > span { position:absolute; top:20px; right:22px; font-family:Georgia,serif; font-size:1.5rem; opacity:.5; }
+.cent-product-art > small { position:absolute; bottom:17px; left:22px; direction:ltr; font-size:9px; letter-spacing:2px; }
+.cent-product-body { display:flex; flex:1; flex-direction:column; padding:24px; }
+.cent-product h3 { font-size:1.17rem; margin:15px 0 9px; }
+.cent-product p { font-size:.83rem; color:var(--muted); line-height:1.9; flex:1; white-space:pre-line; }
+.cent-price { font-size:1.3rem; font-weight:800; margin:20px 0; color:var(--primary-dark); }
+.cent-tag-row { display:flex; flex-wrap:wrap; gap:7px; }
+.cent-tag { display:inline-flex; align-items:center; font-size:.68rem; font-weight:600; padding:5px 9px; border-radius:6px; background:#edf3ea; color:#38674c; }
+.cent-tag.soft { background:#f4f0e5; color:#8a7039; }
+.cent-study-benefits { display:grid; grid-template-columns:repeat(3,1fr); gap:34px; border-top:1px solid var(--cent-line); margin-top:58px; padding-top:38px; }
+.cent-study-benefits svg { color:var(--primary); width:26px; height:26px; }
+.cent-study-benefits h3 { font-size:1rem; margin:13px 0 8px; }
+.cent-study-benefits p { font-size:.83rem; color:var(--muted); line-height:1.9; }
+.cent-checkout { padding-block:50px 80px; min-height:65vh; }
+.cent-checkout-grid { display:grid; grid-template-columns:1.5fr 1fr; gap:25px; align-items:start; margin-top:30px; }
+.cent-checkout-details { padding:30px; }
+.cent-checkout-details h2 { display:flex; align-items:center; gap:10px; }
+.cent-checkout-details dl { display:grid; grid-template-columns:100px 1fr; gap:16px; font-size:.85rem; padding-block:20px; }
+.cent-checkout-details dt { color:var(--muted); }
+.cent-checkout-details dd { margin:0; overflow-wrap:anywhere; }
+.cent-checkout-details p, .cent-checkout-details small { color:var(--muted); font-size:.83rem; line-height:2; }
+.cent-membership { display:flex; align-items:center; gap:20px; border:1px solid #dfe5d2; background:#f0f3e9; padding:23px 25px; border-radius:15px; margin-bottom:28px; }
+.cent-membership > svg { width:30px; height:30px; flex:none; color:#52773d; }
+.cent-membership > div { flex:1; }
+.cent-membership p { font-size:.77rem; color:#63715e; margin:6px 0 0; line-height:1.8; }
+.cent-membership a { display:flex; align-items:center; gap:8px; font-size:.8rem; font-weight:700; white-space:nowrap; }
+.cent-library-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px; }
+.cent-library-book { padding:27px; }
+.cent-library-book-head { display:flex; align-items:center; justify-content:space-between; }
+.cent-library-book-head > svg { width:32px; height:32px; color:var(--primary); stroke-width:1.3; }
+.cent-library-book > h2 { font-size:1.2rem; margin-top:20px; }
+.cent-library-book > p { font-size:.83rem; color:var(--muted); line-height:1.9; white-space:pre-line; }
+.cent-document-list { margin-top:22px; border-top:1px solid var(--cent-line); }
+.cent-document-list > div { display:flex; align-items:center; gap:12px; padding:18px 0; border-bottom:1px solid #edf0ec; }
+.cent-document-list > div > svg { width:20px; height:20px; color:var(--primary); flex:none; }
+.cent-document-list > div > div { flex:1; }
+.cent-document-list b { display:block; font-size:.85rem; }
+.cent-document-list small { display:block; font-size:.67rem; color:var(--muted); margin-top:5px; }
+.cent-document-list .button { white-space:nowrap; }
+.cent-search { margin-bottom:24px; max-width:550px; }
+.cent-notes-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; }
+.cent-saved-note { padding:25px; display:block; }
+.cent-saved-note > span { font-size:.74rem; color:var(--primary); }
+.cent-saved-note > p { font-size:.9rem; line-height:2; white-space:pre-wrap; overflow-wrap:anywhere; }
+.cent-saved-note footer { border-top:1px solid #edf0e8; padding-top:16px; display:flex; justify-content:space-between; gap:10px; align-items:center; }
+.cent-saved-note footer small { color:var(--muted); font-size:.68rem; }
+.cent-saved-note footer a { display:flex; align-items:center; gap:6px; font-size:.72rem; color:var(--primary); }
+.cent-account { display:flex; align-items:center; gap:22px; padding:28px; margin-bottom:25px; }
+.cent-account-avatar { width:65px; height:65px; display:grid; place-items:center; background:#dfe8cf; color:#3a5c34; border-radius:20px; font-size:1.8rem; }
+.cent-account > div:nth-child(2) { flex:1; }
+.cent-account h2 { margin:0 0 8px; font-size:1.15rem; }
+.cent-account p { color:var(--muted); margin:0; font-size:.84rem; }
+.cent-admin-panel { padding:28px; margin-bottom:24px; }
+.cent-admin-panel h2 { font-size:1.1rem; margin-top:0; }
+.cent-admin-panel p { color:var(--muted); line-height:1.95; font-size:.84rem; }
+.cent-admin-columns, .cent-admin-quick { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; align-items:start; }
+.cent-admin-quick > a { padding:30px; }
+.cent-admin-quick p { color:var(--muted); font-size:.85rem; }
+.cent-file-drop { border:1px dashed #afc8b8; background:#f8faf5; padding:24px; border-radius:13px; }
+.cent-file-drop input { font-size:.75rem!important; border:0!important; padding:7px 0!important; background:transparent!important; }
+.cent-admin-document { display:flex; flex-wrap:wrap; gap:15px; align-items:center; padding:16px 0; border-top:1px solid var(--cent-line); font-size:.83rem; }
+.cent-admin-document > span:first-child { flex:1; }
+.cent-dashboard-lead { display:flex; align-items:center; justify-content:space-between; gap:30px; background:#173e36; color:#f6f8ef; border-radius:22px; padding:36px 40px; margin-bottom:28px; }
+.cent-dashboard-lead h2 { font-size:1.9rem; margin:20px 0 13px; }
+.cent-dashboard-lead p { font-size:.86rem; color:#bfd1c7; margin-bottom:25px; max-width:570px; line-height:2; }
+.cent-dashboard-symbol { display:flex; flex-direction:column; gap:24px; align-items:center; padding:20px; color:#c9df9d; flex:none; }
+.cent-dashboard-symbol > svg { width:95px; height:95px; stroke-width:.8; transform:rotate(-12deg); }
+.cent-dashboard-symbol > span { font-size:8px; letter-spacing:2px; direction:ltr; opacity:.6; }
+.cent-exam { padding-block:35px 80px; }
+.cent-exam-status { display:flex; justify-content:space-between; align-items:center; padding:15px 0; font-size:.85rem; }
+.cent-exam-status > span { display:flex; align-items:center; gap:8px; }
+.cent-exam-dots { display:flex; flex-wrap:wrap; gap:8px; margin:22px 0; }
+.cent-exam-dots button { border:1px solid #dce5dd; background:#fff; border-radius:9px; min-width:35px; min-height:35px; color:var(--ink); }
+.cent-exam-dots button.active { background:var(--primary); color:#fff; }
+.cent-exam-dots button.answered { background:#e4eedc; }
+.cent-answer-review { padding:16px 0; border-bottom:1px solid #e4e9e0; font-size:.85rem; }
+.cent-answer-review summary { cursor:pointer; line-height:1.9; }
+.cent-mastery-topic { display:grid; grid-template-columns:minmax(0,1fr); gap:12px; padding:20px 0; border-bottom:1px solid var(--cent-line); }
+.cent-mastery-topic:last-child { border-bottom:0; padding-bottom:4px; }
+.cent-mastery-topic-header { display:flex; align-items:flex-start; justify-content:space-between; gap:16px; }
+.cent-mastery-topic-header > b { min-width:0; overflow-wrap:anywhere; }
+.cent-mastery-topic-header > strong { flex:none; font-size:.78rem; color:var(--muted); }
+.cent-mastery-topic > p { margin:0; }
+.cent-mastery-topic-actions { display:flex; flex-wrap:wrap; gap:10px; padding-top:2px; }
+.cent-mastery-topic-actions > .button { min-width:140px; min-height:44px; }
+@media (max-width:600px) {
+  .cent-mastery-topic-header { flex-direction:column; gap:5px; }
+  .cent-mastery-topic-actions { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .cent-mastery-topic-actions > .button { min-width:0; padding-inline:8px; text-align:center; }
+}
+
+/* Distraction-free reader with persistent, page-anchored notes. */
+.cent-reader { min-height:100vh; background:#e9ece5; }
+.cent-reader-header { display:flex; gap:25px; align-items:center; padding:17px 30px; background:#fcfdf8; border-bottom:1px solid #d8dfd4; position:sticky; top:0; z-index:20; }
+.cent-reader-header > a { display:flex; align-items:center; gap:9px; font-size:.8rem; color:#527060; }
+.cent-reader-header > div { flex:1; border-right:1px solid #d9e0d4; padding-right:22px; }
+.cent-reader-header h1 { font-size:1rem; margin:3px 0 0; }
+.cent-reader-header span { font-size:.65rem; color:#7b887a; }
+.cent-reader-toolbar { display:flex; justify-content:space-between; align-items:center; padding:13px 30px; background:#f4f6ef; border-bottom:1px solid #dce1d5; }
+.cent-reader-pagination, .cent-reader-zoom { display:flex; align-items:center; gap:12px; }
+.cent-reader-toolbar button { display:grid; place-items:center; width:32px; height:32px; border:1px solid #d6dfd1; background:#fff; color:#416446; border-radius:8px; }
+.cent-reader-toolbar button:disabled { opacity:.35; }
+.cent-reader-pagination label, .cent-reader-zoom span { font-size:.77rem; color:#65715e; }
+.cent-reader-pagination select { border:1px solid #d9e2d1; border-radius:6px; padding:4px 10px; background:#fff; color:#3a573e; font:inherit; margin:0 6px; }
+.cent-reader-layout { display:grid; grid-template-columns:minmax(0,1fr) 345px; direction:ltr; min-height:calc(100vh - 145px); }
+.cent-reading-area { direction:rtl; overflow:auto; padding:32px 42px; min-width:0; }
+.cent-page-shell { position:relative; margin:0 auto; max-width:1800px; min-width:280px; box-shadow:0 8px 30px #233a2414; background:#fff; }
+.cent-page-content { position:relative; user-select:none; -webkit-user-select:none; touch-action:pan-x pan-y; }
+.cent-page-content.concealed { visibility:hidden; }
+.cent-page-content canvas { display:block; width:100%; height:auto; min-height:380px; }
+.cent-page-overlay { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; flex-direction:column; background:#fcfdf8; min-height:400px; }
+.cent-note-pin { position:absolute; left:9px; width:26px; height:26px; border-radius:50%; border:2px solid #fff; background:#ddd39b; color:#4f4a20; font-size:11px; box-shadow:0 2px 8px #0002; cursor:pointer; transform:translateY(-50%); }
+.cent-note-pin.selected { background:#2e6c50; color:white; }
+.cent-page-footer { display:flex; gap:20px; justify-content:space-between; align-items:center; font-size:.62rem; color:#7d8879; padding:18px 0; }
+.cent-page-footer span { display:flex; align-items:center; gap:6px; }
+.cent-reader-notes { direction:rtl; padding:25px 22px; background:#f8f9f3; border-left:1px solid #d7dfd0; position:sticky; top:84px; height:calc(100vh - 84px); overflow:auto; }
+.cent-reader-notes-title { display:flex; align-items:center; justify-content:space-between; margin-bottom:22px; }
+.cent-reader-notes-title > div { display:flex; align-items:center; gap:9px; color:#52704a; }
+.cent-reader-notes-title h2 { font-size:.95rem; margin:0; }
+.cent-reader-notes-title span { background:#e7ecd9; border-radius:6px; font-size:.65rem; padding:3px 7px; }
+.cent-section-select { font-size:.7rem; color:#718366; margin-bottom:25px; }
+.cent-section-select select { font-size:.75rem; }
+.cent-note-editor { border:1px solid #dfe4cd; padding:17px; background:#fffdf2; border-radius:13px; }
+.cent-note-editor .eyebrow { font-size:.66rem; color:#8a814b; }
+.cent-note-editor textarea { width:100%; resize:vertical; min-height:145px; border:0; padding:15px 0; background:transparent; font:inherit; font-size:.82rem; line-height:2; color:#414a37; outline:none; }
+.cent-note-editor textarea:focus-visible { outline:1px solid #c5cc98; outline-offset:3px; }
+.cent-note-editor-actions { display:flex; align-items:center; justify-content:space-between; gap:6px; }
+.cent-note-editor-actions .button { font-size:.68rem; }
+.cent-anchor-label { display:flex; flex-direction:column; font-size:.63rem; color:#7c826c; gap:6px; margin:6px 0 15px; }
+.cent-anchor-label input { width:100%; accent-color:#718859; }
+.cent-save-status { display:block; color:#7e855e; font-size:.62rem; margin-top:13px; line-height:1.9; overflow-wrap:anywhere; }
+.cent-page-notes { margin:22px 0; }
+.cent-page-notes article { position:relative; border-bottom:1px solid #e1e6d6; padding:14px 0; }
+.cent-page-notes article.active { background:#edf1e3; border-radius:9px; padding:13px 11px; }
+.cent-note-text { text-align:right; border:0; background:transparent; width:100%; padding:0 0 5px; font:inherit; cursor:pointer; }
+.cent-note-text span { color:#74825d; font-size:.66rem; display:flex; align-items:center; gap:7px; }
+.cent-note-text p { white-space:pre-wrap; overflow-wrap:anywhere; font-size:.78rem; line-height:2; color:#495440; margin:10px 0 0; }
+.cent-note-delete { display:block; margin-right:auto; border:0; background:transparent; color:#9e8d77; padding:6px; cursor:pointer; }
+.cent-notes-empty { color:#9ba58f; text-align:center; padding:25px 8px; font-size:.78rem; }
+.cent-notes-empty svg { opacity:.4; width:30px; height:30px; }
+.cent-reader.notes-closed .cent-reader-layout { grid-template-columns:minmax(0,1fr); }
+.cent-reader.notes-closed .cent-reader-notes { display:none; }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible { outline:2px solid #79a36c; outline-offset:3px; }
+@media (min-width:1500px) { .cent-reading-area { padding-inline:8%; } .cent-reader-layout { grid-template-columns:minmax(0,1fr) 380px; } }
+@media (max-width:1100px) { .cent-product-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .cent-notes-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .cent-reader-layout { grid-template-columns:minmax(0,1fr) 300px; } .cent-reading-area { padding:24px 20px; } .cent-reader-notes { padding:22px 15px; } }
+@media (max-width:760px) { .cent-library-grid, .cent-admin-columns, .cent-admin-quick, .cent-checkout-grid { grid-template-columns:1fr; } .cent-section-head { align-items:flex-start; flex-direction:column; } .cent-section-head .section-tabs { width:100%; } .cent-membership { flex-wrap:wrap; padding:20px; } .cent-membership > a { margin-right:50px; } .cent-dashboard-lead { padding:28px; } .cent-dashboard-symbol { display:none; } .cent-reader-header { padding:13px 15px; gap:12px; flex-wrap:wrap; } .cent-reader-header > a { font-size:.7rem; } .cent-reader-header > div { padding-right:12px; } .cent-reader-header h1 { font-size:.84rem; } .cent-reader-header .button { font-size:.65rem; } .cent-reader-toolbar { padding:12px 15px; } .cent-reader-layout { display:flex; flex-direction:column; } .cent-reader-notes { position:static; height:auto; border:0; border-top:1px solid #d7dfd0; padding:25px 20px; } .cent-reading-area { padding:22px 12px 10px; } .cent-page-footer { flex-direction:column; gap:9px; align-items:flex-start; } .cent-study-benefits { gap:22px; grid-template-columns:1fr; } .cent-account { flex-wrap:wrap; } .cent-account .button { width:100%; } }
+@media (max-width:520px) { .cent-product-grid, .cent-notes-grid { grid-template-columns:1fr; } .cent-store-hero { padding:55px 0; } .cent-store-hero::after { font-size:250px; bottom:-60px; } .cent-access-promises { flex-direction:column; gap:12px; } .cent-product-art { min-height:165px; } .cent-checkout-details { padding:22px; } .cent-checkout-details dl { grid-template-columns:1fr; gap:9px; } .cent-checkout-details dd { margin-bottom:12px; } .cent-reader-zoom { gap:6px; } .cent-reader-pagination { gap:5px; } .cent-library-book { padding:22px; } .cent-admin-panel { padding:22px; } }
+@media print { .cent-reader { display:none!important; } body:has(.cent-reader)::before { content:'این آموزش فقط برای مطالعه آنلاین در حساب شخصی ارائه شده است.'; display:block; padding:50px; } }
+.cent-source-text { padding: 2rem; background: #fffdf8; line-height: 2.1; }
+.cent-source-text > div { white-space: pre-wrap; overflow-wrap: anywhere; }
+.cent-question-figure { display: block; max-width: 100%; max-height: 360px; margin: 1rem auto; }
+.cent-page-content canvas[hidden] { display: none; }
+.cent-results-filter { max-width:320px; margin-bottom:22px; }
+.cent-results-courses { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+.cent-results-course { min-width:0; padding:20px; border:1px solid var(--cent-line); border-radius:14px; }
+.cent-results-course h3 { margin:0 0 8px; }
+.cent-results-course > strong { display:block; margin-bottom:10px; }
+.cent-results-course li { margin-block:8px; overflow-wrap:anywhere; }
+@media (max-width:700px) { .cent-results-courses { grid-template-columns:minmax(0,1fr); } }

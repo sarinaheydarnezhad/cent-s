@@ -1,11 +1,14 @@
-import { defineConfig } from 'vite'
+import { defineConfig, loadEnv } from 'vite'
 import react from '@vitejs/plugin-react'
 
-export default defineConfig({
-  base: '/cent-s/',
+export default defineConfig(({ mode }) => {
+  const env = loadEnv(mode, '.', '')
+  return {
+  base: env.VITE_BASE_PATH || '/cent-s/',
   plugins: [react()],
   server: {
     port: 5173,
-    proxy: { '/api': 'http://localhost:8787' },
+    proxy: { '/api/cent': env.CENT_BACKEND_URL || 'http://127.0.0.1:5108' },
   },
+  }
 })

@@ -16,7 +16,7 @@ export function PublicLayout() {
         <nav className={open ? 'public-nav open' : 'public-nav'} onClick={() => setOpen(false)}>
           <NavLink to="/exam">آشنایی با آزمون</NavLink>
           <NavLink to="/diagnostic/intro">تعیین سطح</NavLink>
-          <NavLink to="/package">پکیج آمادگی</NavLink>
+          <NavLink to="/package">آموزش‌ها و اشتراک</NavLink>
           <Link className="button button-ghost button-small" to={user ? (user.role === 'ADMIN' ? '/admin' : '/student') : '/login'}>{user ? 'ورود به پنل' : 'ورود / ثبت‌نام'}</Link>
         </nav>
       </div>
@@ -25,8 +25,8 @@ export function PublicLayout() {
     <footer className="footer">
       <div className="container footer-grid">
         <Brand light />
-        <p>نسخه تمرینی محصول آمادگی آزمون. اطلاعات رسمی آزمون باید همواره از منبع رسمی بررسی شود.</p>
-        <div><Link to="/exam">راهنمای آزمون</Link><Link to="/package">پکیج آمادگی</Link><Link to="/login">ورود دمو</Link></div>
+        <p>آموزش، مطالعه و تمرین در فضای شخصی تو. اطلاعات رسمی آزمون را از منبع برگزارکننده بررسی کن.</p>
+        <div><Link to="/exam">راهنمای آزمون</Link><Link to="/package">آموزش‌ها و اشتراک</Link><Link to="/login">ورود به حساب</Link></div>
       </div>
     </footer>
   </div>

@@ -1,41 +1,48 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { PublicLayout } from './components/PublicLayout'
 import { DashboardLayout } from './components/DashboardLayout'
 import { ProtectedRoute } from './components/ProtectedRoute'
 import { HomePage } from './pages/public/HomePage'
 import { ExamPage } from './pages/public/ExamPage'
 import { DiagnosticIntroPage } from './pages/public/DiagnosticIntroPage'
-import { DiagnosticTestPage } from './pages/public/DiagnosticTestPage'
-import { DiagnosticResultsPage } from './pages/public/DiagnosticResultsPage'
-import { PackagePage } from './pages/public/PackagePage'
-import { CheckoutPage, CheckoutSuccessPage } from './pages/public/CheckoutPage'
 import { LoginPage } from './pages/public/LoginPage'
 import { NotFoundPage } from './pages/public/NotFoundPage'
-import { MyResultsPage, PackageContentPage, PreparationPage, ProfilePage, SimulatorResultPage, SimulatorsPage, SimulatorTestPage, StudentAnalysisPage, StudentDashboardPage } from './pages/student/StudentPages'
-import { AdminDashboardPage, AIAdminPage, ContentAdminPage, DiagnosticsAdminPage, PackagesAdminPage, SimulatorsAdminPage, UsersAdminPage } from './pages/admin/AdminPages'
-import { DatabaseAdminPage, FinanceAdminPage, N8nAdminPage } from './pages/admin/AdminIntegrations'
+import { AccountPage, CatalogPage, CentCheckoutPage, CentCheckoutResult, LibraryPage, NotesPage } from './pages/CommercePages'
+import { StudyReader } from './pages/StudyReader'
+import { LearningProgress } from './pages/LearningProgress'
+import { CourseDetails } from './pages/CourseCatalog'
+import { CentDashboard, CentExamPage, CentResultPage, CentResultsPage, CentSimulatorsPage } from './pages/PracticePages'
+import { CentAdminDashboard, CentContentAdmin, CentOrdersAdmin, CentProductsAdmin, CentQuestionsAdmin, CentUsersAdmin } from './pages/admin/CentAdmin'
 
 export default function App() {
-  return <BrowserRouter><Routes>
+  return <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '') || '/'}><Routes>
     <Route element={<PublicLayout/>}>
-      <Route path="/" element={<HomePage/>}/>
-      <Route path="/exam" element={<ExamPage/>}/>
-      <Route path="/diagnostic/intro" element={<DiagnosticIntroPage/>}/>
-      <Route path="/diagnostic/results" element={<DiagnosticResultsPage/>}/>
-      <Route path="/package" element={<PackagePage/>}/>
-      <Route path="/checkout" element={<CheckoutPage/>}/>
-      <Route path="/checkout/success" element={<CheckoutSuccessPage/>}/>
-      <Route path="/login" element={<LoginPage/>}/>
+      <Route path="/" element={<HomePage/>}/><Route path="/exam" element={<ExamPage/>}/>
+      <Route path="/courses/:code" element={<CourseDetails/>}/>
+      <Route path="/diagnostic/intro" element={<DiagnosticIntroPage/>}/><Route path="/diagnostic/results" element={<Navigate to="/student/results" replace/>}/>
+      <Route path="/package" element={<CatalogPage/>}/><Route path="/checkout" element={<CentCheckoutPage/>}/>
+      <Route path="/checkout/success" element={<CentCheckoutResult/>}/><Route path="/login" element={<LoginPage/>}/>
     </Route>
-    <Route path="/diagnostic/test" element={<DiagnosticTestPage/>}/>
+    <Route path="/diagnostic/test" element={<CentExamPage/>}/>
     <Route element={<ProtectedRoute role="STUDENT"/>}>
       <Route path="/student" element={<DashboardLayout mode="student"/>}>
-        <Route index element={<StudentDashboardPage/>}/><Route path="preparation" element={<PreparationPage/>}/><Route path="results" element={<MyResultsPage/>}/><Route path="analysis" element={<StudentAnalysisPage/>}/><Route path="content" element={<PackageContentPage/>}/><Route path="simulators" element={<SimulatorsPage/>}/><Route path="simulators/test" element={<SimulatorTestPage/>}/><Route path="simulators/result" element={<SimulatorResultPage/>}/><Route path="profile" element={<ProfilePage/>}/>
+        <Route index element={<CentDashboard/>}/><Route path="preparation" element={<LibraryPage/>}/>
+        <Route path="results" element={<CentResultsPage/>}/><Route path="results/:id" element={<CentResultPage/>}/>
+        <Route path="analysis" element={<LearningProgress/>}/><Route path="practice" element={<CentExamPage kind="practice"/>}/><Route path="content" element={<LibraryPage/>}/>
+        <Route path="notes" element={<NotesPage/>}/><Route path="simulators" element={<CentSimulatorsPage/>}/>
+        <Route path="simulators/test" element={<CentExamPage kind="simulator"/>}/><Route path="simulators/result" element={<Navigate to="/student/results" replace/>}/>
+        <Route path="profile" element={<AccountPage/>}/>
       </Route>
+      <Route path="/student/study/:id" element={<StudyReader/>}/>
     </Route>
     <Route element={<ProtectedRoute role="ADMIN"/>}>
       <Route path="/admin" element={<DashboardLayout mode="admin"/>}>
-        <Route index element={<AdminDashboardPage/>}/><Route path="users" element={<UsersAdminPage/>}/><Route path="questions" element={<DiagnosticsAdminPage/>}/><Route path="subjects" element={<ContentAdminPage/>}/><Route path="diagnostics" element={<DiagnosticsAdminPage/>}/><Route path="simulators" element={<SimulatorsAdminPage/>}/><Route path="packages" element={<PackagesAdminPage/>}/><Route path="orders" element={<FinanceAdminPage/>}/><Route path="finance" element={<FinanceAdminPage/>}/><Route path="ai" element={<AIAdminPage/>}/><Route path="n8n" element={<N8nAdminPage/>}/><Route path="database" element={<DatabaseAdminPage/>}/><Route path="content" element={<ContentAdminPage/>}/><Route path="settings" element={<DatabaseAdminPage/>}/>
+        <Route index element={<CentAdminDashboard/>}/><Route path="users" element={<CentUsersAdmin/>}/>
+        <Route path="content" element={<CentContentAdmin/>}/><Route path="subjects" element={<CentContentAdmin/>}/>
+        <Route path="packages" element={<CentProductsAdmin/>}/><Route path="orders" element={<CentOrdersAdmin/>}/>
+        <Route path="finance" element={<CentOrdersAdmin/>}/><Route path="questions" element={<CentQuestionsAdmin/>}/>
+        <Route path="diagnostics" element={<CentQuestionsAdmin/>}/><Route path="simulators" element={<CentQuestionsAdmin/>}/>
+        <Route path="*" element={<Navigate to="/admin" replace/>}/>
       </Route>
     </Route>
     <Route path="*" element={<NotFoundPage/>}/>

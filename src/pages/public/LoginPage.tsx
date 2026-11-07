@@ -1,17 +1,28 @@
-import { ArrowLeft, BookOpenCheck, BrainCircuit, LockKeyhole, ShieldCheck, Sparkles, UserRound } from 'lucide-react'
-import { useState } from 'react'
-import { useLocation, useNavigate } from 'react-router-dom'
+import { useState, type FormEvent } from 'react'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { BookOpen, ShieldCheck } from 'lucide-react'
 import { useAppState } from '../../state/AppState'
+import { cent } from '../../services/cent'
 
 export function LoginPage() {
-  const [tab, setTab] = useState<'login'|'register'>('login')
-  const { login } = useAppState()
+  const [tab, setTab] = useState<'login' | 'register'>('login')
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [name, setName] = useState('')
+  const [busy, setBusy] = useState(false)
+  const [error, setError] = useState('')
+  const { authenticated } = useAppState()
   const navigate = useNavigate()
   const location = useLocation()
-  function enter(role: 'STUDENT'|'ADMIN') {
-    login(role)
-    const intended = (location.state as { from?: string } | null)?.from
-    navigate(intended || (role === 'ADMIN' ? '/admin' : '/student'))
+  async function submit(event: FormEvent) {
+    event.preventDefault(); setBusy(true); setError('')
+    try {
+      const result = await cent.authenticate(tab, { email, password, name })
+      authenticated(result.user, result.token)
+      const next = (location.state as { from?: string } | null)?.from
+      navigate(next?.startsWith('/') && !next.startsWith('//') ? next : result.user.role === 'ADMIN' ? '/admin' : '/student', { replace: true })
+    } catch (e) { setError(e instanceof Error ? e.message : 'ورود انجام نشد.') }
+    finally { setBusy(false) }
   }
-  return <div className="auth-page"><div className="auth-visual"><div className="auth-orb one">π</div><div className="auth-orb two">A+</div><div className="auth-visual-content"><span className="pill light"><Sparkles/> نسخه تمرینی</span><h1>ادامه مسیر آمادگی، از همین‌جا.</h1><p>هر آزمون یک نشانه است؛ با تحلیل درست، قدم بعدی‌ات را دقیق‌تر انتخاب کن.</p><div className="auth-benefits"><span><BrainCircuit/><b>تحلیل شخصی</b><small>نقاط قوت و مسیر بهبود</small></span><span><BookOpenCheck/><b>یادگیری هدفمند</b><small>محتوای مناسب هر مبحث</small></span></div><div className="study-streak"><i>۷</i><div><b>روز همراهی پیوسته</b><small>یک قدم کوچک، هر روز</small></div></div></div></div><div className="auth-panel"><div className="auth-card"><div className="auth-welcome"><span>خوش آمدی 👋</span><small>فضای یادگیری تو آماده است</small></div><div className="auth-tabs"><button className={tab === 'login' ? 'active' : ''} onClick={() => setTab('login')}>ورود</button><button className={tab === 'register' ? 'active' : ''} onClick={() => setTab('register')}>ثبت‌نام</button></div><h2>{tab === 'login' ? 'ورود به حساب Cent-s' : 'ساخت حساب آزمایشی'}</h2><p>{tab === 'login' ? 'نقش موردنظرت را انتخاب کن و وارد محیط تمرینی شو.' : 'در نسخه تمرینی، ثبت‌نام به همان حساب دانشجوی دمو متصل می‌شود.'}</p><div className="demo-account"><UserRound/><div><b>حساب دانشجو</b><span dir="ltr">student@cent-s.demo</span></div><button className="button button-primary" onClick={() => enter('STUDENT')}>ورود <ArrowLeft/></button></div><div className="demo-account admin-account"><LockKeyhole/><div><b>حساب مدیر</b><span dir="ltr">admin@cent-s.demo</span></div><button className="button button-secondary" onClick={() => enter('ADMIN')}>ورود ادمین</button></div><div className="auth-security"><ShieldCheck/> ورود فعلی نمایشی است و برای محیط واقعی نیاز به احراز هویت امن دارد.</div></div></div></div>
+  return <div className="auth-page"><div className="auth-visual"><div className="auth-visual-content"><span className="pill light"><BookOpen/> کتابخانه شخصی تو</span><h1>یادگیری،<br/>با جای خودت.</h1><p>آموزش‌هایت، یادداشت‌های کنار هر صفحه و ادامه مطالعه‌ات، هر بار که برمی‌گردی در دسترس‌اند.</p><Link className="button button-secondary" to="/package">دیدن آموزش‌ها</Link></div></div><div className="auth-panel"><form className="auth-card" onSubmit={submit}><div className="auth-tabs"><button type="button" className={tab === 'login' ? 'active' : ''} onClick={() => { setTab('login'); setError('') }}>ورود</button><button type="button" className={tab === 'register' ? 'active' : ''} onClick={() => { setTab('register'); setError('') }}>ثبت‌نام</button></div><h2>{tab === 'login' ? 'خوش برگشتی' : 'حساب Cent خودت را بساز'}</h2><div className="cent-form">{tab === 'register' && <label>نام و نام خانوادگی<input autoComplete="name" value={name} maxLength={120} onChange={e => setName(e.target.value)} required/></label>}<label>ایمیل<input type="email" dir="ltr" autoComplete="email" value={email} maxLength={256} onChange={e => setEmail(e.target.value)} required/></label><label>رمز عبور<input type="password" dir="ltr" autoComplete={tab === 'login' ? 'current-password' : 'new-password'} value={password} minLength={10} maxLength={128} onChange={e => setPassword(e.target.value)} required/><small>حداقل ۱۰ نویسه</small></label>{error && <p className="inline-error" role="alert">{error}</p>}<button className="button button-primary button-block" disabled={busy}>{busy ? 'در حال بررسی…' : tab === 'login' ? 'ورود به حساب' : 'ساخت حساب'}</button></div><p className="auth-security"><ShieldCheck/> حساب و خریدهای شما مخصوص Cent است.</p></form></div></div>
 }

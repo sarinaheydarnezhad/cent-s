@@ -11,7 +11,7 @@ export interface ScoringLimits { minScore?: number, maxScore?: number, negative?
 
 export function scoreAttempt(questions: Question[], answers: AnswerMap, limits?: ScoringLimits): DiagnosticResult {
   const total = emptyBreakdown()
-  const bySubject: Record<SubjectId, Breakdown> = { math: emptyBreakdown(), logic: emptyBreakdown() }
+  const bySubject: Record<SubjectId, Breakdown> = { math: emptyBreakdown(), logic: emptyBreakdown(), biology: emptyBreakdown(), chemistry: emptyBreakdown(), physics: emptyBreakdown() }
   const byTopic: DiagnosticResult['byTopic'] = {}
   const byDifficulty: Record<Difficulty, Breakdown> = { easy: emptyBreakdown(), medium: emptyBreakdown(), hard: emptyBreakdown() }
 
@@ -41,7 +41,7 @@ export function scoreAttempt(questions: Question[], answers: AnswerMap, limits?:
     attemptId: `ATT-${Date.now()}`,
     createdAt: new Date().toISOString(),
     answers,
-    bySubject: { math: finalize(bySubject.math), logic: finalize(bySubject.logic) },
+    bySubject: { math: finalize(bySubject.math), logic: finalize(bySubject.logic), biology: finalize(bySubject.biology), chemistry: finalize(bySubject.chemistry), physics: finalize(bySubject.physics) },
     byTopic: Object.fromEntries(Object.entries(byTopic).map(([key, value]) => [key, { ...finalize(value), subject: value.subject }])),
     byDifficulty: {
       easy: finalize(byDifficulty.easy),

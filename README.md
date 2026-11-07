@@ -1,104 +1,73 @@
-# Cent-s Practice MVP
+# Cent
 
-یک MVP قابل‌اجرای فارسی و RTL برای نمایش چرخه آمادگی آزمون: صفحه فرود، آزمون تشخیصی، امتیازدهی قطعی، تحلیل AI با fallback، پکیج و پرداخت نمایشی، محتوای آموزشی، آزمون شبیه‌ساز و پنل مدیریت.
+Persian / RTL learning storefront, personal library, protected page reader and private notes. The React application calls `backend/Cent.Module` in the Lerona backend repository. It no longer runs the Express demo server.
 
-> این پروژه نسخه تمرینی است؛ اطلاعات آزمون، احراز هویت، پرداخت و داده‌های مدیریتی برای استفاده تولیدی آماده نیستند.
+## Development
 
-## فناوری‌ها
-
-- React + TypeScript + React Router
-- Vite برای رابط کاربری
-- Express برای API سرور
-- Zod برای اعتبارسنجی payloadهای API
-- Vitest برای تست منطق امتیازدهی
-- localStorage برای وضعیت دمو و CRUD محلی
-
-## اجرا
-
-پیش‌نیاز: Node.js 20 یا جدیدتر.
-
-```bash
-npm install
-npm run dev
-```
-
-سپس باز کنید:
-
-- رابط کاربری: `http://localhost:5173`
-- وضعیت API: `http://localhost:8787/api/health`
-
-در PowerShell ویندوز با execution policy محدود می‌توانید از `npm.cmd` استفاده کنید:
+Use Node 24 (PDF.js requires Node 22.13 or newer) and the .NET 10 backend. Copy `.env.example` to `.env.local` and configure the API URL or local proxy.
 
 ```powershell
-npm.cmd install
+npm.cmd ci
 npm.cmd run dev
 ```
 
-## حساب‌های دمو
+The default URL is `http://localhost:5173/cent-s/`. Start and configure the shared backend following `CENT.md` in the backend repository. A missing backend produces a retryable error; browser-controlled login and paid access have been removed.
 
-ورود رمز عبور ندارد و از صفحه `/login` با انتخاب نقش انجام می‌شود:
+For a local preview without SQL Server, run this from the **backend repository root**:
 
-- دانشجو: `student@cent-s.demo`
-- مدیر: `admin@cent-s.demo`
-
-این مکانیزم عمداً در `AppState` ایزوله شده و فقط برای نمایش MVP است.
-
-## متغیرهای محیطی
-
-فایل `.env.example` را به `.env` کپی و مقادیر لازم را وارد کنید. کلیدهای بدون پیشوند `VITE_` فقط در Express خوانده می‌شوند و وارد bundle مرورگر نمی‌شوند.
-
-### OpenRouter
-
-```env
-OPENROUTER_API_KEY=
-OPENROUTER_MODEL=openai/gpt-4.1-mini
+```powershell
+dotnet run --project backend/Cent.Preview/Cent.Preview.csproj
 ```
 
-- اگر کلید خالی باشد، `MockAIAnalysisProvider` پاسخ قطعی و قابل تکرار می‌سازد.
-- اگر فراخوانی OpenRouter شکست بخورد، `AIAnalysisService` به fallback محلی برمی‌گردد و جریان آزمون خراب نمی‌شود.
-- درصدها در `src/services/scoring.ts` محاسبه می‌شوند؛ AI اجازه محاسبه یا تغییر نمره را ندارد.
+Then run this from the **frontend repository root**:
 
-### پرداخت Mock و اتصال آینده زرین‌پال
-
-Provider فعلی `MockPaymentProvider` در `server/services/payment.ts` است. این Provider فقط یک سفارش دمو می‌سازد و هیچ درگاه یا اطلاعات بانکی ندارد.
-
-برای تست خطا:
-
-```env
-MOCK_PAYMENT_SHOULD_FAIL=true
+```powershell
+$env:CENT_BACKEND_URL = "http://127.0.0.1:5108"
+npm.cmd run dev
 ```
 
-اتصال آینده زرین‌پال باید با پیاده‌سازی قرارداد `PaymentProvider`، ساخت سفارش PENDING، redirect و verify کاملاً server-side انجام شود.
+Preview Swagger is at `http://127.0.0.1:5108/swagger/index.html`. The local administrator is `admin@cent.local` / `cent-local-preview-only`. The preview uses simulated payments and an ignored SQLite database inside the backend checkout; source files are included in Git. No application dependency points to a workspace tools directory.
 
-### n8n
+## Commerce
 
-```env
-N8N_WEBHOOK_URL=
-N8N_WEBHOOK_SECRET=
+- A `TRAINING` product grants permanent online access to one training after verified payment.
+- A `SUBSCRIPTION` product grants a configured number of days of access to trainings marked as included, plus simulator practice. Renewals extend the current end date. There is no automatic bank debit.
+- Access is checked by the backend on every page request. Saved notes remain readable after a subscription expires; editing a lesson's notes requires access to that lesson.
+- Prices are stored and sent to Zarinpal in **rials**; the storefront displays **tomans**.
+- Real checkout requires server-side Zarinpal configuration. Development mock payments require both the Development environment and an explicit server flag. Sandbox and mock revenue are excluded from live revenue.
+
+## Uploading and reading PDFs
+
+1. Create a Cent administrator using the server's one-time bootstrap procedure.
+2. Create a training in **آموزش‌ها و PDF**. Choose whether it is included in subscriptions.
+3. Upload a PDF as a lesson. The administrator's browser renders it with PDF.js and uploads compressed WebP pages. PDFs are limited to 40 MB / 200 pages per lesson; each image is limited to 1.5 MB and the rendered lesson to 60 MB.
+4. Create a one-time product for the training, or a subscription product, then publish the training and activate sales.
+
+Interrupted uploads resume when the same file is selected again in the same browser tab. Published pages are immutable, so annotations cannot silently shift when a source file changes. Upload an edited PDF as a new lesson.
+
+Readers have page navigation, zoom, a PDF outline when present, saved position, personal watermarks and private notes pinned to a position on each page. Notes save to the server; unfinished text is kept as a device-local draft. Study pages have no PDF download/print controls, and printing the reader is suppressed. **Websites cannot guarantee screenshot prevention or prevent an authorized reader from extracting displayed images.** The original PDF is never uploaded to or served by this backend. Keep your source PDF archive separately.
+
+## Practice
+
+Questions and answer keys live on the backend. The administrator can enter questions or import the existing sample set. Each attempt snapshots its questions; scoring uses that snapshot on the server. Results, answers and topic recommendations persist in the account. Current recommendations use deterministic educational rules; no OpenRouter or n8n connection is claimed or configured through browser forms.
+
+## Deployment
+
+```powershell
+npm.cmd run build
+npm.cmd test
 ```
 
-`QuestionGenerationService` در `server/services/question-generation.ts` قرار دارد. بدون URL، `MockQuestionGenerator` براساس مباحث ضعیف سؤال‌های موجود را انتخاب می‌کند. با تنظیم URL، adapter مربوط به n8n payload عملکرد را server-side ارسال می‌کند و در صورت خطا fallback دارد.
+`VITE_BASE_PATH` sets the routing and asset base. `VITE_CENT_API_URL` is public and contains only an API URL, never credentials. The build bundles the Persian font and PDF.js fonts/CMaps/WASM locally. A `404.html` fallback is included for GitHub Pages. Other hosts should rewrite application paths to `index.html`.
 
-## جریان‌های قابل آزمایش
+For the existing Pages workflow, set repository variable `CENT_API_URL` to the existing backend's HTTPS Cent API endpoint, and optionally `CENT_BASE_PATH` (default `/cent-s/`). The backend needs the frontend's origin in its separate Cent CORS policy. No deployment occurs from editing these files; the workflow runs on a push to `main` or manual dispatch.
 
-1. صفحه اصلی → آزمون تشخیصی → پاسخ‌گویی → نتیجه و تحلیل → صفحه پکیج
-2. ورود دانشجو → خرید آزمایشی → فعال‌شدن پکیج → محتوا → شبیه‌ساز → نتیجه
-3. ورود مدیر → داشبورد → سؤال‌ها → افزودن/ویرایش با persistence محلی → سفارش‌ها → AI → تنظیمات
+The admin interface never accepts database passwords or gateway secrets. Server setup, migration, backup and later extraction instructions are in the backend repository's `CENT.md`.
 
-## دستورهای بررسی
+Optional browser checks, including their own `package.json` and lockfile, are in `tests/browser/` inside this repository. See `tests/browser/README.md`. They are separate from the application's main package and are not required to run or build the frontend.
 
-```bash
-npm run test
-npm run build
-npm run lint
-```
+## Curriculum progress
 
-## مرزهای نسخه دمو
+The backend's bundled five-subject curriculum powers subject/topic selection, targeted practice, source-based study lessons and the **تحلیل شخصی** learning map. Import it as described in the backend's `CENT.md`. The map shows topic accuracy, evidence coverage and provisional subject progress across the complete imported syllabus. Submitted practice and assessment results both update progress; a repeated question replaces its previous evidence rather than increasing the distinct-question count. Reading alone does not change question mastery. The backend persists attempts and computes the estimates from immutable snapshots. **نتایج من** combines the account's real recent results, subject progress, comparable score changes and correctly labeled practice/test history.
 
-- داده‌ها database ندارند و بخشی از وضعیت در localStorage ذخیره می‌شود.
-- احراز هویت production و session server-side وجود ندارد.
-- پرداخت واقعی انجام نمی‌شود.
-- OpenRouter اختیاری است و به‌صورت پیش‌فرض Mock فعال است.
-- n8n اختیاری است و به‌صورت پیش‌فرض Mock فعال است.
-- اطلاعات رسمی و جاری CEnT-S هنوز باید از منابع رسمی اعتبارسنجی و نسخه‌گذاری شود.
-- محتوای درس‌ها نمونه معماری است و بانک محتوای کامل تجاری نیست.
+The homepage, course introduction and course selection use public curriculum metadata from the backend. `/courses/:code` shows the actual source lessons, chapters and skills. There are no hardcoded course cards, fictional progress percentages or sample-course fallbacks. Source text still requires purchased access, and course prices come from configured backend products.

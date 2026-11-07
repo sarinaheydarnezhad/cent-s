@@ -1,4 +1,4 @@
-export type SubjectId = 'math' | 'logic'
+export type SubjectId = 'math' | 'logic' | 'biology' | 'chemistry' | 'physics'
 export type Difficulty = 'easy' | 'medium' | 'hard'
 export type QuestionStatus = 'active' | 'draft'
 
@@ -6,6 +6,7 @@ export interface Question {
   id: string
   subject: SubjectId
   topic: string
+  topicId?: string | null
   difficulty: Difficulty
   text: string
   options: string[]
@@ -42,7 +43,7 @@ export interface AIAnalysis {
   recommendedStudyAreas: string[]
   suggestedNextStep: string
   personalizedExplanation: string
-  provider: 'mock' | 'openrouter' | 'fallback'
+  provider: 'mock' | 'openrouter' | 'fallback' | 'rules'
   status: 'COMPLETED' | 'FAILED'
 }
 

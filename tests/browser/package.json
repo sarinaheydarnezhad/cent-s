@@ -1,0 +1,17 @@
+{
+  "name": "cent-browser",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node check.mjs",
+    "test:recovery": "node check-recovery.mjs",
+    "test:curriculum": "node check-curriculum.mjs",
+    "test:courses": "node check-courses.mjs",
+    "test:notes": "node check-notes.mjs",
+    "test:study-return": "node check-study-return.mjs",
+    "test:progress": "node check-personal-progress.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.65.0"
+  }
+}
