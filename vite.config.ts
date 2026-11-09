@@ -8,7 +8,9 @@ export default defineConfig(({ mode }) => {
   plugins: [react()],
   server: {
     port: 5173,
+    headers: { 'Referrer-Policy': 'no-referrer', 'Cache-Control': 'no-store' },
     proxy: { '/api/cent': env.CENT_BACKEND_URL || 'http://127.0.0.1:5108' },
   },
+  preview: { headers: { 'Referrer-Policy': 'no-referrer', 'Cache-Control': 'no-store' } },
   }
 })

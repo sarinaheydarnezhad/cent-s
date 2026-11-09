@@ -12,7 +12,7 @@ interface AppStateValue {
   orders: Order[]
   library: Library | null
   hasPackage: boolean
-  authenticated: (user: SessionUser, token: string) => void
+  authenticated: (user: SessionUser, token: string, expiresAt?: string) => void
   logout: () => void
   refresh: () => Promise<void>
   setDiagnostic: (result: DiagnosticResult, analysis: AIAnalysis) => void
@@ -29,6 +29,10 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
   const [orders, setOrders] = useState<Order[]>([])
   const [library, setLibrary] = useState<Library | null>(null)
   const clear = useCallback(() => { session.clear(); setUser(null); setLibrary(null); setOrders([]); setResult(null); setAnalysis(null); setSessionError('') }, [])
+  const authenticated = useCallback((u: SessionUser, token: string, expiresAt?: string) => {
+    session.set(token, expiresAt)
+    setLibrary(null); setOrders([]); setResult(null); setAnalysis(null); setSessionError(''); setUser(u); setLoading(false)
+  }, [])
   const refresh = useCallback(async () => {
     const expectedToken = session.get()
     if (!expectedToken) return
@@ -43,24 +47,36 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     let active = true
     const expectedToken = session.get()
-    setSessionError(''); setLoading(true)
-    if (expectedToken) cent.me().then(u => { if (active && session.get() === expectedToken) setUser(u) }).catch(e => {
+    const restore = expectedToken ? cent.me() : Promise.resolve(null)
+    restore.then(u => { if (active && session.get() === expectedToken) setUser(u) }).catch(e => {
       if (!active || session.get() !== expectedToken) return
       if (e instanceof ApiError && e.status === 401) clear()
       else setSessionError(e instanceof Error ? e.message : 'بررسی حساب ممکن نشد؛ دوباره تلاش کنید.')
     }).finally(() => { if (active) setLoading(false) })
-    else setLoading(false)
     window.addEventListener('cent:session-expired', clear)
     return () => { active = false; window.removeEventListener('cent:session-expired', clear) }
   }, [clear, restoreRevision])
-  useEffect(() => { if (user) void refresh().catch(() => {}) }, [user, refresh])
-  const value = useMemo<AppStateValue>(() => ({ user, loading, sessionError, retrySession: () => setRestoreRevision(r => r + 1), diagnosticResult, aiAnalysis, orders, library,
+  useEffect(() => { if (user) void Promise.resolve().then(refresh).catch(() => {}) }, [user, refresh])
+  useEffect(() => {
+    if (!user) return
+    let timer: ReturnType<typeof setTimeout>
+    const checkExpiry = () => {
+      clearTimeout(timer)
+      if (!session.get()) { clear(); return }
+      const expiresAt = session.expiresAt()
+      if (expiresAt) timer = setTimeout(checkExpiry, Math.min(2_147_483_647, Math.max(0, Date.parse(expiresAt) - Date.now())))
+    }
+    checkExpiry()
+    window.addEventListener('focus', checkExpiry)
+    return () => { clearTimeout(timer); window.removeEventListener('focus', checkExpiry) }
+  }, [user, clear])
+  const value = useMemo<AppStateValue>(() => ({ user, loading, sessionError, retrySession: () => { setSessionError(''); setLoading(true); setRestoreRevision(r => r + 1) }, diagnosticResult, aiAnalysis, orders, library,
     hasPackage: library?.hasSubscription ?? false,
-    authenticated: (u, token) => { setLibrary(null); setOrders([]); setResult(null); setAnalysis(null); setSessionError(''); session.set(token); setUser(u); setLoading(false) },
+    authenticated,
     logout: () => { void cent.logout().catch(() => {}); clear() }, refresh,
     setDiagnostic: (result, analysis) => { setResult(result); setAnalysis(analysis) },
     addOrder: () => { void refresh() },
-  }), [user, loading, sessionError, diagnosticResult, aiAnalysis, orders, library, refresh, clear])
+  }), [user, loading, sessionError, diagnosticResult, aiAnalysis, orders, library, refresh, clear, authenticated])
   return <AppState.Provider value={value}>{children}</AppState.Provider>
 }
 // eslint-disable-next-line react-refresh/only-export-components

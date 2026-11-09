@@ -16,16 +16,42 @@ export interface Curriculum { courses: { code: string; title: string; trainingId
 export interface MasteryTopic { id: string; chapterId: string; title: string; evidenceQuestions: number; availableQuestions: number; accuracyPercentage: number | null; masteryPercentage: number | null; status: string }
 export interface MasteryReport { courses: { code: string; title: string; totalTopics: number; assessedTopics: number; coveragePercentage: number; confirmedProgressPercentage: number; assessedAccuracyPercentage: number | null; topics: MasteryTopic[] }[] }
 export interface SourceSection { id: string; topicId: string | null; heading: string; sortOrder: number; text: string }
+export interface AuthSession { token: string; expiresAt: string; user: SessionUser }
+export interface GoogleAuthStart { authorizationUrl: string; state: string; codeVerifier: string; expiresAt: string }
+export type GoogleAuthComplete = { state: string; codeVerifier: string } & ({ code: string; error?: never } | { error: string; code?: never })
 
 const base = (import.meta.env.VITE_CENT_API_URL || '/api/cent/v1').replace(/\/$/, '')
 const tokenKey = 'cent:session:v1'
+const expiryKey = 'cent:session-expiry:v1'
+function readSession(key: string): string | null {
+  try { return sessionStorage.getItem(key) } catch { return null }
+}
 export const session = {
-  get: () => sessionStorage.getItem(tokenKey),
-  set: (token: string) => sessionStorage.setItem(tokenKey, token),
-  clear: () => sessionStorage.removeItem(tokenKey),
+  get: () => {
+    const expiresAt = readSession(expiryKey)
+    if (expiresAt && (!Number.isFinite(Date.parse(expiresAt)) || Date.parse(expiresAt) <= Date.now())) {
+      session.clear()
+      return null
+    }
+    return readSession(tokenKey)
+  },
+  expiresAt: () => readSession(expiryKey),
+  set: (token: string, expiresAt?: string) => {
+    if (expiresAt !== undefined && (!Number.isFinite(Date.parse(expiresAt)) || Date.parse(expiresAt) <= Date.now())) {
+      throw new Error('مهلت ورود پایان یافته است؛ دوباره وارد شوید.')
+    }
+    try {
+      if (expiresAt) sessionStorage.setItem(expiryKey, expiresAt)
+      else sessionStorage.removeItem(expiryKey)
+      sessionStorage.setItem(tokenKey, token)
+    } catch (error) { session.clear(); throw error }
+  },
+  clear: () => {
+    try { sessionStorage.removeItem(tokenKey); sessionStorage.removeItem(expiryKey) } catch { /* Storage may be blocked by the browser. */ }
+  },
 }
 export class ApiError extends Error {
-  constructor(message: string, public status: number, public code?: string) { super(message) }
+  constructor(message: string, public status: number, public code?: string, public retryAfterMs?: number) { super(message) }
 }
 export async function centRequest<T>(path: string, init: RequestInit = {}, retry = 0): Promise<T> {
   const token = session.get()
@@ -41,7 +67,9 @@ export async function centRequest<T>(path: string, init: RequestInit = {}, retry
     }
     const payload = await response.json().catch(() => ({}))
     if (response.status === 401 && token && session.get() === token && !path.startsWith('/auth/')) window.dispatchEvent(new Event('cent:session-expired'))
-    throw new ApiError(payload.message || (response.status === 429 ? 'درخواست‌ها زیاد است؛ کمی بعد دوباره تلاش کنید.' : 'ارتباط با سرویس برقرار نشد.'), response.status, payload.code)
+    const retryAfter = response.headers.get('Retry-After')
+    const retryAfterMs = retryAfter === null ? undefined : /^\d+$/.test(retryAfter) ? Number(retryAfter) * 1000 : Math.max(0, Date.parse(retryAfter) - Date.now())
+    throw new ApiError(payload.message || (response.status === 429 ? 'درخواست‌ها زیاد است؛ کمی بعد دوباره تلاش کنید.' : 'ارتباط با سرویس برقرار نشد.'), response.status, payload.code, Number.isFinite(retryAfterMs) ? retryAfterMs : undefined)
   }
   if (response.status === 204) return undefined as T
   if (response.headers.get('Content-Type')?.startsWith('image/')) return await response.blob() as T
@@ -56,7 +84,9 @@ async function loadCurriculum(): Promise<Curriculum> {
   return data
 }
 export const cent = {
-  authenticate: (mode: 'login' | 'register', input: { email: string; password: string; name?: string }) => post<{ token: string; user: SessionUser }>(`/auth/${mode}`, input),
+  authenticate: (mode: 'login' | 'register', input: { email: string; password: string; name?: string }) => post<AuthSession>(`/auth/${mode}`, input),
+  googleStart: () => post<GoogleAuthStart>('/auth/google/start', {}),
+  googleComplete: (input: GoogleAuthComplete) => post<AuthSession>('/auth/google/complete', input),
   me: () => centRequest<SessionUser>('/me'),
   logout: () => post<void>('/auth/logout', {}),
   catalog: () => centRequest<{ trainings: Training[]; products: StoreProduct[] }>('/catalog'),

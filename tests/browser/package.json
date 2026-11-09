@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "test": "node check.mjs",
+    "test:google-auth": "node check-google-auth.mjs",
     "test:recovery": "node check-recovery.mjs",
     "test:curriculum": "node check-curriculum.mjs",
     "test:courses": "node check-courses.mjs",

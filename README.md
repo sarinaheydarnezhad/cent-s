@@ -28,6 +28,23 @@ npm.cmd run dev
 
 Preview Swagger is at `http://127.0.0.1:5108/swagger/index.html`. The local administrator is `admin@cent.local` / `cent-local-preview-only`. The preview uses simulated payments and an ignored SQLite database inside the backend checkout; source files are included in Git. No application dependency points to a workspace tools directory.
 
+## Google sign-in
+
+Both tabs on `/login` support Google sign-in alongside password login and registration. No Google SDK or frontend Google credentials are needed. The existing `VITE_CENT_API_URL` / `CENT_BACKEND_URL` configuration also serves Google authentication. The backend creates the authorization URL, OAuth state and S256 PKCE verifier; the frontend stores the five-minute attempt in `sessionStorage`, redirects to that exact URL, validates the callback, and submits the code (or cancellation) and saved proof once. Authentication uses the returned Cent bearer session and expiration, with the same logout and `/me` restoration as password sign-in. Existing sessions without a stored expiration remain supported.
+
+The local callback is **`http://localhost:5173/cent-s/auth/google/callback`**. Use `localhost` consistently: a flow started at `127.0.0.1` cannot read a `localhost` tab's storage. Changing `VITE_BASE_PATH` changes the callback path, so update the backend and Google registration together.
+
+Operator configuration, if not already set:
+
+1. Configure a Google **Web application** OAuth client and consent screen (including test users while in Testing). Register `http://localhost:5173` as the local JavaScript origin and the exact local callback above as an authorized redirect URI.
+2. On the backend set `Cent__Google__Enabled=true`, `Cent__Google__ClientId`, **`Cent__Google__ClientSecret` (backend secret environment only)**, `Cent__Google__RedirectUri` to the callback, and `Cent__AllowedOrigins__0=http://localhost:5173`. HTTP loopback callbacks require the backend Development environment. The verified SQLite upgrade needs no further frontend migration.
+3. For production use the actual HTTPS frontend origin and callback in Google and the backend, and configure the existing public API URL as usual. Serve direct callback requests/reloads with the application HTML. Set **`Cache-Control: no-store`** and **`Referrer-Policy: no-referrer`** on callback HTML responses (including SPA fallbacks); exclude the callback from analytics, third-party scripts, service-worker caching and URL logging. Vite development and preview already set these headers; the HTML also contains a `no-referrer` policy. The current GitHub Pages workflow cannot set custom response headers, so use hosting or a proxy that can enforce them for production Google authentication.
+4. Verify one real Google round trip with your configured test account: new/returning user, cancellation, existing-password-email conflict, session restoration and logout. Automated tests use synthetic codes and mocked API/Google navigation; they do not authenticate a real Google account.
+
+The callback removes its query before React mounts and consumes the saved attempt before completion. Failures and reloads require a new start. Google email conflicts direct users to their existing sign-in method; accounts are never linked by the frontend. The exact server contracts and setup are documented in the backend repository's `docs/CENT-GOOGLE-AUTHENTICATION.md`.
+
+Run `npm.cmd test` for callback/API/session tests. The optional `npm.cmd --prefix tests/browser run test:google-auth` check exercises the rendered login/register UI, callback, session reload, logout and failure paths using isolated browser mocks without modifying the backend database.
+
 ## Commerce
 
 - A `TRAINING` product grants permanent online access to one training after verified payment.

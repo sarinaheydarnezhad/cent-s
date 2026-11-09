@@ -1,5 +1,7 @@
 # Local browser checks
 
+`npm.cmd --prefix tests/browser run test:google-auth` tests Google/password login and registration, loading states, duplicate activation/callback handling under React StrictMode, state validation, cancellation, conflicts, disabled configuration, session expiration/restoration, logout, and mobile layout. Start only the Vite frontend for this check: it mocks all Cent and Google requests in isolated browser contexts and never contacts Google or creates database records. It also verifies callback response headers; use Vite development or preview, or a production server configured with the documented callback headers. The screenshot and result report use synthetic test data.
+
 This optional test package is kept separate from the frontend application's dependencies. Its manifest, lockfile and test sources belong to the Cent Git repository. Normal frontend installation, build and runtime do not need this package.
 
 Start `Cent.Preview` from the backend repository and the Vite frontend with `CENT_BACKEND_URL=http://127.0.0.1:5108`, as described in the main README. These checks require local development mock payments and create sample users, trainings, PDF pages and purchases in the local preview database.
