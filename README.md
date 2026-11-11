@@ -70,6 +70,8 @@ Questions and answer keys live on the backend. The administrator can enter quest
 
 ## Deployment
 
+For Cloudflare Pages and `itatest.ir`, follow [CLOUDFLARE.md](CLOUDFLARE.md).
+
 ```powershell
 npm.cmd run build
 npm.cmd test
