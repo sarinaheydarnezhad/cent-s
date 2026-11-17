@@ -30,11 +30,11 @@ Preview Swagger is at `http://127.0.0.1:5108/swagger/index.html`. The local admi
 
 ## Google sign-in
 
-Both tabs on `/login` support Google sign-in alongside password login and registration. No Google SDK or frontend Google credentials are needed. The existing `VITE_CENT_API_URL` / `CENT_BACKEND_URL` configuration also serves Google authentication. The backend creates the authorization URL, OAuth state and S256 PKCE verifier; the frontend stores the five-minute attempt in `sessionStorage`, redirects to that exact URL, validates the callback, and submits the code (or cancellation) and saved proof once. Authentication uses the returned Cent bearer session and expiration, with the same logout and `/me` restoration as password sign-in. Existing sessions without a stored expiration remain supported.
+Both tabs on `/login` support Google sign-in alongside password login and registration. The frontend discovers the backend-selected mode and existing public client ID from `/auth/google/config`. `GisIdToken` uses the official Google Identity Services button, a server nonce/challenge and a single backend verification request; no Google credential is persisted. `AuthorizationCode` retains the backend-generated authorization URL, OAuth state, S256 PKCE verifier and callback flow described below. Both use the same Cent bearer session, expiration, logout, `/me` restoration and intended destination as password sign-in. Existing sessions without a stored expiration remain supported. See [GOOGLE-GIS.md](GOOGLE-GIS.md) for the frontend contract integration, security, local/Cloudflare setup, tests, deployment dependencies and rollback. No new frontend Google environment variable or secret is required.
 
 The local callback is **`http://localhost:5173/cent-s/auth/google/callback`**. Use `localhost` consistently: a flow started at `127.0.0.1` cannot read a `localhost` tab's storage. Changing `VITE_BASE_PATH` changes the callback path, so update the backend and Google registration together.
 
-Operator configuration, if not already set:
+For AuthorizationCode mode only, operator configuration if not already set:
 
 1. Configure a Google **Web application** OAuth client and consent screen (including test users while in Testing). Register `http://localhost:5173` as the local JavaScript origin and the exact local callback above as an authorized redirect URI.
 2. On the backend set `Cent__Google__Enabled=true`, `Cent__Google__ClientId`, **`Cent__Google__ClientSecret` (backend secret environment only)**, `Cent__Google__RedirectUri` to the callback, and `Cent__AllowedOrigins__0=http://localhost:5173`. HTTP loopback callbacks require the backend Development environment. The verified SQLite upgrade needs no further frontend migration.

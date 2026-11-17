@@ -193,6 +193,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .auth-google { min-height: 46px; }
 .auth-google:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
 .auth-google-status { text-align: center; font-size: .82rem; }
+.auth-google-sdk { min-height: 44px; width: 100%; display: flex; justify-content: center; }
+.auth-google-sdk[hidden] { display: none; }
 .auth-divider { display: flex; align-items: center; gap: 12px; margin: 22px 0; color: var(--muted); font-size: .8rem; }
 .auth-divider::before, .auth-divider::after { content: ''; height: 1px; flex: 1; background: var(--line); }
 .auth-callback-page { min-height: 100vh; display: grid; place-items: center; padding: 24px; background: var(--bg); }

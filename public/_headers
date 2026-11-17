@@ -1,0 +1,21 @@
+# GIS popup fallback when FedCM is unavailable. Other routes retain their policies.
+/login
+  Cross-Origin-Opener-Policy: same-origin-allow-popups
+  Cache-Control: no-store
+/login/
+  Cross-Origin-Opener-Policy: same-origin-allow-popups
+  Cache-Control: no-store
+/cent-s/login
+  Cross-Origin-Opener-Policy: same-origin-allow-popups
+  Cache-Control: no-store
+/cent-s/login/
+  Cross-Origin-Opener-Policy: same-origin-allow-popups
+  Cache-Control: no-store
+
+# Retain code/PKCE callback protections for direct requests and SPA fallback.
+/auth/google/callback*
+  Cache-Control: no-store
+  Referrer-Policy: no-referrer
+/cent-s/auth/google/callback*
+  Cache-Control: no-store
+  Referrer-Policy: no-referrer

@@ -20,7 +20,7 @@ export interface AuthSession { token: string; expiresAt: string; user: SessionUs
 export interface GoogleAuthStart { authorizationUrl: string; state: string; codeVerifier: string; expiresAt: string }
 export type GoogleAuthComplete = { state: string; codeVerifier: string } & ({ code: string; error?: never } | { error: string; code?: never })
 
-const base = (import.meta.env.VITE_CENT_API_URL || '/api/cent/v1').replace(/\/$/, '')
+export const centApiBase = (import.meta.env.VITE_CENT_API_URL || '/api/cent/v1').replace(/\/$/, '')
 const tokenKey = 'cent:session:v1'
 const expiryKey = 'cent:session-expiry:v1'
 function readSession(key: string): string | null {
@@ -58,7 +58,7 @@ export async function centRequest<T>(path: string, init: RequestInit = {}, retry
   const headers = new Headers(init.headers)
   if (!(init.body instanceof Blob)) headers.set('Content-Type', 'application/json')
   if (token) headers.set('Authorization', `Bearer ${token}`)
-  const response = await fetch(base + path, { ...init, headers, cache: 'no-store', credentials: 'omit' })
+  const response = await fetch(centApiBase + path, { ...init, headers, cache: 'no-store', credentials: 'omit' })
   if (!response.ok) {
     if ((!init.method || init.method === 'GET') && [429, 503].includes(response.status) && retry < 2 && !init.signal?.aborted) {
       const delay = Math.min(5, Number(response.headers.get('Retry-After')) || 1) * 1000

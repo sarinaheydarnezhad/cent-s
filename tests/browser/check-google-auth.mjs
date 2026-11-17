@@ -1,4 +1,4 @@
-/* global sessionStorage, document, innerWidth, console, setTimeout */
+/* global sessionStorage, document, innerWidth, console */
 import assert from 'node:assert/strict'
 import { writeFileSync } from 'node:fs'
 import { URL } from 'node:url'
@@ -24,10 +24,13 @@ async function fixture(options = {}) {
   await context.route('**/api/cent/v1/**', async route => {
     const request = route.request(), path = new URL(request.url()).pathname.split('/api/cent/v1')[1]
     const send = (body, status = 200) => route.fulfill({ status, contentType: 'application/json', body: JSON.stringify(body) })
+    if (path === '/auth/google/config') return send({ enabled: true, mode: 'AuthorizationCode', clientId: 'synthetic.apps.googleusercontent.com' })
     if (path === '/auth/google/start') {
       calls.start++
       if (options.startUnavailable) return send({ code: 'google_unavailable', message: 'Unavailable' }, 503)
-      await new Promise(resolve => setTimeout(resolve, 150))
+      // Hold the response until loading UI has committed, avoiding a navigation race.
+      await page.getByRole('status').getByText('در حال انتقال به گوگل…').waitFor()
+      assert.equal(await page.getByRole('button', { name: /^(ورود به حساب|ساخت حساب)$/ }).isDisabled(), true)
       return send({ authorizationUrl, state, codeVerifier, expiresAt: new Date(Date.now() + 300_000).toISOString() })
     }
     if (path === '/auth/google/complete') {
@@ -59,8 +62,6 @@ async function startOn(page, registration = false) {
   const button = page.getByRole('button', { name: registration ? 'ثبت‌نام با گوگل' : 'ورود با گوگل', exact: true })
   // A double activation must produce one start, even with blank required password fields.
   await button.evaluate(element => { element.click(); element.click() })
-  await page.getByRole('status').getByText('در حال انتقال به گوگل…').waitFor()
-  assert.equal(await page.getByRole('button', { name: registration ? 'ساخت حساب' : 'ورود به حساب', exact: true }).isDisabled(), true)
   await page.waitForURL(authorizationUrl)
 }
 
