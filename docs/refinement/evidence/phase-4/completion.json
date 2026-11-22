@@ -1,0 +1,12 @@
+{
+  "completedUtc": "2026-11-19T08:42:54.662Z",
+  "phase": 4,
+  "awaitingVisualApproval": true,
+  "taskOwnedPreviewPortsStopped": [
+    5174,
+    5184
+  ],
+  "existingUserPreviewServicesPreserved": true,
+  "noCommitPushDeploy": true,
+  "phase5Started": false
+}

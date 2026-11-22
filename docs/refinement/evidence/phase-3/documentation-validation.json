@@ -1,0 +1,11 @@
+{
+  "success": true,
+  "documents": 16,
+  "links": 34,
+  "comparisonPairs": 32,
+  "indexDesktopMobile": true,
+  "themeWidthFilters": true,
+  "noMobileOverflow": true,
+  "productionReferenceEvidenceExcluded": true,
+  "errors": []
+}

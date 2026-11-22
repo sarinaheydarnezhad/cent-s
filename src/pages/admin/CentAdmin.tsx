@@ -1,22 +1,12 @@
 import { useState, type FormEvent } from 'react'
-import { BookOpen, CreditCard, FileUp, HardDrive, Plus, Save, Users } from 'lucide-react'
-import { Link } from 'react-router-dom'
-import { cent, centRequest, dateFa, toman, type StoreProduct, type StudyDocument, type Training } from '../../services/cent'
+import { FileUp, Save } from 'lucide-react'
+import { centRequest, toman, type StoreProduct, type StudyDocument, type Training } from '../../services/cent'
 import { uploadTrainingPdf } from '../../services/pdf-upload'
 import { LoadState, useRemote } from '../../components/CentUI'
-import { EmptyState, PageHeader, StatCard } from '../../components/UI'
-import type { Question } from '../../types'
+import { PageHeader } from '../../components/UI'
 
-const fetchContent = () => centRequest<{ trainings: Training[]; documents: StudyDocument[]; products: StoreProduct[] }>('/admin/trainings')
-const fetchOverview = () => centRequest<{ users: number; trainings: number; paidOrders: number; incomeRial: number; storageBytes: number }>('/admin/overview')
-const fetchOrders = () => centRequest<{ id: string; title: string; amountRial: number; status: string; provider: string; createdAt: string }[]>('/admin/orders')
-const fetchUsers = () => centRequest<{ id: string; name: string; email: string; role: string; createdAt: string }[]>('/admin/users')
-
-export function CentAdminDashboard() {
-  const remote = useRemote(fetchOverview)
-  return <><PageHeader eyebrow="مدیریت Cent" title="نمای واقعی محصول" description="آمار این بخش از پایگاه داده Cent دریافت می‌شود." action={<Link className="button button-primary" to="/admin/content"><Plus size={16}/> افزودن آموزش</Link>}/><LoadState {...remote} retry={remote.reload}/>{remote.data && <><div className="stats-grid"><StatCard icon={<Users/>} label="کاربران" value={remote.data.users}/><StatCard icon={<BookOpen/>} label="آموزش‌ها" value={remote.data.trainings}/><StatCard icon={<CreditCard/>} label="سفارش‌های تأییدشده" value={remote.data.paidOrders}/><StatCard icon={<HardDrive/>} label="حجم صفحات" value={`${(remote.data.storageBytes / 1024 / 1024).toFixed(1)} MB`}/></div><section className="card cent-admin-panel"><span className="eyebrow">درآمد واقعی تأییدشده</span><h2>{toman(remote.data.incomeRial)}</h2><p>پرداخت‌های آزمایشی در این مبلغ محاسبه نمی‌شوند.</p></section><section className="cent-admin-quick"><Link className="card" to="/admin/content"><FileUp/><h3>آموزش و PDF</h3><p>آموزش بساز، فایل را بارگذاری و درس‌ها را منتشر کن.</p></Link><Link className="card" to="/admin/packages"><CreditCard/><h3>قیمت و اشتراک</h3><p>محصول تکی یا طرح اشتراک با مدت دلخواه بساز.</p></Link></section></>}</>
-}
-
+const fetchContent = () => centRequest<{ trainings: Training[]; documents: StudyDocument[] }>('/admin/trainings')
+const fetchProductOptions = () => centRequest<{ trainings: Training[]; products: StoreProduct[] }>('/admin/product-options')
 export function CentContentAdmin() {
   const remote = useRemote(fetchContent)
   const [id, setId] = useState<string>(() => crypto.randomUUID())
@@ -30,7 +20,10 @@ export function CentContentAdmin() {
   const [busy, setBusy] = useState(false)
   const [message, setMessage] = useState('')
   async function save(event: FormEvent) {
-    event.preventDefault(); setBusy(true); setMessage('')
+    event.preventDefault()
+    const existing = remote.data?.trainings.find(t => t.id === id)
+    if ((published || existing?.published) && !window.confirm('تغییر وضعیت یا اطلاعات آموزش منتشرشده ثبت شود؟ خریدها و سوابق قبلی حفظ می‌شوند.')) return
+    setBusy(true); setMessage('')
     try { await centRequest(`/admin/trainings/${id}`, { method: 'PUT', body: JSON.stringify({ title, description, includedInSubscription: included, published }) }); setMessage('آموزش ذخیره شد.'); setTrainingId(id); remote.reload() }
     catch (e) { setMessage(e instanceof Error ? e.message : 'ذخیره انجام نشد.') } finally { setBusy(false) }
   }
@@ -44,39 +37,16 @@ export function CentContentAdmin() {
 }
 
 export function CentProductsAdmin() {
-  const remote = useRemote(fetchContent)
+  const remote = useRemote(fetchProductOptions)
   const [product, setProduct] = useState<StoreProduct>({ id: crypto.randomUUID(), title: '', kind: 'TRAINING', trainingId: null, priceRial: 100000, durationDays: null, active: false })
   const [busy, setBusy] = useState(false)
   const [message, setMessage] = useState('')
   async function save(event: FormEvent) {
-    event.preventDefault(); setBusy(true); setMessage('')
+    event.preventDefault()
+    if (!window.confirm('قیمت و وضعیت فروش محصول ثبت شود؟ مبلغ سفارش‌های قبلی تغییر نمی‌کند.')) return
+    setBusy(true); setMessage('')
     try { await centRequest(`/admin/products/${product.id}`, { method: 'PUT', body: JSON.stringify(product) }); remote.reload(); setMessage('محصول ذخیره شد.') }
     catch (e) { setMessage(e instanceof Error ? e.message : 'ذخیره انجام نشد.') } finally { setBusy(false) }
   }
-  return <><PageHeader title="محصولات و اشتراک" description="قیمت‌ها در پایگاه داده به ریال ذخیره می‌شوند؛ نمایش فروشگاه به تومان است."/><LoadState {...remote} retry={remote.reload}/><form className="card cent-admin-panel cent-form" onSubmit={save}><div className="cent-section-head"><h2>تعریف دسترسی</h2><button type="button" className="button button-secondary button-small" onClick={() => setProduct({ id: crypto.randomUUID(), title: '', kind: 'SUBSCRIPTION', trainingId: null, priceRial: 100000, durationDays: 30, active: false })}>محصول جدید</button></div><div className="form-grid"><label>عنوان<input value={product.title} required maxLength={200} onChange={e => setProduct({ ...product, title: e.target.value })}/></label><label>نوع<select value={product.kind} onChange={e => setProduct({ ...product, kind: e.target.value as StoreProduct['kind'], trainingId: null, durationDays: e.target.value === 'SUBSCRIPTION' ? 30 : null })}><option value="TRAINING">خرید دائمی آموزش</option><option value="SUBSCRIPTION">اشتراک مطالعه</option></select></label>{product.kind === 'TRAINING' ? <label>آموزش<select value={product.trainingId || ''} required onChange={e => setProduct({ ...product, trainingId: e.target.value })}><option value="">انتخاب آموزش</option>{remote.data?.trainings.map(t => <option key={t.id} value={t.id}>{t.title}</option>)}</select></label> : <label>مدت (روز)<input type="number" min={1} max={366} value={product.durationDays || 30} onChange={e => setProduct({ ...product, durationDays: Number(e.target.value) })} required/></label>}<label>قیمت (ریال)<input type="number" min={1} step={1} max={1000000000000} value={product.priceRial} onChange={e => setProduct({ ...product, priceRial: Number(e.target.value) })} required/><small>{toman(product.priceRial)}</small></label></div><label className="cent-checkbox"><input type="checkbox" checked={product.active} onChange={e => setProduct({ ...product, active: e.target.checked })}/> فروش این محصول فعال باشد</label><button className="button button-primary" disabled={busy}><Save size={16}/> ذخیره محصول</button>{message && <p role="status">{message}</p>}</form><div className="table-card"><table><thead><tr><th>محصول</th><th>دسترسی</th><th>قیمت</th><th>وضعیت</th><th></th></tr></thead><tbody>{remote.data?.products.map(p => <tr key={p.id}><td>{p.title}</td><td>{p.kind === 'TRAINING' ? 'دائمی' : `${p.durationDays} روز`}</td><td>{toman(p.priceRial)}</td><td>{p.active ? 'فعال' : 'غیرفعال'}</td><td><button className="button button-ghost button-small" onClick={() => { setProduct(p); window.scrollTo({ top: 0, behavior: 'smooth' }) }}>ویرایش</button></td></tr>)}</tbody></table></div></>
-}
-
-export function CentOrdersAdmin() {
-  const remote = useRemote(fetchOrders)
-  return <><PageHeader title="سفارش‌های Cent" description="ثبت پرداخت و دسترسی فقط پس از تأیید سمت سرور انجام می‌شود."/><LoadState {...remote} retry={remote.reload}/><div className="table-card"><table><thead><tr><th>محصول</th><th>مبلغ</th><th>وضعیت</th><th>درگاه</th><th>تاریخ</th></tr></thead><tbody>{remote.data?.map(o => <tr key={o.id}><td>{o.title}</td><td>{toman(o.amountRial)}</td><td>{o.status}</td><td>{o.provider}</td><td>{dateFa(o.createdAt)}</td></tr>)}</tbody></table></div></>
-}
-export function CentUsersAdmin() {
-  const remote = useRemote(fetchUsers)
-  return <><PageHeader title="کاربران Cent"/><LoadState {...remote} retry={remote.reload}/><div className="table-card"><table><thead><tr><th>نام</th><th>ایمیل</th><th>نقش</th><th>عضویت</th></tr></thead><tbody>{remote.data?.map(u => <tr key={u.id}><td>{u.name}</td><td dir="ltr">{u.email}</td><td>{u.role}</td><td>{dateFa(u.createdAt)}</td></tr>)}</tbody></table></div></>
-}
-
-interface AdminQuestion extends Omit<Question, 'status'> { active: boolean }
-const fetchQuestions = () => centRequest<AdminQuestion[]>('/admin/questions/')
-export function CentQuestionsAdmin() {
-  const remote = useRemote(fetchQuestions)
-  const curriculum = useRemote(cent.curriculum)
-  const [editing, setEditing] = useState<AdminQuestion | null>(null)
-  const [busy, setBusy] = useState(false)
-  const [message, setMessage] = useState('')
-  async function save(question: AdminQuestion) { await centRequest(`/admin/questions/${question.id}`, { method: 'PUT', body: JSON.stringify(question) }) }
-  async function submit(event: FormEvent) {
-    event.preventDefault(); if (!editing) return; setBusy(true); setMessage('')
-    try { await save(editing); setEditing(null); remote.reload() } catch (e) { setMessage(e instanceof Error ? e.message : 'ذخیره نشد.') } finally { setBusy(false) }
-  }
-  return <><PageHeader title="بانک سؤال" description="کلید پاسخ در سرور نگه‌داری می‌شود. ویرایش سؤال، نتیجه آزمون‌های قبلی را تغییر نمی‌دهد." action={<button className="button button-primary" onClick={() => setEditing({ id: crypto.randomUUID(), text: '', subject: 'math', topic: '', difficulty: 'medium', options: ['', '', '', ''], correctAnswer: 0, explanation: '', kind: 'both', active: false })}><Plus size={16}/> سؤال جدید</button>}/><LoadState {...remote} retry={remote.reload}/>{remote.data?.length === 0 && <EmptyState title="بانک سؤال خالی است" description="منابع و بانک سؤال واردشده را از بک‌اند دریافت کنید." action={<button className="button button-secondary" disabled={busy} onClick={async () => { setBusy(true); try { await centRequest('/admin/curriculum/import', { method: 'POST', body: '{}' }); remote.reload(); curriculum.reload() } catch (e) { setMessage(e instanceof Error ? e.message : 'ورود انجام نشد.') } finally { setBusy(false) } }}>ورود بانک سؤال منابع</button>}/>} {message && <p className="notice" role="alert">{message}</p>}{editing && <form className="card cent-admin-panel cent-form" onSubmit={submit}><h2>ویرایش سؤال</h2><label>متن<textarea value={editing.text} onChange={e => setEditing({ ...editing, text: e.target.value })} maxLength={8000} required/></label><div className="form-grid"><label>درس<select value={editing.subject} onChange={e => setEditing({ ...editing, subject: e.target.value as Question['subject'], topicId: null })}>{curriculum.data?.courses.map(c => <option key={c.code} value={c.code}>{c.title}</option>)}</select></label><label>مهارت در نقشه یادگیری<select value={editing.topicId || ""} onChange={e => { const topic = curriculum.data?.topics.find(t => t.id === e.target.value); setEditing({ ...editing, topicId: topic?.id || null, topic: topic?.title || editing.topic }) }}><option value="">بدون نگاشت؛ در تسلط محاسبه نمی‌شود</option>{curriculum.data?.topics.filter(t => t.courseCode === editing.subject).map(t => <option key={t.id} value={t.id}>{t.title}</option>)}</select></label><label>مبحث<input value={editing.topic} onChange={e => setEditing({ ...editing, topic: e.target.value })} maxLength={500} required/></label><label>سطح<select value={editing.difficulty} onChange={e => setEditing({ ...editing, difficulty: e.target.value as Question['difficulty'] })}><option value="easy">آسان</option><option value="medium">متوسط</option><option value="hard">دشوار</option></select></label><label>کاربرد<select value={editing.kind} onChange={e => setEditing({ ...editing, kind: e.target.value as Question['kind'] })}><option value="both">هردو</option><option value="diagnostic">تعیین سطح</option><option value="simulator">شبیه‌ساز</option></select></label>{editing.options.map((option, i) => <label key={i}>گزینه {i + 1}<input value={option} maxLength={1000} required onChange={e => setEditing({ ...editing, options: editing.options.map((o, n) => n === i ? e.target.value : o) })}/></label>)}<label>گزینه صحیح<select value={editing.correctAnswer} onChange={e => setEditing({ ...editing, correctAnswer: Number(e.target.value) })}>{editing.options.map((_, i) => <option key={i} value={i}>{i + 1}</option>)}</select></label></div><label>توضیح<textarea value={editing.explanation} maxLength={8000} onChange={e => setEditing({ ...editing, explanation: e.target.value })}/></label><label className="cent-checkbox"><input type="checkbox" checked={editing.active} onChange={e => setEditing({ ...editing, active: e.target.checked })}/> منتشر شود</label><button className="button button-primary" disabled={busy}>ذخیره سؤال</button><button type="button" className="button button-ghost" onClick={() => setEditing(null)}>بستن</button></form>}<div className="table-card"><table><thead><tr><th>سؤال</th><th>مبحث</th><th>وضعیت</th><th></th></tr></thead><tbody>{remote.data?.map(q => <tr key={q.id}><td>{q.text}</td><td>{q.topic}</td><td>{q.active ? 'منتشرشده' : 'پیش‌نویس'}</td><td><button className="button button-ghost button-small" onClick={() => setEditing(q)}>ویرایش</button></td></tr>)}</tbody></table></div></>
+  return <><PageHeader title="محصولات و اشتراک" description="قیمت‌ها در پایگاه داده به ریال ذخیره می‌شوند؛ نمایش فروشگاه به تومان است."/><LoadState {...remote} retry={remote.reload}/><form className="card cent-admin-panel cent-form" onSubmit={save}><div className="cent-section-head"><h2>تعریف دسترسی</h2><button type="button" className="button button-secondary button-small" onClick={() => setProduct({ id: crypto.randomUUID(), title: '', kind: 'SUBSCRIPTION', trainingId: null, priceRial: 100000, durationDays: 30, active: false })}>محصول جدید</button></div><div className="form-grid"><label>عنوان<input value={product.title} required maxLength={200} onChange={e => setProduct({ ...product, title: e.target.value })}/></label><label>نوع<select value={product.kind} onChange={e => setProduct({ ...product, kind: e.target.value as StoreProduct['kind'], trainingId: null, durationDays: e.target.value === 'SUBSCRIPTION' ? 30 : null })}><option value="TRAINING">خرید دائمی آموزش</option><option value="SUBSCRIPTION">اشتراک مطالعه</option></select></label>{product.kind === 'TRAINING' ? <label>آموزش<select value={product.trainingId || ''} required onChange={e => setProduct({ ...product, trainingId: e.target.value })}><option value="">انتخاب آموزش</option>{remote.data?.trainings.map(t => <option key={t.id} value={t.id}>{t.title}</option>)}</select></label> : <label>مدت (روز)<input type="number" min={1} max={366} value={product.durationDays || 30} onChange={e => setProduct({ ...product, durationDays: Number(e.target.value) })} required/></label>}<label>قیمت (ریال)<input type="number" min={1} step={1} max={1000000000000} value={product.priceRial} onChange={e => setProduct({ ...product, priceRial: Number(e.target.value) })} required/><small>{toman(product.priceRial)}</small></label></div><label className="cent-checkbox"><input type="checkbox" checked={product.active} onChange={e => setProduct({ ...product, active: e.target.checked })}/> فروش این محصول فعال باشد</label><button className="button button-primary" disabled={busy}><Save size={16}/> ذخیره محصول</button>{message && <p role="status">{message}</p>}</form><div className="table-card"><table><thead><tr><th>محصول</th><th>دسترسی</th><th>قیمت</th><th>وضعیت</th><th></th></tr></thead><tbody>{remote.data?.products.filter(p => ['TRAINING', 'SUBSCRIPTION'].includes(p.kind)).map(p => <tr key={p.id}><td>{p.title}</td><td>{p.kind === 'TRAINING' ? 'دائمی' : `${p.durationDays} روز`}</td><td>{toman(p.priceRial)}</td><td>{p.active ? 'فعال' : 'غیرفعال'}</td><td><button className="button button-ghost button-small" onClick={() => { setProduct(p); window.scrollTo({ top: 0, behavior: 'smooth' }) }}>ویرایش</button></td></tr>)}</tbody></table></div></>
 }

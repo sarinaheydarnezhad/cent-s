@@ -1,0 +1,331 @@
+{
+  "kind": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+  "screenshots": [
+    {
+      "file": "home-light-390.png",
+      "route": "/",
+      "width": 390,
+      "theme": "light",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(245, 247, 247)",
+      "alerts": []
+    },
+    {
+      "file": "home-dark-390.png",
+      "route": "/",
+      "width": 390,
+      "theme": "dark",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(24, 33, 39)",
+      "alerts": []
+    },
+    {
+      "file": "home-light-1440.png",
+      "route": "/",
+      "width": 1440,
+      "theme": "light",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(245, 247, 247)",
+      "alerts": []
+    },
+    {
+      "file": "home-dark-1440.png",
+      "route": "/",
+      "width": 1440,
+      "theme": "dark",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(24, 33, 39)",
+      "alerts": []
+    },
+    {
+      "file": "login-light-390.png",
+      "route": "/login",
+      "width": 390,
+      "theme": "light",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(245, 247, 247)",
+      "alerts": []
+    },
+    {
+      "file": "login-dark-390.png",
+      "route": "/login",
+      "width": 390,
+      "theme": "dark",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(24, 33, 39)",
+      "alerts": []
+    },
+    {
+      "file": "login-light-1440.png",
+      "route": "/login",
+      "width": 1440,
+      "theme": "light",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(245, 247, 247)",
+      "alerts": []
+    },
+    {
+      "file": "login-dark-1440.png",
+      "route": "/login",
+      "width": 1440,
+      "theme": "dark",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(24, 33, 39)",
+      "alerts": []
+    },
+    {
+      "file": "commerce-light-390.png",
+      "route": "/package",
+      "width": 390,
+      "theme": "light",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(245, 247, 247)",
+      "alerts": []
+    },
+    {
+      "file": "commerce-dark-390.png",
+      "route": "/package",
+      "width": 390,
+      "theme": "dark",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(24, 33, 39)",
+      "alerts": []
+    },
+    {
+      "file": "commerce-light-1440.png",
+      "route": "/package",
+      "width": 1440,
+      "theme": "light",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(245, 247, 247)",
+      "alerts": []
+    },
+    {
+      "file": "commerce-dark-1440.png",
+      "route": "/package",
+      "width": 1440,
+      "theme": "dark",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(24, 33, 39)",
+      "alerts": []
+    },
+    {
+      "file": "dashboard-light-390.png",
+      "route": "/student",
+      "width": 390,
+      "theme": "light",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(245, 247, 247)",
+      "alerts": []
+    },
+    {
+      "file": "dashboard-dark-390.png",
+      "route": "/student",
+      "width": 390,
+      "theme": "dark",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(24, 33, 39)",
+      "alerts": []
+    },
+    {
+      "file": "dashboard-light-1440.png",
+      "route": "/student",
+      "width": 1440,
+      "theme": "light",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(245, 247, 247)",
+      "alerts": []
+    },
+    {
+      "file": "dashboard-dark-1440.png",
+      "route": "/student",
+      "width": 1440,
+      "theme": "dark",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(24, 33, 39)",
+      "alerts": []
+    },
+    {
+      "file": "account-light-390.png",
+      "route": "/student/profile",
+      "width": 390,
+      "theme": "light",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(245, 247, 247)",
+      "alerts": []
+    },
+    {
+      "file": "account-dark-390.png",
+      "route": "/student/profile",
+      "width": 390,
+      "theme": "dark",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(24, 33, 39)",
+      "alerts": []
+    },
+    {
+      "file": "account-light-1440.png",
+      "route": "/student/profile",
+      "width": 1440,
+      "theme": "light",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(245, 247, 247)",
+      "alerts": []
+    },
+    {
+      "file": "account-dark-1440.png",
+      "route": "/student/profile",
+      "width": 1440,
+      "theme": "dark",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(24, 33, 39)",
+      "alerts": []
+    },
+    {
+      "file": "reader-light-390.png",
+      "route": "/student/study/485b3e6d-1d7d-46ab-9aff-2ef18bf18374",
+      "width": 390,
+      "theme": "light",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(245, 247, 247)",
+      "alerts": []
+    },
+    {
+      "file": "reader-dark-390.png",
+      "route": "/student/study/485b3e6d-1d7d-46ab-9aff-2ef18bf18374",
+      "width": 390,
+      "theme": "dark",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(24, 33, 39)",
+      "alerts": []
+    },
+    {
+      "file": "reader-light-1440.png",
+      "route": "/student/study/485b3e6d-1d7d-46ab-9aff-2ef18bf18374",
+      "width": 1440,
+      "theme": "light",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(245, 247, 247)",
+      "alerts": []
+    },
+    {
+      "file": "reader-dark-1440.png",
+      "route": "/student/study/485b3e6d-1d7d-46ab-9aff-2ef18bf18374",
+      "width": 1440,
+      "theme": "dark",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(24, 33, 39)",
+      "alerts": []
+    },
+    {
+      "file": "assessment-light-390.png",
+      "route": "/diagnostic/test?course=math",
+      "width": 390,
+      "theme": "light",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(245, 247, 247)",
+      "alerts": []
+    },
+    {
+      "file": "assessment-dark-390.png",
+      "route": "/diagnostic/test?course=math",
+      "width": 390,
+      "theme": "dark",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(24, 33, 39)",
+      "alerts": []
+    },
+    {
+      "file": "assessment-light-1440.png",
+      "route": "/diagnostic/test?course=math",
+      "width": 1440,
+      "theme": "light",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(245, 247, 247)",
+      "alerts": []
+    },
+    {
+      "file": "assessment-dark-1440.png",
+      "route": "/diagnostic/test?course=math",
+      "width": 1440,
+      "theme": "dark",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(24, 33, 39)",
+      "alerts": []
+    },
+    {
+      "file": "admin-light-390.png",
+      "route": "/admin",
+      "width": 390,
+      "theme": "light",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(245, 247, 247)",
+      "alerts": []
+    },
+    {
+      "file": "admin-dark-390.png",
+      "route": "/admin",
+      "width": 390,
+      "theme": "dark",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(24, 33, 39)",
+      "alerts": []
+    },
+    {
+      "file": "admin-light-1440.png",
+      "route": "/admin",
+      "width": 1440,
+      "theme": "light",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(245, 247, 247)",
+      "alerts": []
+    },
+    {
+      "file": "admin-dark-1440.png",
+      "route": "/admin",
+      "width": 1440,
+      "theme": "dark",
+      "classification": "Actual local Cent.Preview, no response mocking; synthetic seed/local fixture accounts only",
+      "overflow": false,
+      "body": "rgb(24, 33, 39)",
+      "alerts": []
+    }
+  ],
+  "checks": [
+    {
+      "results": "No existing attempt for smoke learner; captured using real progress-suite learner below if available"
+    }
+  ],
+  "errors": []
+}

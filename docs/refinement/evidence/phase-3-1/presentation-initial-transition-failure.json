@@ -1,0 +1,192 @@
+{
+  "root": "http://localhost:5173/cent-s",
+  "success": false,
+  "images": [
+    {
+      "theme": "light",
+      "selector": ".public-colosseum",
+      "src": "http://localhost:5173/cent-s/images/hero-colosseum.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": ""
+    },
+    {
+      "theme": "light",
+      "selector": ".public-headline-emphasis img",
+      "src": "http://localhost:5173/cent-s/images/hero-underline.webp",
+      "width": 2109,
+      "height": 704,
+      "alt": ""
+    },
+    {
+      "theme": "dark",
+      "selector": ".public-colosseum",
+      "src": "http://localhost:5173/cent-s/images/hero-colosseum.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": ""
+    },
+    {
+      "theme": "dark",
+      "selector": ".public-headline-emphasis img",
+      "src": "http://localhost:5173/cent-s/images/hero-underline.webp",
+      "width": 2109,
+      "height": 704,
+      "alt": ""
+    }
+  ],
+  "contrast": [
+    {
+      "theme": "light",
+      "selector": ".public-hero h1",
+      "token": "surface",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "selector": ".public-hero h1",
+      "token": "page",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "selector": ".public-hero h1",
+      "token": "interactive-selected",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(231, 238, 242)",
+      "ratio": 10.849607593589786
+    },
+    {
+      "theme": "light",
+      "selector": ".public-hero-copy > p",
+      "token": "surface",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "selector": ".public-hero-copy > p",
+      "token": "page",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 4.969720906577139
+    },
+    {
+      "theme": "light",
+      "selector": ".public-hero-copy > p",
+      "token": "interactive-selected",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(231, 238, 242)",
+      "ratio": 4.557452651508061
+    },
+    {
+      "theme": "light",
+      "selector": ".public-exam-available p",
+      "token": "surface",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "selector": ".public-exam-available p",
+      "token": "interactive-selected",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(231, 238, 242)",
+      "ratio": 4.557452651508061
+    },
+    {
+      "theme": "light",
+      "selector": ".public-path p",
+      "token": "surface",
+      "foreground": "rgb(52, 77, 50)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 9.318334490709798
+    },
+    {
+      "theme": "light",
+      "selector": ".public-path p",
+      "token": "learning-surface",
+      "foreground": "rgb(52, 77, 50)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 7.899999447094375
+    },
+    {
+      "theme": "light",
+      "selector": ".public-final p",
+      "token": "surface",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "selector": ".public-final p",
+      "token": "interactive-selected",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(231, 238, 242)",
+      "ratio": 4.557452651508061
+    },
+    {
+      "theme": "light",
+      "selector": ".auth-visual h2",
+      "token": "learning-surface",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 10.785302302114225
+    },
+    {
+      "theme": "light",
+      "selector": ".auth-visual h2",
+      "token": "interactive-selected",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(231, 238, 242)",
+      "ratio": 10.849607593589786
+    },
+    {
+      "theme": "light",
+      "selector": ".auth-visual h2",
+      "token": "surface-subtle",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "selector": ".auth-visual p",
+      "token": "learning-surface",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 4.5304407694088
+    },
+    {
+      "theme": "light",
+      "selector": ".auth-visual p",
+      "token": "interactive-selected",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(231, 238, 242)",
+      "ratio": 4.557452651508061
+    },
+    {
+      "theme": "light",
+      "selector": ".auth-visual p",
+      "token": "surface-subtle",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 4.698790194330086
+    },
+    {
+      "theme": "dark",
+      "selector": ".public-hero h1",
+      "token": "surface",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 1.1043297104859642
+    }
+  ]
+}

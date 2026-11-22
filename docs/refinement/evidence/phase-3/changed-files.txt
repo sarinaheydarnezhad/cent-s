@@ -1,0 +1,197 @@
+ M docs/brand/README.md
+ M docs/refinement/ACCEPTANCE_CRITERIA.md
+ M docs/refinement/AUDIT_COVERAGE.md
+ M docs/refinement/COMPONENT_INVENTORY.md
+ M docs/refinement/COMPONENT_USAGE_GUIDE.md
+ M docs/refinement/DECISION_LOG.md
+ M docs/refinement/DESIGN_SYSTEM.md
+ M docs/refinement/FEEDBACK_PATTERNS.md
+ M docs/refinement/IMPLEMENTATION_PLAN.md
+ M docs/refinement/OPEN_QUESTIONS.md
+ M docs/refinement/PHASE_2_REPORT.md
+ M docs/refinement/PROGRAM_BRIEF.md
+ M docs/refinement/PROGRAM_STATUS.md
+ M docs/refinement/REGRESSION_REPORT.md
+ M docs/refinement/UX_WRITING.md
+ M docs/refinement/VISUAL_REVIEW.md
+ M src/components/PublicLayout.tsx
+ M src/components/useNavigationDisclosure.ts
+ M src/main.tsx
+ M src/pages/CourseCatalog.tsx
+ M src/pages/public/DiagnosticIntroPage.tsx
+ M src/pages/public/ExamPage.tsx
+ M src/pages/public/GoogleCallbackPage.tsx
+ M src/pages/public/HomePage.tsx
+ M src/pages/public/LoginPage.tsx
+ M src/pages/public/NotFoundPage.tsx
+?? docs/refinement/PHASE_3_REPORT.md
+?? docs/refinement/evidence/phase-3/README.md
+?? docs/refinement/evidence/phase-3/after-callback-dark-1440.png
+?? docs/refinement/evidence/phase-3/after-callback-dark-390.png
+?? docs/refinement/evidence/phase-3/after-callback-light-1440.png
+?? docs/refinement/evidence/phase-3/after-callback-light-390.png
+?? docs/refinement/evidence/phase-3/after-course-dark-1440.png
+?? docs/refinement/evidence/phase-3/after-course-dark-390.png
+?? docs/refinement/evidence/phase-3/after-course-light-1440.png
+?? docs/refinement/evidence/phase-3/after-course-light-390.png
+?? docs/refinement/evidence/phase-3/after-exam-dark-1440.png
+?? docs/refinement/evidence/phase-3/after-exam-dark-390.png
+?? docs/refinement/evidence/phase-3/after-exam-light-1440.png
+?? docs/refinement/evidence/phase-3/after-exam-light-390.png
+?? docs/refinement/evidence/phase-3/after-home-dark-1440.png
+?? docs/refinement/evidence/phase-3/after-home-dark-390.png
+?? docs/refinement/evidence/phase-3/after-home-light-1440.png
+?? docs/refinement/evidence/phase-3/after-home-light-390.png
+?? docs/refinement/evidence/phase-3/after-intro-dark-1440.png
+?? docs/refinement/evidence/phase-3/after-intro-dark-390.png
+?? docs/refinement/evidence/phase-3/after-intro-light-1440.png
+?? docs/refinement/evidence/phase-3/after-intro-light-390.png
+?? docs/refinement/evidence/phase-3/after-login-dark-1440.png
+?? docs/refinement/evidence/phase-3/after-login-dark-390.png
+?? docs/refinement/evidence/phase-3/after-login-light-1440.png
+?? docs/refinement/evidence/phase-3/after-login-light-390.png
+?? docs/refinement/evidence/phase-3/after-not-found-dark-1440.png
+?? docs/refinement/evidence/phase-3/after-not-found-dark-390.png
+?? docs/refinement/evidence/phase-3/after-not-found-light-1440.png
+?? docs/refinement/evidence/phase-3/after-not-found-light-390.png
+?? docs/refinement/evidence/phase-3/after-register-dark-1440.png
+?? docs/refinement/evidence/phase-3/after-register-dark-390.png
+?? docs/refinement/evidence/phase-3/after-register-light-1440.png
+?? docs/refinement/evidence/phase-3/after-register-light-390.png
+?? docs/refinement/evidence/phase-3/appearance-final-result.json
+?? docs/refinement/evidence/phase-3/appearance-final.log
+?? docs/refinement/evidence/phase-3/auth-dark-result.json
+?? docs/refinement/evidence/phase-3/auth-dark.log
+?? docs/refinement/evidence/phase-3/auth-error-dark-1440.png
+?? docs/refinement/evidence/phase-3/auth-error-dark-390.png
+?? docs/refinement/evidence/phase-3/auth-error-light-1440.png
+?? docs/refinement/evidence/phase-3/auth-error-light-390.png
+?? docs/refinement/evidence/phase-3/auth-light.log
+?? docs/refinement/evidence/phase-3/authored-lint-verified.json
+?? docs/refinement/evidence/phase-3/authored-lint.json
+?? docs/refinement/evidence/phase-3/authorization.md
+?? docs/refinement/evidence/phase-3/baseline-appearance.log
+?? docs/refinement/evidence/phase-3/baseline-auth.log
+?? docs/refinement/evidence/phase-3/baseline-build.log
+?? docs/refinement/evidence/phase-3/baseline-gis.log
+?? docs/refinement/evidence/phase-3/baseline-unit.log
+?? docs/refinement/evidence/phase-3/before-callback-dark-1440.png
+?? docs/refinement/evidence/phase-3/before-callback-dark-390.png
+?? docs/refinement/evidence/phase-3/before-callback-light-1440.png
+?? docs/refinement/evidence/phase-3/before-callback-light-390.png
+?? docs/refinement/evidence/phase-3/before-captures.json
+?? docs/refinement/evidence/phase-3/before-course-dark-1440.png
+?? docs/refinement/evidence/phase-3/before-course-dark-390.png
+?? docs/refinement/evidence/phase-3/before-course-light-1440.png
+?? docs/refinement/evidence/phase-3/before-course-light-390.png
+?? docs/refinement/evidence/phase-3/before-docs/ACCEPTANCE_CRITERIA.md
+?? docs/refinement/evidence/phase-3/before-docs/AUDIT_COVERAGE.md
+?? docs/refinement/evidence/phase-3/before-docs/BRAND_README.md
+?? docs/refinement/evidence/phase-3/before-docs/COMPONENT_INVENTORY.md
+?? docs/refinement/evidence/phase-3/before-docs/COMPONENT_USAGE_GUIDE.md
+?? docs/refinement/evidence/phase-3/before-docs/DECISION_LOG.md
+?? docs/refinement/evidence/phase-3/before-docs/DESIGN_SYSTEM.md
+?? docs/refinement/evidence/phase-3/before-docs/FEEDBACK_PATTERNS.md
+?? docs/refinement/evidence/phase-3/before-docs/IMPLEMENTATION_PLAN.md
+?? docs/refinement/evidence/phase-3/before-docs/OPEN_QUESTIONS.md
+?? docs/refinement/evidence/phase-3/before-docs/PHASE_2_REPORT.md
+?? docs/refinement/evidence/phase-3/before-docs/PROGRAM_BRIEF.md
+?? docs/refinement/evidence/phase-3/before-docs/PROGRAM_STATUS.md
+?? docs/refinement/evidence/phase-3/before-docs/REGRESSION_REPORT.md
+?? docs/refinement/evidence/phase-3/before-docs/UX_WRITING.md
+?? docs/refinement/evidence/phase-3/before-docs/VISUAL_REVIEW.md
+?? docs/refinement/evidence/phase-3/before-exam-dark-1440.png
+?? docs/refinement/evidence/phase-3/before-exam-dark-390.png
+?? docs/refinement/evidence/phase-3/before-exam-light-1440.png
+?? docs/refinement/evidence/phase-3/before-exam-light-390.png
+?? docs/refinement/evidence/phase-3/before-home-dark-1440.png
+?? docs/refinement/evidence/phase-3/before-home-dark-390.png
+?? docs/refinement/evidence/phase-3/before-home-light-1440.png
+?? docs/refinement/evidence/phase-3/before-home-light-390.png
+?? docs/refinement/evidence/phase-3/before-intro-dark-1440.png
+?? docs/refinement/evidence/phase-3/before-intro-dark-390.png
+?? docs/refinement/evidence/phase-3/before-intro-light-1440.png
+?? docs/refinement/evidence/phase-3/before-intro-light-390.png
+?? docs/refinement/evidence/phase-3/before-login-dark-1440.png
+?? docs/refinement/evidence/phase-3/before-login-dark-390.png
+?? docs/refinement/evidence/phase-3/before-login-light-1440.png
+?? docs/refinement/evidence/phase-3/before-login-light-390.png
+?? docs/refinement/evidence/phase-3/before-not-found-dark-1440.png
+?? docs/refinement/evidence/phase-3/before-not-found-dark-390.png
+?? docs/refinement/evidence/phase-3/before-not-found-light-1440.png
+?? docs/refinement/evidence/phase-3/before-not-found-light-390.png
+?? docs/refinement/evidence/phase-3/before-register-dark-1440.png
+?? docs/refinement/evidence/phase-3/before-register-dark-390.png
+?? docs/refinement/evidence/phase-3/before-register-light-1440.png
+?? docs/refinement/evidence/phase-3/before-register-light-390.png
+?? docs/refinement/evidence/phase-3/build-default.log
+?? docs/refinement/evidence/phase-3/build-root.log
+?? docs/refinement/evidence/phase-3/changed-files.txt
+?? docs/refinement/evidence/phase-3/check-disclosure.mjs
+?? docs/refinement/evidence/phase-3/checkpoint.mjs
+?? docs/refinement/evidence/phase-3/connected-courses-result.json
+?? docs/refinement/evidence/phase-3/connected-courses.log
+?? docs/refinement/evidence/phase-3/delivery-verification.json
+?? docs/refinement/evidence/phase-3/delivery-verification.log
+?? docs/refinement/evidence/phase-3/disclosure-result.json
+?? docs/refinement/evidence/phase-3/disclosure.log
+?? docs/refinement/evidence/phase-3/documentation-validation.json
+?? docs/refinement/evidence/phase-3/exams-dark-1440.png
+?? docs/refinement/evidence/phase-3/exams-light-1440.png
+?? docs/refinement/evidence/phase-3/final-doc-helper-lint.json
+?? docs/refinement/evidence/phase-3/final-types.log
+?? docs/refinement/evidence/phase-3/final-unit.log
+?? docs/refinement/evidence/phase-3/finalize-docs.mjs
+?? docs/refinement/evidence/phase-3/focused-lint-corrected.json
+?? docs/refinement/evidence/phase-3/focused-lint-delivery.json
+?? docs/refinement/evidence/phase-3/focused-lint-final.json
+?? docs/refinement/evidence/phase-3/focused-lint-verified.json
+?? docs/refinement/evidence/phase-3/focused-lint.json
+?? docs/refinement/evidence/phase-3/footer-dark-1440.png
+?? docs/refinement/evidence/phase-3/footer-light-1440.png
+?? docs/refinement/evidence/phase-3/gis-dark-result.json
+?? docs/refinement/evidence/phase-3/gis-dark.log
+?? docs/refinement/evidence/phase-3/gis-light.log
+?? docs/refinement/evidence/phase-3/git-before.json
+?? docs/refinement/evidence/phase-3/google-code-mock-mobile.png
+?? docs/refinement/evidence/phase-3/google-gis-mock-mobile.png
+?? docs/refinement/evidence/phase-3/hero-dark-1440.png
+?? docs/refinement/evidence/phase-3/hero-light-1440.png
+?? docs/refinement/evidence/phase-3/home-text-200.png
+?? docs/refinement/evidence/phase-3/implement-pages.mjs
+?? docs/refinement/evidence/phase-3/index.html
+?? docs/refinement/evidence/phase-3/initial-types.log
+?? docs/refinement/evidence/phase-3/mobile-navigation-dark.png
+?? docs/refinement/evidence/phase-3/mobile-navigation-light.png
+?? docs/refinement/evidence/phase-3/native-validation-dark.png
+?? docs/refinement/evidence/phase-3/native-validation-light.png
+?? docs/refinement/evidence/phase-3/preview-status.json
+?? docs/refinement/evidence/phase-3/protected-before.json
+?? docs/refinement/evidence/phase-3/public-development-result.json
+?? docs/refinement/evidence/phase-3/public-development.log
+?? docs/refinement/evidence/phase-3/public-root-result.json
+?? docs/refinement/evidence/phase-3/public-root.log
+?? docs/refinement/evidence/phase-3/resource-error-dark.png
+?? docs/refinement/evidence/phase-3/resource-error-light.png
+?? docs/refinement/evidence/phase-3/review-evidence.log
+?? docs/refinement/evidence/phase-3/review-evidence.mjs
+?? docs/refinement/evidence/phase-3/review-home.png
+?? docs/refinement/evidence/phase-3/review-login.png
+?? docs/refinement/evidence/phase-3/review-render.mjs
+?? docs/refinement/evidence/phase-3/root-appearance-result.json
+?? docs/refinement/evidence/phase-3/root-appearance.log
+?? docs/refinement/evidence/phase-3/root-auth-result.json
+?? docs/refinement/evidence/phase-3/root-auth.log
+?? docs/refinement/evidence/phase-3/root-gis-result.json
+?? docs/refinement/evidence/phase-3/root-gis.log
+?? docs/refinement/evidence/phase-3/shell-catalog-dark-1440.png
+?? docs/refinement/evidence/phase-3/shell-catalog-dark-390.png
+?? docs/refinement/evidence/phase-3/shell-catalog-light-1440.png
+?? docs/refinement/evidence/phase-3/shell-catalog-light-390.png
+?? docs/refinement/evidence/phase-3/summary.json
+?? docs/refinement/evidence/phase-3/verify-delivery.mjs
+?? docs/refinement/evidence/phase-3/visual-index-desktop.png
+?? docs/refinement/evidence/phase-3/visual-index-mobile.png
+?? src/pages/public/LearningIllustration.tsx
+?? src/public.css
+?? tests/browser/check-public.mjs

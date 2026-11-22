@@ -1,11 +1,20 @@
+/* global fetch */
+import process from 'node:process'
+import { URL } from 'node:url'
 import { mkdirSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
+import { resolve, join } from 'node:path'
 
 export const root = (process.env.CENT_TEST_WEB_URL || 'http://localhost:5173/cent-s').replace(/\/$/, '')
 export const api = (process.env.CENT_TEST_API_URL || 'http://127.0.0.1:5108/api/cent/v1').replace(/\/$/, '')
 const output = new URL('./artifacts/', import.meta.url)
 mkdirSync(output, { recursive: true })
-export const artifact = name => fileURLToPath(new URL(name, output))
+export const artifact = name => {
+  if (!process.env.ITATEST_TEST_EVIDENCE) return fileURLToPath(new URL(name, output))
+  const folder = resolve(process.env.ITATEST_TEST_EVIDENCE)
+  mkdirSync(folder, { recursive: true })
+  return join(folder, name)
+}
 export const browserOptions = {
   headless: true,
   ...(process.env.CENT_TEST_CHROME_PATH

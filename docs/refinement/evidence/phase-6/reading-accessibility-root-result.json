@@ -1,0 +1,2436 @@
+{
+  "success": true,
+  "checks": [
+    "light /student/content: rendered contrast, RTL, five portrait/landscape sizes, touch targets, keyboard focus, notes panel focus/return, zoom bounds, reduced motion, persisted single-click appearance",
+    "light /student/notes: rendered contrast, RTL, five portrait/landscape sizes, touch targets, keyboard focus, notes panel focus/return, zoom bounds, reduced motion, persisted single-click appearance",
+    "light /student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5: rendered contrast, RTL, five portrait/landscape sizes, touch targets, keyboard focus, notes panel focus/return, zoom bounds, reduced motion, persisted single-click appearance",
+    "light /student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3: rendered contrast, RTL, five portrait/landscape sizes, touch targets, keyboard focus, notes panel focus/return, zoom bounds, reduced motion, persisted single-click appearance",
+    "dark /student/content: rendered contrast, RTL, five portrait/landscape sizes, touch targets, keyboard focus, notes panel focus/return, zoom bounds, reduced motion, persisted single-click appearance",
+    "dark /student/notes: rendered contrast, RTL, five portrait/landscape sizes, touch targets, keyboard focus, notes panel focus/return, zoom bounds, reduced motion, persisted single-click appearance",
+    "dark /student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5: rendered contrast, RTL, five portrait/landscape sizes, touch targets, keyboard focus, notes panel focus/return, zoom bounds, reduced motion, persisted single-click appearance",
+    "dark /student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3: rendered contrast, RTL, five portrait/landscape sizes, touch targets, keyboard focus, notes panel focus/return, zoom bounds, reduced motion, persisted single-click appearance"
+  ],
+  "observations": [
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "width": 320,
+      "height": 844,
+      "shellOverflow": false,
+      "targets": 9
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "width": 390,
+      "height": 844,
+      "shellOverflow": false,
+      "targets": 9
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "width": 768,
+      "height": 1024,
+      "shellOverflow": false,
+      "targets": 9
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "width": 844,
+      "height": 390,
+      "shellOverflow": false,
+      "targets": 9
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "width": 1024,
+      "height": 768,
+      "shellOverflow": false,
+      "targets": 9
+    },
+    {
+      "theme": "light",
+      "path": "/student/notes",
+      "width": 320,
+      "height": 844,
+      "shellOverflow": false,
+      "targets": 3
+    },
+    {
+      "theme": "light",
+      "path": "/student/notes",
+      "width": 390,
+      "height": 844,
+      "shellOverflow": false,
+      "targets": 3
+    },
+    {
+      "theme": "light",
+      "path": "/student/notes",
+      "width": 768,
+      "height": 1024,
+      "shellOverflow": false,
+      "targets": 3
+    },
+    {
+      "theme": "light",
+      "path": "/student/notes",
+      "width": 844,
+      "height": 390,
+      "shellOverflow": false,
+      "targets": 3
+    },
+    {
+      "theme": "light",
+      "path": "/student/notes",
+      "width": 1024,
+      "height": 768,
+      "shellOverflow": false,
+      "targets": 3
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "width": 320,
+      "height": 844,
+      "shellOverflow": false,
+      "targets": 19
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "width": 390,
+      "height": 844,
+      "shellOverflow": false,
+      "targets": 19
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "width": 768,
+      "height": 1024,
+      "shellOverflow": false,
+      "targets": 19
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "width": 844,
+      "height": 390,
+      "shellOverflow": false,
+      "targets": 19
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "width": 1024,
+      "height": 768,
+      "shellOverflow": false,
+      "targets": 19
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "width": 320,
+      "height": 844,
+      "shellOverflow": false,
+      "targets": 14
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "width": 390,
+      "height": 844,
+      "shellOverflow": false,
+      "targets": 14
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "width": 768,
+      "height": 1024,
+      "shellOverflow": false,
+      "targets": 14
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "width": 844,
+      "height": 390,
+      "shellOverflow": false,
+      "targets": 14
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "width": 1024,
+      "height": 768,
+      "shellOverflow": false,
+      "targets": 14
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "width": 320,
+      "height": 844,
+      "shellOverflow": false,
+      "targets": 9
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "width": 390,
+      "height": 844,
+      "shellOverflow": false,
+      "targets": 9
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "width": 768,
+      "height": 1024,
+      "shellOverflow": false,
+      "targets": 9
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "width": 844,
+      "height": 390,
+      "shellOverflow": false,
+      "targets": 9
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "width": 1024,
+      "height": 768,
+      "shellOverflow": false,
+      "targets": 9
+    },
+    {
+      "theme": "dark",
+      "path": "/student/notes",
+      "width": 320,
+      "height": 844,
+      "shellOverflow": false,
+      "targets": 3
+    },
+    {
+      "theme": "dark",
+      "path": "/student/notes",
+      "width": 390,
+      "height": 844,
+      "shellOverflow": false,
+      "targets": 3
+    },
+    {
+      "theme": "dark",
+      "path": "/student/notes",
+      "width": 768,
+      "height": 1024,
+      "shellOverflow": false,
+      "targets": 3
+    },
+    {
+      "theme": "dark",
+      "path": "/student/notes",
+      "width": 844,
+      "height": 390,
+      "shellOverflow": false,
+      "targets": 3
+    },
+    {
+      "theme": "dark",
+      "path": "/student/notes",
+      "width": 1024,
+      "height": 768,
+      "shellOverflow": false,
+      "targets": 3
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "width": 320,
+      "height": 844,
+      "shellOverflow": false,
+      "targets": 19
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "width": 390,
+      "height": 844,
+      "shellOverflow": false,
+      "targets": 19
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "width": 768,
+      "height": 1024,
+      "shellOverflow": false,
+      "targets": 19
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "width": 844,
+      "height": 390,
+      "shellOverflow": false,
+      "targets": 19
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "width": 1024,
+      "height": 768,
+      "shellOverflow": false,
+      "targets": 19
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "width": 320,
+      "height": 844,
+      "shellOverflow": false,
+      "targets": 14
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "width": 390,
+      "height": 844,
+      "shellOverflow": false,
+      "targets": 14
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "width": 768,
+      "height": 1024,
+      "shellOverflow": false,
+      "targets": 14
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "width": 844,
+      "height": 390,
+      "shellOverflow": false,
+      "targets": 14
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "width": 1024,
+      "height": 768,
+      "shellOverflow": false,
+      "targets": 14
+    }
+  ],
+  "measuredTextPairs": 262,
+  "measurements": [
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "کتابخانه من",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "کتابخانه من",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "از همان‌جایی که مانده بودی، ادامه بده",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "از همان‌جایی که مانده بودی، ادامه بده",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "دیدن آموزش‌ها",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "دسترسی هر منبع، کنار خودش مشخصه",
+      "foreground": "rgb(52, 77, 50)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 7.899999447094375
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "خریدهای تکی به اشتراک وابسته نیستن. یادداشت‌هات بعد از پایان",
+      "foreground": "rgb(52, 77, 50)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 7.899999447094375
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "دیدن طرح‌ها",
+      "foreground": "rgb(52, 77, 50)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 7.899999447094375
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "نوار مطالعه، بیشترین صفحه بازشده رو نشون می‌ده؛ میزان تسلط ا",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 4.969720906577139
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "جبر؛ از مثال تا تمرین",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "مثال‌های معادله خطی و تمرین برای مرور روش حل.",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 4.969720906577139
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "خرید دائمی",
+      "foreground": "rgb(52, 77, 50)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 7.899999447094375
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "ITATEST",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "معادله‌های خطی؛ مثال و تمرین",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "معادله‌های خطی؛ مثال و تمرین",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "آخرین محل مطالعه: صفحه 1",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "صفحه 1",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "بیشترین صفحه بازشده 2 از 2",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "2 از 2",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "ادامه مطالعه: معادله‌های خطی؛ مثال و تمرین",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "ریاضی — منابع اصلی CEnT",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "درس‌نامه‌ها و تمرین‌های منبع اصلی ریاضی. دسترسی خریداری‌شده ",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 4.969720906577139
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "خرید دائمی",
+      "foreground": "rgb(52, 77, 50)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 7.899999447094375
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "ITATEST",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "مسترکلاس ریاضی: پایه‌های محاسباتی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "ریاضی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "مسترکلاس ریاضی: پایه‌های محاسباتی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "آخرین محل مطالعه: صفحه 3",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "صفحه 3",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "بیشترین صفحه بازشده 3 از 14",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "3 از 14",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "ادامه مطالعه: مسترکلاس ریاضی: پایه‌های محاسباتی",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "ITATEST",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "معادلات، نامعادلات و هندسهٔ مختصات",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "ریاضی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "معادلات، نامعادلات و هندسهٔ مختصات",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "هنوز شروع نکردی",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "شروع مطالعه: معادلات، نامعادلات و هندسهٔ مختصات",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "ITATEST",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "توابع (Functions)",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "ریاضی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "توابع (Functions)",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "هنوز شروع نکردی",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "شروع مطالعه: توابع (Functions)",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "ITATEST",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "مثلثات؛ از رادیان تا حل معادله",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "ریاضی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "مثلثات؛ از رادیان تا حل معادله",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "هنوز شروع نکردی",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "شروع مطالعه: مثلثات؛ از رادیان تا حل معادله",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "ITATEST",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "هندسه از صفر تا تشابه و مختصات",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "ریاضی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "هندسه از صفر تا تشابه و مختصات",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "هنوز شروع نکردی",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "شروع مطالعه: هندسه از صفر تا تشابه و مختصات",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "ITATEST",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "ترکیبات و احتمال",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "ریاضی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "ترکیبات و احتمال",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "هنوز شروع نکردی",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "شروع مطالعه: ترکیبات و احتمال",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "ITATEST",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "آمار (Statistics)",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "ریاضی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "آمار (Statistics)",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "هنوز شروع نکردی",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/student/content",
+      "text": "شروع مطالعه: آمار (Statistics)",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/student/notes",
+      "text": "فضای یادگیری تو",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "light",
+      "path": "/student/notes",
+      "text": "فضای یادگیری تو",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/student/notes",
+      "text": "یادداشت‌های من",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "light",
+      "path": "/student/notes",
+      "text": "یادداشت‌های من",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/student/notes",
+      "text": "نکته‌هایی که کنار صفحه‌ها نوشتی، برای مرور اینجان. حتی بعد ا",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "light",
+      "path": "/student/notes",
+      "text": "نکته‌هایی که کنار صفحه‌ها نوشتی، برای مرور اینجان. حتی بعد ا",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/student/notes",
+      "text": "معادله‌های خطی؛ مثال و تمرین",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/student/notes",
+      "text": "صفحه 1",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/student/notes",
+      "text": "برای حل معادله، اول ثابت‌ها رو جابه‌جا می‌کنم.\nبعد از تقسیم،",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/notes",
+      "text": "۱۴۰۵/۸/۲۸",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/student/notes",
+      "text": "باز کردن صفحه و یادداشت",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/notes",
+      "text": "معادله‌های خطی؛ مثال و تمرین",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/student/notes",
+      "text": "صفحه 1",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/student/notes",
+      "text": "اگر دو طرف رو بر یک عدد تقسیم می‌کنم، اون عدد نباید صفر باشه",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/notes",
+      "text": "۱۴۰۵/۸/۲۸",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/student/notes",
+      "text": "باز کردن صفحه و یادداشت",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "معادله‌های خطی؛ مثال و تمرین",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "یادداشت‌ها2",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "صفحه 12از 2",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "از 2",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "100٪",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "1",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "2",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "صفحه 1 · برای ثبت نکته روی بخش موردنظر بزن",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 4.969720906577139
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "نمایش شخصی برای سارا رضایی",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 4.969720906577139
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "محل مطالعه ثبت‌شده",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 4.969720906577139
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "آخرین محل مطالعه: صفحه 1",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 4.969720906577139
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "بیشترین صفحه بازشده 2 از 2",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 4.969720906577139
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "این محل پیش از باز کردن این صفحه ثبت شده؛ جابه‌جایی‌هات مثل ",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 4.969720906577139
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "کنار این صفحه",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "فهرست درسانتخاب بخشExample · صفحه 1Practice · صفحه 2",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "ویرایش یادداشت · صفحه 1",
+      "foreground": "rgb(52, 77, 50)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 7.899999447094375
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "برای حل معادله، اول ثابت‌ها رو جابه‌جا می‌کنم.\nبعد از تقسیم،",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "محل یادداشت روی صفحه",
+      "foreground": "rgb(52, 77, 50)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 7.899999447094375
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "ثبت یادداشت",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "یادداشت جدید",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 10.785302302114225
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "یادداشت‌ها فقط برای خودت قابل مشاهده‌اند.",
+      "foreground": "rgb(52, 77, 50)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 7.899999447094375
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "یادداشت 1 · صفحه 1 · در حال ویرایش",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 4.5304407694088
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "برای حل معادله، اول ثابت‌ها رو جابه‌جا می‌کنم.\nبعد از تقسیم،",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 10.785302302114225
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "یادداشت 2 · صفحه 1",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "اگر دو طرف رو بر یک عدد تقسیم می‌کنم، اون عدد نباید صفر باشه",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "همه یادداشت‌های من",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "مسترکلاس ریاضی: پایه‌های محاسباتی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "یادداشت‌ها0",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "صفحه 1234567891011121314از 14",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "از 14",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "100٪",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "reading-root-1795095201645@test.local · 308f1358",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 253, 248)",
+      "ratio": 12.514214109582612
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "معماری اعداد: مجموعه‌های تو در تو",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 253, 248)",
+      "ratio": 12.514214109582612
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "تمرین این مبحث",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "صفحه 3 · برای ثبت نکته روی بخش موردنظر بزن",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 4.969720906577139
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "نمایش شخصی برای سارا رضایی",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 4.969720906577139
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "محل مطالعه ثبت‌شده",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 4.969720906577139
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "آخرین محل مطالعه: صفحه 3",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 4.969720906577139
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "بیشترین صفحه بازشده 3 از 14",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 4.969720906577139
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "این محل پیش از باز کردن این صفحه ثبت شده؛ جابه‌جایی‌هات مثل ",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 4.969720906577139
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "کنار این صفحه",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "فهرست درسانتخاب بخشمسترکلاس ریاضی: پایه‌های محاسباتی · صفحه ",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "نکته تازه · صفحه 3",
+      "foreground": "rgb(52, 77, 50)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 7.899999447094375
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "محل یادداشت روی صفحه",
+      "foreground": "rgb(52, 77, 50)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 7.899999447094375
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "یادداشت‌ها فقط برای خودت قابل مشاهده‌اند.",
+      "foreground": "rgb(52, 77, 50)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 7.899999447094375
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "یادداشت ثبت‌شده‌ای برای این صفحه نیست.",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "همه یادداشت‌های من",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "کتابخانه من",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "کتابخانه من",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "از همان‌جایی که مانده بودی، ادامه بده",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "از همان‌جایی که مانده بودی، ادامه بده",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "دیدن آموزش‌ها",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "دسترسی هر منبع، کنار خودش مشخصه",
+      "foreground": "rgb(198, 216, 194)",
+      "background": "rgb(48, 61, 52)",
+      "ratio": 7.598662017479065
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "خریدهای تکی به اشتراک وابسته نیستن. یادداشت‌هات بعد از پایان",
+      "foreground": "rgb(198, 216, 194)",
+      "background": "rgb(48, 61, 52)",
+      "ratio": 7.598662017479065
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "دیدن طرح‌ها",
+      "foreground": "rgb(198, 216, 194)",
+      "background": "rgb(48, 61, 52)",
+      "ratio": 7.598662017479065
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "نوار مطالعه، بیشترین صفحه بازشده رو نشون می‌ده؛ میزان تسلط ا",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 9.078757389006908
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "جبر؛ از مثال تا تمرین",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 15.190344709396944
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "مثال‌های معادله خطی و تمرین برای مرور روش حل.",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 9.078757389006908
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "خرید دائمی",
+      "foreground": "rgb(198, 216, 194)",
+      "background": "rgb(48, 61, 52)",
+      "ratio": 7.598662017479065
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "ITATEST",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "معادله‌های خطی؛ مثال و تمرین",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "معادله‌های خطی؛ مثال و تمرین",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "آخرین محل مطالعه: صفحه 1",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "صفحه 1",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "بیشترین صفحه بازشده 2 از 2",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "2 از 2",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "ادامه مطالعه: معادله‌های خطی؛ مثال و تمرین",
+      "foreground": "rgb(24, 33, 39)",
+      "background": "rgb(156, 184, 201)",
+      "ratio": 7.86604004163575
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "ریاضی — منابع اصلی CEnT",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 15.190344709396944
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "درس‌نامه‌ها و تمرین‌های منبع اصلی ریاضی. دسترسی خریداری‌شده ",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 9.078757389006908
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "خرید دائمی",
+      "foreground": "rgb(198, 216, 194)",
+      "background": "rgb(48, 61, 52)",
+      "ratio": 7.598662017479065
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "ITATEST",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "مسترکلاس ریاضی: پایه‌های محاسباتی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "ریاضی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "مسترکلاس ریاضی: پایه‌های محاسباتی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "آخرین محل مطالعه: صفحه 3",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "صفحه 3",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "بیشترین صفحه بازشده 3 از 14",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "3 از 14",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "ادامه مطالعه: مسترکلاس ریاضی: پایه‌های محاسباتی",
+      "foreground": "rgb(24, 33, 39)",
+      "background": "rgb(156, 184, 201)",
+      "ratio": 7.86604004163575
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "ITATEST",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "معادلات، نامعادلات و هندسهٔ مختصات",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "ریاضی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "معادلات، نامعادلات و هندسهٔ مختصات",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "هنوز شروع نکردی",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "شروع مطالعه: معادلات، نامعادلات و هندسهٔ مختصات",
+      "foreground": "rgb(24, 33, 39)",
+      "background": "rgb(156, 184, 201)",
+      "ratio": 7.86604004163575
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "ITATEST",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "توابع (Functions)",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "ریاضی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "توابع (Functions)",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "هنوز شروع نکردی",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "شروع مطالعه: توابع (Functions)",
+      "foreground": "rgb(24, 33, 39)",
+      "background": "rgb(156, 184, 201)",
+      "ratio": 7.86604004163575
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "ITATEST",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "مثلثات؛ از رادیان تا حل معادله",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "ریاضی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "مثلثات؛ از رادیان تا حل معادله",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "هنوز شروع نکردی",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "شروع مطالعه: مثلثات؛ از رادیان تا حل معادله",
+      "foreground": "rgb(24, 33, 39)",
+      "background": "rgb(156, 184, 201)",
+      "ratio": 7.86604004163575
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "ITATEST",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "هندسه از صفر تا تشابه و مختصات",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "ریاضی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "هندسه از صفر تا تشابه و مختصات",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "هنوز شروع نکردی",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "شروع مطالعه: هندسه از صفر تا تشابه و مختصات",
+      "foreground": "rgb(24, 33, 39)",
+      "background": "rgb(156, 184, 201)",
+      "ratio": 7.86604004163575
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "ITATEST",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "ترکیبات و احتمال",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "ریاضی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "ترکیبات و احتمال",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "هنوز شروع نکردی",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "شروع مطالعه: ترکیبات و احتمال",
+      "foreground": "rgb(24, 33, 39)",
+      "background": "rgb(156, 184, 201)",
+      "ratio": 7.86604004163575
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "ITATEST",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "آمار (Statistics)",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "ریاضی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "آمار (Statistics)",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "هنوز شروع نکردی",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/student/content",
+      "text": "شروع مطالعه: آمار (Statistics)",
+      "foreground": "rgb(24, 33, 39)",
+      "background": "rgb(156, 184, 201)",
+      "ratio": 7.86604004163575
+    },
+    {
+      "theme": "dark",
+      "path": "/student/notes",
+      "text": "فضای یادگیری تو",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "dark",
+      "path": "/student/notes",
+      "text": "فضای یادگیری تو",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "dark",
+      "path": "/student/notes",
+      "text": "یادداشت‌های من",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "dark",
+      "path": "/student/notes",
+      "text": "یادداشت‌های من",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "dark",
+      "path": "/student/notes",
+      "text": "نکته‌هایی که کنار صفحه‌ها نوشتی، برای مرور اینجان. حتی بعد ا",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "dark",
+      "path": "/student/notes",
+      "text": "نکته‌هایی که کنار صفحه‌ها نوشتی، برای مرور اینجان. حتی بعد ا",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "dark",
+      "path": "/student/notes",
+      "text": "معادله‌های خطی؛ مثال و تمرین",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/student/notes",
+      "text": "صفحه 1",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/student/notes",
+      "text": "برای حل معادله، اول ثابت‌ها رو جابه‌جا می‌کنم.\nبعد از تقسیم،",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/notes",
+      "text": "۱۴۰۵/۸/۲۸",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/student/notes",
+      "text": "باز کردن صفحه و یادداشت",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/notes",
+      "text": "معادله‌های خطی؛ مثال و تمرین",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/student/notes",
+      "text": "صفحه 1",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/student/notes",
+      "text": "اگر دو طرف رو بر یک عدد تقسیم می‌کنم، اون عدد نباید صفر باشه",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/notes",
+      "text": "۱۴۰۵/۸/۲۸",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/student/notes",
+      "text": "باز کردن صفحه و یادداشت",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "معادله‌های خطی؛ مثال و تمرین",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "یادداشت‌ها2",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "صفحه 12از 2",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "از 2",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "100٪",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "1",
+      "foreground": "rgb(24, 33, 39)",
+      "background": "rgb(156, 184, 201)",
+      "ratio": 7.86604004163575
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "2",
+      "foreground": "rgb(24, 33, 39)",
+      "background": "rgb(156, 184, 201)",
+      "ratio": 7.86604004163575
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "صفحه 1 · برای ثبت نکته روی بخش موردنظر بزن",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 9.078757389006908
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "نمایش شخصی برای سارا رضایی",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 9.078757389006908
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "محل مطالعه ثبت‌شده",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 9.078757389006908
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "آخرین محل مطالعه: صفحه 1",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 9.078757389006908
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "بیشترین صفحه بازشده 2 از 2",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 9.078757389006908
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "این محل پیش از باز کردن این صفحه ثبت شده؛ جابه‌جایی‌هات مثل ",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 9.078757389006908
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "کنار این صفحه",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "فهرست درسانتخاب بخشExample · صفحه 1Practice · صفحه 2",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "ویرایش یادداشت · صفحه 1",
+      "foreground": "rgb(198, 216, 194)",
+      "background": "rgb(48, 61, 52)",
+      "ratio": 7.598662017479065
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "برای حل معادله، اول ثابت‌ها رو جابه‌جا می‌کنم.\nبعد از تقسیم،",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "محل یادداشت روی صفحه",
+      "foreground": "rgb(198, 216, 194)",
+      "background": "rgb(48, 61, 52)",
+      "ratio": 7.598662017479065
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "ثبت یادداشت",
+      "foreground": "rgb(24, 33, 39)",
+      "background": "rgb(156, 184, 201)",
+      "ratio": 7.86604004163575
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "یادداشت جدید",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(48, 61, 52)",
+      "ratio": 10.598170170170837
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "یادداشت‌ها فقط برای خودت قابل مشاهده‌اند.",
+      "foreground": "rgb(198, 216, 194)",
+      "background": "rgb(48, 61, 52)",
+      "ratio": 7.598662017479065
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "یادداشت 1 · صفحه 1 · در حال ویرایش",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(48, 61, 52)",
+      "ratio": 6.3341693413230615
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "برای حل معادله، اول ثابت‌ها رو جابه‌جا می‌کنم.\nبعد از تقسیم،",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(48, 61, 52)",
+      "ratio": 10.598170170170837
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "یادداشت 2 · صفحه 1",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "اگر دو طرف رو بر یک عدد تقسیم می‌کنم، اون عدد نباید صفر باشه",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/02b7feb1-cce1-4eb3-bf77-61f390571ac5",
+      "text": "همه یادداشت‌های من",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "مسترکلاس ریاضی: پایه‌های محاسباتی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "یادداشت‌ها0",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "صفحه 1234567891011121314از 14",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "از 14",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "100٪",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "reading-root-1795095201645@test.local · 308f1358",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 253, 248)",
+      "ratio": 12.514214109582612
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "معماری اعداد: مجموعه‌های تو در تو",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 253, 248)",
+      "ratio": 12.514214109582612
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "تمرین این مبحث",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "صفحه 3 · برای ثبت نکته روی بخش موردنظر بزن",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 9.078757389006908
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "نمایش شخصی برای سارا رضایی",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 9.078757389006908
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "محل مطالعه ثبت‌شده",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 9.078757389006908
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "آخرین محل مطالعه: صفحه 3",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 9.078757389006908
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "بیشترین صفحه بازشده 3 از 14",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 9.078757389006908
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "این محل پیش از باز کردن این صفحه ثبت شده؛ جابه‌جایی‌هات مثل ",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 9.078757389006908
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "کنار این صفحه",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "فهرست درسانتخاب بخشمسترکلاس ریاضی: پایه‌های محاسباتی · صفحه ",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "نکته تازه · صفحه 3",
+      "foreground": "rgb(198, 216, 194)",
+      "background": "rgb(48, 61, 52)",
+      "ratio": 7.598662017479065
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "محل یادداشت روی صفحه",
+      "foreground": "rgb(198, 216, 194)",
+      "background": "rgb(48, 61, 52)",
+      "ratio": 7.598662017479065
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "یادداشت‌ها فقط برای خودت قابل مشاهده‌اند.",
+      "foreground": "rgb(198, 216, 194)",
+      "background": "rgb(48, 61, 52)",
+      "ratio": 7.598662017479065
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "یادداشت ثبت‌شده‌ای برای این صفحه نیست.",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/student/study/26559545-07b6-5bd7-0723-ea951534b1d7?page=3",
+      "text": "همه یادداشت‌های من",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    }
+  ],
+  "browserErrors": [],
+  "scope": "Representative local Chromium; manual visual review supplements these assertions; not full WCAG/screen-reader/cross-browser acceptance."
+}

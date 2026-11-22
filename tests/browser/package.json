@@ -4,7 +4,10 @@
   "type": "module",
   "scripts": {
     "test": "node check.mjs",
+    "test:mock-experience": "node check-mock-experience.mjs",
+    "test:commerce-real": "node check-subject-commerce.mjs",
     "test:google-auth": "node check-google-auth.mjs",
+    "test:google-gis": "node check-google-gis.mjs",
     "test:recovery": "node check-recovery.mjs",
     "test:curriculum": "node check-curriculum.mjs",
     "test:courses": "node check-courses.mjs",

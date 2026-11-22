@@ -1,0 +1,503 @@
+{
+  "success": true,
+  "backend": "http://127.0.0.1:5117/api/cent/v1",
+  "checks": [
+    "Connected public catalog, exact rial price, existing course detail/curriculum navigation, real plan duration and benefits; covers never request protected content",
+    "Connected corrected mock checkout PAID/amountRial and owner recovery fields; one UI submission while busy; verified order+library before access; owned resource prioritizes library; actual protected document access",
+    "Connected SQLite mock concurrent same-key purchase: same order and exactly one entitlement; explicit stacked renewal uses next interval; owner history/current and upcoming subscription; foreign verify/source denial",
+    "Injected pending/callback spoof, paid:false verification and safe malformed gateway feedback; reload and explicit recovery send exact server product/request IDs without another purchase key",
+    "Injected expired subscription presentation preserves independent permanent ownership; no invented renewal or access grant",
+    "Twelve real commerce route/theme compositions: 60 viewport observations (320–1440px, tablet and landscape), RTL, enabled 44px targets, visible keyboard focus and reduced-motion feedback"
+  ],
+  "observations": [
+    {
+      "theme": "light",
+      "path": "/package",
+      "width": 320,
+      "height": 844,
+      "targets": 9,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "width": 390,
+      "height": 844,
+      "targets": 9,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "width": 768,
+      "height": 1024,
+      "targets": 9,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "width": 844,
+      "height": 390,
+      "targets": 9,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "width": 1440,
+      "height": 1000,
+      "targets": 9,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "width": 320,
+      "height": 844,
+      "targets": 10,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "width": 390,
+      "height": 844,
+      "targets": 10,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "width": 768,
+      "height": 1024,
+      "targets": 10,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "width": 844,
+      "height": 390,
+      "targets": 10,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "width": 1440,
+      "height": 1000,
+      "targets": 10,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "path": "/package?kind=SUBSCRIPTION",
+      "width": 320,
+      "height": 844,
+      "targets": 4,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "path": "/package?kind=SUBSCRIPTION",
+      "width": 390,
+      "height": 844,
+      "targets": 4,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "path": "/package?kind=SUBSCRIPTION",
+      "width": 768,
+      "height": 1024,
+      "targets": 4,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "path": "/package?kind=SUBSCRIPTION",
+      "width": 844,
+      "height": 390,
+      "targets": 4,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "path": "/package?kind=SUBSCRIPTION",
+      "width": 1440,
+      "height": 1000,
+      "targets": 4,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "path": "/checkout?product=f28f2e41-449b-4f57-96df-4b38a1ed9cd5",
+      "width": 320,
+      "height": 844,
+      "targets": 1,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "path": "/checkout?product=f28f2e41-449b-4f57-96df-4b38a1ed9cd5",
+      "width": 390,
+      "height": 844,
+      "targets": 1,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "path": "/checkout?product=f28f2e41-449b-4f57-96df-4b38a1ed9cd5",
+      "width": 768,
+      "height": 1024,
+      "targets": 1,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "path": "/checkout?product=f28f2e41-449b-4f57-96df-4b38a1ed9cd5",
+      "width": 844,
+      "height": 390,
+      "targets": 1,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "path": "/checkout?product=f28f2e41-449b-4f57-96df-4b38a1ed9cd5",
+      "width": 1440,
+      "height": 1000,
+      "targets": 1,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "path": "/checkout/success?order=54aeb13f-9767-424a-b4be-a00c8c8b4d55",
+      "width": 320,
+      "height": 844,
+      "targets": 3,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "path": "/checkout/success?order=54aeb13f-9767-424a-b4be-a00c8c8b4d55",
+      "width": 390,
+      "height": 844,
+      "targets": 3,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "path": "/checkout/success?order=54aeb13f-9767-424a-b4be-a00c8c8b4d55",
+      "width": 768,
+      "height": 1024,
+      "targets": 3,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "path": "/checkout/success?order=54aeb13f-9767-424a-b4be-a00c8c8b4d55",
+      "width": 844,
+      "height": 390,
+      "targets": 3,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "path": "/checkout/success?order=54aeb13f-9767-424a-b4be-a00c8c8b4d55",
+      "width": 1440,
+      "height": 1000,
+      "targets": 3,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "width": 320,
+      "height": 844,
+      "targets": 5,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "width": 390,
+      "height": 844,
+      "targets": 5,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "width": 768,
+      "height": 1024,
+      "targets": 5,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "width": 844,
+      "height": 390,
+      "targets": 5,
+      "overflow": false
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "width": 1440,
+      "height": 1000,
+      "targets": 5,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "width": 320,
+      "height": 844,
+      "targets": 9,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "width": 390,
+      "height": 844,
+      "targets": 9,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "width": 768,
+      "height": 1024,
+      "targets": 9,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "width": 844,
+      "height": 390,
+      "targets": 9,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "width": 1440,
+      "height": 1000,
+      "targets": 9,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "width": 320,
+      "height": 844,
+      "targets": 10,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "width": 390,
+      "height": 844,
+      "targets": 10,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "width": 768,
+      "height": 1024,
+      "targets": 10,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "width": 844,
+      "height": 390,
+      "targets": 10,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "width": 1440,
+      "height": 1000,
+      "targets": 10,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "path": "/package?kind=SUBSCRIPTION",
+      "width": 320,
+      "height": 844,
+      "targets": 4,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "path": "/package?kind=SUBSCRIPTION",
+      "width": 390,
+      "height": 844,
+      "targets": 4,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "path": "/package?kind=SUBSCRIPTION",
+      "width": 768,
+      "height": 1024,
+      "targets": 4,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "path": "/package?kind=SUBSCRIPTION",
+      "width": 844,
+      "height": 390,
+      "targets": 4,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "path": "/package?kind=SUBSCRIPTION",
+      "width": 1440,
+      "height": 1000,
+      "targets": 4,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout?product=f28f2e41-449b-4f57-96df-4b38a1ed9cd5",
+      "width": 320,
+      "height": 844,
+      "targets": 1,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout?product=f28f2e41-449b-4f57-96df-4b38a1ed9cd5",
+      "width": 390,
+      "height": 844,
+      "targets": 1,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout?product=f28f2e41-449b-4f57-96df-4b38a1ed9cd5",
+      "width": 768,
+      "height": 1024,
+      "targets": 1,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout?product=f28f2e41-449b-4f57-96df-4b38a1ed9cd5",
+      "width": 844,
+      "height": 390,
+      "targets": 1,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout?product=f28f2e41-449b-4f57-96df-4b38a1ed9cd5",
+      "width": 1440,
+      "height": 1000,
+      "targets": 1,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout/success?order=54aeb13f-9767-424a-b4be-a00c8c8b4d55",
+      "width": 320,
+      "height": 844,
+      "targets": 3,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout/success?order=54aeb13f-9767-424a-b4be-a00c8c8b4d55",
+      "width": 390,
+      "height": 844,
+      "targets": 3,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout/success?order=54aeb13f-9767-424a-b4be-a00c8c8b4d55",
+      "width": 768,
+      "height": 1024,
+      "targets": 3,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout/success?order=54aeb13f-9767-424a-b4be-a00c8c8b4d55",
+      "width": 844,
+      "height": 390,
+      "targets": 3,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout/success?order=54aeb13f-9767-424a-b4be-a00c8c8b4d55",
+      "width": 1440,
+      "height": 1000,
+      "targets": 3,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "width": 320,
+      "height": 844,
+      "targets": 5,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "width": 390,
+      "height": 844,
+      "targets": 5,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "width": 768,
+      "height": 1024,
+      "targets": 5,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "width": 844,
+      "height": 390,
+      "targets": 5,
+      "overflow": false
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "width": 1440,
+      "height": 1000,
+      "targets": 5,
+      "overflow": false
+    }
+  ],
+  "screenshots": [],
+  "errors": [],
+  "connected": "Fresh corrected Phase 7A source built into isolated workspace output, Development SQLite mock only",
+  "injected": [
+    "PENDING history/paid:false",
+    "gateway_invalid_response",
+    "expired subscription"
+  ],
+  "previewReturnOriginAdapted": true
+}

@@ -11,4 +11,12 @@ describe('scoreAttempt', () => {
     expect(result.bySubject.math.total).toBeGreaterThan(0)
     expect(result.bySubject.logic.total).toBeGreaterThan(0)
   })
+  it('scores Reading and future subject keys without a fixed subject count', () => {
+    const sample = diagnosticQuestions[0]
+    const questions = [{ ...sample, id: 'reading', subject: 'reading' }, { ...sample, id: 'future', subject: 'future-subject' }]
+    const result = scoreAttempt(questions, { reading: sample.correctAnswer, future: null })
+    expect(result.bySubject.reading.correct).toBe(1)
+    expect(result.bySubject['future-subject'].unanswered).toBe(1)
+    expect(result.percentage).toBe(50)
+  })
 })

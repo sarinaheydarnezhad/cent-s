@@ -1,0 +1,13 @@
+{
+  "success": true,
+  "branch": "main",
+  "head": "8e87191a471ebe585ebb58f7db7fbbff688da5e8",
+  "protectedFileCount": 38,
+  "changed": [],
+  "authLogicUnchanged": true,
+  "courseAccessLogicUnchanged": true,
+  "mainChange": "One public CSS import only; early callback capture/theme unaffected",
+  "backend": "No backend repository access or edit; existing local preview reused",
+  "production": "Both outputs contain original security headers; development references/evidence not copied",
+  "staged": false
+}

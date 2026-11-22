@@ -1,0 +1,51 @@
+{
+  "success": true,
+  "links": 12,
+  "images": [
+    "after-new-light-390.png",
+    "after-recovery-dark-390.png",
+    "after-returning-dark-1440.png",
+    "after-returning-dark-390.png",
+    "after-returning-light-1440.png",
+    "after-returning-light-390.png"
+  ],
+  "observations": [
+    {
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "width": 390,
+      "scroll": 390
+    }
+  ],
+  "noAdditionalScreenshots": true,
+  "checks": {
+    "units": {
+      "passed": 156,
+      "files": 9
+    },
+    "typescript": "tsc -b passed",
+    "buildBases": [
+      "/cent-s/",
+      "/"
+    ],
+    "dashboard": {
+      "groupsPerEnvironment": 13,
+      "responsiveObservationsPerEnvironment": 26
+    },
+    "accessibility": {
+      "textPairsPerEnvironment": 158
+    },
+    "refinement": {
+      "groups": 5,
+      "responsiveObservations": 10
+    },
+    "appearance": {
+      "groups": 5
+    },
+    "progress": "Connected real local scores/mastery/account isolation passed",
+    "focusedLint": "clean",
+    "broaderSourceLint": "6 pre-existing effect-rule errors"
+  }
+}

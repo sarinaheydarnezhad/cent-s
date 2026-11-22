@@ -1,83 +1,154 @@
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useRef, useState } from 'react'
 import { Link, Navigate, useLocation, useSearchParams } from 'react-router-dom'
-import { ArrowLeft, BookOpen, Check, CheckCircle2, Clock3, CreditCard, FileText, LockKeyhole, MessageSquare, Sparkles } from 'lucide-react'
-import { cent, dateFa, toman } from '../services/cent'
+import { ArrowLeft, CheckCircle2, Clock3, CreditCard } from 'lucide-react'
+import { ApiError, cent, session } from '../services/cent'
+import { checkPayment, clearPaidIntent, ownsTraining, paymentFeedback, paymentMethod, purchaseIntent, recoverableOrder, rememberIntent } from '../services/commerce'
 import { useAppState } from '../state/AppState'
-import { LoadState, useRemote } from '../components/CentUI'
-import { EmptyState, PageHeader } from '../components/UI'
+import { useRemote } from '../components/CentUI'
+import { Badge, Button, Card, EmptyState, FilterGroup, Notice, PageHeader, Skeleton } from '../components/UI'
+import { CommerceHero, CommerceLoading, OnlineAccessNotice, OrderSummary, Price, ProductCard, SubscriptionSummary, OrderHistory } from '../components/CommerceUI'
 import { CourseCatalog } from './CourseCatalog'
+import { useCommerceAccess } from '../services/useCommerceAccess'
+import { usePaymentCooldown } from '../services/usePaymentCooldown'
+import { SubjectAccessList, SubjectOrderDetails } from './SubjectCommercePages'
+
+export { LibraryPage, NotesPage } from './ReadingLibrary'
 
 export function CatalogPage() {
   const remote = useRemote(cent.catalog)
-  const { library } = useAppState()
-  const [kind, setKind] = useState<'TRAINING' | 'SUBSCRIPTION'>('TRAINING')
-  const products = remote.data?.products.filter(p => p.kind === kind) || []
-  return <div className="cent-store"><section className="cent-store-hero"><div className="container"><span className="pill light"><Sparkles size={16}/> برای هر شیوه یادگیری</span><h1>یاد بگیر.<br/><em>به روش خودت.</em></h1><p>یک آموزش را برای همیشه به کتابخانه‌ات اضافه کن، یا با اشتراک به آموزش‌های منتخب و فضای تمرین دسترسی داشته باش.</p><div className="cent-access-promises"><span><Check/> یادداشت‌های شخصی کنار هر صفحه</span><span><Check/> ادامه از آخرین جای مطالعه</span><span><Check/> مطالعه آنلاین در حساب خودت</span></div></div></section><div className="container cent-store-body"><div className="cent-section-head"><div><span className="eyebrow">مسیر بعدی تو</span><h2>انتخاب کن، شروع کن</h2></div><div className="section-tabs"><button className={kind === 'TRAINING' ? 'active' : ''} onClick={() => setKind('TRAINING')}>آموزش‌های تکی</button><button className={kind === 'SUBSCRIPTION' ? 'active' : ''} onClick={() => setKind('SUBSCRIPTION')}>اشتراک مطالعه</button></div></div><p className="muted-text">{kind === 'TRAINING' ? 'خرید تکی: دسترسی دائمی به آموزش خریداری‌شده در سایت.' : 'اشتراک: دسترسی در مدت اعتبار به آموزش‌های دارای نشان «داخل اشتراک» و آزمون‌های شبیه‌ساز. تمدید به انتهای اعتبار قبلی اضافه می‌شود.'}</p><LoadState {...remote} retry={remote.reload}/>{kind === 'SUBSCRIPTION' && !remote.busy && !remote.error && products.length === 0 && <EmptyState title="آموزش‌های تازه در راه‌اند" description="پس از انتشار اولین آموزش‌ها یا طرح اشتراک، اینجا می‌توانی آن‌ها را انتخاب کنی."/>}{kind === 'TRAINING' && <CourseCatalog/>}<div className="cent-product-grid">{(kind === 'SUBSCRIPTION' ? products : []).map((product, index) => {
-    const training = remote.data?.trainings.find(t => t.id === product.trainingId)
-    const owned = library?.entitlements.some(e => e.kind === 'TRAINING' && e.trainingId === product.trainingId && !e.revokedAt)
-    return <article className={`card cent-product ${kind === 'SUBSCRIPTION' ? 'subscription' : ''}`} key={product.id}><div className="cent-product-art"><span>{String(index + 1).padStart(2, '0')}</span>{kind === 'TRAINING' ? <BookOpen/> : <Sparkles/>}<small>{kind === 'TRAINING' ? 'TRAINING / CENT' : 'STUDY MEMBERSHIP'}</small></div><div className="cent-product-body"><div className="cent-tag-row"><span className="cent-tag">{kind === 'TRAINING' ? 'خرید دائمی' : `${product.durationDays} روز دسترسی`}</span>{training?.includedInSubscription && <span className="cent-tag soft">داخل اشتراک</span>}</div><h3>{product.title}</h3><p>{training?.description || 'آموزش‌های منتخب، فضای مطالعه و تمرین‌های شبیه‌ساز، در مدت اعتبار اشتراک.'}</p><div className="cent-price">{toman(product.priceRial)}</div><Link className="button button-primary button-block" to={owned ? '/student/content' : `/checkout?product=${product.id}`}>{owned ? 'در کتابخانه من' : kind === 'TRAINING' ? 'خرید آموزش' : 'انتخاب اشتراک'}<ArrowLeft size={17}/></Link></div></article>
-  })}</div><section className="cent-study-benefits"><div><MessageSquare/><h3>فکرهایت را همان‌جا بنویس</h3><p>برای هر صفحه و بخش یادداشت بگذار؛ هر بار با همان آموزش برمی‌گردند.</p></div><div><FileText/><h3>فضای متمرکز مطالعه</h3><p>صفحه‌به‌صفحه، با اندازه دلخواه و فهرست درس‌ها بخوان.</p></div><div><LockKeyhole/><h3>مطالعه داخل سایت</h3><p>آموزش‌ها برای مشاهده آنلاین‌اند و فایل PDF برای دانلود ارائه نمی‌شود.</p></div></section></div></div>
+  const curriculum = useRemote(cent.curriculum)
+  const access = useCommerceAccess()
+  const [params, setParams] = useSearchParams()
+  const kind = params.get('kind') === 'SUBSCRIPTION' ? 'SUBSCRIPTION' : 'TRAINING'
+  const products = remote.data?.products.filter(p => p.kind === kind && p.active) || []
+  return <div className="container commerce-page"><CommerceHero title="منبع مناسب مسیرت رو انتخاب کن" description="یاد بگیر، اونطور که خودت راحتی"/>
+    <div className="commerce-section-title"><div><h2>منابع و دسترسی آموزشی</h2><p>خرید تکی برای دسترسی دائمی؛ اشتراک برای مطالعه در مدت اعتبار.</p></div><FilterGroup label="نوع دسترسی آموزشی" value={kind} options={[{ value: 'TRAINING', label: 'آموزش‌های تکی' }, { value: 'SUBSCRIPTION', label: 'اشتراک مطالعه' }]} onChange={value => setParams(value === 'TRAINING' ? {} : { kind: value })}/></div>
+    <CommerceLoading {...remote} retry={remote.reload}/>
+    {access.user && <CommerceLoading {...access} retry={access.reload}/>}
+    {kind === 'SUBSCRIPTION' && <Notice>اشتراک، مالکیت دائمی ایجاد نمی‌کنه. فقط آموزش‌های داخل اشتراک و آزمون‌های شبیه‌ساز در مدت اعتبار در دسترس‌اند. تمدید، یک خرید جداست و خودکار انجام نمی‌شه.</Notice>}
+    {!remote.busy && !remote.error && products.length === 0 && <EmptyState title={kind === 'TRAINING' ? 'هنوز منبعی برای خرید منتشر نشده' : 'فعلاً طرح اشتراکی برای خرید موجود نیست'} description="منابع و طرح‌های قابل خرید پس از انتشار اینجا نمایش داده می‌شن."/>}
+    {!remote.error && <div className="commerce-product-grid">{products.map(product => {
+      const training = remote.data?.trainings.find(t => t.id === product.trainingId)
+      const course = curriculum.data?.courses.find(c => c.trainingId === product.trainingId)
+      return <ProductCard key={product.id} product={product} description={training?.description} subject={course?.title} library={access.error || access.busy ? null : access.library} detail={course ? `/courses/${course.code}` : undefined}/>
+    })}</div>}
+    {kind === 'TRAINING' && <section className="commerce-discovery"><h2>درس‌ها و سرفصل‌های منتشرشده</h2><CourseCatalog actionVariant="secondary" compact excludeTrainingIds={products.flatMap(p => p.trainingId ? [p.trainingId] : [])}/></section>}<OnlineAccessNotice/>
+  </div>
 }
 
 export function CentCheckoutPage() {
+  const location = useLocation()
+  return <CheckoutExperience key={location.search}/>
+}
+
+function CheckoutExperience() {
   const [params] = useSearchParams()
-  const id = params.get('product')
+  const id = params.get('product') || ''
+  const orderId = params.get('order')
   const remote = useRemote(cent.catalog)
   const status = useRemote(cent.status)
+  const access = useCommerceAccess()
   const { user, loading } = useAppState()
+  const ordersFetcher = useCallback(() => user ? cent.orders().then(orders => ({ accountId: user.id, orders })) : Promise.resolve(null), [user])
+  const orders = useRemote(ordersFetcher)
   const location = useLocation()
+  const lock = useRef(false)
   const [busy, setBusy] = useState(false)
-  const [error, setError] = useState('')
-  const requestId = useRef(crypto.randomUUID())
-  if (loading) return <LoadState busy error="" retry={() => {}}/>
+  const [failure, setFailure] = useState<unknown>(null)
+  const { waiting: cooldown, respectRetryAfter } = usePaymentCooldown()
+  const [snapshot, setSnapshot] = useState<number | null>(null)
+  if (loading) return <Skeleton/>
   if (!user) return <Navigate to="/login" replace state={{ from: location.pathname + location.search }}/>
-  const product = remote.data?.products.find(p => p.id === id)
+  const product = remote.data?.products.find(p => p.id === id && p.active)
+  const history = orders.data?.accountId === user.id ? orders.data.orders : []
+  const existing = orderId ? history.find(o => o.id === orderId && o.productId === id) : recoverableOrder(user.id, id, history)
+  const pending = existing?.status === 'PENDING'
+  const owned = product?.kind === 'TRAINING' && ownsTraining(access.library, product.trainingId)
+  const ready = !remote.busy && !remote.error && !orders.busy && !orders.error && !access.busy && !access.error && !!access.library
+  const blocked = failure instanceof ApiError && ['payments_not_configured', 'mock_payment_disabled', 'invalid_payment_provider', 'already_owned', 'invalid_request'].includes(failure.code || '')
+  const unavailable = !product && !existing
   async function pay() {
-    if (!product) return
-    setBusy(true); setError('')
-    try { const result = await cent.checkout(product.id, requestId.current); window.location.assign(result.redirectUrl) }
-    catch (e) { setError(e instanceof Error ? e.message : 'پرداخت انجام نشد.'); setBusy(false) }
+    if (lock.current || !ready || unavailable || owned || cooldown || blocked || !id || (orderId && !existing)) return
+    lock.current = true; setBusy(true); setFailure(null)
+    const token = session.get()
+    try {
+      if (existing) rememberIntent(user!.id, existing)
+      const intent = purchaseIntent(user!.id, id, existing ? [existing] : history)
+      const result = await cent.checkout(id, intent.requestId)
+      if (session.get() !== token) return
+      if (result.amountRial !== undefined) setSnapshot(result.amountRial)
+      window.location.assign(result.redirectUrl)
+    } catch (error) {
+      if (session.get() !== token) return
+      setFailure(error)
+      respectRetryAfter(error)
+      orders.reload(); access.reload()
+    } finally { lock.current = false; setBusy(false) }
   }
-  return <div className="container cent-checkout"><Link className="back-link" to="/package">بازگشت به آموزش‌ها</Link><h1>یک قدم تا شروع مطالعه</h1><LoadState {...remote} retry={remote.reload}/>{!remote.busy && !remote.error && !product && <EmptyState title="محصول را انتخاب کن" description="برای خرید، ابتدا آموزش یا اشتراک موردنظرت را انتخاب کن." action={<Link className="button button-primary" to="/package">دیدن آموزش‌ها</Link>}/>} {product && <div className="cent-checkout-grid"><section className="card cent-checkout-details"><h2><CreditCard/> اطلاعات خرید</h2><dl><dt>خریدار</dt><dd>{user.name}</dd><dt>ایمیل</dt><dd dir="ltr">{user.email}</dd><dt>نوع دسترسی</dt><dd>{product.kind === 'TRAINING' ? 'خرید تکی، دسترسی دائمی داخل سایت' : `${product.durationDays} روز اشتراک`}</dd></dl><p>یادداشت‌ها به حساب شما متصل‌اند و پس از پایان اشتراک نیز حفظ می‌شوند.</p><p>اشتراک به صورت خودکار تمدید یا از حساب بانکی کسر نمی‌شود.</p>{status.data?.payments !== 'LIVE' && <div className="notice">{status.data?.payments === 'NOT_CONFIGURED' ? 'درگاه هنوز فعال نشده است؛ پرداخت فعلاً امکان‌پذیر نیست.' : 'درگاه در حالت آزمایشی است؛ پرداخت واقعی انجام نمی‌شود.'}</div>}{error && <p className="inline-error" role="alert">{error}</p>}<button className="button button-primary button-block" disabled={busy || !status.data || status.data.payments === 'NOT_CONFIGURED'} onClick={pay}>{busy ? 'در حال اتصال به درگاه…' : 'ادامه و پرداخت'}<ArrowLeft size={18}/></button></section><aside className="card cent-checkout-details"><span className="eyebrow">خلاصه سفارش</span><h2>{product.title}</h2><div className="cent-price">{toman(product.priceRial)}</div><small>قیمت از سرور دریافت شده و مبلغ نهایی در درگاه نمایش داده می‌شود.</small></aside></div>}</div>
+  const amount = snapshot ?? existing?.amountRial ?? product?.priceRial
+  return <div className="container commerce-page commerce-checkout"><Link className="back-link" to="/package">بازگشت به منابع</Link><PageHeader eyebrow="خرید آموزشی" title={existing ? 'ادامه سفارش قبلی' : 'مرور و پرداخت'} description="جزئیات خریدت رو بررسی کن و بعد ادامه بده."/>
+    <CommerceLoading {...remote} retry={remote.reload}/><CommerceLoading {...orders} retry={orders.reload}/><CommerceLoading {...access} retry={access.reload}/>
+    {ready && unavailable && <EmptyState kind="unavailable" title="این محصول فعلاً برای خرید موجود نیست" description="منابع قابل خرید رو از فهرست انتخاب کن. برای پرداخت قبلی، سوابق خریدت رو بررسی کن." action={<Link className="button button-secondary" to="/student/profile">سوابق خرید</Link>}/>}
+    {ready && orderId && !existing && !unavailable && <Notice tone="warning">این سفارش برای ادامه در دسترس نیست. از سوابق خرید، سفارش خودت رو انتخاب کن.<Link to="/student/profile">سوابق خرید</Link></Notice>}
+    {ready && !unavailable && (!orderId || existing) && <div className="commerce-checkout-grid"><section className="card commerce-payment"><div className="commerce-section-title"><CreditCard aria-hidden="true"/><h2>{existing?.title || product?.title}</h2></div>
+      <div className="commerce-tags"><Badge>{(existing?.kind || product?.kind) === 'SUBSCRIPTION' ? 'اشتراک با مدت مشخص' : 'خرید تکی · دائمی'}</Badge>{status.data && <Badge>{paymentMethod(existing?.provider, status.data.payments)}</Badge>}</div>
+      {(existing?.durationDays || product?.durationDays) && <p>مدت طرح: {existing?.durationDays || product?.durationDays} روز. تمدید خودکار نیست؛ دوره جدید پس از پایان پوشش قبلی شروع می‌شه.</p>}
+      {pending && <Notice tone="warning" title="پرداخت این سفارش هنوز تأیید نشده">برای پیشگیری از پرداخت تکراری، ابتدا وضعیت همین سفارش رو بررسی کن.<Link className="button button-secondary" to={`/checkout/success?order=${existing.id}`}>بررسی وضعیت سفارش</Link></Notice>}
+      {existing?.status === 'PAID' && <Notice tone="success">پرداخت این سفارش تأیید شده.<Link className="button button-primary" to={`/checkout/success?order=${existing.id}`}>دیدن سفارش و دسترسی فعلی</Link></Notice>}
+      {owned && <Notice tone="info">این آموزش رو قبلاً خریده‌ای.<Link className="button button-primary" to="/student/content">رفتن به کتابخانه</Link></Notice>}
+      {failure !== null && <Notice tone="warning" live="assertive" title="ادامه پرداخت نیاز به بررسی داره">{paymentFeedback(failure)}<Link className="button button-secondary" to="/student/profile">بررسی سوابق خرید</Link></Notice>}
+      <CommerceLoading {...status} retry={status.reload}/>
+      {status.data?.payments === 'NOT_CONFIGURED' && <Notice tone="warning">پرداخت فعلاً در دسترس نیست. بعداً از همین صفحه ادامه بده.</Notice>}
+      {(existing ? existing.provider === 'MOCK' : status.data?.payments === 'DEVELOPMENT_MOCK') && <Notice>این محیط آزمایشی است؛ پرداخت واقعی انجام نمی‌شه.</Notice>}
+      {!owned && existing?.status !== 'PAID' && <Button fullWidth loading={busy} loadingLabel="در حال آماده‌سازی پرداخت…" disabled={cooldown || blocked || !status.data || !!status.error || status.busy || status.data.payments === 'NOT_CONFIGURED'} onClick={pay}>{cooldown ? 'کمی بعد دوباره تلاش کن' : pending ? 'ادامه همین پرداخت' : 'ادامه و پرداخت'}<ArrowLeft size={18}/></Button>}
+      <OnlineAccessNotice/>
+    </section><aside className="card commerce-summary"><span className="eyebrow">خلاصه سفارش</span><h2>{existing?.title || product?.title}</h2>{amount !== undefined && <Price amount={amount} label="مبلغ قابل پرداخت"/>}<p>{existing ? 'مبلغ ثبت‌شده همین سفارش؛ قیمت امروز روی این سفارش اعمال نمی‌شه.' : 'قیمت فعلی از سرور دریافت شده؛ مبلغ سفارش پس از ثبت، توسط سرور مشخص می‌شه.'}</p>{(existing?.kind || product?.kind) === 'SUBSCRIPTION' && <p>دسترسی به آموزش‌های داخل اشتراک و آزمون‌های شبیه‌ساز در مدت اعتبار؛ مالکیت دائمی ایجاد نمی‌شه.</p>}<Link className="text-link" to="/student/profile">سوابق خرید و وضعیت اشتراک</Link></aside></div>}
+  </div>
 }
 
 export function CentCheckoutResult() {
   const [params] = useSearchParams()
   const id = params.get('order') || ''
   const { user, loading, refresh } = useAppState()
-  const fetcher = useCallback(async () => { if (!id) throw new Error('شناسه سفارش موجود نیست.'); return cent.verify(id) }, [id])
+  const accountId = user?.id
+  const { waiting: cooldown, respectRetryAfter } = usePaymentCooldown()
+  const fetcher = useCallback(async () => {
+    if (!accountId || !id) return null
+    const token = session.get()
+    const result = await checkPayment(id).catch(error => { respectRetryAfter(error); throw new Error(paymentFeedback(error)) })
+    respectRetryAfter(result.verificationError)
+    respectRetryAfter(result.accessError)
+    if (session.get() !== token) return null
+    clearPaidIntent(accountId, result.order)
+    return { ...result, accountId }
+  }, [accountId, id, respectRetryAfter])
   const remote = useRemote(fetcher)
-  useEffect(() => { if (remote.data?.paid) void refresh() }, [remote.data, refresh])
-  if (loading) return <LoadState busy error="" retry={remote.reload}/>
+  const result = remote.data && remote.data.accountId === accountId && remote.data.order.id === id ? remote.data : null
+  const failure = result?.verificationError || result?.accessError
+  const retry = () => { if (!cooldown) { remote.reload(); void refresh().catch(() => {}) } }
+  if (loading) return <Skeleton/>
   if (!user) return <Navigate to="/login" replace state={{ from: '/checkout/success?order=' + id }}/>
-  return <div className="container success-page"><LoadState {...remote} retry={remote.reload}/>{remote.data && <><div className="success-check">{remote.data.paid ? <CheckCircle2/> : <Clock3/>}</div><h1>{remote.data.paid ? 'خریدت تأیید شد؛ وقت یادگیری است.' : 'پرداخت هنوز تأیید نشده است.'}</h1><p>{remote.data.paid ? 'دسترسی در حساب شما ثبت شد و از کتابخانه قابل استفاده است.' : 'اگر مبلغی کسر شده، دوباره وضعیت را بررسی کن. دسترسی فقط پس از تأیید درگاه فعال می‌شود.'}</p><div className="success-actions"><Link className="button button-primary" to="/student/content">کتابخانه من <ArrowLeft/></Link>{!remote.data.paid && <button className="button button-secondary" onClick={remote.reload}>بررسی دوباره</button>}<Link className="button button-secondary" to="/student/profile">سوابق خرید</Link></div></>}</div>
-}
-
-export function LibraryPage() {
-  const remote = useRemote(cent.library)
-  return <><PageHeader eyebrow="فضای یادگیری تو" title="کتابخانه من" description="آموزش‌های خریداری‌شده و مطالعه‌های ناتمام، همه در یک جا." action={<Link className="button button-primary" to="/package">کشف آموزش‌ها <ArrowLeft/></Link>}/><LoadState {...remote} retry={remote.reload}/>{remote.data && <><div className={`cent-membership ${remote.data.hasSubscription ? 'active' : ''}`}><Sparkles/><div><b>{remote.data.hasSubscription ? 'اشتراک مطالعه فعال است' : 'یک آموزش برای همیشه، یا اشتراک برای کشف بیشتر'}</b><p>{remote.data.hasSubscription ? 'آموزش‌های داخل اشتراک و شبیه‌سازها در دسترس‌اند.' : 'خریدهای تکی شما به اشتراک وابسته نیستند. یادداشت‌های قبلی همیشه در بخش یادداشت‌های من باقی می‌مانند.'}</p></div><Link to="/package">{remote.data.hasSubscription ? 'تمدید اشتراک' : 'دیدن طرح‌ها'} <ArrowLeft size={16}/></Link></div>{remote.data.trainings.length === 0 && <EmptyState title="اولین صفحه مسیرت را انتخاب کن" description="با خرید آموزش یا اشتراک، کتابخانه شخصی تو شکل می‌گیرد." action={<Link className="button button-primary" to="/package">انتخاب آموزش</Link>}/>}<div className="cent-library-grid">{remote.data.trainings.map(training => {
-    const docs = remote.data!.documents.filter(d => d.trainingId === training.id)
-    const readable = remote.data!.readableTrainingIds.includes(training.id)
-    const permanent = remote.data!.entitlements.some(e => e.kind === 'TRAINING' && e.trainingId === training.id && !e.revokedAt)
-    return <section className="card cent-library-book" key={training.id}><div className="cent-library-book-head"><BookOpen/><span className="cent-tag">{permanent ? 'خرید دائمی' : readable ? 'داخل اشتراک' : 'نیازمند تمدید'}</span></div><h2>{training.title}</h2><p>{training.description}</p><div className="cent-document-list">{docs.map(doc => {
-      const progress = remote.data!.progress.find(p => p.documentId === doc.id)
-      const count = remote.data!.notes.find(n => n.documentId === doc.id)?.count || 0
-      return <div key={doc.id}><FileText/><div><b>{doc.title}</b><small>{doc.pageCount} صفحه · {count} یادداشت {progress && `· ادامه از صفحه ${progress.lastPage}`}</small></div>{readable ? <Link className="button button-secondary button-small" to={`/student/study/${doc.id}`}>{progress ? 'ادامه' : 'شروع'}<ArrowLeft size={15}/></Link> : <LockKeyhole size={18}/>}</div>
-    })}{docs.length === 0 && <p className="muted-text">درس‌های این آموزش به‌زودی اضافه می‌شوند.</p>}</div>{!readable && <Link className="text-link" to="/package">فعال‌سازی دسترسی <ArrowLeft size={15}/></Link>}</section>
-  })}</div></>}</>
-}
-
-export function NotesPage() {
-  const remote = useRemote(cent.notes)
-  const [search, setSearch] = useState('')
-  const notes = remote.data?.filter(n => `${n.body} ${n.documentTitle}`.includes(search)) || []
-  return <><PageHeader eyebrow="حاشیه‌های ماندگار" title="یادداشت‌های من" description="حتی پس از پایان اشتراک، نوشته‌های خودت را اینجا می‌بینی."/><input className="cent-search" aria-label="جست‌وجو در یادداشت‌ها" placeholder="در نوشته‌هایت جست‌وجو کن…" value={search} onChange={e => setSearch(e.target.value)}/><LoadState {...remote} retry={remote.reload}/>{!remote.busy && !remote.error && notes.length === 0 && <EmptyState title="هنوز یادداشتی اینجا نیست" description="در محیط مطالعه، روی بخشی از صفحه بزن و اولین نکته را ثبت کن."/>}<div className="cent-notes-grid">{notes.map(note => <article className="card cent-saved-note" key={note.id}><span>{note.documentTitle} · صفحه {note.page}</span><p>{note.body}</p><footer><small>{dateFa(note.updatedAt)}</small><Link to={`/student/study/${note.documentId}?page=${note.page}&note=${note.id}`}>رفتن به صفحه <ArrowLeft size={15}/></Link></footer></article>)}</div></>
+  const order = result?.order
+  const paid = order?.status === 'PAID'
+  const readable = !result?.accessError && !!order?.trainingId && result?.library?.readableTrainingIds.includes(order.trainingId)
+  return <div className="container commerce-page commerce-result"><PageHeader eyebrow="پیگیری خرید" title="وضعیت سفارش"/>
+    {!id ? <EmptyState kind="unavailable" title="سفارشی برای بررسی مشخص نشده" description="از سوابق خرید، سفارش موردنظرت رو انتخاب کن." action={<Link className="button button-primary" to="/student/profile">سوابق خرید</Link>}/> : <>
+      <CommerceLoading busy={remote.busy} error={remote.error ? 'بررسی سفارش ممکن نشد' : ''} retry={retry} retryDisabled={cooldown}/>
+      {!remote.busy && !remote.error && order && <section className="card commerce-result-card"><div className={`commerce-result-symbol ${paid ? 'is-paid' : ''}`} aria-hidden="true">{paid ? <CheckCircle2/> : <Clock3/>}</div><Badge tone={paid ? 'success' : 'warning'}>{paid ? 'پرداخت تأییدشده' : 'پرداخت تأیید نشده'}</Badge><h2>{paid ? 'پرداختت تأیید شد' : 'هنوز تأیید پرداخت نرسیده'}</h2><p>{paid ? 'وضعیت پرداخت از سرور دریافت شده. دسترسی مطالعه جداگانه بر اساس مجوز فعلی حساب بررسی می‌شه.' : 'این وضعیت به معنی ناموفق بودن قطعی پرداخت نیست. اگر پرداخت رو انجام داده‌ای، ابتدا همین سفارش رو دوباره بررسی کن.'}</p><h3>{order.title}</h3><Price amount={order.amountRial} label="مبلغ ثبت‌شده سفارش"/><details><summary>جزئیات سفارش</summary><OrderSummary order={order}/></details>
+        {order.kind === 'SUBJECT_ORDER' && <><SubjectOrderDetails id={order.id}/>{order.status === 'PENDING' && <Link className="button button-secondary" to={'/checkout?order=' + order.id}>ادامهٔ همین سفارش</Link>}{['FAILED', 'CANCELLED'].includes(order.status) && <Notice tone="warning">{order.status === 'FAILED' ? 'پرداخت ناموفق بود.' : 'از پرداخت انصراف داده شده.'} برای خرید تازه به فهرست درس‌ها برگرد. اگر مبلغی کسر شده، همین سفارش را دوباره بررسی کن.</Notice>}</>}
+        {!!failure && <Notice tone="warning" title="بررسی کامل نشد">{paymentFeedback(failure)}</Notice>}
+        {paid && !result?.accessError && order.kind === 'TRAINING' && !readable && <Notice>پرداخت تأیید شده، اما این آموزش الان برای مطالعه در دسترس نیست. وضعیت فعلی رو از کتابخانه بررسی کن.</Notice>}
+        {paid && result?.library && order.kind === 'SUBSCRIPTION' && <SubscriptionSummary library={result.library}/>}
+        <div className="commerce-actions">{readable && <Link className="button button-primary" to="/student/content">مطالعه از کتابخانه<ArrowLeft size={18}/></Link>}<Button variant={readable ? 'secondary' : 'primary'} disabled={cooldown} onClick={retry}>بررسی دوباره</Button><Link className="button button-secondary" to="/student/profile">سوابق خرید</Link></div>
+        {!paid && order.kind !== 'SUBJECT_ORDER' && order.productId && order.requestId && <details className="commerce-recovery"><summary>پرداخت نیمه‌کاره رو چطور ادامه بدم؟</summary><p>اگر هنوز پرداخت نکرده‌ای، ادامه از همین سفارش، شناسه درخواست قبلی رو نگه می‌داره. اگر مبلغی کسر شده، اول بررسی دوباره رو انجام بده.</p><Link className="button button-secondary" to={`/checkout?product=${order.productId}&order=${order.id}`}>ادامه همین سفارش</Link></details>}
+      </section>}
+    </>}
+  </div>
 }
 
 export function AccountPage() {
   const { user } = useAppState()
+  const access = useCommerceAccess()
   const remote = useRemote(cent.orders)
-  const library = useRemote(cent.library)
-  const subscriptionEnd = library.data?.entitlements.filter(e => e.kind === 'SUBSCRIPTION' && !e.revokedAt && e.expiresAt).map(e => e.expiresAt!).sort().at(-1)
-  return <><PageHeader eyebrow="حساب Cent" title="پروفایل و خریدهای من"/><section className="card cent-account"><div className="cent-account-avatar">{user?.name.slice(0, 1)}</div><div><h2>{user?.name}</h2><p dir="ltr">{user?.email}</p></div><Link className="button button-secondary" to="/student/content">کتابخانه من</Link></section><section className="cent-membership"><Sparkles/><div><b>{library.data?.hasSubscription ? 'اشتراک فعال' : 'اشتراک فعالی ندارید'}</b><p>{subscriptionEnd ? `اعتبار ثبت‌شده تا ${dateFa(subscriptionEnd)}` : 'خریدهای تکی به صورت دائمی در کتابخانه باقی می‌مانند.'}</p></div><Link to="/package">طرح‌های اشتراک</Link></section><h2>سوابق خرید</h2><LoadState {...remote} retry={remote.reload}/>{remote.data?.length === 0 && <EmptyState title="هنوز خریدی ثبت نشده است" description="آموزش یا اشتراکت را از فروشگاه انتخاب کن."/>}<div className="table-card"><table><thead><tr><th>محصول</th><th>مبلغ</th><th>وضعیت</th><th>تاریخ</th><th>پیگیری</th></tr></thead><tbody>{remote.data?.map(order => <tr key={order.id}><td>{order.title}<small className="table-sub">{order.kind === 'TRAINING' ? 'خرید تکی' : 'اشتراک'}{order.provider === 'MOCK' ? ' · آزمایشی' : ''}</small></td><td>{toman(order.amountRial)}</td><td>{order.status === 'PAID' ? 'پرداخت‌شده' : 'در انتظار تأیید'}</td><td>{dateFa(order.createdAt)}</td><td>{order.reference || <Link to={`/checkout/success?order=${order.id}`}>بررسی پرداخت</Link>}</td></tr>)}</tbody></table></div></>
+  return <div className="commerce-account"><PageHeader title="حساب کاربری من" description="دسترسی درس‌ها و سوابق خریدت رو اینجا بررسی کن."/><Card className="student-account-profile"><h2>{user?.name}</h2><p><bdi dir="ltr">{user?.email}</bdi></p><Link className="button button-secondary" to="/student/content">کتابخانهٔ من</Link></Card><SubjectAccessList/><CommerceLoading {...access} retry={access.reload}/>{access.library?.entitlements.some(e => e.kind === 'SUBSCRIPTION') && <SubscriptionSummary library={access.library}/>}<div className="commerce-section-title"><h2>سوابق خرید</h2><CreditCard aria-hidden="true"/></div><CommerceLoading {...remote} retry={remote.reload}/>{remote.data && !remote.busy && !remote.error && <OrderHistory orders={remote.data} library={access.error || access.busy ? null : access.library}/>}</div>
 }

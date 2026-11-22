@@ -1,0 +1,21 @@
+{
+  "brokenLinks": [],
+  "coreFiles": [
+    {
+      "name": "PHASE_1_REPORT.md",
+      "exists": true
+    },
+    {
+      "name": "POST_GIS_CHECKPOINT.md",
+      "exists": true
+    },
+    {
+      "name": "DESIGN_SYSTEM.md",
+      "exists": true
+    },
+    {
+      "name": "PROGRAM_STATUS.md",
+      "exists": true
+    }
+  ]
+}

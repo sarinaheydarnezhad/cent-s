@@ -1,0 +1,209 @@
+{
+  "success": true,
+  "passedUnitTests": 213,
+  "focusedLintErrors": 0,
+  "localReviewLinksValid": true,
+  "mobileOrderBadgesUseSeparateRow": true,
+  "observations": [
+    {
+      "root": "http://127.0.0.1:5173/cent-s",
+      "theme": "light",
+      "width": 320,
+      "titleWidth": 192,
+      "titleTop": 1346.0625,
+      "titleBottom": 1400.65625,
+      "badgeTop": 1412.65625,
+      "overflow": false
+    },
+    {
+      "root": "http://127.0.0.1:5173/cent-s",
+      "theme": "light",
+      "width": 390,
+      "titleWidth": 262,
+      "titleTop": 1174.09375,
+      "titleBottom": 1228.6875,
+      "badgeTop": 1240.6875,
+      "overflow": false
+    },
+    {
+      "root": "http://127.0.0.1:5173/cent-s",
+      "theme": "light",
+      "width": 768,
+      "titleWidth": 497.84375,
+      "titleTop": 1085.71875,
+      "titleBottom": 1140.3125,
+      "badgeTop": 1097.3125,
+      "overflow": false
+    },
+    {
+      "root": "http://127.0.0.1:5173/cent-s",
+      "theme": "light",
+      "width": 844,
+      "titleWidth": 347.84375,
+      "titleTop": 1146.703125,
+      "titleBottom": 1201.296875,
+      "badgeTop": 1158.296875,
+      "overflow": false
+    },
+    {
+      "root": "http://127.0.0.1:5173/cent-s",
+      "theme": "light",
+      "width": 1440,
+      "titleWidth": 925.84375,
+      "titleTop": 1087.515625,
+      "titleBottom": 1142.109375,
+      "badgeTop": 1099.109375,
+      "overflow": false
+    },
+    {
+      "root": "http://127.0.0.1:5173/cent-s",
+      "theme": "dark",
+      "width": 320,
+      "titleWidth": 192,
+      "titleTop": 1346.0625,
+      "titleBottom": 1400.65625,
+      "badgeTop": 1412.65625,
+      "overflow": false
+    },
+    {
+      "root": "http://127.0.0.1:5173/cent-s",
+      "theme": "dark",
+      "width": 390,
+      "titleWidth": 262,
+      "titleTop": 1174.09375,
+      "titleBottom": 1228.6875,
+      "badgeTop": 1240.6875,
+      "overflow": false
+    },
+    {
+      "root": "http://127.0.0.1:5173/cent-s",
+      "theme": "dark",
+      "width": 768,
+      "titleWidth": 497.84375,
+      "titleTop": 1085.71875,
+      "titleBottom": 1140.3125,
+      "badgeTop": 1097.3125,
+      "overflow": false
+    },
+    {
+      "root": "http://127.0.0.1:5173/cent-s",
+      "theme": "dark",
+      "width": 844,
+      "titleWidth": 347.84375,
+      "titleTop": 1146.703125,
+      "titleBottom": 1201.296875,
+      "badgeTop": 1158.296875,
+      "overflow": false
+    },
+    {
+      "root": "http://127.0.0.1:5173/cent-s",
+      "theme": "dark",
+      "width": 1440,
+      "titleWidth": 925.84375,
+      "titleTop": 1087.515625,
+      "titleBottom": 1142.109375,
+      "badgeTop": 1099.109375,
+      "overflow": false
+    },
+    {
+      "root": "http://127.0.0.1:5187",
+      "theme": "light",
+      "width": 320,
+      "titleWidth": 192,
+      "titleTop": 1346.0625,
+      "titleBottom": 1400.65625,
+      "badgeTop": 1412.65625,
+      "overflow": false
+    },
+    {
+      "root": "http://127.0.0.1:5187",
+      "theme": "light",
+      "width": 390,
+      "titleWidth": 262,
+      "titleTop": 1174.09375,
+      "titleBottom": 1228.6875,
+      "badgeTop": 1240.6875,
+      "overflow": false
+    },
+    {
+      "root": "http://127.0.0.1:5187",
+      "theme": "light",
+      "width": 768,
+      "titleWidth": 497.84375,
+      "titleTop": 1085.71875,
+      "titleBottom": 1140.3125,
+      "badgeTop": 1097.3125,
+      "overflow": false
+    },
+    {
+      "root": "http://127.0.0.1:5187",
+      "theme": "light",
+      "width": 844,
+      "titleWidth": 347.84375,
+      "titleTop": 1146.703125,
+      "titleBottom": 1201.296875,
+      "badgeTop": 1158.296875,
+      "overflow": false
+    },
+    {
+      "root": "http://127.0.0.1:5187",
+      "theme": "light",
+      "width": 1440,
+      "titleWidth": 925.84375,
+      "titleTop": 1087.515625,
+      "titleBottom": 1142.109375,
+      "badgeTop": 1099.109375,
+      "overflow": false
+    },
+    {
+      "root": "http://127.0.0.1:5187",
+      "theme": "dark",
+      "width": 320,
+      "titleWidth": 192,
+      "titleTop": 1346.0625,
+      "titleBottom": 1400.65625,
+      "badgeTop": 1412.65625,
+      "overflow": false
+    },
+    {
+      "root": "http://127.0.0.1:5187",
+      "theme": "dark",
+      "width": 390,
+      "titleWidth": 262,
+      "titleTop": 1174.09375,
+      "titleBottom": 1228.6875,
+      "badgeTop": 1240.6875,
+      "overflow": false
+    },
+    {
+      "root": "http://127.0.0.1:5187",
+      "theme": "dark",
+      "width": 768,
+      "titleWidth": 497.84375,
+      "titleTop": 1085.71875,
+      "titleBottom": 1140.3125,
+      "badgeTop": 1097.3125,
+      "overflow": false
+    },
+    {
+      "root": "http://127.0.0.1:5187",
+      "theme": "dark",
+      "width": 844,
+      "titleWidth": 347.84375,
+      "titleTop": 1146.703125,
+      "titleBottom": 1201.296875,
+      "badgeTop": 1158.296875,
+      "overflow": false
+    },
+    {
+      "root": "http://127.0.0.1:5187",
+      "theme": "dark",
+      "width": 1440,
+      "titleWidth": 925.84375,
+      "titleTop": 1087.515625,
+      "titleBottom": 1142.109375,
+      "badgeTop": 1099.109375,
+      "overflow": false
+    }
+  ]
+}

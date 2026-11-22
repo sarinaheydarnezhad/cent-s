@@ -1,0 +1,5168 @@
+[
+  {
+    "file": "src/components/Brand.tsx",
+    "line": 6,
+    "kind": "JsxText",
+    "text": "مسیر آمادگی هدفمند",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/CentUI.tsx",
+    "line": 14,
+    "kind": "StringLiteral",
+    "text": "ارتباط برقرار نشد.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/CentUI.tsx",
+    "line": 20,
+    "kind": "JsxText",
+    "text": "تلاش دوباره",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/CentUI.tsx",
+    "line": 21,
+    "kind": "JsxText",
+    "text": "در حال بارگذاری…",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/DashboardLayout.tsx",
+    "line": 8,
+    "kind": "StringLiteral",
+    "text": "داشبورد",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/DashboardLayout.tsx",
+    "line": 9,
+    "kind": "StringLiteral",
+    "text": "آمادگی من",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/DashboardLayout.tsx",
+    "line": 10,
+    "kind": "StringLiteral",
+    "text": "نتایج من",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/DashboardLayout.tsx",
+    "line": 11,
+    "kind": "StringLiteral",
+    "text": "تحلیل شخصی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/DashboardLayout.tsx",
+    "line": 12,
+    "kind": "StringLiteral",
+    "text": "کتابخانه من",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/DashboardLayout.tsx",
+    "line": 13,
+    "kind": "StringLiteral",
+    "text": "یادداشت‌های من",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/DashboardLayout.tsx",
+    "line": 14,
+    "kind": "StringLiteral",
+    "text": "آزمون‌های شبیه‌ساز",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/DashboardLayout.tsx",
+    "line": 15,
+    "kind": "StringLiteral",
+    "text": "پروفایل",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/DashboardLayout.tsx",
+    "line": 19,
+    "kind": "StringLiteral",
+    "text": "داشبورد",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/DashboardLayout.tsx",
+    "line": 19,
+    "kind": "StringLiteral",
+    "text": "کاربران",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/DashboardLayout.tsx",
+    "line": 19,
+    "kind": "StringLiteral",
+    "text": "تعیین سطح و سؤال‌ها",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/DashboardLayout.tsx",
+    "line": 20,
+    "kind": "StringLiteral",
+    "text": "آزمون‌های شبیه‌ساز",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/DashboardLayout.tsx",
+    "line": 20,
+    "kind": "StringLiteral",
+    "text": "پکیج‌ها",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/DashboardLayout.tsx",
+    "line": 21,
+    "kind": "StringLiteral",
+    "text": "آموزش‌ها و PDF",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/DashboardLayout.tsx",
+    "line": 22,
+    "kind": "StringLiteral",
+    "text": "زرین‌پال و مالی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/DashboardLayout.tsx",
+    "line": 33,
+    "kind": "JsxText",
+    "text": "فضای یادگیری Cent",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/DashboardLayout.tsx",
+    "line": 37,
+    "kind": "JsxText",
+    "text": "خروج از حساب",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/DashboardLayout.tsx",
+    "line": 42,
+    "kind": "StringLiteral",
+    "text": "پنل مدیریت Cent",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/DashboardLayout.tsx",
+    "line": 42,
+    "kind": "TemplateHead",
+    "text": "سلام",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/DashboardLayout.tsx",
+    "line": 42,
+    "kind": "StringLiteral",
+    "text": "آموزش، محتوا و خریدهای Cent",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/DashboardLayout.tsx",
+    "line": 42,
+    "kind": "StringLiteral",
+    "text": "امروز یک قدم به آمادگی بیشتر نزدیک شو",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/JourneyNav.tsx",
+    "line": 5,
+    "kind": "StringLiteral",
+    "text": "مراحل مسیر آمادگی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/JourneyNav.tsx",
+    "line": 6,
+    "kind": "JsxText",
+    "text": "مرحله اول",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/JourneyNav.tsx",
+    "line": 6,
+    "kind": "JsxText",
+    "text": "تعیین سطح",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/JourneyNav.tsx",
+    "line": 8,
+    "kind": "JsxText",
+    "text": "مرحله دوم",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/JourneyNav.tsx",
+    "line": 8,
+    "kind": "JsxText",
+    "text": "پکیج آمادگی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/ProtectedRoute.tsx",
+    "line": 7,
+    "kind": "JsxText",
+    "text": "در حال بررسی حساب…",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/ProtectedRoute.tsx",
+    "line": 8,
+    "kind": "JsxText",
+    "text": "بررسی دوباره حساب",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/PublicLayout.tsx",
+    "line": 15,
+    "kind": "StringLiteral",
+    "text": "نمایش منو",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/PublicLayout.tsx",
+    "line": 17,
+    "kind": "JsxText",
+    "text": "آشنایی با آزمون",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/PublicLayout.tsx",
+    "line": 18,
+    "kind": "JsxText",
+    "text": "تعیین سطح",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/PublicLayout.tsx",
+    "line": 19,
+    "kind": "JsxText",
+    "text": "آموزش‌ها و اشتراک",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/PublicLayout.tsx",
+    "line": 20,
+    "kind": "StringLiteral",
+    "text": "ورود به پنل",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/PublicLayout.tsx",
+    "line": 20,
+    "kind": "StringLiteral",
+    "text": "ورود / ثبت‌نام",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/PublicLayout.tsx",
+    "line": 28,
+    "kind": "JsxText",
+    "text": "آموزش، مطالعه و تمرین در فضای شخصی تو. اطلاعات رسمی آزمون را از منبع برگزارکننده بررسی کن.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/PublicLayout.tsx",
+    "line": 29,
+    "kind": "JsxText",
+    "text": "راهنمای آزمون",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/PublicLayout.tsx",
+    "line": 29,
+    "kind": "JsxText",
+    "text": "آموزش‌ها و اشتراک",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/PublicLayout.tsx",
+    "line": 29,
+    "kind": "JsxText",
+    "text": "ورود به حساب",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/components/UI.tsx",
+    "line": 4,
+    "kind": "LastTemplateToken",
+    "text": "درصد",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 5,
+    "kind": "StringLiteral",
+    "text": "جبر",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 6,
+    "kind": "StringLiteral",
+    "text": "اگر ۳x + ۵ = ۲۰ باشد، مقدار x کدام است؟",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 7,
+    "kind": "StringLiteral",
+    "text": "۳",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 7,
+    "kind": "StringLiteral",
+    "text": "۵",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 7,
+    "kind": "StringLiteral",
+    "text": "۷",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 7,
+    "kind": "StringLiteral",
+    "text": "۱۵",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 8,
+    "kind": "StringLiteral",
+    "text": "با کم‌کردن ۵ از دو طرف، ۳x = ۱۵ و در نتیجه x = ۵ می‌شود.",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 11,
+    "kind": "StringLiteral",
+    "text": "درصد و تناسب",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 12,
+    "kind": "StringLiteral",
+    "text": "قیمت کالایی پس از ۲۰٪ تخفیف، ۸۰ یورو است. قیمت اولیه چند یورو بوده است؟",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 13,
+    "kind": "StringLiteral",
+    "text": "۹۶",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 13,
+    "kind": "StringLiteral",
+    "text": "۱۰۰",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 13,
+    "kind": "StringLiteral",
+    "text": "۱۰۴",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 13,
+    "kind": "StringLiteral",
+    "text": "۱۲۰",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 14,
+    "kind": "StringLiteral",
+    "text": "۸۰ یورو برابر ۸۰٪ قیمت اولیه است؛ بنابراین قیمت اولیه ۸۰ ÷ ۰٫۸ = ۱۰۰ است.",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 17,
+    "kind": "StringLiteral",
+    "text": "توان و رادیکال",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 18,
+    "kind": "StringLiteral",
+    "text": "مقدار ۲³ × ۲⁴ کدام است؟",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 19,
+    "kind": "StringLiteral",
+    "text": "۲⁷",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 19,
+    "kind": "StringLiteral",
+    "text": "۴⁷",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 19,
+    "kind": "StringLiteral",
+    "text": "۲¹²",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 19,
+    "kind": "StringLiteral",
+    "text": "۴¹²",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 20,
+    "kind": "StringLiteral",
+    "text": "در ضرب توان‌های هم‌پایه، توان‌ها جمع می‌شوند: ۲³ × ۲⁴ = ۲⁷.",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 23,
+    "kind": "StringLiteral",
+    "text": "احتمال",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 24,
+    "kind": "StringLiteral",
+    "text": "در کیسه‌ای ۳ مهره قرمز و ۲ مهره آبی است. احتمال انتخاب یک مهره آبی چقدر است؟",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 25,
+    "kind": "StringLiteral",
+    "text": "۲/۳",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 25,
+    "kind": "StringLiteral",
+    "text": "۲/۵",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 25,
+    "kind": "StringLiteral",
+    "text": "۳/۵",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 25,
+    "kind": "StringLiteral",
+    "text": "۱/۲",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 26,
+    "kind": "StringLiteral",
+    "text": "از ۵ مهره، ۲ مهره آبی است؛ پس احتمال برابر ۲/۵ است.",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 29,
+    "kind": "StringLiteral",
+    "text": "هندسه",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 30,
+    "kind": "StringLiteral",
+    "text": "مساحت مثلثی با قاعده ۸ و ارتفاع ۵ چند واحد مربع است؟",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 31,
+    "kind": "StringLiteral",
+    "text": "۱۳",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 31,
+    "kind": "StringLiteral",
+    "text": "۲۰",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 31,
+    "kind": "StringLiteral",
+    "text": "۴۰",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 31,
+    "kind": "StringLiteral",
+    "text": "۸۰",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 32,
+    "kind": "StringLiteral",
+    "text": "مساحت مثلث برابر نصف حاصل‌ضرب قاعده در ارتفاع است: ۸ × ۵ ÷ ۲ = ۲۰.",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 35,
+    "kind": "StringLiteral",
+    "text": "تابع",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 36,
+    "kind": "StringLiteral",
+    "text": "اگر f(x)=x²−1 باشد، کدام مقدار x باعث می‌شود f(x)=۸ شود؟",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 37,
+    "kind": "StringLiteral",
+    "text": "فقط ۳",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 37,
+    "kind": "StringLiteral",
+    "text": "فقط −۳",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 37,
+    "kind": "StringLiteral",
+    "text": "۳ و −۳",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 37,
+    "kind": "StringLiteral",
+    "text": "۴ و −۴",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 38,
+    "kind": "StringLiteral",
+    "text": "x²−1=۸، پس x²=۹ و در نتیجه x می‌تواند ۳ یا −۳ باشد.",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 41,
+    "kind": "StringLiteral",
+    "text": "دنباله منطقی",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 42,
+    "kind": "StringLiteral",
+    "text": "عدد بعدی در دنباله ۲، ۶، ۱۲، ۲۰، ... کدام است؟",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 43,
+    "kind": "StringLiteral",
+    "text": "۲۶",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 43,
+    "kind": "StringLiteral",
+    "text": "۲۸",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 43,
+    "kind": "StringLiteral",
+    "text": "۳۰",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 43,
+    "kind": "StringLiteral",
+    "text": "۳۲",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 44,
+    "kind": "StringLiteral",
+    "text": "اختلاف‌ها ۴، ۶ و ۸ هستند؛ اختلاف بعدی ۱۰ است، پس عدد بعدی ۳۰ می‌شود.",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 47,
+    "kind": "StringLiteral",
+    "text": "استدلال شرطی",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 48,
+    "kind": "StringLiteral",
+    "text": "اگر همه برنامه‌نویسان حل‌کننده مسئله باشند و سارا برنامه‌نویس باشد، کدام نتیجه حتماً درست است؟",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 49,
+    "kind": "StringLiteral",
+    "text": "سارا مدیر است",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 49,
+    "kind": "StringLiteral",
+    "text": "سارا حل‌کننده مسئله است",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 49,
+    "kind": "StringLiteral",
+    "text": "همه حل‌کنندگان مسئله برنامه‌نویس‌اند",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 49,
+    "kind": "StringLiteral",
+    "text": "هیچ‌کدام",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 50,
+    "kind": "StringLiteral",
+    "text": "سارا عضو مجموعه برنامه‌نویسان است و طبق گزاره، تمام اعضای این مجموعه حل‌کننده مسئله‌اند.",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 53,
+    "kind": "StringLiteral",
+    "text": "مجموعه‌ها",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 54,
+    "kind": "StringLiteral",
+    "text": "در کلاسی ۱۸ نفر ریاضی و ۱۲ نفر منطق می‌خوانند و ۵ نفر هر دو را می‌خوانند. چند نفر حداقل یکی را می‌خوانند؟",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 55,
+    "kind": "StringLiteral",
+    "text": "۲۵",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 55,
+    "kind": "StringLiteral",
+    "text": "۳۰",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 55,
+    "kind": "StringLiteral",
+    "text": "۳۵",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 55,
+    "kind": "StringLiteral",
+    "text": "۶۰",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 56,
+    "kind": "StringLiteral",
+    "text": "با اصل شمول و عدم شمول: ۱۸ + ۱۲ − ۵ = ۲۵.",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 59,
+    "kind": "StringLiteral",
+    "text": "الگوی تصویری",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 60,
+    "kind": "StringLiteral",
+    "text": "در یک الگو تعداد نقطه‌ها به‌ترتیب ۱، ۴، ۹، ۱۶ است. جمله بعدی چند نقطه دارد؟",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 61,
+    "kind": "StringLiteral",
+    "text": "۲۰",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 61,
+    "kind": "StringLiteral",
+    "text": "۲۴",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 61,
+    "kind": "StringLiteral",
+    "text": "۲۵",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 61,
+    "kind": "StringLiteral",
+    "text": "۳۲",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 62,
+    "kind": "StringLiteral",
+    "text": "جملات مربع اعداد طبیعی‌اند: ۱²، ۲²، ۳²، ۴²؛ پس جمله بعدی ۵² = ۲۵ است.",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 65,
+    "kind": "StringLiteral",
+    "text": "تحلیل گزاره",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 66,
+    "kind": "StringLiteral",
+    "text": "نقیض گزاره «همه دانشجویان آزمون را گذرانده‌اند» کدام است؟",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 67,
+    "kind": "StringLiteral",
+    "text": "هیچ دانشجویی نگذرانده است",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 67,
+    "kind": "StringLiteral",
+    "text": "حداقل یک دانشجو نگذرانده است",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 67,
+    "kind": "StringLiteral",
+    "text": "بعضی دانشجویان گذرانده‌اند",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 67,
+    "kind": "StringLiteral",
+    "text": "همه دانشجویان مردود شده‌اند",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 68,
+    "kind": "StringLiteral",
+    "text": "برای نادرست‌شدن گزاره همگانی، وجود حداقل یک مورد نقض کافی است.",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 71,
+    "kind": "StringLiteral",
+    "text": "استنتاج",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 72,
+    "kind": "StringLiteral",
+    "text": "هیچ Aای، B نیست. بعضی Cها، A هستند. کدام نتیجه قطعی است؟",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 73,
+    "kind": "StringLiteral",
+    "text": "همه Cها B هستند",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 73,
+    "kind": "StringLiteral",
+    "text": "بعضی Cها B نیستند",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 73,
+    "kind": "StringLiteral",
+    "text": "هیچ Cای B نیست",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 73,
+    "kind": "StringLiteral",
+    "text": "بعضی Bها A هستند",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 74,
+    "kind": "StringLiteral",
+    "text": "آن دسته از Cها که A هستند، با توجه به گزاره اول نمی‌توانند B باشند.",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 77,
+    "kind": "StringLiteral",
+    "text": "معادله",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 78,
+    "kind": "StringLiteral",
+    "text": "مجموع دو عدد ۲۴ و اختلاف آن‌ها ۶ است. عدد بزرگ‌تر کدام است؟",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 79,
+    "kind": "StringLiteral",
+    "text": "۹",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 79,
+    "kind": "StringLiteral",
+    "text": "۱۲",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 79,
+    "kind": "StringLiteral",
+    "text": "۱۵",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 79,
+    "kind": "StringLiteral",
+    "text": "۱۸",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 80,
+    "kind": "StringLiteral",
+    "text": "با حل x+y=۲۴ و x−y=۶ داریم ۲x=۳۰ و x=۱۵.",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 83,
+    "kind": "StringLiteral",
+    "text": "میانگین",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 84,
+    "kind": "StringLiteral",
+    "text": "میانگین اعداد ۴، ۷، ۹ و ۱۲ چند است؟",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 85,
+    "kind": "StringLiteral",
+    "text": "۷",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 85,
+    "kind": "StringLiteral",
+    "text": "۸",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 85,
+    "kind": "StringLiteral",
+    "text": "۹",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 85,
+    "kind": "StringLiteral",
+    "text": "۱۰",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 86,
+    "kind": "StringLiteral",
+    "text": "مجموع اعداد ۳۲ است و ۳۲ ÷ ۴ = ۸.",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 89,
+    "kind": "StringLiteral",
+    "text": "نسبت",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 90,
+    "kind": "StringLiteral",
+    "text": "نسبت دانشجویان A به B برابر ۳ به ۵ است. اگر مجموع آن‌ها ۴۰ باشد، تعداد A چند است؟",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 91,
+    "kind": "StringLiteral",
+    "text": "۱۵",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 91,
+    "kind": "StringLiteral",
+    "text": "۲۰",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 91,
+    "kind": "StringLiteral",
+    "text": "۲۴",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 91,
+    "kind": "StringLiteral",
+    "text": "۲۵",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 92,
+    "kind": "StringLiteral",
+    "text": "مجموع سهم‌ها ۸ است؛ هر سهم ۵ و تعداد A برابر ۳×۵=۱۵ است.",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 95,
+    "kind": "StringLiteral",
+    "text": "دنباله منطقی",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 96,
+    "kind": "StringLiteral",
+    "text": "حرف بعدی در الگوی A, C, F, J, ... کدام است؟",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 98,
+    "kind": "StringLiteral",
+    "text": "فاصله حروف به‌ترتیب ۲، ۳ و ۴ است؛ با فاصله ۵ از J به O می‌رسیم.",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 101,
+    "kind": "StringLiteral",
+    "text": "استدلال شرطی",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 102,
+    "kind": "StringLiteral",
+    "text": "اگر باران ببارد، زمین خیس می‌شود. زمین خیس نیست. چه نتیجه‌ای معتبر است؟",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 103,
+    "kind": "StringLiteral",
+    "text": "باران باریده است",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 103,
+    "kind": "StringLiteral",
+    "text": "باران نباریده است",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 103,
+    "kind": "StringLiteral",
+    "text": "هوا آفتابی است",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 103,
+    "kind": "StringLiteral",
+    "text": "نتیجه‌ای نمی‌توان گرفت",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 104,
+    "kind": "StringLiteral",
+    "text": "با عکس نقیض: اگر زمین خیس نیست، باران نباریده است.",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 107,
+    "kind": "StringLiteral",
+    "text": "طبقه‌بندی",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 108,
+    "kind": "StringLiteral",
+    "text": "کدام مورد با سه مورد دیگر متفاوت است؟",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 109,
+    "kind": "StringLiteral",
+    "text": "مثلث",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 109,
+    "kind": "StringLiteral",
+    "text": "مربع",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 109,
+    "kind": "StringLiteral",
+    "text": "دایره",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 109,
+    "kind": "StringLiteral",
+    "text": "مستطیل",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 110,
+    "kind": "StringLiteral",
+    "text": "دایره برخلاف سه گزینه دیگر چندضلعی و دارای ضلع نیست.",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 117,
+    "kind": "StringLiteral",
+    "text": "ریاضیات",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 117,
+    "kind": "StringLiteral",
+    "text": "منطق",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 117,
+    "kind": "StringLiteral",
+    "text": "زیست‌شناسی",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 117,
+    "kind": "StringLiteral",
+    "text": "شیمی",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 117,
+    "kind": "StringLiteral",
+    "text": "فیزیک",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 118,
+    "kind": "StringLiteral",
+    "text": "آسان",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 118,
+    "kind": "StringLiteral",
+    "text": "متوسط",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/data/questions.ts",
+    "line": 118,
+    "kind": "StringLiteral",
+    "text": "دشوار",
+    "scope": "educational reference data; not UI rewriting scope"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 17,
+    "kind": "StringLiteral",
+    "text": "مدیریت Cent",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 17,
+    "kind": "StringLiteral",
+    "text": "نمای واقعی محصول",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 17,
+    "kind": "StringLiteral",
+    "text": "آمار این بخش از پایگاه داده Cent دریافت می‌شود.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 17,
+    "kind": "JsxText",
+    "text": "افزودن آموزش",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 17,
+    "kind": "StringLiteral",
+    "text": "کاربران",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 17,
+    "kind": "StringLiteral",
+    "text": "آموزش‌ها",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 17,
+    "kind": "StringLiteral",
+    "text": "سفارش‌های تأییدشده",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 17,
+    "kind": "StringLiteral",
+    "text": "حجم صفحات",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 17,
+    "kind": "JsxText",
+    "text": "درآمد واقعی تأییدشده",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 17,
+    "kind": "JsxText",
+    "text": "پرداخت‌های آزمایشی در این مبلغ محاسبه نمی‌شوند.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 17,
+    "kind": "JsxText",
+    "text": "آموزش و PDF",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 17,
+    "kind": "JsxText",
+    "text": "آموزش بساز، فایل را بارگذاری و درس‌ها را منتشر کن.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 17,
+    "kind": "JsxText",
+    "text": "قیمت و اشتراک",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 17,
+    "kind": "JsxText",
+    "text": "محصول تکی یا طرح اشتراک با مدت دلخواه بساز.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 34,
+    "kind": "StringLiteral",
+    "text": "آموزش ذخیره شد.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 35,
+    "kind": "StringLiteral",
+    "text": "ذخیره انجام نشد.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 39,
+    "kind": "StringLiteral",
+    "text": "درس با موفقیت منتشر شد.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 40,
+    "kind": "StringLiteral",
+    "text": "بارگذاری انجام نشد.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 40,
+    "kind": "StringLiteral",
+    "text": "در صورت قطع اتصال، همین فایل را دوباره انتخاب کنید تا بارگذاری ادامه یابد.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 43,
+    "kind": "StringLiteral",
+    "text": "کتابخانه آموزشی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 43,
+    "kind": "StringLiteral",
+    "text": "آموزش‌ها و درس‌ها",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 43,
+    "kind": "StringLiteral",
+    "text": "آموزش، مجموعه‌ای از درس‌های PDF است. فایل اصلی به دانشجو ارائه نمی‌شود.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 43,
+    "kind": "JsxText",
+    "text": "مشخصات آموزش",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 43,
+    "kind": "JsxText",
+    "text": "آموزش جدید",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 43,
+    "kind": "JsxText",
+    "text": "عنوان",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 43,
+    "kind": "JsxText",
+    "text": "توضیح",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 43,
+    "kind": "JsxText",
+    "text": "داخل اشتراک مطالعه باشد",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 43,
+    "kind": "JsxText",
+    "text": "در فروشگاه و کتابخانه منتشر شود",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 43,
+    "kind": "JsxText",
+    "text": "ذخیره آموزش",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 43,
+    "kind": "JsxText",
+    "text": "افزودن درس PDF",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 43,
+    "kind": "JsxText",
+    "text": "آموزش",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 43,
+    "kind": "JsxText",
+    "text": "انتخاب آموزش",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 43,
+    "kind": "JsxText",
+    "text": "عنوان درس",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 43,
+    "kind": "JsxText",
+    "text": "فایل PDF",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 43,
+    "kind": "JsxText",
+    "text": "حداکثر ۴۰ مگابایت و ۲۰۰ صفحه برای هر درس",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 43,
+    "kind": "JsxText",
+    "text": "صفحات به تصاویر بهینه تبدیل می‌شوند. فهرست داخلی PDF هم به محیط مطالعه منتقل می‌شود. تا پایان بارگذاری این صفحه را باز نگه دارید.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 43,
+    "kind": "StringLiteral",
+    "text": "در حال آماده‌سازی…",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 43,
+    "kind": "StringLiteral",
+    "text": "بارگذاری و انتشار درس",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 43,
+    "kind": "StringLiteral",
+    "text": "منتشرشده",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 43,
+    "kind": "StringLiteral",
+    "text": "پیش‌نویس",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 43,
+    "kind": "JsxText",
+    "text": "ویرایش",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 43,
+    "kind": "JsxText",
+    "text": "صفحه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 43,
+    "kind": "StringLiteral",
+    "text": "منتشرشده",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 43,
+    "kind": "StringLiteral",
+    "text": "بارگذاری ناتمام",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 43,
+    "kind": "StringLiteral",
+    "text": "این پیش‌نویس و صفحات آن حذف شوند؟",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 43,
+    "kind": "StringLiteral",
+    "text": "حذف نشد.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 43,
+    "kind": "JsxText",
+    "text": "حذف پیش‌نویس",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 53,
+    "kind": "StringLiteral",
+    "text": "محصول ذخیره شد.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 54,
+    "kind": "StringLiteral",
+    "text": "ذخیره انجام نشد.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 56,
+    "kind": "StringLiteral",
+    "text": "محصولات و اشتراک",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 56,
+    "kind": "StringLiteral",
+    "text": "قیمت‌ها در پایگاه داده به ریال ذخیره می‌شوند؛ نمایش فروشگاه به تومان است.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 56,
+    "kind": "JsxText",
+    "text": "تعریف دسترسی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 56,
+    "kind": "JsxText",
+    "text": "محصول جدید",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 56,
+    "kind": "JsxText",
+    "text": "عنوان",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 56,
+    "kind": "JsxText",
+    "text": "نوع",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 56,
+    "kind": "JsxText",
+    "text": "خرید دائمی آموزش",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 56,
+    "kind": "JsxText",
+    "text": "اشتراک مطالعه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 56,
+    "kind": "JsxText",
+    "text": "آموزش",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 56,
+    "kind": "JsxText",
+    "text": "انتخاب آموزش",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 56,
+    "kind": "JsxText",
+    "text": "مدت (روز)",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 56,
+    "kind": "JsxText",
+    "text": "قیمت (ریال)",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 56,
+    "kind": "JsxText",
+    "text": "فروش این محصول فعال باشد",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 56,
+    "kind": "JsxText",
+    "text": "ذخیره محصول",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 56,
+    "kind": "JsxText",
+    "text": "محصول",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 56,
+    "kind": "JsxText",
+    "text": "دسترسی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 56,
+    "kind": "JsxText",
+    "text": "قیمت",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 56,
+    "kind": "JsxText",
+    "text": "وضعیت",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 56,
+    "kind": "StringLiteral",
+    "text": "دائمی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 56,
+    "kind": "LastTemplateToken",
+    "text": "روز",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 56,
+    "kind": "StringLiteral",
+    "text": "فعال",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 56,
+    "kind": "StringLiteral",
+    "text": "غیرفعال",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 56,
+    "kind": "JsxText",
+    "text": "ویرایش",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 61,
+    "kind": "StringLiteral",
+    "text": "سفارش‌های Cent",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 61,
+    "kind": "StringLiteral",
+    "text": "ثبت پرداخت و دسترسی فقط پس از تأیید سمت سرور انجام می‌شود.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 61,
+    "kind": "JsxText",
+    "text": "محصول",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 61,
+    "kind": "JsxText",
+    "text": "مبلغ",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 61,
+    "kind": "JsxText",
+    "text": "وضعیت",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 61,
+    "kind": "JsxText",
+    "text": "درگاه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 61,
+    "kind": "JsxText",
+    "text": "تاریخ",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 65,
+    "kind": "StringLiteral",
+    "text": "کاربران Cent",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 65,
+    "kind": "JsxText",
+    "text": "نام",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 65,
+    "kind": "JsxText",
+    "text": "ایمیل",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 65,
+    "kind": "JsxText",
+    "text": "نقش",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 65,
+    "kind": "JsxText",
+    "text": "عضویت",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 79,
+    "kind": "StringLiteral",
+    "text": "ذخیره نشد.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "StringLiteral",
+    "text": "بانک سؤال",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "StringLiteral",
+    "text": "کلید پاسخ در سرور نگه‌داری می‌شود. ویرایش سؤال، نتیجه آزمون‌های قبلی را تغییر نمی‌دهد.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "JsxText",
+    "text": "سؤال جدید",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "StringLiteral",
+    "text": "بانک سؤال خالی است",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "StringLiteral",
+    "text": "منابع و بانک سؤال واردشده را از بک‌اند دریافت کنید.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "StringLiteral",
+    "text": "ورود انجام نشد.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "JsxText",
+    "text": "ورود بانک سؤال منابع",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "JsxText",
+    "text": "ویرایش سؤال",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "JsxText",
+    "text": "متن",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "JsxText",
+    "text": "درس",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "JsxText",
+    "text": "مهارت در نقشه یادگیری",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "JsxText",
+    "text": "بدون نگاشت؛ در تسلط محاسبه نمی‌شود",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "JsxText",
+    "text": "مبحث",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "JsxText",
+    "text": "سطح",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "JsxText",
+    "text": "آسان",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "JsxText",
+    "text": "متوسط",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "JsxText",
+    "text": "دشوار",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "JsxText",
+    "text": "کاربرد",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "JsxText",
+    "text": "هردو",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "JsxText",
+    "text": "تعیین سطح",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "JsxText",
+    "text": "شبیه‌ساز",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "JsxText",
+    "text": "گزینه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "JsxText",
+    "text": "گزینه صحیح",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "JsxText",
+    "text": "توضیح",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "JsxText",
+    "text": "منتشر شود",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "JsxText",
+    "text": "ذخیره سؤال",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "JsxText",
+    "text": "بستن",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "JsxText",
+    "text": "سؤال",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "JsxText",
+    "text": "مبحث",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "JsxText",
+    "text": "وضعیت",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "StringLiteral",
+    "text": "منتشرشده",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "StringLiteral",
+    "text": "پیش‌نویس",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/admin/CentAdmin.tsx",
+    "line": 81,
+    "kind": "JsxText",
+    "text": "ویرایش",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 15,
+    "kind": "JsxText",
+    "text": "برای هر شیوه یادگیری",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 15,
+    "kind": "JsxText",
+    "text": "یاد بگیر.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 15,
+    "kind": "JsxText",
+    "text": "به روش خودت.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 15,
+    "kind": "JsxText",
+    "text": "یک آموزش را برای همیشه به کتابخانه‌ات اضافه کن، یا با اشتراک به آموزش‌های منتخب و فضای تمرین دسترسی داشته باش.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 15,
+    "kind": "JsxText",
+    "text": "یادداشت‌های شخصی کنار هر صفحه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 15,
+    "kind": "JsxText",
+    "text": "ادامه از آخرین جای مطالعه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 15,
+    "kind": "JsxText",
+    "text": "مطالعه آنلاین در حساب خودت",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 15,
+    "kind": "JsxText",
+    "text": "مسیر بعدی تو",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 15,
+    "kind": "JsxText",
+    "text": "انتخاب کن، شروع کن",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 15,
+    "kind": "JsxText",
+    "text": "آموزش‌های تکی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 15,
+    "kind": "JsxText",
+    "text": "اشتراک مطالعه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 15,
+    "kind": "StringLiteral",
+    "text": "خرید تکی: دسترسی دائمی به آموزش خریداری‌شده در سایت.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 15,
+    "kind": "StringLiteral",
+    "text": "اشتراک: دسترسی در مدت اعتبار به آموزش‌های دارای نشان «داخل اشتراک» و آزمون‌های شبیه‌ساز. تمدید به انتهای اعتبار قبلی اضافه می‌شود.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 15,
+    "kind": "StringLiteral",
+    "text": "آموزش‌های تازه در راه‌اند",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 15,
+    "kind": "StringLiteral",
+    "text": "پس از انتشار اولین آموزش‌ها یا طرح اشتراک، اینجا می‌توانی آن‌ها را انتخاب کنی.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 18,
+    "kind": "StringLiteral",
+    "text": "خرید دائمی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 18,
+    "kind": "LastTemplateToken",
+    "text": "روز دسترسی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 18,
+    "kind": "JsxText",
+    "text": "داخل اشتراک",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 18,
+    "kind": "StringLiteral",
+    "text": "آموزش‌های منتخب، فضای مطالعه و تمرین‌های شبیه‌ساز، در مدت اعتبار اشتراک.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 18,
+    "kind": "StringLiteral",
+    "text": "در کتابخانه من",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 18,
+    "kind": "StringLiteral",
+    "text": "خرید آموزش",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 18,
+    "kind": "StringLiteral",
+    "text": "انتخاب اشتراک",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 19,
+    "kind": "JsxText",
+    "text": "فکرهایت را همان‌جا بنویس",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 19,
+    "kind": "JsxText",
+    "text": "برای هر صفحه و بخش یادداشت بگذار؛ هر بار با همان آموزش برمی‌گردند.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 19,
+    "kind": "JsxText",
+    "text": "فضای متمرکز مطالعه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 19,
+    "kind": "JsxText",
+    "text": "صفحه‌به‌صفحه، با اندازه دلخواه و فهرست درس‌ها بخوان.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 19,
+    "kind": "JsxText",
+    "text": "مطالعه داخل سایت",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 19,
+    "kind": "JsxText",
+    "text": "آموزش‌ها برای مشاهده آنلاین‌اند و فایل PDF برای دانلود ارائه نمی‌شود.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 39,
+    "kind": "StringLiteral",
+    "text": "پرداخت انجام نشد.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 41,
+    "kind": "JsxText",
+    "text": "بازگشت به آموزش‌ها",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 41,
+    "kind": "JsxText",
+    "text": "یک قدم تا شروع مطالعه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 41,
+    "kind": "StringLiteral",
+    "text": "محصول را انتخاب کن",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 41,
+    "kind": "StringLiteral",
+    "text": "برای خرید، ابتدا آموزش یا اشتراک موردنظرت را انتخاب کن.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 41,
+    "kind": "JsxText",
+    "text": "دیدن آموزش‌ها",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 41,
+    "kind": "JsxText",
+    "text": "اطلاعات خرید",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 41,
+    "kind": "JsxText",
+    "text": "خریدار",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 41,
+    "kind": "JsxText",
+    "text": "ایمیل",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 41,
+    "kind": "JsxText",
+    "text": "نوع دسترسی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 41,
+    "kind": "StringLiteral",
+    "text": "خرید تکی، دسترسی دائمی داخل سایت",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 41,
+    "kind": "LastTemplateToken",
+    "text": "روز اشتراک",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 41,
+    "kind": "JsxText",
+    "text": "یادداشت‌ها به حساب شما متصل‌اند و پس از پایان اشتراک نیز حفظ می‌شوند.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 41,
+    "kind": "JsxText",
+    "text": "اشتراک به صورت خودکار تمدید یا از حساب بانکی کسر نمی‌شود.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 41,
+    "kind": "StringLiteral",
+    "text": "درگاه هنوز فعال نشده است؛ پرداخت فعلاً امکان‌پذیر نیست.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 41,
+    "kind": "StringLiteral",
+    "text": "درگاه در حالت آزمایشی است؛ پرداخت واقعی انجام نمی‌شود.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 41,
+    "kind": "StringLiteral",
+    "text": "در حال اتصال به درگاه…",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 41,
+    "kind": "StringLiteral",
+    "text": "ادامه و پرداخت",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 41,
+    "kind": "JsxText",
+    "text": "خلاصه سفارش",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 41,
+    "kind": "JsxText",
+    "text": "قیمت از سرور دریافت شده و مبلغ نهایی در درگاه نمایش داده می‌شود.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 48,
+    "kind": "StringLiteral",
+    "text": "شناسه سفارش موجود نیست.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 53,
+    "kind": "StringLiteral",
+    "text": "خریدت تأیید شد؛ وقت یادگیری است.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 53,
+    "kind": "StringLiteral",
+    "text": "پرداخت هنوز تأیید نشده است.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 53,
+    "kind": "StringLiteral",
+    "text": "دسترسی در حساب شما ثبت شد و از کتابخانه قابل استفاده است.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 53,
+    "kind": "StringLiteral",
+    "text": "اگر مبلغی کسر شده، دوباره وضعیت را بررسی کن. دسترسی فقط پس از تأیید درگاه فعال می‌شود.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 53,
+    "kind": "JsxText",
+    "text": "کتابخانه من",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 53,
+    "kind": "JsxText",
+    "text": "بررسی دوباره",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 53,
+    "kind": "JsxText",
+    "text": "سوابق خرید",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 58,
+    "kind": "StringLiteral",
+    "text": "فضای یادگیری تو",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 58,
+    "kind": "StringLiteral",
+    "text": "کتابخانه من",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 58,
+    "kind": "StringLiteral",
+    "text": "آموزش‌های خریداری‌شده و مطالعه‌های ناتمام، همه در یک جا.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 58,
+    "kind": "JsxText",
+    "text": "کشف آموزش‌ها",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 58,
+    "kind": "StringLiteral",
+    "text": "اشتراک مطالعه فعال است",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 58,
+    "kind": "StringLiteral",
+    "text": "یک آموزش برای همیشه، یا اشتراک برای کشف بیشتر",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 58,
+    "kind": "StringLiteral",
+    "text": "آموزش‌های داخل اشتراک و شبیه‌سازها در دسترس‌اند.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 58,
+    "kind": "StringLiteral",
+    "text": "خریدهای تکی شما به اشتراک وابسته نیستند. یادداشت‌های قبلی همیشه در بخش یادداشت‌های من باقی می‌مانند.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 58,
+    "kind": "StringLiteral",
+    "text": "تمدید اشتراک",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 58,
+    "kind": "StringLiteral",
+    "text": "دیدن طرح‌ها",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 58,
+    "kind": "StringLiteral",
+    "text": "اولین صفحه مسیرت را انتخاب کن",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 58,
+    "kind": "StringLiteral",
+    "text": "با خرید آموزش یا اشتراک، کتابخانه شخصی تو شکل می‌گیرد.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 58,
+    "kind": "JsxText",
+    "text": "انتخاب آموزش",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 62,
+    "kind": "StringLiteral",
+    "text": "خرید دائمی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 62,
+    "kind": "StringLiteral",
+    "text": "داخل اشتراک",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 62,
+    "kind": "StringLiteral",
+    "text": "نیازمند تمدید",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 65,
+    "kind": "JsxText",
+    "text": "صفحه ·",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 65,
+    "kind": "JsxText",
+    "text": "یادداشت",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 65,
+    "kind": "TemplateHead",
+    "text": "· ادامه از صفحه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 65,
+    "kind": "StringLiteral",
+    "text": "ادامه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 65,
+    "kind": "StringLiteral",
+    "text": "شروع",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 66,
+    "kind": "JsxText",
+    "text": "درس‌های این آموزش به‌زودی اضافه می‌شوند.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 66,
+    "kind": "JsxText",
+    "text": "فعال‌سازی دسترسی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 74,
+    "kind": "StringLiteral",
+    "text": "حاشیه‌های ماندگار",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 74,
+    "kind": "StringLiteral",
+    "text": "یادداشت‌های من",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 74,
+    "kind": "StringLiteral",
+    "text": "حتی پس از پایان اشتراک، نوشته‌های خودت را اینجا می‌بینی.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 74,
+    "kind": "StringLiteral",
+    "text": "جست‌وجو در یادداشت‌ها",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 74,
+    "kind": "StringLiteral",
+    "text": "در نوشته‌هایت جست‌وجو کن…",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 74,
+    "kind": "StringLiteral",
+    "text": "هنوز یادداشتی اینجا نیست",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 74,
+    "kind": "StringLiteral",
+    "text": "در محیط مطالعه، روی بخشی از صفحه بزن و اولین نکته را ثبت کن.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 74,
+    "kind": "JsxText",
+    "text": "· صفحه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 74,
+    "kind": "JsxText",
+    "text": "رفتن به صفحه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 82,
+    "kind": "StringLiteral",
+    "text": "حساب Cent",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 82,
+    "kind": "StringLiteral",
+    "text": "پروفایل و خریدهای من",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 82,
+    "kind": "JsxText",
+    "text": "کتابخانه من",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 82,
+    "kind": "StringLiteral",
+    "text": "اشتراک فعال",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 82,
+    "kind": "StringLiteral",
+    "text": "اشتراک فعالی ندارید",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 82,
+    "kind": "TemplateHead",
+    "text": "اعتبار ثبت‌شده تا",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 82,
+    "kind": "StringLiteral",
+    "text": "خریدهای تکی به صورت دائمی در کتابخانه باقی می‌مانند.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 82,
+    "kind": "JsxText",
+    "text": "طرح‌های اشتراک",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 82,
+    "kind": "JsxText",
+    "text": "سوابق خرید",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 82,
+    "kind": "StringLiteral",
+    "text": "هنوز خریدی ثبت نشده است",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 82,
+    "kind": "StringLiteral",
+    "text": "آموزش یا اشتراکت را از فروشگاه انتخاب کن.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 82,
+    "kind": "JsxText",
+    "text": "محصول",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 82,
+    "kind": "JsxText",
+    "text": "مبلغ",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 82,
+    "kind": "JsxText",
+    "text": "وضعیت",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 82,
+    "kind": "JsxText",
+    "text": "تاریخ",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 82,
+    "kind": "JsxText",
+    "text": "پیگیری",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 82,
+    "kind": "StringLiteral",
+    "text": "خرید تکی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 82,
+    "kind": "StringLiteral",
+    "text": "اشتراک",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 82,
+    "kind": "StringLiteral",
+    "text": "· آزمایشی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 82,
+    "kind": "StringLiteral",
+    "text": "پرداخت‌شده",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 82,
+    "kind": "StringLiteral",
+    "text": "در انتظار تأیید",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CommercePages.tsx",
+    "line": 82,
+    "kind": "JsxText",
+    "text": "بررسی پرداخت",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CourseCatalog.tsx",
+    "line": 11,
+    "kind": "StringLiteral",
+    "text": "هنوز درسی منتشر نشده",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CourseCatalog.tsx",
+    "line": 11,
+    "kind": "StringLiteral",
+    "text": "پس از ورود منابع آموزشی، درس‌ها و فصل‌ها اینجا نمایش داده می‌شوند.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CourseCatalog.tsx",
+    "line": 17,
+    "kind": "JsxText",
+    "text": "درس‌نامه ·",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CourseCatalog.tsx",
+    "line": 17,
+    "kind": "JsxText",
+    "text": "فصل ·",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CourseCatalog.tsx",
+    "line": 17,
+    "kind": "JsxText",
+    "text": "مبحث",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CourseCatalog.tsx",
+    "line": 17,
+    "kind": "JsxText",
+    "text": "سؤال با پاسخ تشریحی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CourseCatalog.tsx",
+    "line": 19,
+    "kind": "JsxText",
+    "text": "مشاهده فصل‌ها و درس‌ها",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CourseCatalog.tsx",
+    "line": 33,
+    "kind": "JsxText",
+    "text": "بازگشت به درس‌ها",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CourseCatalog.tsx",
+    "line": 35,
+    "kind": "StringLiteral",
+    "text": "این درس پیدا نشد",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CourseCatalog.tsx",
+    "line": 35,
+    "kind": "StringLiteral",
+    "text": "از فهرست درس‌های منتشرشده انتخاب کنید.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CourseCatalog.tsx",
+    "line": 36,
+    "kind": "StringLiteral",
+    "text": "فصل‌ها، مباحث و درس‌نامه‌های منابع آموزشی این درس",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CourseCatalog.tsx",
+    "line": 37,
+    "kind": "JsxText",
+    "text": "تعیین سطح این درس",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CourseCatalog.tsx",
+    "line": 37,
+    "kind": "JsxText",
+    "text": "تمرین این درس",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CourseCatalog.tsx",
+    "line": 38,
+    "kind": "JsxText",
+    "text": "دسترسی به مطالعه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CourseCatalog.tsx",
+    "line": 38,
+    "kind": "JsxText",
+    "text": "خرید دسترسی ·",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CourseCatalog.tsx",
+    "line": 38,
+    "kind": "JsxText",
+    "text": "برای این درس هنوز قیمت خرید تکی تعیین نشده است. اگر اشتراک فعال داری، از کتابخانه وارد درس شو.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CourseCatalog.tsx",
+    "line": 39,
+    "kind": "JsxText",
+    "text": "درس‌نامه‌های منبع",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CourseCatalog.tsx",
+    "line": 39,
+    "kind": "JsxText",
+    "text": "بخش مطالعه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CourseCatalog.tsx",
+    "line": 39,
+    "kind": "JsxText",
+    "text": "شروع مطالعه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CourseCatalog.tsx",
+    "line": 40,
+    "kind": "JsxText",
+    "text": "فصل‌ها و مهارت‌ها",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CourseCatalog.tsx",
+    "line": 40,
+    "kind": "JsxText",
+    "text": "سؤال",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/CourseCatalog.tsx",
+    "line": 40,
+    "kind": "JsxText",
+    "text": "سنجش این مبحث",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/LearningProgress.tsx",
+    "line": 9,
+    "kind": "StringLiteral",
+    "text": "نقشه یادگیری من",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/LearningProgress.tsx",
+    "line": 9,
+    "kind": "StringLiteral",
+    "text": "پیشرفت در برنامه درسیِ منابع شما، به تفکیک درس و مهارت",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/LearningProgress.tsx",
+    "line": 10,
+    "kind": "JsxText",
+    "text": "این درصدها از پاسخ‌های ثبت‌شده شما در تمرین و آزمون برآورد می‌شوند. برای هر مبحث حداقل ۳ سؤال متفاوت لازم است؛ آخرین پاسخ به حداکثر ۱۰ سؤال متفاوت محاسبه می‌شود. مباحث سنجیده‌نشده در پیشرفت کل سهم صفر دارند. خواندن درس به‌تنهایی درصد تسلط را تغییر نمی‌دهد.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/LearningProgress.tsx",
+    "line": 13,
+    "kind": "JsxText",
+    "text": "· پیشرفت تأییدشده",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/LearningProgress.tsx",
+    "line": 13,
+    "kind": "JsxText",
+    "text": "٪",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/LearningProgress.tsx",
+    "line": 15,
+    "kind": "JsxText",
+    "text": "از",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/LearningProgress.tsx",
+    "line": 15,
+    "kind": "JsxText",
+    "text": "مبحث سنجیده شده (",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/LearningProgress.tsx",
+    "line": 15,
+    "kind": "JsxText",
+    "text": "٪ پوشش). میانگین دقت مباحث سنجیده‌شده:",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/LearningProgress.tsx",
+    "line": 15,
+    "kind": "StringLiteral",
+    "text": "هنوز سنجیده نشده",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/LearningProgress.tsx",
+    "line": 15,
+    "kind": "LastTemplateToken",
+    "text": "٪",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/LearningProgress.tsx",
+    "line": 16,
+    "kind": "JsxText",
+    "text": "سنجش این درس",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/LearningProgress.tsx",
+    "line": 20,
+    "kind": "StringLiteral",
+    "text": "سنجیده نشده",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/LearningProgress.tsx",
+    "line": 20,
+    "kind": "StringLiteral",
+    "text": "شواهد ناکافی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/LearningProgress.tsx",
+    "line": 20,
+    "kind": "LastTemplateToken",
+    "text": "٪",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/LearningProgress.tsx",
+    "line": 22,
+    "kind": "JsxText",
+    "text": "سؤال متفاوت از بانک",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/LearningProgress.tsx",
+    "line": 22,
+    "kind": "JsxText",
+    "text": "سؤالی · دقت مشاهده‌شده:",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/LearningProgress.tsx",
+    "line": 22,
+    "kind": "LastTemplateToken",
+    "text": "٪",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/LearningProgress.tsx",
+    "line": 23,
+    "kind": "JsxText",
+    "text": "سنجش مهارت",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/LearningProgress.tsx",
+    "line": 23,
+    "kind": "JsxText",
+    "text": "تمرین و مرور",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 10,
+    "kind": "StringLiteral",
+    "text": "تعیین سطح",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 10,
+    "kind": "StringLiteral",
+    "text": "شبیه‌ساز",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 10,
+    "kind": "StringLiteral",
+    "text": "تمرین مبحث",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 38,
+    "kind": "StringLiteral",
+    "text": "نتایج من",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 38,
+    "kind": "LastTemplateToken",
+    "text": "، پیشرفت این صفحه از پاسخ‌ها و نتایج ثبت‌شده خودت محاسبه می‌شود.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 38,
+    "kind": "JsxText",
+    "text": "ارزیابی تازه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 41,
+    "kind": "JsxText",
+    "text": "درس",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 41,
+    "kind": "StringLiteral",
+    "text": "فیلتر نتایج بر اساس درس",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 41,
+    "kind": "JsxText",
+    "text": "همه درس‌ها",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 43,
+    "kind": "StringLiteral",
+    "text": "نتایج اخیر",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 44,
+    "kind": "StringLiteral",
+    "text": "آخرین نتیجه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 44,
+    "kind": "LastTemplateToken",
+    "text": "٪",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 44,
+    "kind": "StringLiteral",
+    "text": "هنوز نتیجه‌ای ثبت نشده",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 45,
+    "kind": "StringLiteral",
+    "text": "دقت در نتایج اخیر",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 45,
+    "kind": "LastTemplateToken",
+    "text": "٪",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 45,
+    "kind": "TemplateMiddle",
+    "text": "پاسخ صحیح از",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 45,
+    "kind": "LastTemplateToken",
+    "text": "سؤال",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 46,
+    "kind": "StringLiteral",
+    "text": "تغییر نسبت به آزمون هم‌مبحث",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 46,
+    "kind": "TemplateHead",
+    "text": "واحد درصد نسبت به",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 46,
+    "kind": "StringLiteral",
+    "text": "پس از تکرار همان نوع آزمون و مباحث",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 48,
+    "kind": "JsxText",
+    "text": "پیشرفت درس‌های من",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 48,
+    "kind": "JsxText",
+    "text": "تمرین و آزمون هر دو در این برآورد اولیه حساب می‌شوند. برای هر مبحث حداقل ۳ سؤال متفاوت لازم است؛ پاسخ تازه به سؤال تکراری جای پاسخ قبلی را می‌گیرد. پیشرفت کل، همه مباحث درس را در نظر می‌گیرد؛ پوشش نشان می‌دهد چند مبحث واقعاً سنجیده شده است.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 53,
+    "kind": "LastTemplateToken",
+    "text": "٪ پیشرفت",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 53,
+    "kind": "StringLiteral",
+    "text": "هنوز سنجیده نشده",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 54,
+    "kind": "JsxText",
+    "text": "از",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 54,
+    "kind": "JsxText",
+    "text": "مبحث سنجیده شده · پوشش",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 54,
+    "kind": "JsxText",
+    "text": "٪",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 55,
+    "kind": "JsxText",
+    "text": "دقت در مباحث سنجیده‌شده:",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 55,
+    "kind": "LastTemplateToken",
+    "text": "٪",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 56,
+    "kind": "JsxText",
+    "text": "آخرین نتیجه این درس:",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 56,
+    "kind": "JsxText",
+    "text": "٪ ·",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 57,
+    "kind": "JsxText",
+    "text": "مباحثی که به مرور نیاز دارند",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 57,
+    "kind": "JsxText",
+    "text": "٪",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 58,
+    "kind": "JsxText",
+    "text": "دیدن پیشرفت هر مهارت",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 62,
+    "kind": "JsxText",
+    "text": "تاریخچه نتایج من",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 63,
+    "kind": "StringLiteral",
+    "text": "هنوز نتیجه‌ای برای این انتخاب ثبت نشده",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 63,
+    "kind": "StringLiteral",
+    "text": "پس از ثبت پاسخ‌های تمرین یا آزمون، نتیجه واقعی و پیشرفتت اینجا نمایش داده می‌شود.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 67,
+    "kind": "JsxText",
+    "text": "٪",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 67,
+    "kind": "JsxText",
+    "text": "صحیح ·",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 67,
+    "kind": "JsxText",
+    "text": "نادرست ·",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 67,
+    "kind": "JsxText",
+    "text": "بی‌پاسخ از",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 67,
+    "kind": "JsxText",
+    "text": "سؤال",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PersonalResults.tsx",
+    "line": 67,
+    "kind": "JsxText",
+    "text": "دیدن گزارش",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 17,
+    "kind": "StringLiteral",
+    "text": "یک قدم در هر روز",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 17,
+    "kind": "StringLiteral",
+    "text": "امروز از کجا ادامه می‌دهی؟",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 17,
+    "kind": "StringLiteral",
+    "text": "فضایی برای یادگیری متمرکز، مرور نوشته‌ها و سنجش مسیرت.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 17,
+    "kind": "JsxText",
+    "text": "کتابخانه من",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 17,
+    "kind": "JsxText",
+    "text": "مسیر شخصی تو",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 17,
+    "kind": "StringLiteral",
+    "text": "اولین صفحه منتظر توست.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 17,
+    "kind": "TemplateHead",
+    "text": "آخرین بار تا صفحه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 17,
+    "kind": "LastTemplateToken",
+    "text": "خواندی. یادداشت‌هایت همان‌جا منتظرند.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 17,
+    "kind": "StringLiteral",
+    "text": "آموزشت را انتخاب کن، در حاشیه‌اش بنویس و هر بار از همان‌جا ادامه بده.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 17,
+    "kind": "StringLiteral",
+    "text": "ادامه مطالعه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 17,
+    "kind": "StringLiteral",
+    "text": "انتخاب آموزش",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 17,
+    "kind": "StringLiteral",
+    "text": "آموزش‌های کتابخانه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 17,
+    "kind": "StringLiteral",
+    "text": "یادداشت‌های من",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 17,
+    "kind": "StringLiteral",
+    "text": "آخرین نتیجه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 17,
+    "kind": "LastTemplateToken",
+    "text": "٪",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 17,
+    "kind": "StringLiteral",
+    "text": "اشتراک مطالعه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 17,
+    "kind": "StringLiteral",
+    "text": "فعال",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 17,
+    "kind": "StringLiteral",
+    "text": "غیرفعال",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 17,
+    "kind": "JsxText",
+    "text": "یادداشت‌های کنار مسیر",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 17,
+    "kind": "JsxText",
+    "text": "آنچه یاد گرفته‌ای، همراهت می‌ماند.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 17,
+    "kind": "JsxText",
+    "text": "همه نکته‌هایت را مرور کن؛ حتی اگر اشتراکت تمام شده باشد.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 17,
+    "kind": "JsxText",
+    "text": "مرور یادداشت‌ها",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 17,
+    "kind": "JsxText",
+    "text": "قدم بعدی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 17,
+    "kind": "StringLiteral",
+    "text": "براساس آخرین ارزیابی تو",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 17,
+    "kind": "StringLiteral",
+    "text": "مسیرت را بهتر بشناس",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 17,
+    "kind": "StringLiteral",
+    "text": "با تعیین سطح، مباحثی را که به مرور بیشتری نیاز دارند پیدا کن.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 17,
+    "kind": "JsxText",
+    "text": "تعیین سطح",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 55,
+    "kind": "StringLiteral",
+    "text": "آزمون آماده نشد.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 65,
+    "kind": "StringLiteral",
+    "text": "ثبت نتیجه انجام نشد؛ پاسخ‌هایت حفظ شده‌اند.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "StringLiteral",
+    "text": "بازگشت به مطالعه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "StringLiteral",
+    "text": "بازگشت به پنل",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "StringLiteral",
+    "text": "سنجش مسیر",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "StringLiteral",
+    "text": "آزمون تعیین سطح",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "StringLiteral",
+    "text": "تمرین مبحث",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "StringLiteral",
+    "text": "آزمون شبیه‌ساز",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "StringLiteral",
+    "text": "نتیجه از پاسخ‌ها و کلید پاسخ سرور محاسبه می‌شود.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "JsxText",
+    "text": "با آرامش شروع کن",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "JsxText",
+    "text": "درس",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "StringLiteral",
+    "text": "انتخاب درس",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "JsxText",
+    "text": "همه درس‌ها",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "JsxText",
+    "text": "مبحث",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "StringLiteral",
+    "text": "انتخاب مبحث",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "JsxText",
+    "text": "همه مباحث",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "JsxText",
+    "text": "برای هر تلاش ۶۰ دقیقه زمان داری. پاسخ‌ها تا زمان ثبت در همین مرورگر حفظ می‌شوند. شبیه‌ساز به اشتراک فعال نیاز دارد.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "StringLiteral",
+    "text": "در حال آماده‌سازی…",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "StringLiteral",
+    "text": "شروع آزمون",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "JsxText",
+    "text": "سؤال",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "JsxText",
+    "text": "از",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "StringLiteral",
+    "text": "آسان",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "StringLiteral",
+    "text": "متوسط",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "StringLiteral",
+    "text": "سخت",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "StringLiteral",
+    "text": "شکل سؤال",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "StringLiteral",
+    "text": "الف",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "StringLiteral",
+    "text": "ب",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "StringLiteral",
+    "text": "ج",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "StringLiteral",
+    "text": "د",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "StringLiteral",
+    "text": "هـ",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "StringLiteral",
+    "text": "و",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "JsxText",
+    "text": "قبلی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "JsxText",
+    "text": "پاک‌کردن پاسخ",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "JsxText",
+    "text": "بعدی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "StringLiteral",
+    "text": "در حال ثبت…",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "StringLiteral",
+    "text": "ثبت و دیدن نتیجه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "JsxText",
+    "text": "زمان آزمون پایان یافته است.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 68,
+    "kind": "JsxText",
+    "text": "آزمون تازه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 82,
+    "kind": "StringLiteral",
+    "text": "گزارش آزمون",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 82,
+    "kind": "JsxText",
+    "text": "همه نتایج",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 82,
+    "kind": "StringLiteral",
+    "text": "درصد کل",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 82,
+    "kind": "LastTemplateToken",
+    "text": "٪",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 82,
+    "kind": "StringLiteral",
+    "text": "صحیح",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 82,
+    "kind": "StringLiteral",
+    "text": "نادرست",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 82,
+    "kind": "StringLiteral",
+    "text": "بدون پاسخ",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 82,
+    "kind": "JsxText",
+    "text": "قدم بعدی تو",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 82,
+    "kind": "StringLiteral",
+    "text": "بازگشت به مطالعه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 82,
+    "kind": "StringLiteral",
+    "text": "رفتن به مطالعه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 82,
+    "kind": "JsxText",
+    "text": "عملکرد موضوعی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 82,
+    "kind": "JsxText",
+    "text": "نقشه یادگیری و تسلط همه مباحث",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 82,
+    "kind": "JsxText",
+    "text": "از",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 82,
+    "kind": "JsxText",
+    "text": "٪",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 82,
+    "kind": "JsxText",
+    "text": "مرور پاسخ‌ها",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 82,
+    "kind": "JsxText",
+    "text": "سؤال",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 82,
+    "kind": "StringLiteral",
+    "text": "بی‌پاسخ",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 82,
+    "kind": "StringLiteral",
+    "text": "صحیح",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 82,
+    "kind": "StringLiteral",
+    "text": "نادرست",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 82,
+    "kind": "JsxText",
+    "text": "گزینه صحیح:",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 87,
+    "kind": "StringLiteral",
+    "text": "آزمون شبیه‌ساز",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 87,
+    "kind": "StringLiteral",
+    "text": "بعد از مطالعه، خودت را دوباره بسنج.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 87,
+    "kind": "JsxText",
+    "text": "مرور ترکیبی درس‌ها",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 87,
+    "kind": "JsxText",
+    "text": "آزمون از سؤال‌های منتشرشده ساخته می‌شود و گزارش موضوعی آن در حساب شما باقی می‌ماند.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 87,
+    "kind": "StringLiteral",
+    "text": "شروع شبیه‌ساز",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/PracticePages.tsx",
+    "line": 87,
+    "kind": "StringLiteral",
+    "text": "انتخاب اشتراک مطالعه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/DiagnosticIntroPage.tsx",
+    "line": 7,
+    "kind": "JsxText",
+    "text": "تعیین سطح رایگان",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/DiagnosticIntroPage.tsx",
+    "line": 7,
+    "kind": "JsxText",
+    "text": "قبل از شروع مطالعه، موقعیت فعلی‌ات را بشناس.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/DiagnosticIntroPage.tsx",
+    "line": 7,
+    "kind": "JsxText",
+    "text": "از میان درس‌ها و مباحث منابع آموزشی، موضوع ارزیابی را انتخاب کن و گزارش عملکرد و پیشنهاد مطالعه بگیر. برای نگه‌داشتن نتایج، ابتدا وارد حسابت شو.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/DiagnosticIntroPage.tsx",
+    "line": 8,
+    "kind": "JsxText",
+    "text": "حداکثر ۶۰ دقیقه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/DiagnosticIntroPage.tsx",
+    "line": 8,
+    "kind": "JsxText",
+    "text": "سؤال‌های چندگزینه‌ای",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/DiagnosticIntroPage.tsx",
+    "line": 8,
+    "kind": "JsxText",
+    "text": "تحلیل موضوعی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/DiagnosticIntroPage.tsx",
+    "line": 9,
+    "kind": "JsxText",
+    "text": "شروع آزمون",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/DiagnosticIntroPage.tsx",
+    "line": 11,
+    "kind": "JsxText",
+    "text": "در پایان چه می‌بینی؟",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/DiagnosticIntroPage.tsx",
+    "line": 11,
+    "kind": "JsxText",
+    "text": "۱",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/DiagnosticIntroPage.tsx",
+    "line": 11,
+    "kind": "JsxText",
+    "text": "درصد پاسخ‌های صحیح",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/DiagnosticIntroPage.tsx",
+    "line": 11,
+    "kind": "JsxText",
+    "text": "محاسبه مستقیم از پاسخ‌های تو",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/DiagnosticIntroPage.tsx",
+    "line": 11,
+    "kind": "JsxText",
+    "text": "۲",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/DiagnosticIntroPage.tsx",
+    "line": 11,
+    "kind": "JsxText",
+    "text": "قوت و ضعف موضوعی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/DiagnosticIntroPage.tsx",
+    "line": 11,
+    "kind": "JsxText",
+    "text": "مهارت‌های همان درس و مبحث انتخاب‌شده",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/DiagnosticIntroPage.tsx",
+    "line": 11,
+    "kind": "JsxText",
+    "text": "۳",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/DiagnosticIntroPage.tsx",
+    "line": 11,
+    "kind": "JsxText",
+    "text": "تحلیل قابل توضیح",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/DiagnosticIntroPage.tsx",
+    "line": 11,
+    "kind": "JsxText",
+    "text": "پیشنهاد براساس عملکرد موضوعی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/DiagnosticIntroPage.tsx",
+    "line": 11,
+    "kind": "JsxText",
+    "text": "۴",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/DiagnosticIntroPage.tsx",
+    "line": 11,
+    "kind": "JsxText",
+    "text": "قدم بعدی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/DiagnosticIntroPage.tsx",
+    "line": 11,
+    "kind": "JsxText",
+    "text": "یک پیشنهاد مشخص برای ادامه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/DiagnosticIntroPage.tsx",
+    "line": 11,
+    "kind": "JsxText",
+    "text": "نتیجه و پاسخ‌ها پس از ثبت، در حساب شخصی شما ذخیره می‌شوند.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/ExamPage.tsx",
+    "line": 5,
+    "kind": "StringLiteral",
+    "text": "درس‌ها و مسیر آمادگی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/ExamPage.tsx",
+    "line": 5,
+    "kind": "StringLiteral",
+    "text": "درس‌نامه‌ها و سؤال‌ها براساس منابع آموزشی واردشده در سامانه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/GoogleCallbackPage.tsx",
+    "line": 21,
+    "kind": "JsxText",
+    "text": "ورود امن به Cent",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/GoogleCallbackPage.tsx",
+    "line": 22,
+    "kind": "JsxText",
+    "text": "ورود با گوگل",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/GoogleCallbackPage.tsx",
+    "line": 23,
+    "kind": "JsxText",
+    "text": "بازگشت به ورود و تلاش دوباره",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/GoogleCallbackPage.tsx",
+    "line": 23,
+    "kind": "JsxText",
+    "text": "در حال تکمیل ورود با گوگل…",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/HomePage.tsx",
+    "line": 11,
+    "kind": "JsxText",
+    "text": "آمادگی هدفمند برای CEnT-S",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/HomePage.tsx",
+    "line": 12,
+    "kind": "JsxText",
+    "text": "از منابع درست،",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/HomePage.tsx",
+    "line": 12,
+    "kind": "JsxText",
+    "text": "قدم‌به‌قدم",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/HomePage.tsx",
+    "line": 12,
+    "kind": "JsxText",
+    "text": "یاد بگیر.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/HomePage.tsx",
+    "line": 13,
+    "kind": "JsxText",
+    "text": "درس‌نامه‌ها را بخوان، در هر مبحث تمرین کن و با ارزیابی، نقاط قوت و مباحث نیازمند مرور را بشناس.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/HomePage.tsx",
+    "line": 14,
+    "kind": "JsxText",
+    "text": "تعیین سطح را شروع کن",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/HomePage.tsx",
+    "line": 14,
+    "kind": "JsxText",
+    "text": "مشاهده درس‌ها",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/HomePage.tsx",
+    "line": 15,
+    "kind": "JsxText",
+    "text": "ارزیابی موضوعی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/HomePage.tsx",
+    "line": 15,
+    "kind": "JsxText",
+    "text": "پاسخ تشریحی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/HomePage.tsx",
+    "line": 15,
+    "kind": "JsxText",
+    "text": "پیگیری پیشرفت",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/HomePage.tsx",
+    "line": 16,
+    "kind": "JsxText",
+    "text": "درس‌های منتشرشده",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/HomePage.tsx",
+    "line": 16,
+    "kind": "JsxText",
+    "text": "درس‌نامه‌های منبع",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/HomePage.tsx",
+    "line": 16,
+    "kind": "JsxText",
+    "text": "درس‌نامه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/HomePage.tsx",
+    "line": 16,
+    "kind": "JsxText",
+    "text": "بانک سؤال",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/HomePage.tsx",
+    "line": 16,
+    "kind": "JsxText",
+    "text": "سؤال",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/HomePage.tsx",
+    "line": 17,
+    "kind": "JsxText",
+    "text": "منابع آموزشی شما",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/HomePage.tsx",
+    "line": 17,
+    "kind": "JsxText",
+    "text": "درس‌ها و فصل‌های واقعی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/HomePage.tsx",
+    "line": 17,
+    "kind": "JsxText",
+    "text": "هر درس به منابع، مباحث و سؤال‌های خودش متصل است.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/HomePage.tsx",
+    "line": 18,
+    "kind": "JsxText",
+    "text": "سنجش هر مهارت",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/HomePage.tsx",
+    "line": 18,
+    "kind": "JsxText",
+    "text": "یک درس یا مبحث را انتخاب کن و نتیجه پاسخ‌هایت را ببین.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/HomePage.tsx",
+    "line": 18,
+    "kind": "JsxText",
+    "text": "مطالعه و تمرین",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/HomePage.tsx",
+    "line": 18,
+    "kind": "JsxText",
+    "text": "منبع هر درس را بخوان و نکته‌های شخصی‌ات را همان‌جا ذخیره کن.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/HomePage.tsx",
+    "line": 18,
+    "kind": "JsxText",
+    "text": "نقشه یادگیری",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/HomePage.tsx",
+    "line": 18,
+    "kind": "JsxText",
+    "text": "پیشرفت هر مبحث را در کنار پوشش ارزیابی و پیشرفت کل درس ببین.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/LoginPage.tsx",
+    "line": 36,
+    "kind": "StringLiteral",
+    "text": "ورود انجام نشد.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/LoginPage.tsx",
+    "line": 48,
+    "kind": "JsxText",
+    "text": "کتابخانه شخصی تو",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/LoginPage.tsx",
+    "line": 48,
+    "kind": "JsxText",
+    "text": "یادگیری،",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/LoginPage.tsx",
+    "line": 48,
+    "kind": "JsxText",
+    "text": "با جای خودت.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/LoginPage.tsx",
+    "line": 49,
+    "kind": "JsxText",
+    "text": "آموزش‌هایت، یادداشت‌های کنار هر صفحه و ادامه مطالعه‌ات، هر بار که برمی‌گردی در دسترس‌اند.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/LoginPage.tsx",
+    "line": 50,
+    "kind": "JsxText",
+    "text": "دیدن آموزش‌ها",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/LoginPage.tsx",
+    "line": 54,
+    "kind": "JsxText",
+    "text": "ورود",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/LoginPage.tsx",
+    "line": 55,
+    "kind": "JsxText",
+    "text": "ثبت‌نام",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/LoginPage.tsx",
+    "line": 57,
+    "kind": "StringLiteral",
+    "text": "خوش برگشتی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/LoginPage.tsx",
+    "line": 57,
+    "kind": "StringLiteral",
+    "text": "حساب Cent خودت را بساز",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/LoginPage.tsx",
+    "line": 65,
+    "kind": "StringLiteral",
+    "text": "در حال انتقال به گوگل…",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/LoginPage.tsx",
+    "line": 65,
+    "kind": "StringLiteral",
+    "text": "ورود با گوگل",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/LoginPage.tsx",
+    "line": 65,
+    "kind": "StringLiteral",
+    "text": "ثبت‌نام با گوگل",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/LoginPage.tsx",
+    "line": 67,
+    "kind": "JsxText",
+    "text": "در حال انتقال به گوگل…",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/LoginPage.tsx",
+    "line": 68,
+    "kind": "JsxText",
+    "text": "یا با ایمیل",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/LoginPage.tsx",
+    "line": 70,
+    "kind": "JsxText",
+    "text": "نام و نام خانوادگی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/LoginPage.tsx",
+    "line": 71,
+    "kind": "JsxText",
+    "text": "ایمیل",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/LoginPage.tsx",
+    "line": 72,
+    "kind": "JsxText",
+    "text": "رمز عبور",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/LoginPage.tsx",
+    "line": 72,
+    "kind": "JsxText",
+    "text": "حداقل ۱۰ نویسه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/LoginPage.tsx",
+    "line": 74,
+    "kind": "StringLiteral",
+    "text": "در حال بررسی…",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/LoginPage.tsx",
+    "line": 74,
+    "kind": "StringLiteral",
+    "text": "ورود به حساب",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/LoginPage.tsx",
+    "line": 74,
+    "kind": "StringLiteral",
+    "text": "ساخت حساب",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/LoginPage.tsx",
+    "line": 76,
+    "kind": "JsxText",
+    "text": "حساب و خریدهای شما مخصوص Cent است.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/NotFoundPage.tsx",
+    "line": 2,
+    "kind": "JsxText",
+    "text": "۴۰۴",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/NotFoundPage.tsx",
+    "line": 2,
+    "kind": "JsxText",
+    "text": "این صفحه پیدا نشد.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/NotFoundPage.tsx",
+    "line": 2,
+    "kind": "JsxText",
+    "text": "ممکن است آدرس تغییر کرده باشد یا هنوز در MVP ساخته نشده باشد.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/public/NotFoundPage.tsx",
+    "line": 2,
+    "kind": "JsxText",
+    "text": "بازگشت به صفحه اصلی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 77,
+    "kind": "StringLiteral",
+    "text": "تصویر صفحه قابل نمایش نیست.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 91,
+    "kind": "StringLiteral",
+    "text": "صفحه بارگذاری نشد.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 98,
+    "kind": "StringLiteral",
+    "text": "محل مطالعه ذخیره نشد؛ اتصال را بررسی کنید.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 103,
+    "kind": "StringLiteral",
+    "text": "پیش‌نویس روی این دستگاه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 104,
+    "kind": "StringLiteral",
+    "text": "پیش‌نویس ذخیره نشد؛ پیش از خروج ثبت کنید.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 113,
+    "kind": "StringLiteral",
+    "text": "نوشته ثبت‌نشده با یادداشت جدید جایگزین شود؟",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 118,
+    "kind": "StringLiteral",
+    "text": "در حال ذخیره…",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 122,
+    "kind": "StringLiteral",
+    "text": "در حساب شما ذخیره شد",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 123,
+    "kind": "StringLiteral",
+    "text": "ذخیره انجام نشد؛ پیش‌نویس شما باقی مانده است.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 127,
+    "kind": "StringLiteral",
+    "text": "این یادداشت حذف شود؟",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 128,
+    "kind": "StringLiteral",
+    "text": "یادداشت حذف شد",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 129,
+    "kind": "StringLiteral",
+    "text": "حذف انجام نشد.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 133,
+    "kind": "StringLiteral",
+    "text": "نوشته ثبت‌نشده با این یادداشت جایگزین شود؟",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 138,
+    "kind": "JsxText",
+    "text": "کتابخانه من",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 138,
+    "kind": "JsxText",
+    "text": "فضای مطالعه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 138,
+    "kind": "StringLiteral",
+    "text": "آموزش",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 138,
+    "kind": "JsxText",
+    "text": "یادداشت‌ها",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 138,
+    "kind": "JsxText",
+    "text": "خرید یا تمدید دسترسی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 138,
+    "kind": "StringLiteral",
+    "text": "صفحه قبل",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 138,
+    "kind": "JsxText",
+    "text": "صفحه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 138,
+    "kind": "StringLiteral",
+    "text": "انتخاب صفحه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 138,
+    "kind": "JsxText",
+    "text": "از",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 138,
+    "kind": "StringLiteral",
+    "text": "صفحه بعد",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 138,
+    "kind": "StringLiteral",
+    "text": "کوچک‌نمایی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 138,
+    "kind": "JsxText",
+    "text": "٪",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 138,
+    "kind": "StringLiteral",
+    "text": "بزرگ‌نمایی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 138,
+    "kind": "StringLiteral",
+    "text": "اندازه معمول",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 140,
+    "kind": "JsxText",
+    "text": "تمرین این مبحث",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 140,
+    "kind": "TemplateHead",
+    "text": "صفحه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 140,
+    "kind": "TemplateMiddle",
+    "text": "از",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 140,
+    "kind": "TemplateHead",
+    "text": "یادداشت",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 140,
+    "kind": "JsxText",
+    "text": "بررسی دسترسی",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 140,
+    "kind": "JsxText",
+    "text": "صفحه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 140,
+    "kind": "JsxText",
+    "text": "· برای ثبت نکته روی بخش موردنظر بزن",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 140,
+    "kind": "JsxText",
+    "text": "نمایش شخصی برای",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 140,
+    "kind": "JsxText",
+    "text": "کنار این صفحه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 140,
+    "kind": "StringLiteral",
+    "text": "بستن یادداشت‌ها",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 140,
+    "kind": "JsxText",
+    "text": "فهرست درس",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 140,
+    "kind": "JsxText",
+    "text": "انتخاب بخش",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 140,
+    "kind": "JsxText",
+    "text": "· صفحه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 140,
+    "kind": "StringLiteral",
+    "text": "ویرایش یادداشت",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 140,
+    "kind": "StringLiteral",
+    "text": "نکته تازه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 140,
+    "kind": "JsxText",
+    "text": "· صفحه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 140,
+    "kind": "StringLiteral",
+    "text": "متن یادداشت",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 140,
+    "kind": "StringLiteral",
+    "text": "اینجا چه چیزی یاد گرفتی؟ سؤالت چیست؟",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 140,
+    "kind": "JsxText",
+    "text": "محل یادداشت روی صفحه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 140,
+    "kind": "StringLiteral",
+    "text": "در حساب شما ذخیره شد",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 140,
+    "kind": "StringLiteral",
+    "text": "در حال ثبت…",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 140,
+    "kind": "StringLiteral",
+    "text": "ثبت یادداشت",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 140,
+    "kind": "JsxText",
+    "text": "یادداشت جدید",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 140,
+    "kind": "StringLiteral",
+    "text": "یادداشت‌ها فقط برای خودت قابل مشاهده‌اند.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 140,
+    "kind": "JsxText",
+    "text": "اولین فکر کنار این صفحه را بنویس.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 140,
+    "kind": "JsxText",
+    "text": "یادداشت",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 140,
+    "kind": "StringLiteral",
+    "text": "حذف یادداشت",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/pages/StudyReader.tsx",
+    "line": 140,
+    "kind": "JsxText",
+    "text": "همه یادداشت‌های من",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/services/cent.ts",
+    "line": 41,
+    "kind": "StringLiteral",
+    "text": "مهلت ورود پایان یافته است؛ دوباره وارد شوید.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/services/cent.ts",
+    "line": 72,
+    "kind": "StringLiteral",
+    "text": "درخواست‌ها زیاد است؛ کمی بعد دوباره تلاش کنید.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/services/cent.ts",
+    "line": 72,
+    "kind": "StringLiteral",
+    "text": "ارتباط با سرویس برقرار نشد.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/services/cent.ts",
+    "line": 82,
+    "kind": "StringLiteral",
+    "text": "فهرست درس‌ها موقتاً در دسترس نیست. کمی بعد دوباره تلاش کنید.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/services/cent.ts",
+    "line": 112,
+    "kind": "LastTemplateToken",
+    "text": "تومان",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/services/google-auth.ts",
+    "line": 4,
+    "kind": "StringLiteral",
+    "text": "درخواست ورود با گوگل معتبر نیست یا مهلت آن تمام شده است. دوباره وارد شوید.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/services/google-auth.ts",
+    "line": 12,
+    "kind": "StringLiteral",
+    "text": "درخواست‌ها زیاد است؛ کمی بعد دوباره تلاش کنید.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/services/google-auth.ts",
+    "line": 39,
+    "kind": "StringLiteral",
+    "text": "شروع ورود با گوگل ممکن نشد. دوباره تلاش کنید.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/services/google-auth.ts",
+    "line": 82,
+    "kind": "StringLiteral",
+    "text": "ورود با گوگل لغو شد. دوباره تلاش کنید.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/services/google-auth.ts",
+    "line": 91,
+    "kind": "TemplateHead",
+    "text": "درخواست‌ها زیاد است؛",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/services/google-auth.ts",
+    "line": 91,
+    "kind": "LastTemplateToken",
+    "text": "ثانیه صبر کنید و دوباره تلاش کنید.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/services/google-auth.ts",
+    "line": 93,
+    "kind": "StringLiteral",
+    "text": "ورود با گوگل لغو شد. می‌توانید دوباره تلاش کنید.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/services/google-auth.ts",
+    "line": 94,
+    "kind": "StringLiteral",
+    "text": "ورود با گوگل انجام نشد. دوباره تلاش کنید.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/services/google-auth.ts",
+    "line": 96,
+    "kind": "StringLiteral",
+    "text": "این ایمیل قبلاً در Cent ثبت شده است. با روش قبلی خود وارد شوید؛ حساب‌ها خودکار به هم متصل نمی‌شوند.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/services/google-auth.ts",
+    "line": 98,
+    "kind": "StringLiteral",
+    "text": "ورود با گوگل فعلاً در دسترس نیست. کمی بعد دوباره تلاش کنید.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/services/google-auth.ts",
+    "line": 103,
+    "kind": "StringLiteral",
+    "text": "برای ورود با گوگل، دسترسی مرورگر به فضای ذخیره‌سازی این برگه را فعال کنید.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/services/google-auth.ts",
+    "line": 105,
+    "kind": "StringLiteral",
+    "text": "ارتباط با سرویس برقرار نشد. اتصال اینترنت را بررسی و دوباره تلاش کنید.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/services/google-auth.ts",
+    "line": 106,
+    "kind": "StringLiteral",
+    "text": "ورود با گوگل انجام نشد. دوباره تلاش کنید.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/services/pdf-upload.ts",
+    "line": 6,
+    "kind": "StringLiteral",
+    "text": "حداکثر حجم PDF برابر ۴۰ مگابایت است.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/services/pdf-upload.ts",
+    "line": 8,
+    "kind": "StringLiteral",
+    "text": "فایل PDF معتبر انتخاب کنید.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/services/pdf-upload.ts",
+    "line": 18,
+    "kind": "StringLiteral",
+    "text": "هر درس باید بین ۱ تا ۲۰۰ صفحه داشته باشد؛ فایل بزرگ را به چند درس تقسیم کنید.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/services/pdf-upload.ts",
+    "line": 24,
+    "kind": "StringLiteral",
+    "text": "این فایل قبلاً منتشر شده است.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/services/pdf-upload.ts",
+    "line": 36,
+    "kind": "TemplateHead",
+    "text": "آماده‌سازی و بارگذاری صفحه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/services/pdf-upload.ts",
+    "line": 36,
+    "kind": "TemplateMiddle",
+    "text": "از",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/services/pdf-upload.ts",
+    "line": 47,
+    "kind": "TemplateHead",
+    "text": "حجم صفحه",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/services/pdf-upload.ts",
+    "line": 47,
+    "kind": "LastTemplateToken",
+    "text": "زیاد است؛ PDF را بهینه کنید.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/services/pdf-upload.ts",
+    "line": 53,
+    "kind": "StringLiteral",
+    "text": "همه صفحات بارگذاری شدند؛ در حال انتشار درس…",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/services/pdf-upload.ts",
+    "line": 70,
+    "kind": "StringLiteral",
+    "text": "مرورگر شما از تبدیل WebP پشتیبانی نمی‌کند. از مرورگر به‌روز استفاده کنید.",
+    "scope": "UI or service text; contextual review needed"
+  },
+  {
+    "file": "src/state/AppState.tsx",
+    "line": 54,
+    "kind": "StringLiteral",
+    "text": "بررسی حساب ممکن نشد؛ دوباره تلاش کنید.",
+    "scope": "UI or service text; contextual review needed"
+  }
+]

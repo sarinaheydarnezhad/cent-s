@@ -1,0 +1,53 @@
+{
+  "source": "docs/brand/logo-original-reference.png",
+  "viewBox": "100 86 284 284",
+  "geometry": [
+    "M242 106 366 230 332 264 242 174 152 264 118 230Z",
+    "M242 202 317 277 293 301 242 250 191 301 167 277Z",
+    "M242 277 279 314 242 351 205 314Z"
+  ],
+  "axis": 242,
+  "edgeAngles": "45 degrees",
+  "widths": [
+    248,
+    150,
+    74
+  ],
+  "height": 245,
+  "apexY": [
+    106,
+    202,
+    277
+  ],
+  "innerApexY": [
+    174,
+    250
+  ],
+  "centerlineGaps": [
+    28,
+    27
+  ],
+  "variants": {
+    "symbol": [
+      "#A5B5A1",
+      "#4D687A",
+      "#29343C"
+    ],
+    "symbol-dark": [
+      "#A5B5A1",
+      "#9CB8C9",
+      "#F5F7F7"
+    ],
+    "monochrome": [
+      "#29343C",
+      "#29343C",
+      "#29343C"
+    ],
+    "inverted": [
+      "#F5F7F7",
+      "#F5F7F7",
+      "#F5F7F7"
+    ]
+  },
+  "note": "Symmetric vector fit to a shaded, antialiased raster. Approximate silhouette, not recovered exact vector master. All variants share these paths; dark colors retained from Phase 1."
+}

@@ -1,4 +1,6 @@
+/* global fetch, crypto, console, sessionStorage, document, URL */
 import { chromium } from 'playwright'
+import process from 'node:process'
 import assert from 'node:assert/strict'
 import { writeFileSync } from 'node:fs'
 import { api, root, artifact, browserOptions, requireLocalPreview } from './environment.mjs'
@@ -37,6 +39,9 @@ try {
   assert.equal(new URL(page.url()).searchParams.get('returnTo'), studyPath)
   // Cancelling before starting also goes back to the same page.
   await page.getByRole('link', { name: 'بازگشت به مطالعه', exact: true }).click()
+  // Navigation commits before document fetch and reader initialization finish.
+  // Wait for the actual restored state; no fixed delay or weakened assertion.
+  await page.waitForFunction(n => document.querySelector('select[aria-label="انتخاب صفحه"]')?.value === String(n), pageNumber)
   assert.equal(await page.getByLabel('انتخاب صفحه').inputValue(), String(pageNumber))
   await page.getByRole('link', { name: 'تمرین این مبحث', exact: true }).click()
   // Reauthentication must retain both the topic and reader return URL.
@@ -68,10 +73,11 @@ try {
   await resume.waitFor()
   await resume.click()
   await page.getByRole('link', { name: 'تمرین این مبحث', exact: true }).waitFor()
+  await page.waitForFunction(n => document.querySelector('select[aria-label="انتخاب صفحه"]')?.value === String(n) && document.querySelector('textarea[aria-label="متن یادداشت"]')?.value === 'Study return draft', pageNumber)
   assert.equal(new URL(page.url()).searchParams.get('page'), String(pageNumber))
   assert.equal(await page.getByLabel('انتخاب صفحه').inputValue(), String(pageNumber))
   assert.equal(await page.getByLabel('متن یادداشت').inputValue(), 'Study return draft')
-  await page.screenshot({ path: artifact('study-return-page.png'), fullPage: true })
+  if (process.env.ITATEST_TEST_CAPTURE !== '0') await page.screenshot({ path: artifact('study-return-page.png'), fullPage: true })
   // A test opened without a study origin keeps the existing dashboard fallback.
   await page.goto(`${root}/diagnostic/test?returnTo=${encodeURIComponent('https://example.invalid')}`)
   await page.getByRole('link', { name: 'بازگشت به پنل', exact: true }).waitFor()

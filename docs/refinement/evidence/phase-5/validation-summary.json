@@ -1,0 +1,50 @@
+{
+  "success": true,
+  "screenshotCount": 8,
+  "dimensions": [
+    {
+      "name": "after-analysis-dark-390.png",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "name": "after-analysis-light-1440.png",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "name": "after-entry-light-1440.png",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "name": "after-question-dark-390.png",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "name": "after-question-light-1440.png",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "name": "after-readiness-dark-390.png",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "name": "after-result-detail-light-390.png",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "name": "after-results-dark-1440.png",
+      "width": 1440,
+      "height": 1000
+    }
+  ],
+  "reportLinksChecked": 11,
+  "gallery": "All eight images decoded; desktop/mobile gallery has no overflow",
+  "provenance": "Only connected AFTER viewport images; injected assertion states not captured",
+  "retainedBaseline": "170 tests, builds/TypeScript, focused lint; six documented frontend lint errors"
+}

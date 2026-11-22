@@ -1,0 +1,11 @@
+{
+  "success": true,
+  "kind": "Light/Dark appearance checks; synthetic API responses",
+  "checks": [
+    "light OS default saved before React; opposite-action icon/name; mouse/Space/Enter; focus/44px target; reload/navigation; OS independence; seven widths/both themes; title/favicon; cross-tab switching/clear",
+    "dark OS default saved before React; opposite-action icon/name; mouse/Space/Enter; focus/44px target; reload/navigation; OS independence; seven widths/both themes; title/favicon; cross-tab switching/clear",
+    "Legacy System and invalid saved preferences migrate to Light/Dark under both OS defaults and persist across reload",
+    "Storage-denied startup and in-memory switching remain usable",
+    "Dark startup background resolves when React cannot load"
+  ]
+}

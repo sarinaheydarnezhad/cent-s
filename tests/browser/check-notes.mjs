@@ -1,4 +1,7 @@
+/* global fetch, crypto, console, sessionStorage */
 import { chromium } from 'playwright'
+import process from 'node:process'
+import { URL } from 'node:url'
 import assert from 'node:assert/strict'
 import { writeFileSync } from 'node:fs'
 import { api, root, artifact, browserOptions, requireLocalPreview } from './environment.mjs'
@@ -84,7 +87,7 @@ try {
   assert.equal(stored.notes.length, 5)
   assert.equal(new Set(stored.notes.map(n => n.id)).size, 5)
   assert.deepEqual(errors, [])
-  await page.screenshot({ path: artifact('consecutive-notes.png'), fullPage: true })
+  if (process.env.ITATEST_TEST_CAPTURE !== '0') await page.screenshot({ path: artifact('consecutive-notes.png'), fullPage: true })
   writeFileSync(artifact('consecutive-notes-result.json'), JSON.stringify({ success: true, persistedNotes: 5, checked: ['three consecutive creations', 'edit then create', 'failed request retry', 'delete then create', 'reload persistence'], browserErrors: errors }, null, 2))
   console.log('Notes checks passed: consecutive notes, editing, retry, deletion and five distinct notes persisted after reload.')
 } finally { await browser.close() }

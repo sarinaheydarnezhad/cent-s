@@ -1,0 +1,150 @@
+{
+  "scope": "Actual local login/public menu only; no screen-reader/axe/full WCAG audit",
+  "menu": {
+    "expanded": null,
+    "remainsOpenAfterEscape": true
+  },
+  "focus": [
+    {
+      "tag": "A",
+      "name": "Cent-s",
+      "type": null,
+      "outline": "rgb(121, 163, 108) solid 2px",
+      "rect": {
+        "width": 137.8125,
+        "height": 39
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "name": "نمایش منو",
+      "type": null,
+      "outline": "rgb(121, 163, 108) solid 2px",
+      "rect": {
+        "width": 36,
+        "height": 26
+      }
+    },
+    {
+      "tag": "A",
+      "name": "دیدن آموزش‌ها",
+      "type": null,
+      "outline": "rgb(121, 163, 108) solid 2px",
+      "rect": {
+        "width": 130.7313995361328,
+        "height": 47.168212890625
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "name": "ورود",
+      "type": "button",
+      "outline": "rgb(121, 163, 108) solid 2px",
+      "rect": {
+        "width": 159.922119140625,
+        "height": 44.22845458984375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "name": "ثبت‌نام",
+      "type": "button",
+      "outline": "rgb(121, 163, 108) solid 2px",
+      "rect": {
+        "width": 159.93678283691406,
+        "height": 44.232513427734375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "name": "ورود با گوگل",
+      "type": "button",
+      "outline": "rgb(13, 119, 111) solid 2px",
+      "rect": {
+        "width": 327.9322509765625,
+        "height": 47.193359375
+      }
+    },
+    {
+      "tag": "INPUT",
+      "name": "",
+      "type": "email",
+      "outline": "rgb(121, 163, 108) solid 2px",
+      "rect": {
+        "width": 327.9461975097656,
+        "height": 47.7734375
+      }
+    },
+    {
+      "tag": "INPUT",
+      "name": "",
+      "type": "password",
+      "outline": "rgb(121, 163, 108) solid 2px",
+      "rect": {
+        "width": 327.981689453125,
+        "height": 47.778564453125
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "name": "ورود به حساب",
+      "type": null,
+      "outline": "rgb(121, 163, 108) solid 2px",
+      "rect": {
+        "width": 327.9869079589844,
+        "height": 45.9981689453125
+      }
+    },
+    {
+      "tag": "A",
+      "name": "Cent-s",
+      "type": null,
+      "outline": "rgb(121, 163, 108) solid 2px",
+      "rect": {
+        "width": 364,
+        "height": 39
+      }
+    },
+    {
+      "tag": "A",
+      "name": "راهنمای آزمون",
+      "type": null,
+      "outline": "rgb(121, 163, 108) solid 2px",
+      "rect": {
+        "width": 364,
+        "height": 22.390625
+      }
+    },
+    {
+      "tag": "A",
+      "name": "آموزش‌ها و اشتراک",
+      "type": null,
+      "outline": "rgb(121, 163, 108) solid 2px",
+      "rect": {
+        "width": 364,
+        "height": 22.390625
+      }
+    }
+  ],
+  "fields": [
+    {
+      "type": "email",
+      "labels": [
+        "ایمیل"
+      ],
+      "direction": "ltr",
+      "autoComplete": "email",
+      "describedBy": null
+    },
+    {
+      "type": "password",
+      "labels": [
+        "رمز عبورحداقل ۱۰ نویسه"
+      ],
+      "direction": "ltr",
+      "autoComplete": "current-password",
+      "describedBy": null
+    }
+  ],
+  "reducedAnimation": "1e-05s"
+}

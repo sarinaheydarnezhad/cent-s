@@ -1,0 +1,16 @@
+{
+  "success": true,
+  "checks": [
+    "Existing mock-paid subscription enables actual simulator",
+    "Course change resets topic",
+    "Start failure retry retains exact request identity and configuration",
+    "Busy submission disables choices/action and sends one request",
+    "Real partial-answer server score and unanswered counts",
+    "Validated study return retained"
+  ],
+  "total": 9,
+  "correct": 1,
+  "unanswered": 8,
+  "percentage": 11,
+  "browserErrors": []
+}

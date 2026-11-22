@@ -1,0 +1,258 @@
+[
+  {
+    "file": "before-home-light-390.png",
+    "route": "/",
+    "theme": "light",
+    "width": 390,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  },
+  {
+    "file": "before-home-light-1440.png",
+    "route": "/",
+    "theme": "light",
+    "width": 1440,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  },
+  {
+    "file": "before-home-dark-390.png",
+    "route": "/",
+    "theme": "dark",
+    "width": 390,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  },
+  {
+    "file": "before-home-dark-1440.png",
+    "route": "/",
+    "theme": "dark",
+    "width": 1440,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  },
+  {
+    "file": "before-exam-light-390.png",
+    "route": "/exam",
+    "theme": "light",
+    "width": 390,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  },
+  {
+    "file": "before-exam-light-1440.png",
+    "route": "/exam",
+    "theme": "light",
+    "width": 1440,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  },
+  {
+    "file": "before-exam-dark-390.png",
+    "route": "/exam",
+    "theme": "dark",
+    "width": 390,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  },
+  {
+    "file": "before-exam-dark-1440.png",
+    "route": "/exam",
+    "theme": "dark",
+    "width": 1440,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  },
+  {
+    "file": "before-intro-light-390.png",
+    "route": "/diagnostic/intro",
+    "theme": "light",
+    "width": 390,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  },
+  {
+    "file": "before-intro-light-1440.png",
+    "route": "/diagnostic/intro",
+    "theme": "light",
+    "width": 1440,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  },
+  {
+    "file": "before-intro-dark-390.png",
+    "route": "/diagnostic/intro",
+    "theme": "dark",
+    "width": 390,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  },
+  {
+    "file": "before-intro-dark-1440.png",
+    "route": "/diagnostic/intro",
+    "theme": "dark",
+    "width": 1440,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  },
+  {
+    "file": "before-course-light-390.png",
+    "route": "/courses/math",
+    "theme": "light",
+    "width": 390,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  },
+  {
+    "file": "before-course-light-1440.png",
+    "route": "/courses/math",
+    "theme": "light",
+    "width": 1440,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  },
+  {
+    "file": "before-course-dark-390.png",
+    "route": "/courses/math",
+    "theme": "dark",
+    "width": 390,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  },
+  {
+    "file": "before-course-dark-1440.png",
+    "route": "/courses/math",
+    "theme": "dark",
+    "width": 1440,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  },
+  {
+    "file": "before-login-light-390.png",
+    "route": "/login",
+    "theme": "light",
+    "width": 390,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  },
+  {
+    "file": "before-login-light-1440.png",
+    "route": "/login",
+    "theme": "light",
+    "width": 1440,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  },
+  {
+    "file": "before-login-dark-390.png",
+    "route": "/login",
+    "theme": "dark",
+    "width": 390,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  },
+  {
+    "file": "before-login-dark-1440.png",
+    "route": "/login",
+    "theme": "dark",
+    "width": 1440,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  },
+  {
+    "file": "before-register-light-390.png",
+    "route": "/login",
+    "theme": "light",
+    "width": 390,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  },
+  {
+    "file": "before-register-light-1440.png",
+    "route": "/login",
+    "theme": "light",
+    "width": 1440,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  },
+  {
+    "file": "before-register-dark-390.png",
+    "route": "/login",
+    "theme": "dark",
+    "width": 390,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  },
+  {
+    "file": "before-register-dark-1440.png",
+    "route": "/login",
+    "theme": "dark",
+    "width": 1440,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  },
+  {
+    "file": "before-callback-light-390.png",
+    "route": "/auth/google/callback?error=access_denied",
+    "theme": "light",
+    "width": 390,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  },
+  {
+    "file": "before-callback-light-1440.png",
+    "route": "/auth/google/callback?error=access_denied",
+    "theme": "light",
+    "width": 1440,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  },
+  {
+    "file": "before-callback-dark-390.png",
+    "route": "/auth/google/callback?error=access_denied",
+    "theme": "dark",
+    "width": 390,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  },
+  {
+    "file": "before-callback-dark-1440.png",
+    "route": "/auth/google/callback?error=access_denied",
+    "theme": "dark",
+    "width": 1440,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  },
+  {
+    "file": "before-not-found-light-390.png",
+    "route": "/missing-page",
+    "theme": "light",
+    "width": 390,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  },
+  {
+    "file": "before-not-found-light-1440.png",
+    "route": "/missing-page",
+    "theme": "light",
+    "width": 1440,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  },
+  {
+    "file": "before-not-found-dark-390.png",
+    "route": "/missing-page",
+    "theme": "dark",
+    "width": 390,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  },
+  {
+    "file": "before-not-found-dark-1440.png",
+    "route": "/missing-page",
+    "theme": "dark",
+    "width": 1440,
+    "kind": "Actual rendered local page; local backend public GETs; callback missing-proof recovery; external requests blocked",
+    "overflow": false
+  }
+]

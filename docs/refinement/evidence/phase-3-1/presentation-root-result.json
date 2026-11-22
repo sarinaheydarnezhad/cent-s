@@ -1,0 +1,328 @@
+{
+  "root": "http://localhost:5180",
+  "success": true,
+  "images": [
+    {
+      "theme": "light",
+      "selector": ".public-colosseum",
+      "src": "http://localhost:5180/images/hero-colosseum.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": ""
+    },
+    {
+      "theme": "light",
+      "selector": ".public-headline-emphasis img",
+      "src": "http://localhost:5180/images/hero-underline.webp",
+      "width": 2109,
+      "height": 704,
+      "alt": ""
+    },
+    {
+      "theme": "dark",
+      "selector": ".public-colosseum",
+      "src": "http://localhost:5180/images/hero-colosseum.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": ""
+    },
+    {
+      "theme": "dark",
+      "selector": ".public-headline-emphasis img",
+      "src": "http://localhost:5180/images/hero-underline.webp",
+      "width": 2109,
+      "height": 704,
+      "alt": ""
+    }
+  ],
+  "contrast": [
+    {
+      "theme": "light",
+      "selector": ".public-hero h1",
+      "token": "surface",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "#fff",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "selector": ".public-hero h1",
+      "token": "page",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "#f5f7f7",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "selector": ".public-hero h1",
+      "token": "interactive-selected",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "#e7eef2",
+      "ratio": 10.849607593589786
+    },
+    {
+      "theme": "light",
+      "selector": ".public-hero-copy > p",
+      "token": "surface",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "#fff",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "selector": ".public-hero-copy > p",
+      "token": "page",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "#f5f7f7",
+      "ratio": 4.969720906577139
+    },
+    {
+      "theme": "light",
+      "selector": ".public-hero-copy > p",
+      "token": "interactive-selected",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "#e7eef2",
+      "ratio": 4.557452651508061
+    },
+    {
+      "theme": "light",
+      "selector": ".public-exam-available p",
+      "token": "surface",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "#fff",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "selector": ".public-exam-available p",
+      "token": "interactive-selected",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "#e7eef2",
+      "ratio": 4.557452651508061
+    },
+    {
+      "theme": "light",
+      "selector": ".public-path p",
+      "token": "surface",
+      "foreground": "rgb(52, 77, 50)",
+      "background": "#fff",
+      "ratio": 9.318334490709798
+    },
+    {
+      "theme": "light",
+      "selector": ".public-path p",
+      "token": "learning-surface",
+      "foreground": "rgb(52, 77, 50)",
+      "background": "#e8eee6",
+      "ratio": 7.899999447094375
+    },
+    {
+      "theme": "light",
+      "selector": ".public-final p",
+      "token": "surface",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "#fff",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "selector": ".public-final p",
+      "token": "interactive-selected",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "#e7eef2",
+      "ratio": 4.557452651508061
+    },
+    {
+      "theme": "light",
+      "selector": ".auth-visual h2",
+      "token": "learning-surface",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "#e8eee6",
+      "ratio": 10.785302302114225
+    },
+    {
+      "theme": "light",
+      "selector": ".auth-visual h2",
+      "token": "interactive-selected",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "#e7eef2",
+      "ratio": 10.849607593589786
+    },
+    {
+      "theme": "light",
+      "selector": ".auth-visual h2",
+      "token": "surface-subtle",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "#edf1f2",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "selector": ".auth-visual p",
+      "token": "learning-surface",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "#e8eee6",
+      "ratio": 4.5304407694088
+    },
+    {
+      "theme": "light",
+      "selector": ".auth-visual p",
+      "token": "interactive-selected",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "#e7eef2",
+      "ratio": 4.557452651508061
+    },
+    {
+      "theme": "light",
+      "selector": ".auth-visual p",
+      "token": "surface-subtle",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "#edf1f2",
+      "ratio": 4.698790194330086
+    },
+    {
+      "theme": "dark",
+      "selector": ".public-hero h1",
+      "token": "surface",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "#222d35",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "selector": ".public-hero h1",
+      "token": "page",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "#182127",
+      "ratio": 15.190344709396944
+    },
+    {
+      "theme": "dark",
+      "selector": ".public-hero h1",
+      "token": "interactive-selected",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "#30414d",
+      "ratio": 9.81914847998805
+    },
+    {
+      "theme": "dark",
+      "selector": ".public-hero-copy > p",
+      "token": "surface",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "#222d35",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "selector": ".public-hero-copy > p",
+      "token": "page",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "#182127",
+      "ratio": 9.078757389006908
+    },
+    {
+      "theme": "dark",
+      "selector": ".public-hero-copy > p",
+      "token": "interactive-selected",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "#30414d",
+      "ratio": 5.868574316243185
+    },
+    {
+      "theme": "dark",
+      "selector": ".public-exam-available p",
+      "token": "surface",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "#222d35",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "selector": ".public-exam-available p",
+      "token": "interactive-selected",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "#30414d",
+      "ratio": 5.868574316243185
+    },
+    {
+      "theme": "dark",
+      "selector": ".public-path p",
+      "token": "surface",
+      "foreground": "rgb(198, 216, 194)",
+      "background": "#222d35",
+      "ratio": 9.367611290890526
+    },
+    {
+      "theme": "dark",
+      "selector": ".public-path p",
+      "token": "learning-surface",
+      "foreground": "rgb(198, 216, 194)",
+      "background": "#303d34",
+      "ratio": 7.598662017479065
+    },
+    {
+      "theme": "dark",
+      "selector": ".public-final p",
+      "token": "surface",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "#222d35",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "selector": ".public-final p",
+      "token": "interactive-selected",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "#30414d",
+      "ratio": 5.868574316243185
+    },
+    {
+      "theme": "dark",
+      "selector": ".auth-visual h2",
+      "token": "learning-surface",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "#303d34",
+      "ratio": 10.598170170170837
+    },
+    {
+      "theme": "dark",
+      "selector": ".auth-visual h2",
+      "token": "interactive-selected",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "#30414d",
+      "ratio": 9.81914847998805
+    },
+    {
+      "theme": "dark",
+      "selector": ".auth-visual h2",
+      "token": "surface-subtle",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "#2b3841",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "selector": ".auth-visual p",
+      "token": "learning-surface",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "#303d34",
+      "ratio": 6.3341693413230615
+    },
+    {
+      "theme": "dark",
+      "selector": ".auth-visual p",
+      "token": "interactive-selected",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "#30414d",
+      "ratio": 5.868574316243185
+    },
+    {
+      "theme": "dark",
+      "selector": ".auth-visual p",
+      "token": "surface-subtle",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "#2b3841",
+      "ratio": 6.690106769140596
+    }
+  ]
+}

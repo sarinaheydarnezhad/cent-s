@@ -30,11 +30,11 @@ Preview Swagger is at `http://127.0.0.1:5108/swagger/index.html`. The local admi
 
 ## Google sign-in
 
-Both tabs on `/login` support Google sign-in alongside password login and registration. No Google SDK or frontend Google credentials are needed. The existing `VITE_CENT_API_URL` / `CENT_BACKEND_URL` configuration also serves Google authentication. The backend creates the authorization URL, OAuth state and S256 PKCE verifier; the frontend stores the five-minute attempt in `sessionStorage`, redirects to that exact URL, validates the callback, and submits the code (or cancellation) and saved proof once. Authentication uses the returned Cent bearer session and expiration, with the same logout and `/me` restoration as password sign-in. Existing sessions without a stored expiration remain supported.
+Both tabs on `/login` support Google sign-in alongside password login and registration. The frontend discovers the backend-selected mode and existing public client ID from `/auth/google/config`. `GisIdToken` uses the official Google Identity Services button, a server nonce/challenge and a single backend verification request; no Google credential is persisted. `AuthorizationCode` retains the backend-generated authorization URL, OAuth state, S256 PKCE verifier and callback flow described below. Both use the same Cent bearer session, expiration, logout, `/me` restoration and intended destination as password sign-in. Existing sessions without a stored expiration remain supported. See [GOOGLE-GIS.md](GOOGLE-GIS.md) for the frontend contract integration, security, local/Cloudflare setup, tests, deployment dependencies and rollback. No new frontend Google environment variable or secret is required.
 
 The local callback is **`http://localhost:5173/cent-s/auth/google/callback`**. Use `localhost` consistently: a flow started at `127.0.0.1` cannot read a `localhost` tab's storage. Changing `VITE_BASE_PATH` changes the callback path, so update the backend and Google registration together.
 
-Operator configuration, if not already set:
+For AuthorizationCode mode only, operator configuration if not already set:
 
 1. Configure a Google **Web application** OAuth client and consent screen (including test users while in Testing). Register `http://localhost:5173` as the local JavaScript origin and the exact local callback above as an authorized redirect URI.
 2. On the backend set `Cent__Google__Enabled=true`, `Cent__Google__ClientId`, **`Cent__Google__ClientSecret` (backend secret environment only)**, `Cent__Google__RedirectUri` to the callback, and `Cent__AllowedOrigins__0=http://localhost:5173`. HTTP loopback callbacks require the backend Development environment. The verified SQLite upgrade needs no further frontend migration.
@@ -87,6 +87,31 @@ Optional browser checks, including their own `package.json` and lockfile, are in
 
 ## Curriculum progress
 
-The backend's bundled five-subject curriculum powers subject/topic selection, targeted practice, source-based study lessons and the **تحلیل شخصی** learning map. Import it as described in the backend's `CENT.md`. The map shows topic accuracy, evidence coverage and provisional subject progress across the complete imported syllabus. Submitted practice and assessment results both update progress; a repeated question replaces its previous evidence rather than increasing the distinct-question count. Reading alone does not change question mastery. The backend persists attempts and computes the estimates from immutable snapshots. **نتایج من** combines the account's real recent results, subject progress, comparable score changes and correctly labeled practice/test history.
+The backend's bundled six-subject curriculum powers subject/topic selection, targeted practice, source-based study lessons and the **تحلیل شخصی** learning map. Import it as described in the backend's `CENT.md`. The map shows topic accuracy, evidence coverage and provisional subject progress across the imported syllabus. A repeated question replaces its previous evidence rather than increasing the distinct-question count. Reading alone does not change question mastery. Historical assessment behavior remains compatible; versioned Mock Exam scores remain separate from educational mastery.
 
 The homepage, course introduction and course selection use public curriculum metadata from the backend. `/courses/:code` shows the actual source lessons, chapters and skills. There are no hardcoded course cards, fictional progress percentages or sample-course fallbacks. Source text still requires purchased access, and course prices come from configured backend products.
+
+## Subject commerce and local verification
+
+`/package` shows the six canonical subjects and database-derived published, initially reviewed and unpublished counts. New purchases use server quotes: 4,900,000 IRR (490,000 Toman) per subject, with distinct-count discounts of 0/5/10/15/20/25%. Quotes last 15 minutes. Checkout retains the same quote/request/order on retry. New subject orders extend the existing payment and entitlement services; legacy financial records remain compatible.
+
+Verified settlement creates one finite item per subject. Each UTC interval ends exclusively after 12 calendar months; leap days clamp to the last day of the target month. Explicit renewals queue after contiguous paid coverage without changing previous items. Account history exposes active, upcoming, expired and revoked access. Protected sources resolve the purchased immutable release and exclude unreviewed legacy lessons. New passage-aware Practice requires subject access; legacy diagnostic/Practice contracts remain readable. `Cent:Commerce:MockAdmissionPolicy=all-subjects-v1` conservatively requires every subject in the selected full-mock blueprint at start; default subject-based admission is closed. Started attempts keep their snapshots and deadlines after entitlement expiry.
+
+The additive `SubjectCommerce` SQL Server migration has an offline idempotent script; it was not applied to SQL Server here. Disposable local commerce checks use SQLite schema creation from the current model. SQL Server LocalDB could not start, so full-mock SQL locking/activation remains unverified locally. No production migration, deployment or real charge is included.
+
+To reproduce the fake-payment browser flow, build `backend/Cent.Preview/Cent.Preview.csproj` from the Backend checkout into `.dotnet/phase5-preview`, then launch that DLL with these arguments (choose a new disposable filename each launch):
+
+```powershell
+dotnet .dotnet/phase5-preview/Cent.Preview.dll --urls http://127.0.0.1:5115 --isolated-database D:/Lerona/Backend/.dotnet/phase5-preview/App_Data/isolated/commerce-unique.db --import-curriculum true --prepare-subject-offers true --sandbox-subject-offers true --Cent:ClientBaseUrl http://localhost:5185/cent-s --Cent:PublicApiBaseUrl http://127.0.0.1:5115 --Cent:Commerce:MockAdmissionPolicy all-subjects-v1
+```
+
+`--sandbox-subject-offers` is limited to a new disposable database and the Development fake gateway. Its test approval is not independent academic acceptance. Normal offers are inactive and require an explicit admin review confirmation. Admin preparation/approval uses `/admin/subject-offers/prepare` and `/admin/subject-offers/{subjectId}`; recommendations use `/admin/recommended-bundles/{id}` and the same pricing rules. Only the defensible complete-six recommendation is seeded. Live merchant credentials and content acceptance remain external release requirements.
+
+From this frontend checkout:
+
+```powershell
+$env:CENT_BACKEND_URL='http://127.0.0.1:5115'
+npm.cmd run dev -- --host 127.0.0.1 --port 5185 --strictPort
+```
+
+Open `http://localhost:5185/cent-s/package`. Run `npm.cmd --prefix tests/browser run test:commerce-real` for real local HTTP/browser tests; no request interception or real payments are used. Its sanitized results, exact content counts and screenshots are written to `.preview-artifacts/phase5-commerce/`. Run backend checks with the CEnT-only `backend/Cent.Exam.Tests/Cent.Exam.Tests.csproj`; it does not build or run Lerona projects.

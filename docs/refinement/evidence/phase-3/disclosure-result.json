@@ -1,0 +1,8 @@
+{
+  "success": true,
+  "kind": "Synthetic student session; focus regression only; no private-page redesign",
+  "checks": [
+    "Safe close button still takes focus",
+    "Escape closes/restores trigger"
+  ]
+}

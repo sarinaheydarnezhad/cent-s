@@ -5,14 +5,15 @@ export interface StoreProduct { id: string; title: string; kind: 'TRAINING' | 'S
 export interface StudyDocument { id: string; trainingId: string; sourceId?: string | null; title: string; pageCount: number; sortOrder: number; published?: boolean }
 export interface StudyNote { id: string; documentId: string; documentTitle?: string; page: number; anchorY: number; body: string; revision: number; updatedAt: string }
 export interface StudyProgress { documentId: string; lastPage: number; furthestPage: number; updatedAt: string }
-export interface Entitlement { id: string; kind: 'TRAINING' | 'SUBSCRIPTION'; trainingId: string | null; startsAt: string; expiresAt: string | null; revokedAt: string | null }
-export interface Library { trainings: Training[]; documents: StudyDocument[]; notes: { documentId: string; count: number }[]; progress: StudyProgress[]; entitlements: Entitlement[]; hasSubscription: boolean; readableTrainingIds: string[] }
-export interface PurchaseOrder { id: string; title: string; kind: string; amountRial: number; status: string; provider: string; reference: string | null; createdAt: string }
+export interface Entitlement { id: string; orderId?: string; kind: 'TRAINING' | 'SUBSCRIPTION'; trainingId: string | null; startsAt: string; expiresAt: string | null; revokedAt: string | null }
+export interface Library { trainings: Training[]; documents: StudyDocument[]; notes: { documentId: string; count: number }[]; progress: StudyProgress[]; entitlements: Entitlement[]; subjectAccess?: { subjectId: string; startsAt: string; expiresAt: string; revokedAt: string | null }[]; hasSubscription: boolean; readableTrainingIds: string[]; readableDocumentIds?: string[] }
+export interface PurchaseOrder { id: string; title: string; kind: string; amountRial: number; status: string; provider: string; reference: string | null; createdAt: string; paidAt?: string | null; productId?: string; requestId?: string; trainingId?: string | null; durationDays?: number | null }
+export interface CheckoutResponse { id: string; redirectUrl: string; status?: string; amountRial?: number }
 export interface StudyData { document: StudyDocument; sections: { title: string; startPage: number }[]; notes: StudyNote[]; progress: StudyProgress | null; watermark: string }
-export interface ExamQuestion { id: string; subject: string; topic: string; topicId?: string; sourceSectionId?: string; figureSvg?: string; difficulty: 'easy' | 'medium' | 'hard'; text: string; options: string[] }
-export interface ExamAttempt { id: string; kind: string; expiresAt: string; questions: ExamQuestion[] }
-export interface ExamOutcome { result: DiagnosticResult; analysis: AIAnalysis; review: { id: string; topic: string; correctAnswer: number; explanation: string }[] }
-export interface Curriculum { courses: { code: string; title: string; trainingId: string }[]; chapters: { id: string; title: string; courseCode: string }[]; topics: { id: string; chapterId: string; courseCode: string; title: string; questionCount: number }[]; documents: StudyDocument[] }
+export interface ExamQuestion { id: string; subject: string; topic: string; topicId?: string; sourceSectionId?: string; figureSvg?: string; passageId?: string | null; difficulty: 'easy' | 'medium' | 'hard'; text: string; options: string[] }
+export interface ExamAttempt { id: string; kind: string; expiresAt: string; questions: ExamQuestion[]; contentContract?: 'passage-v1' | null; passages?: { id: string; text: string }[] }
+export interface ExamOutcome { result: DiagnosticResult; analysis: AIAnalysis; contentContract?: 'passage-v1' | null; passages?: { id: string; text: string }[]; review: { id: string; topic: string; correctAnswer: number; explanation: string; text?: string; options?: string[]; passageId?: string | null; figureSvg?: string | null }[] }
+export interface Curriculum { syllabusRevisionId?: string | null; courses: { code: string; title: string; trainingId: string; supportsLegacyAssessment?: boolean }[]; chapters: { id: string; title: string; courseCode: string }[]; topics: { id: string; chapterId: string; courseCode: string; title: string; questionCount: number; contentContract?: 'passage-v1' | null }[]; documents: StudyDocument[] }
 export interface MasteryTopic { id: string; chapterId: string; title: string; evidenceQuestions: number; availableQuestions: number; accuracyPercentage: number | null; masteryPercentage: number | null; status: string }
 export interface MasteryReport { courses: { code: string; title: string; totalTopics: number; assessedTopics: number; coveragePercentage: number; confirmedProgressPercentage: number; assessedAccuracyPercentage: number | null; topics: MasteryTopic[] }[] }
 export interface SourceSection { id: string; topicId: string | null; heading: string; sortOrder: number; text: string }
@@ -20,7 +21,7 @@ export interface AuthSession { token: string; expiresAt: string; user: SessionUs
 export interface GoogleAuthStart { authorizationUrl: string; state: string; codeVerifier: string; expiresAt: string }
 export type GoogleAuthComplete = { state: string; codeVerifier: string } & ({ code: string; error?: never } | { error: string; code?: never })
 
-const base = (import.meta.env.VITE_CENT_API_URL || '/api/cent/v1').replace(/\/$/, '')
+export const centApiBase = (import.meta.env.VITE_CENT_API_URL || '/api/cent/v1').replace(/\/$/, '')
 const tokenKey = 'cent:session:v1'
 const expiryKey = 'cent:session-expiry:v1'
 function readSession(key: string): string | null {
@@ -58,7 +59,7 @@ export async function centRequest<T>(path: string, init: RequestInit = {}, retry
   const headers = new Headers(init.headers)
   if (!(init.body instanceof Blob)) headers.set('Content-Type', 'application/json')
   if (token) headers.set('Authorization', `Bearer ${token}`)
-  const response = await fetch(base + path, { ...init, headers, cache: 'no-store', credentials: 'omit' })
+  const response = await fetch(centApiBase + path, { ...init, headers, cache: 'no-store', credentials: 'omit' })
   if (!response.ok) {
     if ((!init.method || init.method === 'GET') && [429, 503].includes(response.status) && retry < 2 && !init.signal?.aborted) {
       const delay = Math.min(5, Number(response.headers.get('Retry-After')) || 1) * 1000
@@ -97,14 +98,21 @@ export const cent = {
   document: (id: string) => centRequest<StudyData>(`/documents/${id}`),
   sourceSections: (id: string) => centRequest<SourceSection[]>(`/documents/${id}/source-sections`),
   curriculum: loadCurriculum,
-  mastery: () => centRequest<MasteryReport>('/me/mastery'),
+  mastery: async () => {
+    const curriculum = await loadCurriculum()
+    return centRequest<MasteryReport>(`/me/mastery${curriculum.syllabusRevisionId ? `?syllabusRevisionId=${encodeURIComponent(curriculum.syllabusRevisionId)}` : ''}`)
+  },
   page: (id: string, page: number, signal: AbortSignal) => centRequest<Blob>(`/documents/${id}/pages/${page}`, { signal }),
   saveNote: (note: Pick<StudyNote, 'id' | 'documentId' | 'page' | 'anchorY' | 'body' | 'revision'>) => centRequest<StudyNote>(`/notes/${note.id}`, { method: 'PUT', body: JSON.stringify(note) }),
   deleteNote: (note: StudyNote) => centRequest<void>(`/notes/${note.id}?revision=${note.revision}`, { method: 'DELETE' }),
   progress: (id: string, page: number) => centRequest<StudyProgress>(`/documents/${id}/progress`, { method: 'PUT', body: JSON.stringify({ page }) }),
-  checkout: (productId: string, requestId: string) => post<{ id: string; redirectUrl: string }>('/checkout', { productId, requestId }),
+  checkout: (productId: string, requestId: string) => post<CheckoutResponse>('/checkout', { productId, requestId }),
   verify: (id: string) => post<{ paid: boolean }>(`/me/orders/${id}/verify`, {}),
-  startExam: (kind: string, requestId: string, course?: string, topicId?: string) => post<ExamAttempt>('/attempts/', { kind, requestId, course, topicId }),
+  startExam: async (kind: string, requestId: string, course?: string, topicId?: string) => {
+    const curriculum = kind === 'practice' ? await loadCurriculum() : null
+    const passageAware = curriculum?.topics.some(t => (!course || t.courseCode === course) && (!topicId || t.id === topicId) && t.contentContract === 'passage-v1')
+    return post<ExamAttempt>('/attempts/', { kind, requestId, course, topicId, ...(passageAware ? { contentContract: 'passage-v1' } : {}) })
+  },
   submitExam: (id: string, answers: Record<string, number | null>) => post<ExamOutcome>(`/attempts/${id}/submit`, { answers }),
   outcome: (id: string) => centRequest<ExamOutcome>(`/attempts/${id}`),
   attempts: () => centRequest<{ id: string; kind: string; createdAt: string; resultJson: string }[]>('/attempts/'),

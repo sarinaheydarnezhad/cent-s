@@ -1,5 +1,11 @@
 # Cent on Cloudflare Pages
 
+For Google Identity Services mode, follow [GOOGLE-GIS.md](GOOGLE-GIS.md) before
+publishing. The backend must already support `/auth/google/config`; it supplies
+the mode and public client ID. No new Vite variable is needed. `public/_headers`
+adds login popup compatibility and retains callback security headers. Review any
+external CSP/COOP/cache/analytics rules; no live settings are changed by these files.
+
 The Pages project is `itatest`, with production branch `main` and custom hosts
 `itatest.ir` and `www.itatest.ir`. The Cent API remains on Liara at
 `https://lerona-app.com/api/cent/v1`; `lerona-api` is the Liara application name.

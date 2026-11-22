@@ -1,0 +1,1789 @@
+[
+    {
+        "filePath":  "D:\\app\\itatest\\eslint.config.js",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\scripts\\finish-build.mjs",
+        "messages":  [
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027URL\u0027 is not defined.",
+                             "line":  3,
+                             "column":  22,
+                             "messageId":  "undef",
+                             "endLine":  3,
+                             "endColumn":  25
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027process\u0027 is not defined.",
+                             "line":  4,
+                             "column":  5,
+                             "messageId":  "undef",
+                             "endLine":  4,
+                             "endColumn":  12
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027process\u0027 is not defined.",
+                             "line":  4,
+                             "column":  50,
+                             "messageId":  "undef",
+                             "endLine":  4,
+                             "endColumn":  57
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027URL\u0027 is not defined.",
+                             "line":  9,
+                             "column":  20,
+                             "messageId":  "undef",
+                             "endLine":  9,
+                             "endColumn":  23
+                         }
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  4,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\scripts\\prepare-pdf-assets.mjs",
+        "messages":  [
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027URL\u0027 is not defined.",
+                             "line":  4,
+                             "column":  18,
+                             "messageId":  "undef",
+                             "endLine":  4,
+                             "endColumn":  21
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027URL\u0027 is not defined.",
+                             "line":  6,
+                             "column":  22,
+                             "messageId":  "undef",
+                             "endLine":  6,
+                             "endColumn":  25
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027URL\u0027 is not defined.",
+                             "line":  8,
+                             "column":  28,
+                             "messageId":  "undef",
+                             "endLine":  8,
+                             "endColumn":  31
+                         }
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  3,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\App.tsx",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\components\\Brand.tsx",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\components\\CentUI.tsx",
+        "messages":  [
+                         {
+                             "ruleId":  "react-hooks/set-state-in-effect",
+                             "severity":  2,
+                             "message":  "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\nD:\\app\\itatest\\src\\components\\CentUI.tsx:13:5\n  11 |   useEffect(() =\u003e {\n  12 |     let active = true\n\u003e 13 |     setBusy(true); setError(\u0027\u0027)\n     |     ^^^^^^^ Avoid calling setState() directly within an effect\n  14 |     fetcher().then(d =\u003e { if (active) setData(d) }).catch(e =\u003e { if (active) setError(e instanceof Error ? e.message : \u0027ارتباط برقرار نشد.\u0027) }).finally(() =\u003e { if (active) setBusy(false) })\n  15 |     return () =\u003e { active = false }\n  16 |   }, [fetcher, revision])",
+                             "line":  13,
+                             "column":  5,
+                             "endLine":  13,
+                             "endColumn":  12
+                         }
+                     ],
+        "suppressedMessages":  [
+                                   {
+                                       "ruleId":  "react-refresh/only-export-components",
+                                       "severity":  1,
+                                       "message":  "Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.",
+                                       "line":  5,
+                                       "column":  17,
+                                       "messageId":  "namedExport",
+                                       "endLine":  5,
+                                       "endColumn":  26,
+                                       "suppressions":  [
+                                                            {
+                                                                "kind":  "directive",
+                                                                "justification":  ""
+                                                            }
+                                                        ]
+                                   }
+                               ],
+        "errorCount":  1,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\components\\DashboardLayout.tsx",
+        "messages":  [
+                         {
+                             "ruleId":  "@typescript-eslint/no-unused-vars",
+                             "severity":  2,
+                             "message":  "\u0027Database\u0027 is defined but never used.",
+                             "line":  3,
+                             "column":  91,
+                             "messageId":  "unusedVar",
+                             "endLine":  3,
+                             "endColumn":  99,
+                             "suggestions":  [
+                                                 {
+                                                     "messageId":  "removeUnusedVar",
+                                                     "data":  {
+                                                                  "varName":  "Database"
+                                                              },
+                                                     "fix":  {
+                                                                 "range":  [
+                                                                               187,
+                                                                               197
+                                                                           ],
+                                                                 "text":  ""
+                                                             },
+                                                     "desc":  "Remove unused variable \"Database\"."
+                                                 }
+                                             ]
+                         },
+                         {
+                             "ruleId":  "@typescript-eslint/no-unused-vars",
+                             "severity":  2,
+                             "message":  "\u0027Sparkles\u0027 is defined but never used.",
+                             "line":  3,
+                             "column":  157,
+                             "messageId":  "unusedVar",
+                             "endLine":  3,
+                             "endColumn":  165,
+                             "suggestions":  [
+                                                 {
+                                                     "messageId":  "removeUnusedVar",
+                                                     "data":  {
+                                                                  "varName":  "Sparkles"
+                                                              },
+                                                     "fix":  {
+                                                                 "range":  [
+                                                                               253,
+                                                                               263
+                                                                           ],
+                                                                 "text":  ""
+                                                             },
+                                                     "desc":  "Remove unused variable \"Sparkles\"."
+                                                 }
+                                             ]
+                         },
+                         {
+                             "ruleId":  "@typescript-eslint/no-unused-vars",
+                             "severity":  2,
+                             "message":  "\u0027Webhook\u0027 is defined but never used.",
+                             "line":  3,
+                             "column":  187,
+                             "messageId":  "unusedVar",
+                             "endLine":  3,
+                             "endColumn":  194,
+                             "suggestions":  [
+                                                 {
+                                                     "messageId":  "removeUnusedVar",
+                                                     "data":  {
+                                                                  "varName":  "Webhook"
+                                                              },
+                                                     "fix":  {
+                                                                 "range":  [
+                                                                               283,
+                                                                               292
+                                                                           ],
+                                                                 "text":  ""
+                                                             },
+                                                     "desc":  "Remove unused variable \"Webhook\"."
+                                                 }
+                                             ]
+                         }
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  3,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\components\\JourneyNav.tsx",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\components\\ProtectedRoute.tsx",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\components\\PublicLayout.tsx",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\components\\UI.tsx",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\data\\questions.ts",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\main.tsx",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\pages\\CommercePages.tsx",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\pages\\CourseCatalog.tsx",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\pages\\LearningProgress.tsx",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\pages\\PersonalResults.tsx",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\pages\\PracticePages.tsx",
+        "messages":  [
+                         {
+                             "ruleId":  "react-hooks/set-state-in-effect",
+                             "severity":  2,
+                             "message":  "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\nD:\\app\\itatest\\src\\pages\\PracticePages.tsx:40:72\n  38 |     try {\n  39 |       const saved = JSON.parse(sessionStorage.getItem(storageKey) || \u0027null\u0027) as { attempt: ExamAttempt; answers: AnswerMap } | null\n\u003e 40 |       if (saved \u0026\u0026 Date.parse(saved.attempt.expiresAt) \u003e Date.now()) { setAttempt(saved.attempt); setAnswers(saved.answers) }\n     |                                                                        ^^^^^^^^^^ Avoid calling setState() directly within an effect\n  41 |       else sessionStorage.removeItem(storageKey)\n  42 |     } catch { sessionStorage.removeItem(storageKey) }\n  43 |   }, [storageKey])",
+                             "line":  40,
+                             "column":  72,
+                             "endLine":  40,
+                             "endColumn":  82
+                         }
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  1,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\pages\\StudyReader.tsx",
+        "messages":  [
+                         {
+                             "ruleId":  "react-hooks/set-state-in-effect",
+                             "severity":  2,
+                             "message":  "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\nD:\\app\\itatest\\src\\pages\\StudyReader.tsx:40:5\n  38 |     if (!remote.data) return\n  39 |     const requested = Number(params.get(\u0027page\u0027))\n\u003e 40 |     setPage(Number.isInteger(requested) \u0026\u0026 requested \u003e= 1 \u0026\u0026 requested \u003c= remote.data.document.pageCount ? requested : remote.data.progress?.lastPage || 1)\n     |     ^^^^^^^ Avoid calling setState() directly within an effect\n  41 |     setNotes(remote.data.notes)\n  42 |   }, [remote.data, params])\n  43 |",
+                             "line":  40,
+                             "column":  5,
+                             "endLine":  40,
+                             "endColumn":  12
+                         },
+                         {
+                             "ruleId":  "react-hooks/set-state-in-effect",
+                             "severity":  2,
+                             "message":  "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\nD:\\app\\itatest\\src\\pages\\StudyReader.tsx:47:5\n  45 |     if (!page) return\n  46 |     newNoteId.current = crypto.randomUUID()\n\u003e 47 |     setEditing(null); setAnchorY(0.15); setSaveState(\u0027\u0027)\n     |     ^^^^^^^^^^ Avoid calling setState() directly within an effect\n  48 |     try { setDraft(localStorage.getItem(draftKey) || \u0027\u0027) } catch { setDraft(\u0027\u0027) }\n  49 |   }, [draftKey, page])\n  50 |",
+                             "line":  47,
+                             "column":  5,
+                             "endLine":  47,
+                             "endColumn":  15
+                         },
+                         {
+                             "ruleId":  "react-hooks/set-state-in-effect",
+                             "severity":  2,
+                             "message":  "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\nD:\\app\\itatest\\src\\pages\\StudyReader.tsx:63:5\n  61 |     if (!sourceId) return\n  62 |     let disposed = false\n\u003e 63 |     setPageBusy(true); setPageError(\u0027\u0027)\n     |     ^^^^^^^^^^^ Avoid calling setState() directly within an effect\n  64 |     cent.sourceSections(id).then(rows =\u003e { if (!disposed) setSourceSections(rows) }).catch(e =\u003e { if (!disposed) setPageError(e.message) }).finally(() =\u003e { if (!disposed) setPageBusy(false) })\n  65 |     return () =\u003e { disposed = true }\n  66 |   }, [id, sourceId, retryPage])",
+                             "line":  63,
+                             "column":  5,
+                             "endLine":  63,
+                             "endColumn":  16
+                         },
+                         {
+                             "ruleId":  "react-hooks/set-state-in-effect",
+                             "severity":  2,
+                             "message":  "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\nD:\\app\\itatest\\src\\pages\\StudyReader.tsx:72:5\n  70 |     let url: string | undefined\n  71 |     let disposed = false\n\u003e 72 |     setPageBusy(true); setPageError(\u0027\u0027)\n     |     ^^^^^^^^^^^ Avoid calling setState() directly within an effect\n  73 |     const surface = canvas.current\n  74 |     if (surface) { const ctx = surface.getContext(\u00272d\u0027); ctx?.clearRect(0, 0, surface.width, surface.height) }\n  75 |     cent.page(id, page, controller.signal).then(blob =\u003e new Promise\u003cHTMLImageElement\u003e((resolve, reject) =\u003e {",
+                             "line":  72,
+                             "column":  5,
+                             "endLine":  72,
+                             "endColumn":  16
+                         }
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  4,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\pages\\admin\\CentAdmin.tsx",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\pages\\public\\DiagnosticIntroPage.tsx",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\pages\\public\\ExamPage.tsx",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\pages\\public\\GoogleCallbackPage.tsx",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\pages\\public\\HomePage.tsx",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\pages\\public\\LoginPage.tsx",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\pages\\public\\NotFoundPage.tsx",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\services\\cent.ts",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\services\\google-auth.test.ts",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\services\\google-auth.ts",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\services\\pdf-upload.ts",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\services\\scoring.test.ts",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\services\\scoring.ts",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\services\\session.test.ts",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\services\\study-return.ts",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\state\\AppState.tsx",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+                                   {
+                                       "ruleId":  "react-refresh/only-export-components",
+                                       "severity":  1,
+                                       "message":  "Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.",
+                                       "line":  83,
+                                       "column":  17,
+                                       "messageId":  "namedExport",
+                                       "endLine":  83,
+                                       "endColumn":  28,
+                                       "suppressions":  [
+                                                            {
+                                                                "kind":  "directive",
+                                                                "justification":  ""
+                                                            }
+                                                        ]
+                                   }
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\types.ts",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\src\\vite-env.d.ts",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\tests\\browser\\check-courses.mjs",
+        "messages":  [
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027fetch\u0027 is not defined.",
+                             "line":  7,
+                             "column":  24,
+                             "messageId":  "undef",
+                             "endLine":  7,
+                             "endColumn":  29
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027document\u0027 is not defined.",
+                             "line":  33,
+                             "column":  39,
+                             "messageId":  "undef",
+                             "endLine":  33,
+                             "endColumn":  47
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027innerWidth\u0027 is not defined.",
+                             "line":  33,
+                             "column":  79,
+                             "messageId":  "undef",
+                             "endLine":  33,
+                             "endColumn":  89
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027console\u0027 is not defined.",
+                             "line":  49,
+                             "column":  3,
+                             "messageId":  "undef",
+                             "endLine":  49,
+                             "endColumn":  10
+                         }
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  4,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\tests\\browser\\check-curriculum.mjs",
+        "messages":  [
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027fetch\u0027 is not defined.",
+                             "line":  8,
+                             "column":  26,
+                             "messageId":  "undef",
+                             "endLine":  8,
+                             "endColumn":  31
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027crypto\u0027 is not defined.",
+                             "line":  20,
+                             "column":  19,
+                             "messageId":  "undef",
+                             "endLine":  20,
+                             "endColumn":  25
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027crypto\u0027 is not defined.",
+                             "line":  22,
+                             "column":  89,
+                             "messageId":  "undef",
+                             "endLine":  22,
+                             "endColumn":  95
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027sessionStorage\u0027 is not defined.",
+                             "line":  35,
+                             "column":  32,
+                             "messageId":  "undef",
+                             "endLine":  35,
+                             "endColumn":  46
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027sessionStorage\u0027 is not defined.",
+                             "line":  40,
+                             "column":  29,
+                             "messageId":  "undef",
+                             "endLine":  40,
+                             "endColumn":  43
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027sessionStorage\u0027 is not defined.",
+                             "line":  41,
+                             "column":  23,
+                             "messageId":  "undef",
+                             "endLine":  41,
+                             "endColumn":  37
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027document\u0027 is not defined.",
+                             "line":  60,
+                             "column":  39,
+                             "messageId":  "undef",
+                             "endLine":  60,
+                             "endColumn":  47
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027innerWidth\u0027 is not defined.",
+                             "line":  60,
+                             "column":  79,
+                             "messageId":  "undef",
+                             "endLine":  60,
+                             "endColumn":  89
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027console\u0027 is not defined.",
+                             "line":  72,
+                             "column":  3,
+                             "messageId":  "undef",
+                             "endLine":  72,
+                             "endColumn":  10
+                         }
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  9,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\tests\\browser\\check-google-auth.mjs",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\tests\\browser\\check-notes.mjs",
+        "messages":  [
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027fetch\u0027 is not defined.",
+                             "line":  8,
+                             "column":  26,
+                             "messageId":  "undef",
+                             "endLine":  8,
+                             "endColumn":  31
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027crypto\u0027 is not defined.",
+                             "line":  17,
+                             "column":  19,
+                             "messageId":  "undef",
+                             "endLine":  17,
+                             "endColumn":  25
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027crypto\u0027 is not defined.",
+                             "line":  19,
+                             "column":  89,
+                             "messageId":  "undef",
+                             "endLine":  19,
+                             "endColumn":  95
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027sessionStorage\u0027 is not defined.",
+                             "line":  28,
+                             "column":  32,
+                             "messageId":  "undef",
+                             "endLine":  28,
+                             "endColumn":  46
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027URL\u0027 is not defined.",
+                             "line":  37,
+                             "column":  86,
+                             "messageId":  "undef",
+                             "endLine":  37,
+                             "endColumn":  89
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027console\u0027 is not defined.",
+                             "line":  89,
+                             "column":  3,
+                             "messageId":  "undef",
+                             "endLine":  89,
+                             "endColumn":  10
+                         }
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  6,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\tests\\browser\\check-personal-progress.mjs",
+        "messages":  [
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027fetch\u0027 is not defined.",
+                             "line":  8,
+                             "column":  26,
+                             "messageId":  "undef",
+                             "endLine":  8,
+                             "endColumn":  31
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027crypto\u0027 is not defined.",
+                             "line":  19,
+                             "column":  136,
+                             "messageId":  "undef",
+                             "endLine":  19,
+                             "endColumn":  142
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027sessionStorage\u0027 is not defined.",
+                             "line":  34,
+                             "column":  32,
+                             "messageId":  "undef",
+                             "endLine":  34,
+                             "endColumn":  46
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027document\u0027 is not defined.",
+                             "line":  64,
+                             "column":  39,
+                             "messageId":  "undef",
+                             "endLine":  64,
+                             "endColumn":  47
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027innerWidth\u0027 is not defined.",
+                             "line":  64,
+                             "column":  79,
+                             "messageId":  "undef",
+                             "endLine":  64,
+                             "endColumn":  89
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027sessionStorage\u0027 is not defined.",
+                             "line":  67,
+                             "column":  32,
+                             "messageId":  "undef",
+                             "endLine":  67,
+                             "endColumn":  46
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027console\u0027 is not defined.",
+                             "line":  74,
+                             "column":  3,
+                             "messageId":  "undef",
+                             "endLine":  74,
+                             "endColumn":  10
+                         }
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  7,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\tests\\browser\\check-recovery.mjs",
+        "messages":  [
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027fetch\u0027 is not defined.",
+                             "line":  5,
+                             "column":  26,
+                             "messageId":  "undef",
+                             "endLine":  5,
+                             "endColumn":  31
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027fetch\u0027 is not defined.",
+                             "line":  6,
+                             "column":  63,
+                             "messageId":  "undef",
+                             "endLine":  6,
+                             "endColumn":  68
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027fetch\u0027 is not defined.",
+                             "line":  8,
+                             "column":  19,
+                             "messageId":  "undef",
+                             "endLine":  8,
+                             "endColumn":  24
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027sessionStorage\u0027 is not defined.",
+                             "line":  13,
+                             "column":  60,
+                             "messageId":  "undef",
+                             "endLine":  13,
+                             "endColumn":  74
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027document\u0027 is not defined.",
+                             "line":  15,
+                             "column":  170,
+                             "messageId":  "undef",
+                             "endLine":  15,
+                             "endColumn":  178
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027console\u0027 is not defined.",
+                             "line":  17,
+                             "column":  141,
+                             "messageId":  "undef",
+                             "endLine":  17,
+                             "endColumn":  148
+                         }
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  6,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\tests\\browser\\check-study-return.mjs",
+        "messages":  [
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027fetch\u0027 is not defined.",
+                             "line":  8,
+                             "column":  26,
+                             "messageId":  "undef",
+                             "endLine":  8,
+                             "endColumn":  31
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027crypto\u0027 is not defined.",
+                             "line":  17,
+                             "column":  19,
+                             "messageId":  "undef",
+                             "endLine":  17,
+                             "endColumn":  25
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027crypto\u0027 is not defined.",
+                             "line":  19,
+                             "column":  89,
+                             "messageId":  "undef",
+                             "endLine":  19,
+                             "endColumn":  95
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027sessionStorage\u0027 is not defined.",
+                             "line":  32,
+                             "column":  32,
+                             "messageId":  "undef",
+                             "endLine":  32,
+                             "endColumn":  46
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027URL\u0027 is not defined.",
+                             "line":  37,
+                             "column":  20,
+                             "messageId":  "undef",
+                             "endLine":  37,
+                             "endColumn":  23
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027sessionStorage\u0027 is not defined.",
+                             "line":  43,
+                             "column":  29,
+                             "messageId":  "undef",
+                             "endLine":  43,
+                             "endColumn":  43
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027URL\u0027 is not defined.",
+                             "line":  50,
+                             "column":  20,
+                             "messageId":  "undef",
+                             "endLine":  50,
+                             "endColumn":  23
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027sessionStorage\u0027 is not defined.",
+                             "line":  56,
+                             "column":  29,
+                             "messageId":  "undef",
+                             "endLine":  56,
+                             "endColumn":  43
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027sessionStorage\u0027 is not defined.",
+                             "line":  57,
+                             "column":  23,
+                             "messageId":  "undef",
+                             "endLine":  57,
+                             "endColumn":  37
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027URL\u0027 is not defined.",
+                             "line":  64,
+                             "column":  20,
+                             "messageId":  "undef",
+                             "endLine":  64,
+                             "endColumn":  23
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027URL\u0027 is not defined.",
+                             "line":  71,
+                             "column":  20,
+                             "messageId":  "undef",
+                             "endLine":  71,
+                             "endColumn":  23
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027console\u0027 is not defined.",
+                             "line":  81,
+                             "column":  3,
+                             "messageId":  "undef",
+                             "endLine":  81,
+                             "endColumn":  10
+                         }
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  12,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\tests\\browser\\check.mjs",
+        "messages":  [
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027fetch\u0027 is not defined.",
+                             "line":  7,
+                             "column":  26,
+                             "messageId":  "undef",
+                             "endLine":  7,
+                             "endColumn":  31
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027fetch\u0027 is not defined.",
+                             "line":  10,
+                             "column":  25,
+                             "messageId":  "undef",
+                             "endLine":  10,
+                             "endColumn":  30
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027crypto\u0027 is not defined.",
+                             "line":  14,
+                             "column":  20,
+                             "messageId":  "undef",
+                             "endLine":  14,
+                             "endColumn":  26
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027crypto\u0027 is not defined.",
+                             "line":  14,
+                             "column":  51,
+                             "messageId":  "undef",
+                             "endLine":  14,
+                             "endColumn":  57
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027crypto\u0027 is not defined.",
+                             "line":  14,
+                             "column":  87,
+                             "messageId":  "undef",
+                             "endLine":  14,
+                             "endColumn":  93
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027Buffer\u0027 is not defined.",
+                             "line":  24,
+                             "column":  49,
+                             "messageId":  "undef",
+                             "endLine":  24,
+                             "endColumn":  55
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027Buffer\u0027 is not defined.",
+                             "line":  25,
+                             "column":  13,
+                             "messageId":  "undef",
+                             "endLine":  25,
+                             "endColumn":  19
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027console\u0027 is not defined.",
+                             "line":  32,
+                             "column":  43,
+                             "messageId":  "undef",
+                             "endLine":  32,
+                             "endColumn":  50
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027console\u0027 is not defined.",
+                             "line":  32,
+                             "column":  111,
+                             "messageId":  "undef",
+                             "endLine":  32,
+                             "endColumn":  118
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027process\u0027 is not defined.",
+                             "line":  33,
+                             "column":  1,
+                             "messageId":  "undef",
+                             "endLine":  33,
+                             "endColumn":  8
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027console\u0027 is not defined.",
+                             "line":  33,
+                             "column":  46,
+                             "messageId":  "undef",
+                             "endLine":  33,
+                             "endColumn":  53
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027console\u0027 is not defined.",
+                             "line":  33,
+                             "column":  64,
+                             "messageId":  "undef",
+                             "endLine":  33,
+                             "endColumn":  71
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027console\u0027 is not defined.",
+                             "line":  33,
+                             "column":  91,
+                             "messageId":  "undef",
+                             "endLine":  33,
+                             "endColumn":  98
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027process\u0027 is not defined.",
+                             "line":  33,
+                             "column":  253,
+                             "messageId":  "undef",
+                             "endLine":  33,
+                             "endColumn":  260
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027console\u0027 is not defined.",
+                             "line":  34,
+                             "column":  287,
+                             "messageId":  "undef",
+                             "endLine":  34,
+                             "endColumn":  294
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027console\u0027 is not defined.",
+                             "line":  35,
+                             "column":  426,
+                             "messageId":  "undef",
+                             "endLine":  35,
+                             "endColumn":  433
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027console\u0027 is not defined.",
+                             "line":  37,
+                             "column":  533,
+                             "messageId":  "undef",
+                             "endLine":  37,
+                             "endColumn":  540
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027document\u0027 is not defined.",
+                             "line":  40,
+                             "column":  348,
+                             "messageId":  "undef",
+                             "endLine":  40,
+                             "endColumn":  356
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027document\u0027 is not defined.",
+                             "line":  40,
+                             "column":  415,
+                             "messageId":  "undef",
+                             "endLine":  40,
+                             "endColumn":  423
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027document\u0027 is not defined.",
+                             "line":  42,
+                             "column":  227,
+                             "messageId":  "undef",
+                             "endLine":  42,
+                             "endColumn":  235
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027document\u0027 is not defined.",
+                             "line":  43,
+                             "column":  165,
+                             "messageId":  "undef",
+                             "endLine":  43,
+                             "endColumn":  173
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027innerWidth\u0027 is not defined.",
+                             "line":  43,
+                             "column":  202,
+                             "messageId":  "undef",
+                             "endLine":  43,
+                             "endColumn":  212
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027console\u0027 is not defined.",
+                             "line":  47,
+                             "column":  196,
+                             "messageId":  "undef",
+                             "endLine":  47,
+                             "endColumn":  203
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027console\u0027 is not defined.",
+                             "line":  49,
+                             "column":  207,
+                             "messageId":  "undef",
+                             "endLine":  49,
+                             "endColumn":  214
+                         }
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  24,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\tests\\browser\\environment.mjs",
+        "messages":  [
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027process\u0027 is not defined.",
+                             "line":  4,
+                             "column":  22,
+                             "messageId":  "undef",
+                             "endLine":  4,
+                             "endColumn":  29
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027process\u0027 is not defined.",
+                             "line":  5,
+                             "column":  21,
+                             "messageId":  "undef",
+                             "endLine":  5,
+                             "endColumn":  28
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027URL\u0027 is not defined.",
+                             "line":  6,
+                             "column":  20,
+                             "messageId":  "undef",
+                             "endLine":  6,
+                             "endColumn":  23
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027URL\u0027 is not defined.",
+                             "line":  8,
+                             "column":  51,
+                             "messageId":  "undef",
+                             "endLine":  8,
+                             "endColumn":  54
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027process\u0027 is not defined.",
+                             "line":  11,
+                             "column":  7,
+                             "messageId":  "undef",
+                             "endLine":  11,
+                             "endColumn":  14
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027process\u0027 is not defined.",
+                             "line":  12,
+                             "column":  25,
+                             "messageId":  "undef",
+                             "endLine":  12,
+                             "endColumn":  32
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027process\u0027 is not defined.",
+                             "line":  13,
+                             "column":  18,
+                             "messageId":  "undef",
+                             "endLine":  13,
+                             "endColumn":  25
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027URL\u0027 is not defined.",
+                             "line":  18,
+                             "column":  24,
+                             "messageId":  "undef",
+                             "endLine":  18,
+                             "endColumn":  27
+                         },
+                         {
+                             "ruleId":  "no-undef",
+                             "severity":  2,
+                             "message":  "\u0027fetch\u0027 is not defined.",
+                             "line":  23,
+                             "column":  26,
+                             "messageId":  "undef",
+                             "endLine":  23,
+                             "endColumn":  31
+                         }
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  9,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    },
+    {
+        "filePath":  "D:\\app\\itatest\\vite.config.ts",
+        "messages":  [
+
+                     ],
+        "suppressedMessages":  [
+
+                               ],
+        "errorCount":  0,
+        "fatalErrorCount":  0,
+        "warningCount":  0,
+        "fixableErrorCount":  0,
+        "fixableWarningCount":  0,
+        "usedDeprecatedRules":  [
+
+                                ]
+    }
+]

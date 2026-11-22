@@ -1,0 +1,38 @@
+{
+  "verifiedUtc": "2026-11-18T15:45:55.982Z",
+  "identities": [
+    {
+      "repository": "D:/app/itatest",
+      "trackedExit": 0,
+      "stagedExit": 0,
+      "status": "?? docs/"
+    },
+    {
+      "repository": "D:/Lerona/Backend",
+      "trackedExit": 0,
+      "stagedExit": 0,
+      "status": ""
+    }
+  ],
+  "ownedFrontendStopped": true,
+  "userBackendLeftRunning": true,
+  "backendHttp": 200,
+  "backendStatus": {
+    "service": "Cent",
+    "payments": "DEVELOPMENT_MOCK",
+    "screenshotBlocking": false
+  },
+  "documentationValidation": {
+    "checkedUtc": "2026-11-18T15:45:56.740Z",
+    "markdownDocuments": 15,
+    "localLinks": 117,
+    "brokenLinks": [],
+    "manifestFiles": 72,
+    "hashMismatches": [],
+    "recordedCheckpoints": 61,
+    "failedCheckpoints": [],
+    "runtimeFailures": [],
+    "pageErrors": [],
+    "screenshots": 32
+  }
+}

@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 import { RotateCcw } from 'lucide-react'
+import { Button, LoadingState, Notice } from './UI'
 
 // eslint-disable-next-line react-refresh/only-export-components
 export function useRemote<T>(fetcher: () => Promise<T>) {
@@ -10,14 +11,19 @@ export function useRemote<T>(fetcher: () => Promise<T>) {
   const reload = useCallback(() => setRevision(x => x + 1), [])
   useEffect(() => {
     let active = true
-    setBusy(true); setError('')
-    fetcher().then(d => { if (active) setData(d) }).catch(e => { if (active) setError(e instanceof Error ? e.message : 'ارتباط برقرار نشد.') }).finally(() => { if (active) setBusy(false) })
+    void Promise.resolve().then(async () => {
+      if (!active) return
+      setBusy(true); setError(''); setData(null)
+      try { const data = await fetcher(); if (active) setData(data) }
+      catch (e) { if (active) setError(e instanceof Error ? e.message : 'ارتباط برقرار نشد.') }
+      finally { if (active) setBusy(false) }
+    })
     return () => { active = false }
   }, [fetcher, revision])
   return { data, error, busy, reload, setData }
 }
 export function LoadState({ busy, error, retry }: { busy: boolean; error: string; retry: () => void }) {
-  if (error) return <div className="cent-error" role="alert"><p>{error}</p><button className="button button-secondary" onClick={retry}><RotateCcw size={16}/> تلاش دوباره</button></div>
-  if (busy) return <div className="cent-loading" role="status"><span className="cent-spinner"/> در حال بارگذاری…</div>
+  if (error) return <Notice tone="error" live="assertive" className="cent-error" action={<Button variant="secondary" onClick={retry}><RotateCcw size={16} aria-hidden="true"/> دوباره تلاش کن</Button>}>{error}</Notice>
+  if (busy) return <LoadingState/>
   return null
 }

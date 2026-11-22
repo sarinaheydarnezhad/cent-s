@@ -4,8 +4,10 @@ import { CheckCircle2, ClipboardCheck, Target, TrendingUp } from 'lucide-react'
 import { cent, dateFa } from '../services/cent'
 import { useAppState } from '../state/AppState'
 import { LoadState, useRemote } from '../components/CentUI'
-import { EmptyState, PageHeader, ProgressBar, StatCard } from '../components/UI'
+import { EmptyState, ProgressBar, StatCard } from '../components/UI'
+import { AssessmentHero, AssessmentSkeleton, ResultRing, SubjectIcon } from '../components/AssessmentUI'
 import type { Breakdown, DiagnosticResult } from '../types'
+import { MockHistory } from './MockExams'
 
 const kindLabels: Record<string, string> = { diagnostic: 'تعیین سطح', simulator: 'شبیه‌ساز', practice: 'تمرین مبحث' }
 async function loadResults() {
@@ -34,10 +36,10 @@ export function PersonalResults() {
   const change = latest && previous ? breakdown(latest, course)!.percentage - breakdown(previous, course)!.percentage : null
   const total = rows.reduce((sum, row) => sum + breakdown(row, course)!.total, 0)
   const correct = rows.reduce((sum, row) => sum + breakdown(row, course)!.correct, 0)
-  return <>
-    <PageHeader title="نتایج من" description={`${user?.name || ''}، پیشرفت این صفحه از پاسخ‌ها و نتایج ثبت‌شده خودت محاسبه می‌شود.`} action={<Link className="button button-primary" to="/diagnostic/test">ارزیابی تازه</Link>}/>
-    <LoadState {...remote} retry={remote.reload}/>
-    {remote.data && <>
+  return <div className="assessment-page personal-results">
+    <AssessmentHero title="نتایج من" description={`${user?.name || ''}، نتیجه پاسخ‌هات رو مرور کن و برای ادامه تصمیم بگیر.`}><Link className="button button-secondary" to="/diagnostic/test">ارزیابی تازه</Link></AssessmentHero>
+    {remote.busy ? <AssessmentSkeleton label="در حال دریافت نتایجت…"/> : <LoadState {...remote} retry={remote.reload}/>}
+    {remote.data && !remote.busy && !remote.error && <>
       <label className="cent-section-select cent-results-filter">درس<select aria-label="فیلتر نتایج بر اساس درس" value={course} onChange={e => setCourse(e.target.value)}><option value="">همه درس‌ها</option>{remote.data.curriculum.courses.map(c => <option key={c.code} value={c.code}>{c.title}</option>)}</select></label>
       <div className="stats-grid" data-personal-stats>
         <StatCard label="نتایج اخیر" value={rows.length} icon={<ClipboardCheck/>}/>
@@ -45,12 +47,21 @@ export function PersonalResults() {
         <StatCard label="دقت در نتایج اخیر" value={total ? `${Math.round(100 * correct / total)}٪` : '—'} note={total ? `${correct} پاسخ صحیح از ${total} سؤال` : undefined} icon={<CheckCircle2/>}/>
         <StatCard label="تغییر نسبت به آزمون هم‌مبحث" value={change == null ? '—' : `${change > 0 ? '+' : ''}${change}`} note={previous ? `واحد درصد نسبت به ${dateFa(previous.createdAt)}` : 'پس از تکرار همان نوع آزمون و مباحث'} icon={<TrendingUp/>}/>
       </div>
-      <section className="card cent-admin-panel"><h2>پیشرفت درس‌های من</h2><p>تمرین و آزمون هر دو در این برآورد اولیه حساب می‌شوند. برای هر مبحث حداقل ۳ سؤال متفاوت لازم است؛ پاسخ تازه به سؤال تکراری جای پاسخ قبلی را می‌گیرد. پیشرفت کل، همه مباحث درس را در نظر می‌گیرد؛ پوشش نشان می‌دهد چند مبحث واقعاً سنجیده شده است.</p>
+
+      <MockHistory/>
+      <h2>تاریخچه تعیین سطح و تمرین</h2>
+      {rows.length === 0 && <EmptyState title="هنوز نتیجه‌ای برای این انتخاب ثبت نشده" description="بعد از ثبت پاسخ‌های تمرین یا آزمون، نتیجه‌ات اینجا نمایش داده می‌شه." action={<Link className="button button-primary" to={course ? `/diagnostic/test?course=${course}` : '/diagnostic/test'}>شروع ارزیابی سطح</Link>}/>}
+      <div className="assessment-history">{rows.map(row => {
+        const result = breakdown(row, course)!
+        const subjects = remote.data!.curriculum.courses.filter(c => (breakdown(row, c.code)?.total ?? 0) > 0).map(c => c.title)
+        return <Link className="card assessment-history-row" data-result-attempt={row.id} key={row.id} to={`/student/results/${row.id}`}><ResultRing value={result.percentage}/><div><span className="assessment-muted">{kindLabels[row.kind] || 'نتیجه ثبت‌شده'} · {dateFa(row.createdAt)}</span><h3>{subjects.join(' · ') || 'گزارش آزمون'}</h3><p>{result.correct} صحیح · {result.incorrect} نادرست · {result.unanswered} بی‌پاسخ از {result.total} سؤال</p></div><span className="text-link">دیدن گزارش</span></Link>
+      })}</div>
+      <section className="card assessment-panel"><div className="assessment-section-title"><h2>پیشرفت درس‌های من</h2><Link className="text-link" to="/student/analysis">تحلیل شخصی</Link></div><details className="assessment-method"><summary>تفاوت پیشرفت، پوشش و دقت چیه؟</summary><p>تمرین و آزمون هر دو در این برآورد اولیه حساب می‌شن. برای هر مبحث حداقل ۳ سؤال متفاوت لازمه؛ پاسخ تازه به سؤال تکراری جای پاسخ قبلی رو می‌گیره. پیشرفت کل، همه مباحث درس رو در نظر می‌گیره؛ پوشش نشون می‌ده چند مبحث واقعاً سنجیده شده. دقت از پاسخ‌های مباحث سنجیده‌شده میاد و درصد مطالعه نیست.</p></details>
         <div className="cent-results-courses">{remote.data.mastery.courses.filter(c => !course || c.code === course).map(c => {
           const recent = remote.data!.attempts.find(a => (breakdown(a, c.code)?.total ?? 0) > 0)
           const weak = c.topics.filter(t => t.masteryPercentage != null && t.masteryPercentage < 60).sort((a, b) => a.masteryPercentage! - b.masteryPercentage!).slice(0, 3)
           return <article className="cent-results-course" data-result-course={c.code} key={c.code}>
-            <h3>{c.title}</h3><strong>{c.assessedTopics ? `${c.confirmedProgressPercentage}٪ پیشرفت` : 'هنوز سنجیده نشده'}</strong><ProgressBar value={c.confirmedProgressPercentage}/>
+            <div className="assessment-course-heading"><SubjectIcon code={c.code}/><h3>{c.title}</h3></div><strong>{c.assessedTopics ? `${c.confirmedProgressPercentage}٪ پیشرفت` : 'هنوز سنجیده نشده'}</strong><div className={c.assessedTopics ? '' : 'assessment-unassessed'}><ProgressBar label={`پیشرفت ${c.title}`} value={c.confirmedProgressPercentage} valueText={c.assessedTopics ? undefined : 'هنوز سنجیده نشده'}/></div>
             <p>{c.assessedTopics} از {c.totalTopics} مبحث سنجیده شده · پوشش {c.coveragePercentage}٪</p>
             <p>دقت در مباحث سنجیده‌شده: {c.assessedAccuracyPercentage == null ? '—' : `${c.assessedAccuracyPercentage}٪`}</p>
             {recent && <p>آخرین نتیجه این درس: {breakdown(recent, c.code)!.percentage}٪ · {kindLabels[recent.kind]}</p>}
@@ -59,13 +70,6 @@ export function PersonalResults() {
           </article>
         })}</div>
       </section>
-      <h2>تاریخچه نتایج من</h2>
-      {rows.length === 0 && <EmptyState title="هنوز نتیجه‌ای برای این انتخاب ثبت نشده" description="پس از ثبت پاسخ‌های تمرین یا آزمون، نتیجه واقعی و پیشرفتت اینجا نمایش داده می‌شود."/>}
-      <div className="cent-notes-grid">{rows.map(row => {
-        const result = breakdown(row, course)!
-        const subjects = remote.data!.curriculum.courses.filter(c => (breakdown(row, c.code)?.total ?? 0) > 0).map(c => c.title)
-        return <Link className="card cent-saved-note" data-result-attempt={row.id} key={row.id} to={`/student/results/${row.id}`}><span>{kindLabels[row.kind] || row.kind} · {dateFa(row.createdAt)}</span><h3>{subjects.join(' · ')}</h3><h2>{result.percentage}٪</h2><p>{result.correct} صحیح · {result.incorrect} نادرست · {result.unanswered} بی‌پاسخ از {result.total} سؤال</p><span className="text-link">دیدن گزارش</span></Link>
-      })}</div>
     </>}
-  </>
+  </div>
 }

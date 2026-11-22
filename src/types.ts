@@ -1,4 +1,4 @@
-export type SubjectId = 'math' | 'logic' | 'biology' | 'chemistry' | 'physics'
+export type SubjectId = string
 export type Difficulty = 'easy' | 'medium' | 'hard'
 export type QuestionStatus = 'active' | 'draft'
 
@@ -51,7 +51,7 @@ export interface SessionUser {
   id: string
   name: string
   email: string
-  role: 'STUDENT' | 'ADMIN'
+  role: 'STUDENT' | 'ADMIN' | 'SuperAdmin' | 'UserManager' | 'ContentManager' | 'ExamManager' | 'FinanceManager'
 }
 
 export interface Order {

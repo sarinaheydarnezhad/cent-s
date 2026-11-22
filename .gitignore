@@ -8,3 +8,6 @@ npm-debug.log*
 *.tsbuildinfo
 public/pdfjs/
 tests/browser/artifacts/
+.preview-artifacts/
+
+*.trx

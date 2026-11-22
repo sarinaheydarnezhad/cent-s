@@ -1,0 +1,11 @@
+{
+  "kind": "Mock-backed actual application component; existing synthetic SDK/plain test button and API fixtures. Not the official Google button, real consent or credential validation. No button clicked, real requests or account/session created.",
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "widths": [
+    390,
+    1440
+  ]
+}

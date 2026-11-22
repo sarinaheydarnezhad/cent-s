@@ -1,0 +1,98 @@
+[
+  {
+    "file": "before-login-light-390.png",
+    "route": "/login",
+    "theme": "light",
+    "width": 390,
+    "kind": "Actual local backend; no mocked API responses",
+    "overflow": false
+  },
+  {
+    "file": "before-login-light-1440.png",
+    "route": "/login",
+    "theme": "light",
+    "width": 1440,
+    "kind": "Actual local backend; no mocked API responses",
+    "overflow": false
+  },
+  {
+    "file": "before-login-dark-390.png",
+    "route": "/login",
+    "theme": "dark",
+    "width": 390,
+    "kind": "Actual local backend; no mocked API responses",
+    "overflow": false
+  },
+  {
+    "file": "before-login-dark-1440.png",
+    "route": "/login",
+    "theme": "dark",
+    "width": 1440,
+    "kind": "Actual local backend; no mocked API responses",
+    "overflow": false
+  },
+  {
+    "file": "before-catalog-light-390.png",
+    "route": "/package",
+    "theme": "light",
+    "width": 390,
+    "kind": "Actual local backend; no mocked API responses",
+    "overflow": false
+  },
+  {
+    "file": "before-catalog-light-1440.png",
+    "route": "/package",
+    "theme": "light",
+    "width": 1440,
+    "kind": "Actual local backend; no mocked API responses",
+    "overflow": false
+  },
+  {
+    "file": "before-catalog-dark-390.png",
+    "route": "/package",
+    "theme": "dark",
+    "width": 390,
+    "kind": "Actual local backend; no mocked API responses",
+    "overflow": false
+  },
+  {
+    "file": "before-catalog-dark-1440.png",
+    "route": "/package",
+    "theme": "dark",
+    "width": 1440,
+    "kind": "Actual local backend; no mocked API responses",
+    "overflow": false
+  },
+  {
+    "file": "before-course-light-390.png",
+    "route": "/courses/math",
+    "theme": "light",
+    "width": 390,
+    "kind": "Actual local backend; no mocked API responses",
+    "overflow": false
+  },
+  {
+    "file": "before-course-light-1440.png",
+    "route": "/courses/math",
+    "theme": "light",
+    "width": 1440,
+    "kind": "Actual local backend; no mocked API responses",
+    "overflow": false
+  },
+  {
+    "file": "before-course-dark-390.png",
+    "route": "/courses/math",
+    "theme": "dark",
+    "width": 390,
+    "kind": "Actual local backend; no mocked API responses",
+    "overflow": false
+  },
+  {
+    "file": "before-course-dark-1440.png",
+    "route": "/courses/math",
+    "theme": "dark",
+    "width": 1440,
+    "kind": "Actual local backend; no mocked API responses",
+    "overflow": false
+  }
+]

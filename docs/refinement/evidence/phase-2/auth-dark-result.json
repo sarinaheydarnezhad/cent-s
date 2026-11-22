@@ -1,0 +1,14 @@
+{
+  "success": true,
+  "passed": [
+    "login Google button, duplicate start, StrictMode callback, protected return, session restore and logout",
+    "registration Google button, cancellation, clean URL, refresh/replay rejection and retry link",
+    "state mismatch rejected before backend completion",
+    "existing-account conflict preserves existing sign-in method",
+    "disabled/unavailable backend shows a recoverable error",
+    "returned session expiration signs out the active protected page",
+    "password login preserved",
+    "password registration preserved",
+    "mobile Google sign-in layout fits the viewport"
+  ]
+}

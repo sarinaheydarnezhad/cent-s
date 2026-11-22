@@ -1,0 +1,242 @@
+{
+  "branch": "main",
+  "staged": "",
+  "backendClean": true,
+  "protectedFiles": [
+    {
+      "file": "src/App.tsx",
+      "unchanged": true,
+      "sha256": "88a2c0e12020e022caeb1e9c3be484822fa511c95345d094e65fcecf65f54b6a"
+    },
+    {
+      "file": "src/state/AppState.tsx",
+      "unchanged": true,
+      "sha256": "f21740c574bf9c44788edd7d5f22206e888ed2c6fa51ceea5786b2d56d0666fa"
+    },
+    {
+      "file": "src/components/GoogleSignIn.tsx",
+      "unchanged": true,
+      "sha256": "d28d0ac060ca6b626a380dcbdd140fdfc4c22269d798adcb84eddb5e1ea2098b"
+    },
+    {
+      "file": "src/services/cent.ts",
+      "unchanged": true,
+      "sha256": "b09308a93c1e1061066eaf47a9b76980ea83bfb7987ae6f3bfb7cfdc7de82582"
+    },
+    {
+      "file": "src/services/google-auth.ts",
+      "unchanged": true,
+      "sha256": "35c53b1507ce77e9af0e3494e6649880535f44efdf60e6f0f2a2eea345b006f1"
+    },
+    {
+      "file": "src/services/google-identity.ts",
+      "unchanged": true,
+      "sha256": "337ad7c7757510839a6781af9f1fd4e83c7345101a8c5fd4f6c1a3d0d96d1558"
+    },
+    {
+      "file": "src/services/google-identity-api.ts",
+      "unchanged": true,
+      "sha256": "ad3a1ae1e56f79af2b1ae36ec9b73fea43e05e4acd165ef15d9c17cbb043eed1"
+    },
+    {
+      "file": "src/services/google-identity-sdk.ts",
+      "unchanged": true,
+      "sha256": "de68db3dbf93262b812324bf7f9dca56b19d7cee66d95553204a9db279c5c7cb"
+    },
+    {
+      "file": "src/services/scoring.ts",
+      "unchanged": true,
+      "sha256": "66de4b7b1c657a9f013ba7fea247c2b0588ab27a8d4ca5e3fe9466d9425693ad"
+    },
+    {
+      "file": "public/_headers",
+      "unchanged": true,
+      "sha256": "00249a8f9c4c7d59f545e7a92ece2f8d72d9589e17891494b5324e9bc0213148"
+    },
+    {
+      "file": "vite.config.ts",
+      "unchanged": true,
+      "sha256": "da8d56c158646f29488d1e1c86eb7407982e112f2b42df383933953ca891f149"
+    },
+    {
+      "file": "package.json",
+      "unchanged": true,
+      "sha256": "b6b670d20a27df2332c47eaafe65e110d001dab7eb1e7c2c09d191cc3b4f117b"
+    },
+    {
+      "file": "package-lock.json",
+      "unchanged": true,
+      "sha256": "a299a620cf0ade2c85cdaa2f850d023bdd7d8b507571ede3e124a64406b093ee"
+    },
+    {
+      "file": "tests/browser/check-study-return.mjs",
+      "unchanged": true,
+      "sha256": "aa55c45ece25d2e8e8839ea90e428dc18f39e1baa8f4a0c5086a618d6434d0b3"
+    }
+  ],
+  "checks": [
+    "symbol.svg: consistent symmetric geometry, 45-degree angles, flat color mapping, matching built asset",
+    "symbol-dark.svg: consistent symmetric geometry, 45-degree angles, flat color mapping, matching built asset",
+    "monochrome.svg: consistent symmetric geometry, 45-degree angles, flat color mapping, matching built asset",
+    "inverted.svg: consistent symmetric geometry, 45-degree angles, flat color mapping, matching built asset",
+    "logo-primary.svg: consistent symmetric geometry, 45-degree angles, flat color mapping, matching built asset",
+    "logo-dark.svg: consistent symmetric geometry, 45-degree angles, flat color mapping, matching built asset",
+    "favicon.svg: consistent symmetric geometry, 45-degree angles, flat color mapping, matching built asset",
+    "favicon-32.png: PNG dimensions and built-copy identity verified",
+    "favicon-180.png: PNG dimensions and built-copy identity verified",
+    "favicon-192.png: PNG dimensions and built-copy identity verified"
+  ],
+  "screenshots": 20,
+  "uncaughtPageErrors": 0,
+  "overflow": 0,
+  "hashes": [
+    {
+      "file": "public/brand/favicon-180.png",
+      "sha256": "8c06a99d0dfd9d34fe7116a315f4691a6db2f6469b1d7ad22d20810879f2174c"
+    },
+    {
+      "file": "public/brand/favicon-192.png",
+      "sha256": "7193d0720d2999c4282ac088d3433c67bc82d0f71599e5632cef56ca95672f39"
+    },
+    {
+      "file": "public/brand/favicon-32.png",
+      "sha256": "19eaf18fdf18318691c64dea1c7ebdeb91dd293f4565cd9ff0a22f871e8c544d"
+    },
+    {
+      "file": "public/brand/favicon.svg",
+      "sha256": "98a02ffcc6cf4b350eac404e97dc29b72ccd74228033ea248dd864fad4c758b8"
+    },
+    {
+      "file": "public/brand/inverted.svg",
+      "sha256": "09fdc4f56228bd20a22e3c0bc158518f8382bca5fca6a9abd4eed6c1e96c1ff0"
+    },
+    {
+      "file": "public/brand/logo-dark.svg",
+      "sha256": "0256c698ed2c666ff38f806decb77633e2ac1291855d6f15a8024155eeeab896"
+    },
+    {
+      "file": "public/brand/logo-primary.svg",
+      "sha256": "426000732ebdf05dd318db0a3cdf1569667529027931d8adafbdf667867c3fa3"
+    },
+    {
+      "file": "public/brand/monochrome.svg",
+      "sha256": "ae7f8ee9cd6e4b3b6eb498d77b4cecbdb8cb1aa33132cfbf9fd1cee93e2efeb9"
+    },
+    {
+      "file": "public/brand/symbol-dark.svg",
+      "sha256": "3a4a2901019925ce464a38f05ece1103fa1eed16648ecb6b381d3ff9df84680f"
+    },
+    {
+      "file": "public/brand/symbol.svg",
+      "sha256": "161a539dfc9df0461ed364e7182a3dd3d47055e3b7931b19a25aab708444ff6b"
+    },
+    {
+      "file": "docs/brand/logo-original-reference.png",
+      "sha256": "3ea069f8cb9b2501ba74387eee2202666a71a01e9426fba4b966dac13d6e1a30"
+    },
+    {
+      "file": "docs/brand/logo-reference.png",
+      "sha256": "f17cb0fba88da4b373e1bfcadb67261fa8bc606df0cb5c0982f1eba5eaa981cc"
+    },
+    {
+      "file": "docs/brand/brand-board-reference.png",
+      "sha256": "158cb77567b385df619edc52e7167a482f6319fe47352d83db0c021bfbba9fc9"
+    },
+    {
+      "file": "docs/brand/palette-reference.png",
+      "sha256": "4153601818f2718fc9e4f69a39ac00a27ca8265e12bd7bd662e75979f71b81c1"
+    },
+    {
+      "file": "docs/refinement/evidence/phase-1/logo-review/admin-dark-1440.png",
+      "sha256": "ee70c0c6fd57b4ae1d83abec2e141e9944200e9bdb1fe5368bafe59842634aad"
+    },
+    {
+      "file": "docs/refinement/evidence/phase-1/logo-review/admin-dark-390.png",
+      "sha256": "b032deb093b89797a7166c4aeeb77bd4ac9c6730f339acb6d7e1ea6516d06ca5"
+    },
+    {
+      "file": "docs/refinement/evidence/phase-1/logo-review/admin-light-1440.png",
+      "sha256": "d4630f404a387dd245947995c13d6091194a8905a7ac4058b7e25037244da950"
+    },
+    {
+      "file": "docs/refinement/evidence/phase-1/logo-review/admin-light-390.png",
+      "sha256": "7d46e5fe6c61401033c94997ec490ab1f9483326ac9964c978073115ffb94c10"
+    },
+    {
+      "file": "docs/refinement/evidence/phase-1/logo-review/admin-menu-dark-390.png",
+      "sha256": "c464fe8d74b00cda051a402c30a48093da9ecc2ec572ed0b0d813250e98d6e7f"
+    },
+    {
+      "file": "docs/refinement/evidence/phase-1/logo-review/admin-menu-light-390.png",
+      "sha256": "9a14e1cf7fbb85aab977c1151e1de684ac49a0544983fc190b6f6829611fe018"
+    },
+    {
+      "file": "docs/refinement/evidence/phase-1/logo-review/dashboard-dark-1440.png",
+      "sha256": "6922476a99c98d67a24a5984d0281b22f4247a76c744bbb9738332faa10bc071"
+    },
+    {
+      "file": "docs/refinement/evidence/phase-1/logo-review/dashboard-dark-390.png",
+      "sha256": "9e2586847227072122fabdabde19bd799317f82e03aabafa3fd24d5c4b456f63"
+    },
+    {
+      "file": "docs/refinement/evidence/phase-1/logo-review/dashboard-light-1440.png",
+      "sha256": "8277a87b6035e919d548554b7dbec1d5230feed3066882e47261ab747c9f2dfc"
+    },
+    {
+      "file": "docs/refinement/evidence/phase-1/logo-review/dashboard-light-390.png",
+      "sha256": "087bd1fa4162f00d48d4dc2fbe8c0b0ddd5fe13969933eaf87b0a3a4b3949642"
+    },
+    {
+      "file": "docs/refinement/evidence/phase-1/logo-review/dashboard-menu-dark-390.png",
+      "sha256": "bf0f396a917cdcd0e32b20f60f5b20c5c421cc0fe10bcce550ef8c66e5ba543f"
+    },
+    {
+      "file": "docs/refinement/evidence/phase-1/logo-review/dashboard-menu-light-390.png",
+      "sha256": "6c93b6b6eafab4fc4ff8a3bc5f7fa79ec4f8ebcacecd288bee662e257a8d629b"
+    },
+    {
+      "file": "docs/refinement/evidence/phase-1/logo-review/favicon-actual-sizes.png",
+      "sha256": "318c990fb31f573825ea7cd171cb4324c4fa902373e2083b31d8789b1493b35a"
+    },
+    {
+      "file": "docs/refinement/evidence/phase-1/logo-review/geometry-detail.png",
+      "sha256": "0fc944859b118b46f726c8882a8a81faf3ef7c233d555ab8599d8d72d9ec5765"
+    },
+    {
+      "file": "docs/refinement/evidence/phase-1/logo-review/home-dark-1440.png",
+      "sha256": "c6e86460afbed6fa6b35610e67bdfc79f0d4868c89f650235107b33d755fe20b"
+    },
+    {
+      "file": "docs/refinement/evidence/phase-1/logo-review/home-dark-390.png",
+      "sha256": "5b7e4a28ffbc503e6f3698e2280bba7e434199fbdcae64a34ecd4cb779393ca9"
+    },
+    {
+      "file": "docs/refinement/evidence/phase-1/logo-review/home-light-1440.png",
+      "sha256": "2b580cd319006bf2d3efd347098cf74895afca50a8b8a9758e2c105ef1871a2e"
+    },
+    {
+      "file": "docs/refinement/evidence/phase-1/logo-review/home-light-390.png",
+      "sha256": "9c902f6444a9b4ec6630eeb903b5e0f019f6786d5c47e59e57c4cce63836c31b"
+    },
+    {
+      "file": "docs/refinement/evidence/phase-1/logo-review/login-dark-1440.png",
+      "sha256": "38c72896dbbd88086c9e1690a1a450bfe9a1dbcf8d64040187c0ea09a7a68e03"
+    },
+    {
+      "file": "docs/refinement/evidence/phase-1/logo-review/login-dark-390.png",
+      "sha256": "5a6b242e0be3e4d92932262d33242eacd0909973f5df0847b44f9dc6c0b95d36"
+    },
+    {
+      "file": "docs/refinement/evidence/phase-1/logo-review/login-light-1440.png",
+      "sha256": "df0eb8fccad87657f00dac6a2a4c46906ed3ec60f56901b151bb7d4690746ed5"
+    },
+    {
+      "file": "docs/refinement/evidence/phase-1/logo-review/login-light-390.png",
+      "sha256": "099aca6fdb891f0bb1905da2d23544a1cedb2fb03ad3657d50452f8b725ab607"
+    },
+    {
+      "file": "docs/refinement/evidence/phase-1/logo-review/logo-comparison.png",
+      "sha256": "17cbd75dc66c6462d36de952e5cf0a0b98f9217be6041e44a27284c34902bda5"
+    }
+  ]
+}

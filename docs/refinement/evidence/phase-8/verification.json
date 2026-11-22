@@ -1,0 +1,130 @@
+{
+  "generatedAt": "2026-11-22T14:34:09.341Z",
+  "root": "http://localhost:5198/cent-s",
+  "api": "http://127.0.0.1:5128/api/cent/v1",
+  "checks": [
+    "all administrative read APIs reject anonymous users and students",
+    "specialist roles cannot read unrelated modules or assign roles",
+    "persisted aggregates separate mock payments, active subscriptions and restricted finance data",
+    "anonymous direct admin URL returns existing login; student returns student shell",
+    "user search and role filter, empty state, offline error hides stale data, and recovery use actual requests",
+    "resource pagination and real product/section detail",
+    "existing training editor and genuine PDF conversion/upload/publication persisted successfully",
+    "immutable question read-only state, native validation, new manual draft persisted",
+    "order payment events/entitlements and subscription-to-order navigation",
+    "confirmed UI role changes are audited and immediately enforced for existing sessions; fixture role restored",
+    "specialist navigation and direct-URL permission-denied states hide unauthorized forms",
+    "Light/Dark, desktop/tablet/mobile, RTL, visible chart values, labeled fields, skip link, reduced motion, and Escape navigation"
+  ],
+  "layouts": [
+    {
+      "label": "desktop overview",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "label": "desktop users",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "label": "desktop resources",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "label": "desktop assessments",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "label": "desktop questions",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "label": "desktop orders",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "label": "desktop subscriptions",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "label": "desktop content",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "label": "desktop reports",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "label": "desktop roles",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "label": "desktop packages",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "label": "dark users 768",
+      "width": 768,
+      "scroll": 768
+    },
+    {
+      "label": "dark users 390",
+      "width": 390,
+      "scroll": 390
+    },
+    {
+      "label": "dark users 360",
+      "width": 360,
+      "scroll": 360
+    },
+    {
+      "label": "mobile orders dark",
+      "width": 390,
+      "scroll": 390
+    },
+    {
+      "label": "mobile overview light",
+      "width": 390,
+      "scroll": 390
+    },
+    {
+      "label": "mobile reports light",
+      "width": 390,
+      "scroll": 390
+    }
+  ],
+  "screenshots": [
+    "01-overview-light.png",
+    "02-users-light.png",
+    "03-resources-light.png",
+    "04-assessments-light.png",
+    "05-questions-light.png",
+    "06-orders-light.png",
+    "07-subscriptions-light.png",
+    "08-content-light.png",
+    "09-reports-light.png",
+    "10-roles-light.png",
+    "11-products-light.png",
+    "12-user-detail-light.png",
+    "13-order-detail-light.png",
+    "14-overview-dark.png",
+    "15-orders-dark.png",
+    "16-mobile-navigation-dark.png",
+    "17-mobile-orders-dark.png",
+    "18-mobile-overview-light.png",
+    "19-mobile-reports-light.png"
+  ],
+  "pageErrors": [],
+  "provider": "DEVELOPMENT_MOCK",
+  "database": "new isolated SQLite preview; all accounts and financial rows synthetic"
+}

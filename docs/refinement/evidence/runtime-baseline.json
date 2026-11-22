@@ -1,0 +1,765 @@
+{
+  "kind": "Actual unmocked local frontend; backend unavailable",
+  "screenshots": [
+    {
+      "name": "baseline-home-320.png",
+      "route": "/",
+      "width": 320,
+      "height": 900,
+      "theme": "existing light appearance",
+      "data": "unmocked; API unavailable where relevant"
+    },
+    {
+      "name": "baseline-exam-320.png",
+      "route": "/exam",
+      "width": 320,
+      "height": 900,
+      "theme": "existing light appearance",
+      "data": "unmocked; API unavailable where relevant"
+    },
+    {
+      "name": "baseline-courses-math-320.png",
+      "route": "/courses/math",
+      "width": 320,
+      "height": 900,
+      "theme": "existing light appearance",
+      "data": "unmocked; API unavailable where relevant"
+    },
+    {
+      "name": "baseline-diagnostic-intro-320.png",
+      "route": "/diagnostic/intro",
+      "width": 320,
+      "height": 900,
+      "theme": "existing light appearance",
+      "data": "unmocked; API unavailable where relevant"
+    },
+    {
+      "name": "baseline-package-320.png",
+      "route": "/package",
+      "width": 320,
+      "height": 900,
+      "theme": "existing light appearance",
+      "data": "unmocked; API unavailable where relevant"
+    },
+    {
+      "name": "baseline-login-320.png",
+      "route": "/login",
+      "width": 320,
+      "height": 900,
+      "theme": "existing light appearance",
+      "data": "unmocked; API unavailable where relevant"
+    },
+    {
+      "name": "baseline-missing-page-320.png",
+      "route": "/missing-page",
+      "width": 320,
+      "height": 900,
+      "theme": "existing light appearance",
+      "data": "unmocked; API unavailable where relevant"
+    },
+    {
+      "name": "baseline-auth-google-callback-320.png",
+      "route": "/auth/google/callback",
+      "width": 320,
+      "height": 900,
+      "theme": "existing light appearance",
+      "data": "unmocked; API unavailable where relevant"
+    },
+    {
+      "name": "baseline-home-390.png",
+      "route": "/",
+      "width": 390,
+      "height": 900,
+      "theme": "existing light appearance",
+      "data": "unmocked; API unavailable where relevant"
+    },
+    {
+      "name": "baseline-exam-390.png",
+      "route": "/exam",
+      "width": 390,
+      "height": 900,
+      "theme": "existing light appearance",
+      "data": "unmocked; API unavailable where relevant"
+    },
+    {
+      "name": "baseline-courses-math-390.png",
+      "route": "/courses/math",
+      "width": 390,
+      "height": 900,
+      "theme": "existing light appearance",
+      "data": "unmocked; API unavailable where relevant"
+    },
+    {
+      "name": "baseline-diagnostic-intro-390.png",
+      "route": "/diagnostic/intro",
+      "width": 390,
+      "height": 900,
+      "theme": "existing light appearance",
+      "data": "unmocked; API unavailable where relevant"
+    },
+    {
+      "name": "baseline-package-390.png",
+      "route": "/package",
+      "width": 390,
+      "height": 900,
+      "theme": "existing light appearance",
+      "data": "unmocked; API unavailable where relevant"
+    },
+    {
+      "name": "baseline-login-390.png",
+      "route": "/login",
+      "width": 390,
+      "height": 900,
+      "theme": "existing light appearance",
+      "data": "unmocked; API unavailable where relevant"
+    },
+    {
+      "name": "baseline-missing-page-390.png",
+      "route": "/missing-page",
+      "width": 390,
+      "height": 900,
+      "theme": "existing light appearance",
+      "data": "unmocked; API unavailable where relevant"
+    },
+    {
+      "name": "baseline-auth-google-callback-390.png",
+      "route": "/auth/google/callback",
+      "width": 390,
+      "height": 900,
+      "theme": "existing light appearance",
+      "data": "unmocked; API unavailable where relevant"
+    },
+    {
+      "name": "baseline-home-1440.png",
+      "route": "/",
+      "width": 1440,
+      "height": 900,
+      "theme": "existing light appearance",
+      "data": "unmocked; API unavailable where relevant"
+    },
+    {
+      "name": "baseline-exam-1440.png",
+      "route": "/exam",
+      "width": 1440,
+      "height": 900,
+      "theme": "existing light appearance",
+      "data": "unmocked; API unavailable where relevant"
+    },
+    {
+      "name": "baseline-courses-math-1440.png",
+      "route": "/courses/math",
+      "width": 1440,
+      "height": 900,
+      "theme": "existing light appearance",
+      "data": "unmocked; API unavailable where relevant"
+    },
+    {
+      "name": "baseline-diagnostic-intro-1440.png",
+      "route": "/diagnostic/intro",
+      "width": 1440,
+      "height": 900,
+      "theme": "existing light appearance",
+      "data": "unmocked; API unavailable where relevant"
+    },
+    {
+      "name": "baseline-package-1440.png",
+      "route": "/package",
+      "width": 1440,
+      "height": 900,
+      "theme": "existing light appearance",
+      "data": "unmocked; API unavailable where relevant"
+    },
+    {
+      "name": "baseline-login-1440.png",
+      "route": "/login",
+      "width": 1440,
+      "height": 900,
+      "theme": "existing light appearance",
+      "data": "unmocked; API unavailable where relevant"
+    },
+    {
+      "name": "baseline-missing-page-1440.png",
+      "route": "/missing-page",
+      "width": 1440,
+      "height": 900,
+      "theme": "existing light appearance",
+      "data": "unmocked; API unavailable where relevant"
+    },
+    {
+      "name": "baseline-auth-google-callback-1440.png",
+      "route": "/auth/google/callback",
+      "width": 1440,
+      "height": 900,
+      "theme": "existing light appearance",
+      "data": "unmocked; API unavailable where relevant"
+    },
+    {
+      "name": "baseline-register-390.png",
+      "route": "/login",
+      "state": "register",
+      "width": 390,
+      "height": 900,
+      "theme": "existing light appearance"
+    },
+    {
+      "name": "baseline-menu-390.png",
+      "route": "/login",
+      "state": "menu open",
+      "width": 390,
+      "height": 900,
+      "theme": "existing light appearance"
+    }
+  ],
+  "matrix": [
+    {
+      "width": 320,
+      "route": "/",
+      "viewport": 320,
+      "scrollWidth": 320,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 320,
+      "route": "/exam",
+      "viewport": 320,
+      "scrollWidth": 320,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 320,
+      "route": "/courses/math",
+      "viewport": 320,
+      "scrollWidth": 320,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 320,
+      "route": "/diagnostic/intro",
+      "viewport": 320,
+      "scrollWidth": 320,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 320,
+      "route": "/package",
+      "viewport": 320,
+      "scrollWidth": 320,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 320,
+      "route": "/login",
+      "viewport": 320,
+      "scrollWidth": 320,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 320,
+      "route": "/missing-page",
+      "viewport": 320,
+      "scrollWidth": 320,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 320,
+      "route": "/auth/google/callback",
+      "viewport": 320,
+      "scrollWidth": 320,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 375,
+      "route": "/",
+      "viewport": 375,
+      "scrollWidth": 375,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 375,
+      "route": "/exam",
+      "viewport": 375,
+      "scrollWidth": 375,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 375,
+      "route": "/courses/math",
+      "viewport": 375,
+      "scrollWidth": 375,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 375,
+      "route": "/diagnostic/intro",
+      "viewport": 375,
+      "scrollWidth": 375,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 375,
+      "route": "/package",
+      "viewport": 375,
+      "scrollWidth": 375,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 375,
+      "route": "/login",
+      "viewport": 375,
+      "scrollWidth": 375,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 375,
+      "route": "/missing-page",
+      "viewport": 375,
+      "scrollWidth": 375,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 375,
+      "route": "/auth/google/callback",
+      "viewport": 375,
+      "scrollWidth": 375,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 390,
+      "route": "/exam",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 390,
+      "route": "/courses/math",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 390,
+      "route": "/diagnostic/intro",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 390,
+      "route": "/package",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 390,
+      "route": "/login",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 390,
+      "route": "/missing-page",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 390,
+      "route": "/auth/google/callback",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 768,
+      "route": "/",
+      "viewport": 768,
+      "scrollWidth": 768,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 768,
+      "route": "/exam",
+      "viewport": 768,
+      "scrollWidth": 768,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 768,
+      "route": "/courses/math",
+      "viewport": 768,
+      "scrollWidth": 768,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 768,
+      "route": "/diagnostic/intro",
+      "viewport": 768,
+      "scrollWidth": 768,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 768,
+      "route": "/package",
+      "viewport": 768,
+      "scrollWidth": 768,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 768,
+      "route": "/login",
+      "viewport": 768,
+      "scrollWidth": 768,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 768,
+      "route": "/missing-page",
+      "viewport": 768,
+      "scrollWidth": 768,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 768,
+      "route": "/auth/google/callback",
+      "viewport": 768,
+      "scrollWidth": 768,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 1024,
+      "route": "/",
+      "viewport": 1024,
+      "scrollWidth": 1024,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 1024,
+      "route": "/exam",
+      "viewport": 1024,
+      "scrollWidth": 1024,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 1024,
+      "route": "/courses/math",
+      "viewport": 1024,
+      "scrollWidth": 1024,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 1024,
+      "route": "/diagnostic/intro",
+      "viewport": 1024,
+      "scrollWidth": 1024,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 1024,
+      "route": "/package",
+      "viewport": 1024,
+      "scrollWidth": 1024,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 1024,
+      "route": "/login",
+      "viewport": 1024,
+      "scrollWidth": 1024,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 1024,
+      "route": "/missing-page",
+      "viewport": 1024,
+      "scrollWidth": 1024,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 1024,
+      "route": "/auth/google/callback",
+      "viewport": 1024,
+      "scrollWidth": 1024,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 1280,
+      "route": "/",
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 1280,
+      "route": "/exam",
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 1280,
+      "route": "/courses/math",
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 1280,
+      "route": "/diagnostic/intro",
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 1280,
+      "route": "/package",
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 1280,
+      "route": "/login",
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 1280,
+      "route": "/missing-page",
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 1280,
+      "route": "/auth/google/callback",
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 1440,
+      "route": "/",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 1440,
+      "route": "/exam",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 1440,
+      "route": "/courses/math",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 1440,
+      "route": "/diagnostic/intro",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 1440,
+      "route": "/package",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 1440,
+      "route": "/login",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 1440,
+      "route": "/missing-page",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    },
+    {
+      "width": 1440,
+      "route": "/auth/google/callback",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "bodyBackground": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "font": "Vazirmatn, Vazir, Tahoma, Arial, sans-serif",
+      "unnamedButtons": []
+    }
+  ],
+  "redirects": [
+    {
+      "requested": "/student",
+      "final": "/cent-s/login"
+    },
+    {
+      "requested": "/student/study/00000000-0000-0000-0000-000000000001",
+      "final": "/cent-s/login"
+    },
+    {
+      "requested": "/admin",
+      "final": "/cent-s/login"
+    },
+    {
+      "requested": "/checkout?product=unknown",
+      "final": "/cent-s/login"
+    },
+    {
+      "requested": "/diagnostic/test",
+      "final": "/cent-s/login"
+    },
+    {
+      "requested": "/diagnostic/results",
+      "final": "/cent-s/login"
+    },
+    {
+      "requested": "/student/simulators/result",
+      "final": "/cent-s/login"
+    },
+    {
+      "requested": "/checkout/success?order=unknown",
+      "final": "/cent-s/login"
+    }
+  ],
+  "pageErrors": [],
+  "systemAppearance": {
+    "light": {
+      "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "form": "rgb(255, 255, 255)"
+    },
+    "dark": {
+      "background": "rgba(0, 0, 0, 0) linear-gradient(rgb(247, 250, 251) 0px, rgb(243, 247, 249) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+      "form": "rgb(255, 255, 255)"
+    },
+    "identical": true
+  }
+}

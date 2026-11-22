@@ -1,0 +1,162 @@
+[
+  {
+    "name": "hero-colosseum",
+    "sourceBytes": 2084610,
+    "deliveredBytes": 363292,
+    "quality": 0.95,
+    "sourceWidth": 1536,
+    "sourceHeight": 1024,
+    "alphaRange": [
+      0,
+      254
+    ],
+    "transparentPixels": 655915,
+    "partiallyTransparentPixels": 916949,
+    "visibleBounds": [
+      0,
+      0,
+      1532,
+      1024
+    ],
+    "thresholds": [
+      {
+        "alpha": 8,
+        "bounds": [
+          43,
+          75,
+          1448,
+          961
+        ],
+        "pixels": 853278
+      },
+      {
+        "alpha": 32,
+        "bounds": [
+          44,
+          75,
+          1448,
+          961
+        ],
+        "pixels": 851914
+      },
+      {
+        "alpha": 64,
+        "bounds": [
+          44,
+          75,
+          1448,
+          961
+        ],
+        "pixels": 851232
+      },
+      {
+        "alpha": 128,
+        "bounds": [
+          44,
+          76,
+          1448,
+          961
+        ],
+        "pixels": 849973
+      },
+      {
+        "alpha": 200,
+        "bounds": [
+          45,
+          76,
+          1447,
+          960
+        ],
+        "pixels": 848420
+      }
+    ],
+    "derivativeBounds": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "name": "hero-underline",
+    "sourceBytes": 228884,
+    "deliveredBytes": 82666,
+    "quality": 0.95,
+    "sourceWidth": 2164,
+    "sourceHeight": 727,
+    "alphaRange": [
+      0,
+      255
+    ],
+    "transparentPixels": 1396534,
+    "partiallyTransparentPixels": 175593,
+    "visibleBounds": [
+      25,
+      23,
+      2134,
+      727
+    ],
+    "thresholds": [
+      {
+        "alpha": 8,
+        "bounds": [
+          227,
+          309,
+          1939,
+          446
+        ],
+        "pixels": 100695
+      },
+      {
+        "alpha": 32,
+        "bounds": [
+          227,
+          309,
+          1939,
+          446
+        ],
+        "pixels": 99736
+      },
+      {
+        "alpha": 64,
+        "bounds": [
+          228,
+          309,
+          1939,
+          446
+        ],
+        "pixels": 98960
+      },
+      {
+        "alpha": 128,
+        "bounds": [
+          228,
+          310,
+          1938,
+          445
+        ],
+        "pixels": 97621
+      },
+      {
+        "alpha": 200,
+        "bounds": [
+          228,
+          310,
+          1938,
+          445
+        ],
+        "pixels": 96059
+      }
+    ],
+    "derivativeBounds": [
+      25,
+      23,
+      2134,
+      727
+    ],
+    "width": 2109,
+    "height": 704
+  }
+]

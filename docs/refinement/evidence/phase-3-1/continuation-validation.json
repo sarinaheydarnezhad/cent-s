@@ -1,0 +1,19 @@
+{
+  "success": true,
+  "date": "2026-11-19",
+  "unit": { "command": "npm.cmd test", "exitCode": 0, "files": 8, "passed": 148 },
+  "defaultBuild": { "command": "npm.cmd run build", "exitCode": 0, "includesTypeScript": true, "base": "/cent-s/" },
+  "rootBuild": { "exitCode": 0, "base": "/", "output": ".preview-artifacts/phase31-root" },
+  "authentication": { "kind": "Synthetic SDK and API fixtures", "passed": 75, "environments": ["development light", "development dark", "compiled root"] },
+  "appearanceGroupsPerEnvironment": 5,
+  "publicResponsiveObservationsPerEnvironment": 112,
+  "gradientEndpointContrastPairsPerEnvironment": 36,
+  "teardown": {
+    "taskOwnedFrontend5173": "Stopped through owned command session",
+    "taskOwnedLocalPreview5108": "Stopped through owned command session",
+    "taskOwnedRootPreview5180": "Stopped through owned command session"
+  },
+  "committed": false,
+  "deployed": false,
+  "phase4Started": false
+}

@@ -1,0 +1,358 @@
+{
+  "kind": "Actual local preview states, no mocked responses",
+  "responsive": [
+    {
+      "name": "reader",
+      "theme": "light",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "name": "reader",
+      "theme": "light",
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "name": "reader",
+      "theme": "light",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "name": "reader",
+      "theme": "light",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "name": "reader",
+      "theme": "light",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "name": "reader",
+      "theme": "light",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "name": "reader",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "name": "reader",
+      "theme": "dark",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "name": "reader",
+      "theme": "dark",
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "name": "reader",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "name": "reader",
+      "theme": "dark",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "name": "reader",
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "name": "reader",
+      "theme": "dark",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "name": "reader",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "name": "admin",
+      "theme": "light",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "name": "admin",
+      "theme": "light",
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "name": "admin",
+      "theme": "light",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "name": "admin",
+      "theme": "light",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "name": "admin",
+      "theme": "light",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "name": "admin",
+      "theme": "light",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "name": "admin",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "name": "admin",
+      "theme": "dark",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "name": "admin",
+      "theme": "dark",
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "name": "admin",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "name": "admin",
+      "theme": "dark",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "name": "admin",
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "name": "admin",
+      "theme": "dark",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "name": "admin",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false
+    }
+  ],
+  "states": [
+    {
+      "name": "reader",
+      "theme": "light",
+      "selector": ".appearance-control select",
+      "color": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "outline": "rgb(41, 52, 60)",
+      "outlineStyle": "none",
+      "border": "rgb(117, 135, 147)",
+      "font": "Vazirmatn, Tahoma, Arial, sans-serif",
+      "height": 48
+    },
+    {
+      "name": "reader",
+      "theme": "dark",
+      "selector": ".appearance-control select",
+      "color": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "outline": "rgb(245, 247, 247)",
+      "outlineStyle": "none",
+      "border": "rgb(130, 150, 163)",
+      "font": "Vazirmatn, Tahoma, Arial, sans-serif",
+      "height": 48
+    },
+    {
+      "name": "admin",
+      "theme": "light",
+      "selector": ".appearance-control select",
+      "color": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "outline": "rgb(41, 52, 60)",
+      "outlineStyle": "none",
+      "border": "rgb(117, 135, 147)",
+      "font": "Vazirmatn, Tahoma, Arial, sans-serif",
+      "height": 48
+    },
+    {
+      "name": "admin",
+      "theme": "dark",
+      "selector": ".appearance-control select",
+      "color": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "outline": "rgb(245, 247, 247)",
+      "outlineStyle": "none",
+      "border": "rgb(130, 150, 163)",
+      "font": "Vazirmatn, Tahoma, Arial, sans-serif",
+      "height": 48
+    },
+    {
+      "name": "assessment",
+      "theme": "light",
+      "selector": ".appearance-control select",
+      "color": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "outline": "rgb(61, 86, 103)",
+      "outlineStyle": "solid",
+      "border": "rgb(117, 135, 147)",
+      "font": "Vazirmatn, Tahoma, Arial, sans-serif",
+      "height": 48
+    },
+    {
+      "name": "assessment",
+      "theme": "light",
+      "selector": ".options-list button.selected",
+      "color": "rgb(41, 52, 60)",
+      "background": "rgb(232, 238, 230)",
+      "outline": "rgb(41, 52, 60)",
+      "outlineStyle": "none",
+      "border": "rgb(78, 105, 123)",
+      "font": "Vazirmatn, Tahoma, Arial, sans-serif",
+      "height": 58
+    },
+    {
+      "name": "assessment",
+      "theme": "light",
+      "selector": ".options-list button.selected > span",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(77, 104, 122)",
+      "outline": "rgb(255, 255, 255)",
+      "outlineStyle": "none",
+      "border": "rgb(255, 255, 255)",
+      "font": "Vazirmatn, Tahoma, Arial, sans-serif",
+      "height": 32
+    },
+    {
+      "name": "assessment",
+      "theme": "light",
+      "selector": ".question-actions button:disabled",
+      "color": "rgb(117, 129, 138)",
+      "background": "rgb(224, 228, 230)",
+      "outline": "rgb(117, 129, 138)",
+      "outlineStyle": "none",
+      "border": "rgb(117, 135, 147)",
+      "font": "Vazirmatn, Tahoma, Arial, sans-serif",
+      "height": 48
+    },
+    {
+      "name": "assessment-hover",
+      "theme": "light",
+      "selector": ".options-list button",
+      "color": "rgb(41, 52, 60)",
+      "background": "rgb(244, 246, 247)",
+      "outline": "rgb(41, 52, 60)",
+      "outlineStyle": "none",
+      "border": "rgb(185, 194, 200)",
+      "font": "Vazirmatn, Tahoma, Arial, sans-serif",
+      "height": 58
+    },
+    {
+      "name": "assessment",
+      "theme": "dark",
+      "selector": ".appearance-control select",
+      "color": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "outline": "rgb(156, 184, 201)",
+      "outlineStyle": "solid",
+      "border": "rgb(130, 150, 163)",
+      "font": "Vazirmatn, Tahoma, Arial, sans-serif",
+      "height": 48
+    },
+    {
+      "name": "assessment",
+      "theme": "dark",
+      "selector": ".options-list button.selected",
+      "color": "rgb(171, 176, 179)",
+      "background": "rgb(115, 126, 117)",
+      "outline": "rgb(171, 176, 179)",
+      "outlineStyle": "none",
+      "border": "rgb(127, 155, 172)",
+      "font": "Vazirmatn, Tahoma, Arial, sans-serif",
+      "height": 58
+    },
+    {
+      "name": "assessment",
+      "theme": "dark",
+      "selector": ".options-list button.selected > span",
+      "color": "rgb(24, 33, 39)",
+      "background": "rgb(156, 184, 201)",
+      "outline": "rgb(24, 33, 39)",
+      "outlineStyle": "none",
+      "border": "rgb(24, 33, 39)",
+      "font": "Vazirmatn, Tahoma, Arial, sans-serif",
+      "height": 32
+    },
+    {
+      "name": "assessment",
+      "theme": "dark",
+      "selector": ".question-actions button:disabled",
+      "color": "rgb(137, 153, 163)",
+      "background": "rgb(52, 66, 75)",
+      "outline": "rgb(137, 153, 163)",
+      "outlineStyle": "none",
+      "border": "rgb(130, 150, 163)",
+      "font": "Vazirmatn, Tahoma, Arial, sans-serif",
+      "height": 72.375
+    },
+    {
+      "name": "assessment-hover",
+      "theme": "dark",
+      "selector": ".options-list button",
+      "color": "rgb(245, 247, 247)",
+      "background": "rgb(38, 50, 59)",
+      "outline": "rgb(245, 247, 247)",
+      "outlineStyle": "none",
+      "border": "rgb(113, 132, 144)",
+      "font": "Vazirmatn, Tahoma, Arial, sans-serif",
+      "height": 58
+    }
+  ],
+  "errors": [],
+  "fonts": {
+    "inter": true,
+    "vazirmatn600": true,
+    "brand": "Inter, Vazirmatn, Arial, sans-serif",
+    "resources": [
+      "vazirmatn-latin-400-normal.woff2",
+      "InterVariable.woff2",
+      "vazirmatn-arabic-600-normal.woff2",
+      "vazirmatn-latin-700-normal.woff2",
+      "vazirmatn-arabic-400-normal.woff2",
+      "vazirmatn-latin-600-normal.woff2",
+      "vazirmatn-arabic-700-normal.woff2"
+    ]
+  }
+}

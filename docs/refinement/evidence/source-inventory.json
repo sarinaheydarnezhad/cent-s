@@ -1,0 +1,1510 @@
+{
+  "exports": [
+    {
+      "file": "src/App.tsx",
+      "name": "App"
+    },
+    {
+      "file": "src/components/Brand.tsx",
+      "name": "Brand"
+    },
+    {
+      "file": "src/components/CentUI.tsx",
+      "name": "useRemote"
+    },
+    {
+      "file": "src/components/CentUI.tsx",
+      "name": "LoadState"
+    },
+    {
+      "file": "src/components/DashboardLayout.tsx",
+      "name": "DashboardLayout"
+    },
+    {
+      "file": "src/components/JourneyNav.tsx",
+      "name": "JourneyNav"
+    },
+    {
+      "file": "src/components/ProtectedRoute.tsx",
+      "name": "ProtectedRoute"
+    },
+    {
+      "file": "src/components/PublicLayout.tsx",
+      "name": "PublicLayout"
+    },
+    {
+      "file": "src/components/UI.tsx",
+      "name": "ProgressBar"
+    },
+    {
+      "file": "src/components/UI.tsx",
+      "name": "StatCard"
+    },
+    {
+      "file": "src/components/UI.tsx",
+      "name": "PageHeader"
+    },
+    {
+      "file": "src/components/UI.tsx",
+      "name": "EmptyState"
+    },
+    {
+      "file": "src/pages/admin/CentAdmin.tsx",
+      "name": "CentAdminDashboard"
+    },
+    {
+      "file": "src/pages/admin/CentAdmin.tsx",
+      "name": "CentContentAdmin"
+    },
+    {
+      "file": "src/pages/admin/CentAdmin.tsx",
+      "name": "CentProductsAdmin"
+    },
+    {
+      "file": "src/pages/admin/CentAdmin.tsx",
+      "name": "CentOrdersAdmin"
+    },
+    {
+      "file": "src/pages/admin/CentAdmin.tsx",
+      "name": "CentUsersAdmin"
+    },
+    {
+      "file": "src/pages/admin/CentAdmin.tsx",
+      "name": "CentQuestionsAdmin"
+    },
+    {
+      "file": "src/pages/CommercePages.tsx",
+      "name": "CatalogPage"
+    },
+    {
+      "file": "src/pages/CommercePages.tsx",
+      "name": "CentCheckoutPage"
+    },
+    {
+      "file": "src/pages/CommercePages.tsx",
+      "name": "CentCheckoutResult"
+    },
+    {
+      "file": "src/pages/CommercePages.tsx",
+      "name": "LibraryPage"
+    },
+    {
+      "file": "src/pages/CommercePages.tsx",
+      "name": "NotesPage"
+    },
+    {
+      "file": "src/pages/CommercePages.tsx",
+      "name": "AccountPage"
+    },
+    {
+      "file": "src/pages/CourseCatalog.tsx",
+      "name": "CourseCatalog"
+    },
+    {
+      "file": "src/pages/CourseCatalog.tsx",
+      "name": "CourseDetails"
+    },
+    {
+      "file": "src/pages/LearningProgress.tsx",
+      "name": "LearningProgress"
+    },
+    {
+      "file": "src/pages/PersonalResults.tsx",
+      "name": "PersonalResults"
+    },
+    {
+      "file": "src/pages/PracticePages.tsx",
+      "name": "CentDashboard"
+    },
+    {
+      "file": "src/pages/PracticePages.tsx",
+      "name": "CentExamPage"
+    },
+    {
+      "file": "src/pages/PracticePages.tsx",
+      "name": "CentResultsPage"
+    },
+    {
+      "file": "src/pages/PracticePages.tsx",
+      "name": "CentResultPage"
+    },
+    {
+      "file": "src/pages/PracticePages.tsx",
+      "name": "CentSimulatorsPage"
+    },
+    {
+      "file": "src/pages/public/DiagnosticIntroPage.tsx",
+      "name": "DiagnosticIntroPage"
+    },
+    {
+      "file": "src/pages/public/ExamPage.tsx",
+      "name": "ExamPage"
+    },
+    {
+      "file": "src/pages/public/GoogleCallbackPage.tsx",
+      "name": "GoogleCallbackPage"
+    },
+    {
+      "file": "src/pages/public/HomePage.tsx",
+      "name": "HomePage"
+    },
+    {
+      "file": "src/pages/public/LoginPage.tsx",
+      "name": "LoginPage"
+    },
+    {
+      "file": "src/pages/public/NotFoundPage.tsx",
+      "name": "NotFoundPage"
+    },
+    {
+      "file": "src/pages/StudyReader.tsx",
+      "name": "StudyReader"
+    },
+    {
+      "file": "src/services/cent.ts",
+      "name": "centRequest"
+    },
+    {
+      "file": "src/services/google-auth.ts",
+      "name": "safeReturnTo"
+    },
+    {
+      "file": "src/services/google-auth.ts",
+      "name": "googleCallbackPath"
+    },
+    {
+      "file": "src/services/google-auth.ts",
+      "name": "startGoogleSignIn"
+    },
+    {
+      "file": "src/services/google-auth.ts",
+      "name": "captureGoogleCallback"
+    },
+    {
+      "file": "src/services/google-auth.ts",
+      "name": "completeGoogleSignIn"
+    },
+    {
+      "file": "src/services/google-auth.ts",
+      "name": "googleAuthError"
+    },
+    {
+      "file": "src/services/pdf-upload.ts",
+      "name": "uploadTrainingPdf"
+    },
+    {
+      "file": "src/services/scoring.ts",
+      "name": "scoreAttempt"
+    },
+    {
+      "file": "src/services/scoring.ts",
+      "name": "getStrengthsAndWeaknesses"
+    },
+    {
+      "file": "src/services/study-return.ts",
+      "name": "studyReturnPath"
+    },
+    {
+      "file": "src/state/AppState.tsx",
+      "name": "AppStateProvider"
+    },
+    {
+      "file": "src/state/AppState.tsx",
+      "name": "useAppState"
+    }
+  ],
+  "styles": [
+    {
+      "file": "src/cent.css",
+      "bytes": 20467,
+      "colorOccurrences": 87,
+      "colors": [
+        [
+          "#fff",
+          7
+        ],
+        [
+          "#fcfdf8",
+          2
+        ],
+        [
+          "#d7dfd0",
+          2
+        ],
+        [
+          "#f8f9f5",
+          1
+        ],
+        [
+          "#dfe7e3",
+          1
+        ],
+        [
+          "#d5e5de",
+          1
+        ],
+        [
+          "#fff5ef",
+          1
+        ],
+        [
+          "#ecd5c4",
+          1
+        ],
+        [
+          "#143e38",
+          1
+        ],
+        [
+          "#f5f8ed",
+          1
+        ],
+        [
+          "#d5ee9e",
+          1
+        ],
+        [
+          "#c2d5cd",
+          1
+        ],
+        [
+          "#d7e6df",
+          1
+        ],
+        [
+          "#cbe990",
+          1
+        ],
+        [
+          "#ecf0e3",
+          1
+        ],
+        [
+          "#41654b",
+          1
+        ],
+        [
+          "#ebe7d9",
+          1
+        ],
+        [
+          "#817456",
+          1
+        ],
+        [
+          "#dde8e5",
+          1
+        ],
+        [
+          "#436d65",
+          1
+        ],
+        [
+          "#edf3ea",
+          1
+        ],
+        [
+          "#38674c",
+          1
+        ],
+        [
+          "#f4f0e5",
+          1
+        ],
+        [
+          "#8a7039",
+          1
+        ],
+        [
+          "#dfe5d2",
+          1
+        ],
+        [
+          "#f0f3e9",
+          1
+        ],
+        [
+          "#52773d",
+          1
+        ],
+        [
+          "#63715e",
+          1
+        ],
+        [
+          "#edf0ec",
+          1
+        ],
+        [
+          "#edf0e8",
+          1
+        ],
+        [
+          "#dfe8cf",
+          1
+        ],
+        [
+          "#3a5c34",
+          1
+        ],
+        [
+          "#afc8b8",
+          1
+        ],
+        [
+          "#f8faf5",
+          1
+        ],
+        [
+          "#173e36",
+          1
+        ],
+        [
+          "#f6f8ef",
+          1
+        ],
+        [
+          "#bfd1c7",
+          1
+        ],
+        [
+          "#c9df9d",
+          1
+        ],
+        [
+          "#dce5dd",
+          1
+        ],
+        [
+          "#e4eedc",
+          1
+        ],
+        [
+          "#e4e9e0",
+          1
+        ],
+        [
+          "#e9ece5",
+          1
+        ],
+        [
+          "#d8dfd4",
+          1
+        ],
+        [
+          "#527060",
+          1
+        ],
+        [
+          "#d9e0d4",
+          1
+        ],
+        [
+          "#7b887a",
+          1
+        ],
+        [
+          "#f4f6ef",
+          1
+        ],
+        [
+          "#dce1d5",
+          1
+        ],
+        [
+          "#d6dfd1",
+          1
+        ],
+        [
+          "#416446",
+          1
+        ],
+        [
+          "#65715e",
+          1
+        ],
+        [
+          "#d9e2d1",
+          1
+        ],
+        [
+          "#3a573e",
+          1
+        ],
+        [
+          "#233a2414",
+          1
+        ],
+        [
+          "#ddd39b",
+          1
+        ],
+        [
+          "#4f4a20",
+          1
+        ],
+        [
+          "#0002",
+          1
+        ],
+        [
+          "#2e6c50",
+          1
+        ],
+        [
+          "#7d8879",
+          1
+        ],
+        [
+          "#f8f9f3",
+          1
+        ],
+        [
+          "#52704a",
+          1
+        ],
+        [
+          "#e7ecd9",
+          1
+        ],
+        [
+          "#718366",
+          1
+        ],
+        [
+          "#dfe4cd",
+          1
+        ],
+        [
+          "#fffdf2",
+          1
+        ],
+        [
+          "#8a814b",
+          1
+        ],
+        [
+          "#414a37",
+          1
+        ],
+        [
+          "#c5cc98",
+          1
+        ],
+        [
+          "#7c826c",
+          1
+        ],
+        [
+          "#718859",
+          1
+        ],
+        [
+          "#7e855e",
+          1
+        ],
+        [
+          "#e1e6d6",
+          1
+        ],
+        [
+          "#edf1e3",
+          1
+        ],
+        [
+          "#74825d",
+          1
+        ],
+        [
+          "#495440",
+          1
+        ],
+        [
+          "#9e8d77",
+          1
+        ],
+        [
+          "#9ba58f",
+          1
+        ],
+        [
+          "#79a36c",
+          1
+        ],
+        [
+          "#fffdf8",
+          1
+        ]
+      ],
+      "gradients": 0,
+      "radii": [
+        [
+          "6px",
+          3
+        ],
+        [
+          "50%",
+          2
+        ],
+        [
+          "13px",
+          2
+        ],
+        [
+          "9px",
+          2
+        ],
+        [
+          "16px",
+          1
+        ],
+        [
+          "10px",
+          1
+        ],
+        [
+          "19px",
+          1
+        ],
+        [
+          "15px",
+          1
+        ],
+        [
+          "20px",
+          1
+        ],
+        [
+          "22px",
+          1
+        ],
+        [
+          "8px",
+          1
+        ],
+        [
+          "14px",
+          1
+        ]
+      ],
+      "tokens": [
+        {
+          "name": "--cent-paper",
+          "value": "#f8f9f5"
+        },
+        {
+          "name": "--cent-line",
+          "value": "#dfe7e3"
+        }
+      ],
+      "breakpoints": [
+        [
+          "520",
+          1
+        ],
+        [
+          "600",
+          1
+        ],
+        [
+          "700",
+          1
+        ],
+        [
+          "760",
+          1
+        ],
+        [
+          "1100",
+          1
+        ],
+        [
+          "1500",
+          1
+        ]
+      ]
+    },
+    {
+      "file": "src/styles.css",
+      "bytes": 59539,
+      "colorOccurrences": 246,
+      "colors": [
+        [
+          "#fff",
+          62
+        ],
+        [
+          "rgba(255,255,255,.12)",
+          6
+        ],
+        [
+          "rgba(13,119,111,.08)",
+          4
+        ],
+        [
+          "#edf1f4",
+          4
+        ],
+        [
+          "rgba(255,255,255,.1)",
+          3
+        ],
+        [
+          "#102a43",
+          2
+        ],
+        [
+          "rgba(255,255,255,.08)",
+          2
+        ],
+        [
+          "#f0f4f6",
+          2
+        ],
+        [
+          "#fff0f0",
+          2
+        ],
+        [
+          "rgba(255,255,255,.09)",
+          2
+        ],
+        [
+          "#f0f3f5",
+          2
+        ],
+        [
+          "#e8f6f0",
+          2
+        ],
+        [
+          "#f7f9fa",
+          2
+        ],
+        [
+          "#edf0fb",
+          2
+        ],
+        [
+          "rgba(25,57,78,.08)",
+          2
+        ],
+        [
+          "rgba(13,119,111,.2)",
+          2
+        ],
+        [
+          "rgba(0,0,0,.15)",
+          2
+        ],
+        [
+          "rgba(25,57,78,.1)",
+          2
+        ],
+        [
+          "rgba(255,255,255,.22)",
+          2
+        ],
+        [
+          "#78ddd0",
+          2
+        ],
+        [
+          "#0d776f",
+          1
+        ],
+        [
+          "#075a55",
+          1
+        ],
+        [
+          "#e6f4f2",
+          1
+        ],
+        [
+          "#163a5f",
+          1
+        ],
+        [
+          "#17324d",
+          1
+        ],
+        [
+          "#63788c",
+          1
+        ],
+        [
+          "#dfe7ee",
+          1
+        ],
+        [
+          "#f5f8fa",
+          1
+        ],
+        [
+          "#faf7ef",
+          1
+        ],
+        [
+          "#19956a",
+          1
+        ],
+        [
+          "#e09a29",
+          1
+        ],
+        [
+          "#d45151",
+          1
+        ],
+        [
+          "rgba(25,57,78,.09)",
+          1
+        ],
+        [
+          "rgba(25,57,78,.04)",
+          1
+        ],
+        [
+          "rgba(13,119,111,.18)",
+          1
+        ],
+        [
+          "#cddae4",
+          1
+        ],
+        [
+          "rgba(255,255,255,.94)",
+          1
+        ],
+        [
+          "#f5faf9",
+          1
+        ],
+        [
+          "#eaf4f2",
+          1
+        ],
+        [
+          "#f2c86b",
+          1
+        ],
+        [
+          "#1b4f6c",
+          1
+        ],
+        [
+          "rgba(16,42,67,.23)",
+          1
+        ],
+        [
+          "#a9c5d5",
+          1
+        ],
+        [
+          "#4fc6b9",
+          1
+        ],
+        [
+          "#6cdbcf",
+          1
+        ],
+        [
+          "#b8c8d5",
+          1
+        ],
+        [
+          "#d8e0e6",
+          1
+        ],
+        [
+          "#11998e",
+          1
+        ],
+        [
+          "rgba(255,255,255,.06)",
+          1
+        ],
+        [
+          "#d7f0ed",
+          1
+        ],
+        [
+          "#0a2238",
+          1
+        ],
+        [
+          "#c9d7e3",
+          1
+        ],
+        [
+          "#fff8e8",
+          1
+        ],
+        [
+          "#f1dca5",
+          1
+        ],
+        [
+          "#6d5821",
+          1
+        ],
+        [
+          "#bed2d1",
+          1
+        ],
+        [
+          "#f4f8f8",
+          1
+        ],
+        [
+          "#eef3f6",
+          1
+        ],
+        [
+          "#f1f5f7",
+          1
+        ],
+        [
+          "#8bbdb9",
+          1
+        ],
+        [
+          "#f9fcfb",
+          1
+        ],
+        [
+          "#9d3434",
+          1
+        ],
+        [
+          "#f3cdcd",
+          1
+        ],
+        [
+          "#164e63",
+          1
+        ],
+        [
+          "#c1d2df",
+          1
+        ],
+        [
+          "#a9c3d4",
+          1
+        ],
+        [
+          "#f3fbfa",
+          1
+        ],
+        [
+          "#bddedb",
+          1
+        ],
+        [
+          "#fff6df",
+          1
+        ],
+        [
+          "#f3d99c",
+          1
+        ],
+        [
+          "#d3ecea",
+          1
+        ],
+        [
+          "#173f58",
+          1
+        ],
+        [
+          "#bdd0dc",
+          1
+        ],
+        [
+          "#f6f8f9",
+          1
+        ],
+        [
+          "#9aa9b5",
+          1
+        ],
+        [
+          "#fff6dd",
+          1
+        ],
+        [
+          "#f1d28b",
+          1
+        ],
+        [
+          "#f9fbfc",
+          1
+        ],
+        [
+          "#e8f7f0",
+          1
+        ],
+        [
+          "rgba(16,42,67,.83)",
+          1
+        ],
+        [
+          "rgba(13,119,111,.78)",
+          1
+        ],
+        [
+          "#2d8d85",
+          1
+        ],
+        [
+          "#d4e3e8",
+          1
+        ],
+        [
+          "rgba(0,0,0,.06)",
+          1
+        ],
+        [
+          "#7359b1",
+          1
+        ],
+        [
+          "#f1ecfb",
+          1
+        ],
+        [
+          "#d9e4e7",
+          1
+        ],
+        [
+          "#f4f7f9",
+          1
+        ],
+        [
+          "#d7e3eb",
+          1
+        ],
+        [
+          "#111f33",
+          1
+        ],
+        [
+          "#abc2d3",
+          1
+        ],
+        [
+          "#b9cbd8",
+          1
+        ],
+        [
+          "#9eb3c2",
+          1
+        ],
+        [
+          "#174b63",
+          1
+        ],
+        [
+          "#7dd6cb",
+          1
+        ],
+        [
+          "#b7cad7",
+          1
+        ],
+        [
+          "#8ca0af",
+          1
+        ],
+        [
+          "#bed0da",
+          1
+        ],
+        [
+          "#f2f9f8",
+          1
+        ],
+        [
+          "#eff9f4",
+          1
+        ],
+        [
+          "#267155",
+          1
+        ],
+        [
+          "#fff4ed",
+          1
+        ],
+        [
+          "#9a6334",
+          1
+        ],
+        [
+          "#9cafba",
+          1
+        ],
+        [
+          "#e9f7f1",
+          1
+        ],
+        [
+          "#eef2f4",
+          1
+        ],
+        [
+          "#c2dfdc",
+          1
+        ],
+        [
+          "#5d67ac",
+          1
+        ],
+        [
+          "#e7f6ef",
+          1
+        ],
+        [
+          "#217c58",
+          1
+        ],
+        [
+          "#ffeded",
+          1
+        ],
+        [
+          "#ac3d3d",
+          1
+        ],
+        [
+          "#fff3dc",
+          1
+        ],
+        [
+          "#9d681d",
+          1
+        ],
+        [
+          "#667b8b",
+          1
+        ],
+        [
+          "rgba(7,24,38,.6)",
+          1
+        ],
+        [
+          "#606cad",
+          1
+        ],
+        [
+          "#f7fafb",
+          1
+        ],
+        [
+          "#f3f7f9",
+          1
+        ],
+        [
+          "#cbdeda",
+          1
+        ],
+        [
+          "#eaf0f2",
+          1
+        ],
+        [
+          "#f2faf9",
+          1
+        ],
+        [
+          "rgba(13,119,111,.035)",
+          1
+        ],
+        [
+          "#fff5df",
+          1
+        ],
+        [
+          "#96651b",
+          1
+        ],
+        [
+          "#f2deb1",
+          1
+        ],
+        [
+          "#eaf8f1",
+          1
+        ],
+        [
+          "#24795a",
+          1
+        ],
+        [
+          "#c7eadb",
+          1
+        ],
+        [
+          "#70b7b0",
+          1
+        ],
+        [
+          "#fafcfc",
+          1
+        ],
+        [
+          "#cad5dc",
+          1
+        ],
+        [
+          "#f8fbfb",
+          1
+        ],
+        [
+          "#0d293f",
+          1
+        ],
+        [
+          "#0b5754",
+          1
+        ],
+        [
+          "#108479",
+          1
+        ],
+        [
+          "rgba(255,255,255,.16)",
+          1
+        ],
+        [
+          "rgba(255,255,255,.13)",
+          1
+        ],
+        [
+          "#79e1d5",
+          1
+        ],
+        [
+          "#bcd4d8",
+          1
+        ],
+        [
+          "#fff1cc",
+          1
+        ],
+        [
+          "#9b6817",
+          1
+        ],
+        [
+          "rgba(255,255,255,.18)",
+          1
+        ],
+        [
+          "#e7edef",
+          1
+        ],
+        [
+          "#9bc9c4",
+          1
+        ],
+        [
+          "rgba(255,255,255,.92)",
+          1
+        ],
+        [
+          "#f3f8f7",
+          1
+        ],
+        [
+          "#edf2f4",
+          1
+        ],
+        [
+          "#164d5d",
+          1
+        ],
+        [
+          "rgba(16,42,67,.16)",
+          1
+        ],
+        [
+          "#b9cdd6",
+          1
+        ],
+        [
+          "#a8c0cb",
+          1
+        ],
+        [
+          "rgba(255,255,255,.98)",
+          1
+        ],
+        [
+          "#fff2d8",
+          1
+        ],
+        [
+          "#a46d18",
+          1
+        ],
+        [
+          "#e9f7f0",
+          1
+        ],
+        [
+          "#a9c0ca",
+          1
+        ]
+      ],
+      "gradients": 21,
+      "radii": [
+        [
+          "10px",
+          16
+        ],
+        [
+          "50%",
+          14
+        ],
+        [
+          "12px",
+          12
+        ],
+        [
+          "13px",
+          9
+        ],
+        [
+          "99px",
+          8
+        ],
+        [
+          "14px",
+          7
+        ],
+        [
+          "9px",
+          7
+        ],
+        [
+          "8px",
+          7
+        ],
+        [
+          "11px",
+          6
+        ],
+        [
+          "7px",
+          5
+        ],
+        [
+          "18px",
+          4
+        ],
+        [
+          "22px",
+          4
+        ],
+        [
+          "6px",
+          3
+        ],
+        [
+          "5px",
+          3
+        ],
+        [
+          "24px",
+          2
+        ],
+        [
+          "15px",
+          2
+        ],
+        [
+          "0",
+          1
+        ],
+        [
+          "var(--radius)",
+          1
+        ],
+        [
+          "12px 12px 12px 4px",
+          1
+        ],
+        [
+          "150px 150px 35px 35px",
+          1
+        ],
+        [
+          "140px 140px 25px 25px",
+          1
+        ],
+        [
+          "3px",
+          1
+        ],
+        [
+          "20px",
+          1
+        ],
+        [
+          "16px",
+          1
+        ]
+      ],
+      "tokens": [
+        {
+          "name": "--primary",
+          "value": "#0d776f"
+        },
+        {
+          "name": "--primary-dark",
+          "value": "#075a55"
+        },
+        {
+          "name": "--primary-soft",
+          "value": "#e6f4f2"
+        },
+        {
+          "name": "--navy",
+          "value": "#102a43"
+        },
+        {
+          "name": "--navy-2",
+          "value": "#163a5f"
+        },
+        {
+          "name": "--ink",
+          "value": "#17324d"
+        },
+        {
+          "name": "--muted",
+          "value": "#63788c"
+        },
+        {
+          "name": "--line",
+          "value": "#dfe7ee"
+        },
+        {
+          "name": "--surface",
+          "value": "#fff"
+        },
+        {
+          "name": "--bg",
+          "value": "#f5f8fa"
+        },
+        {
+          "name": "--cream",
+          "value": "#faf7ef"
+        },
+        {
+          "name": "--success",
+          "value": "#19956a"
+        },
+        {
+          "name": "--warning",
+          "value": "#e09a29"
+        },
+        {
+          "name": "--danger",
+          "value": "#d45151"
+        },
+        {
+          "name": "--shadow",
+          "value": "0 18px 50px rgba(25,57,78,.09)"
+        },
+        {
+          "name": "--radius",
+          "value": "18px"
+        },
+        {
+          "name": "--font",
+          "value": "'Vazirmatn','Vazir',Tahoma,Arial,sans-serif"
+        }
+      ],
+      "breakpoints": [
+        [
+          "600",
+          2
+        ],
+        [
+          "820",
+          2
+        ],
+        [
+          "520",
+          1
+        ],
+        [
+          "900",
+          1
+        ],
+        [
+          "1050",
+          1
+        ]
+      ]
+    }
+  ],
+  "contrast": [
+    {
+      "name": "current success button",
+      "foreground": "#ffffff",
+      "background": "#19956a",
+      "ratio": 3.78
+    },
+    {
+      "name": "current warning text on white",
+      "foreground": "#e09a29",
+      "background": "#ffffff",
+      "ratio": 2.38
+    },
+    {
+      "name": "current focus on white",
+      "foreground": "#79a36c",
+      "background": "#ffffff",
+      "ratio": 2.89
+    },
+    {
+      "name": "approved primary button",
+      "foreground": "#ffffff",
+      "background": "#4d687a",
+      "ratio": 5.87
+    },
+    {
+      "name": "sage with white",
+      "foreground": "#ffffff",
+      "background": "#a5b5a1",
+      "ratio": 2.16
+    },
+    {
+      "name": "sage with charcoal",
+      "foreground": "#29343c",
+      "background": "#a5b5a1",
+      "ratio": 5.89
+    },
+    {
+      "name": "secondary on off white",
+      "foreground": "#65737d",
+      "background": "#f5f7f7",
+      "ratio": 4.54
+    },
+    {
+      "name": "proposed warning on warning background",
+      "foreground": "#9a702b",
+      "background": "#f8f0e2",
+      "ratio": 3.93
+    },
+    {
+      "name": "proposed error on error background",
+      "foreground": "#b54c4c",
+      "background": "#f8eaea",
+      "ratio": 4.37
+    }
+  ]
+}

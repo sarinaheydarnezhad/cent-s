@@ -1,0 +1,6501 @@
+{
+  "success": true,
+  "checks": [
+    "light /package: text/gradient contrast and single-click persisted appearance",
+    "light /courses/math: text/gradient contrast and single-click persisted appearance",
+    "light /package?kind=SUBSCRIPTION: text/gradient contrast and single-click persisted appearance",
+    "light /checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f: text/gradient contrast and single-click persisted appearance",
+    "light /checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3: text/gradient contrast and single-click persisted appearance",
+    "light /student/profile: text/gradient contrast and single-click persisted appearance",
+    "dark /package: text/gradient contrast and single-click persisted appearance",
+    "dark /courses/math: text/gradient contrast and single-click persisted appearance",
+    "dark /package?kind=SUBSCRIPTION: text/gradient contrast and single-click persisted appearance",
+    "dark /checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f: text/gradient contrast and single-click persisted appearance",
+    "dark /checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3: text/gradient contrast and single-click persisted appearance",
+    "dark /student/profile: text/gradient contrast and single-click persisted appearance"
+  ],
+  "measuredTextPairs": 810,
+  "measurements": [
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "منابع یادگیری ایتاتست",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "منابع یادگیری ایتاتست",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "منبع مناسب مسیرت رو انتخاب کن",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "منبع مناسب مسیرت رو انتخاب کن",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "یاد بگیر، اونطور که خودت راحتی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "یاد بگیر، اونطور که خودت راحتی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "منابع و دسترسی آموزشی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "خرید تکی برای دسترسی دائمی؛ اشتراک برای مطالعه در مدت اعتبار",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 4.969720906577139
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "Local notes verification",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "خرید تکی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "خرید تکی · دائمی",
+      "foreground": "rgb(52, 77, 50)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 7.899999447094375
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "Local notes verification",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "درس‌نامه‌ها و تمرین‌های منبع اصلی ریاضی. دسترسی خریداری‌شده ",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "۱۰٬۰۰۰ ریال",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "در کتابخانه من",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "جزئیات منبع",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "Local study return verification",
+      "foreground": "rgb(52, 77, 50)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 7.899999447094375
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "Local study return verification",
+      "foreground": "rgb(52, 77, 50)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 8.193560367872148
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "خرید تکی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "خرید تکی · دائمی",
+      "foreground": "rgb(52, 77, 50)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 7.899999447094375
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "Local study return verification",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "درس‌نامه‌ها و تمرین‌های منبع اصلی ریاضی. دسترسی خریداری‌شده ",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "۱۰٬۰۰۰ ریال",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "در کتابخانه من",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "جزئیات منبع",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "درس‌نامه و تمرین ریاضی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "خرید تکی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "خرید تکی · دائمی",
+      "foreground": "rgb(52, 77, 50)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 7.899999447094375
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "درس‌نامه و تمرین ریاضی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "درس‌نامه‌ها و تمرین‌های منبع اصلی ریاضی. دسترسی خریداری‌شده ",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "۲۵۰٬۰۰۱ ریال",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "در کتابخانه من",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "جزئیات منبع",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "درس‌نامه و تمرین منطق و تحلیل داده",
+      "foreground": "rgb(52, 77, 50)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 7.899999447094375
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "درس‌نامه و تمرین منطق و تحلیل داده",
+      "foreground": "rgb(52, 77, 50)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 8.193560367872148
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "خرید تکی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "دسترسی فعلی به مطالعه",
+      "foreground": "rgb(52, 77, 50)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 7.899999447094375
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "درس‌نامه و تمرین منطق و تحلیل داده",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "درس‌نامه‌ها و تمرین‌های منبع اصلی منطق و تحلیل داده. دسترسی ",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "۳۵۰٬۰۰۱ ریال",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "مطالعه با دسترسی فعلی",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "جزئیات منبع",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "خرید دسترسی دائمی",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "درس‌نامه و تمرین زیست‌شناسی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "خرید تکی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "دسترسی فعلی به مطالعه",
+      "foreground": "rgb(52, 77, 50)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 7.899999447094375
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "درس‌نامه و تمرین زیست‌شناسی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "درس‌نامه‌ها و تمرین‌های منبع اصلی زیست‌شناسی. دسترسی خریداری",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "۴۵۰٬۰۰۱ ریال",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "مطالعه با دسترسی فعلی",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "جزئیات منبع",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "خرید دسترسی دائمی",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "درس‌ها و سرفصل‌های منتشرشده",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "شیمی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "1 درس‌نامه · 5 فصل · 5 مبحث",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "31 سؤال با پاسخ تشریحی",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "مشاهده فصل‌ها و درس‌ها",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "فیزیک",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "6 درس‌نامه · 6 فصل · 68 مبحث",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "204 سؤال با پاسخ تشریحی",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "مشاهده فصل‌ها و درس‌ها",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/package",
+      "text": "مطالعه داخل حساب ایتاتست انجام می‌شه؛ فایل PDF برای دانلود ا",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 4.969720906577139
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "ریاضی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "منبع آموزشی",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(231, 238, 242)",
+      "ratio": 5.0073279029463675
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "ریاضی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(231, 238, 242)",
+      "ratio": 10.849607593589786
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "ریاضی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "خرید تکی · دائمی",
+      "foreground": "rgb(52, 77, 50)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 7.899999447094375
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "داخل اشتراک",
+      "foreground": "rgb(52, 77, 50)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 7.899999447094375
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "درس‌نامه‌ها و تمرین‌های منبع اصلی ریاضی. دسترسی خریداری‌شده ",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(231, 238, 242)",
+      "ratio": 4.557452651508061
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "تعیین سطح این درس",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "تمرین این درس",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "درس‌نامه‌های منبع",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "مسترکلاس ریاضی: پایه‌های محاسباتی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۱۴ صفحه یا بخش مطالعه",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "شروع مطالعه",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "معادلات، نامعادلات و هندسهٔ مختصات",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۱۵ صفحه یا بخش مطالعه",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "شروع مطالعه",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "توابع (Functions)",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۱۴ صفحه یا بخش مطالعه",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "شروع مطالعه",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "مثلثات؛ از رادیان تا حل معادله",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۱۰ صفحه یا بخش مطالعه",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "شروع مطالعه",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "هندسه از صفر تا تشابه و مختصات",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۸ صفحه یا بخش مطالعه",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "شروع مطالعه",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "ترکیبات و احتمال",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۱۱ صفحه یا بخش مطالعه",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "شروع مطالعه",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "آمار (Statistics)",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۸ صفحه یا بخش مطالعه",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "شروع مطالعه",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "فصل‌ها و مهارت‌ها",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "مسترکلاس ریاضی: پایه‌های محاسباتی",
+      "foreground": "rgb(61, 86, 103)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 7.705319578871759
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "معماری اعداد: مجموعه‌های تو در تو",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "اعداد اعشاری و نمایش علمی (Scientific Notation)",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "مقایسه اعداد، تخمین و تلهٔ اعداد منفی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "عوامل، مضرب‌ها، اعداد اول و تجزیه",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "بخش‌پذیری اعداد (Divisibility Rules)",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "درصدها: زبان تغییرات",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "قوانین پایهٔ توان‌ها (۷ قانون طلایی)",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "ریشه‌ها و رادیکال‌ها: ضرب، تقسیم و ساده‌سازی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "ترتیب عملیات (BODMAS/PEMDAS)",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "عبارت‌های جبری",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۹ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "اتحادهای جبری و فاکتورگیری",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "معادلات، نامعادلات و هندسهٔ مختصات",
+      "foreground": "rgb(61, 86, 103)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 7.705319578871759
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "معادلات درجهٔ یک (Linear Equations)",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "نامعادلات درجهٔ یک (Linear Inequalities)",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "معادلات درجهٔ دو (Quadratic Equations)",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "آشنایی با تعیین علامت (Sign Analysis)",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "نامعادلات درجهٔ دو (Quadratic Inequalities)",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "دستگاه معادلات دو مجهولی (System of Equations)",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "دستگاه مختصات (Coordinate System) و معادلهٔ خط (Equation of ",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "وضعیت دو خط نسبت به هم (Position of Two Lines)",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "فاصلهٔ دو نقطه (Distance Between Two Points) و میانهٔ پاره‌خ",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "فاصلهٔ نقطه از خط (Distance from a Point to a Line) و دو خط ",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "مرکز ثقل مثلث (Centroid of a Triangle) و متوازی‌الاضلاع (Par",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "معادلهٔ دایره (Equation of a Circle)",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "توابع (Functions)",
+      "foreground": "rgb(61, 86, 103)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 7.705319578871759
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "مفهوم تابع، دامنه، برد و ویژگی‌های پایه",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "توابع پایه و آناتومی نماد لگاریتم",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "معادلهٔ درجه دوم و نمودار سهمی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "قدرمطلق — معادله و نامعادله کامل",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "معادلات گویا و گنگ",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "تابع نمایی (Exponential)",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "تابع لگاریتمی (کامل)",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "تبدیلات نمودار توابع",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "ترکیب توابع و تابع وارون",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "حل معادله و نامعادله با نمودار — تعیین علامت کامل",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "مثلثات؛ از رادیان تا حل معادله",
+      "foreground": "rgb(61, 86, 103)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 7.705319578871759
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "رادیان، درجه، طول کمان و مساحت مطاع",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "نسبت‌های مثلثاتی در مثلث قائم‌الزاویه",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "دایرهٔ مثلثاتی، علامت نسبت‌ها و زوایای ویژه",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "فرمول‌های تبدیل زاویه (زوایای وتری)",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "فرمول‌های مجموع، تفاضل و زاویهٔ دوبرابر",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "معادلات مثلثاتی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "توابع مثلثاتی: نمودار، دامنه و برد",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "هندسه از صفر تا تشابه و مختصات",
+      "foreground": "rgb(61, 86, 103)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 7.705319578871759
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "مفاهیم پایهٔ هندسه",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "مثلث و چندضلعی‌ها",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "دایره",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "اشکال فضایی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "تشابه اشکال و مختصات دکارتی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "ترکیبات و احتمال",
+      "foreground": "rgb(61, 86, 103)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 7.705319578871759
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "اصل ضرب و اصل متمم",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "جایگشت (Permutations)",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "ترکیب (Combinations)",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "فضای نمونه، پیشامد و احتمال پایه",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "قوانین احتمال",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "احتمال شرطی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "آمار (Statistics)",
+      "foreground": "rgb(61, 86, 103)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 7.705319578871759
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "جامعه و نمونه، انواع متغیرها",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "جدول‌های فراوانی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "نمودارها",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "شاخص‌های مرکزی: میانگین، میانه و مد",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "شاخص‌های پراکندگی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "دسترسی به مطالعه",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "این منبع رو قبلاً خریده‌ای",
+      "foreground": "rgb(61, 86, 103)",
+      "background": "rgb(231, 238, 242)",
+      "ratio": 6.57144881338382
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "رفتن به کتابخانه",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/courses/math",
+      "text": "مطالعه داخل حساب ایتاتست انجام می‌شه؛ فایل PDF برای دانلود ا",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "منابع یادگیری ایتاتست",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "light",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "منابع یادگیری ایتاتست",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "منبع مناسب مسیرت رو انتخاب کن",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "light",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "منبع مناسب مسیرت رو انتخاب کن",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "یاد بگیر، اونطور که خودت راحتی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "light",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "یاد بگیر، اونطور که خودت راحتی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(41, 52, 60)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "منابع و دسترسی آموزشی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "خرید تکی برای دسترسی دائمی؛ اشتراک برای مطالعه در مدت اعتبار",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 4.969720906577139
+    },
+    {
+      "theme": "light",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "اشتراک مدت‌دار",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "اشتراک سی‌روزه مطالعه",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "مطالعه آموزش‌های مشمول اشتراک",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "دسترسی به آزمون‌های شبیه‌ساز در مدت اعتبار",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "تمدید فقط با خرید دوباره؛ بدون تمدید خودکار",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "۳۰۰٬۰۰۰ ریال",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "خرید دوره بعدی",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "اشتراک مدت‌دار",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "اشتراک نودروزه مطالعه",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "مطالعه آموزش‌های مشمول اشتراک",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "دسترسی به آزمون‌های شبیه‌ساز در مدت اعتبار",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "تمدید فقط با خرید دوباره؛ بدون تمدید خودکار",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "۹۰۰٬۰۰۰ ریال",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "خرید دوره بعدی",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "مطالعه داخل حساب ایتاتست انجام می‌شه؛ فایل PDF برای دانلود ا",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 4.969720906577139
+    },
+    {
+      "theme": "light",
+      "path": "/checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f",
+      "text": "خرید آموزشی",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "light",
+      "path": "/checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f",
+      "text": "مرور و پرداخت",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f",
+      "text": "جزئیات خریدت رو بررسی کن و بعد ادامه بده.",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 4.969720906577139
+    },
+    {
+      "theme": "light",
+      "path": "/checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f",
+      "text": "اشتراک سی‌روزه مطالعه",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f",
+      "text": "اشتراک با مدت مشخص",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f",
+      "text": "پرداخت آزمایشی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f",
+      "text": "مدت طرح: 30 روز. تمدید خودکار نیست؛ دوره جدید پس از پایان پو",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f",
+      "text": "ادامه و پرداختدر حال آماده‌سازی پرداخت…",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f",
+      "text": "مطالعه داخل حساب ایتاتست انجام می‌شه؛ فایل PDF برای دانلود ا",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f",
+      "text": "خلاصه سفارش",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f",
+      "text": "اشتراک سی‌روزه مطالعه",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f",
+      "text": "۳۰۰٬۰۰۰ ریال",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f",
+      "text": "قیمت فعلی از سرور دریافت شده؛ مبلغ سفارش پس از ثبت، توسط سرو",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f",
+      "text": "دسترسی به آموزش‌های داخل اشتراک و آزمون‌های شبیه‌ساز در مدت ",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f",
+      "text": "سوابق خرید و وضعیت اشتراک",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "پیگیری خرید",
+      "foreground": "rgb(77, 104, 122)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "light",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "وضعیت سفارش",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "پرداخت تأییدشده",
+      "foreground": "rgb(72, 102, 68)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 5.4619620720388715
+    },
+    {
+      "theme": "light",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "پرداختت تأیید شد",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "وضعیت پرداخت از سرور دریافت شده. دسترسی مطالعه جداگانه بر اس",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "درس‌نامه و تمرین ریاضی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "۲۵۰٬۰۰۱ ریال",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "جزئیات سفارش",
+      "foreground": "rgb(61, 86, 103)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 7.705319578871759
+    },
+    {
+      "theme": "light",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "نوع خرید",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 4.698790194330086
+    },
+    {
+      "theme": "light",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "آموزش تکی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "مبلغ سفارش",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 4.698790194330086
+    },
+    {
+      "theme": "light",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "۲۵۰٬۰۰۱ ریال",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "تاریخ سفارش",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 4.698790194330086
+    },
+    {
+      "theme": "light",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "۱۴۰۵/۸/۲۸",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "روش پرداخت",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 4.698790194330086
+    },
+    {
+      "theme": "light",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "پرداخت آزمایشی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "شناسه سفارش",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 4.698790194330086
+    },
+    {
+      "theme": "light",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "کد پیگیری پرداخت",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 4.698790194330086
+    },
+    {
+      "theme": "light",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "DEV-6cb75c5a6be24e2f864463115c71c3a3",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "مطالعه از کتابخانه",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.871317395004715
+    },
+    {
+      "theme": "light",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "بررسی دوباره",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "سوابق خرید",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "حساب کاربری من",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "وضعیت اشتراک و سوابق خریدت رو اینجا بررسی کن.",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 4.969720906577139
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "بازبین خرید",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "حساب دانش‌آموزی",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "نام و نام خانوادگی",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "بازبین خرید",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "ایمیل حساب",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "commerce-d2d85341-368d-405e-9512-c0b17d0bed29@example.test",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "کتابخانه من",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "اشتراکت فعاله",
+      "foreground": "rgb(52, 77, 50)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 7.899999447094375
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "اشتراک، دسترسی مدت‌دار به آموزش‌های مشمول و آزمون‌های شبیه‌س",
+      "foreground": "rgb(52, 77, 50)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 7.899999447094375
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "دوره جاری",
+      "foreground": "rgb(52, 77, 50)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 7.899999447094375
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "دوره بعدی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "دیدن طرح‌ها و خرید دوره بعدی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "سوابق خرید",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 11.831065687139782
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "وضعیت پرداخت با مجوز فعلی مطالعه تفاوت داره.",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(245, 247, 247)",
+      "ratio": 4.969720906577139
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "اشتراک نودروزه مطالعه",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "۱۴۰۵/۸/۲۸ · اشتراک مطالعه",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "پرداخت تأییدشده",
+      "foreground": "rgb(72, 102, 68)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 5.4619620720388715
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "۹۰۰٬۰۰۰ ریال",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "جزئیات و بررسی سفارش",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "اطلاعات سفارش",
+      "foreground": "rgb(61, 86, 103)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 7.705319578871759
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "نوع خرید",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 4.698790194330086
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "اشتراک مطالعه · ۹۰ روز",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "مبلغ سفارش",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 4.698790194330086
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "۹۰۰٬۰۰۰ ریال",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "تاریخ سفارش",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 4.698790194330086
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "۱۴۰۵/۸/۲۸",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "روش پرداخت",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 4.698790194330086
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "پرداخت آزمایشی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "شناسه سفارش",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 4.698790194330086
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "47b00da2-082c-46bc-90af-ce9630622ae9",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "کد پیگیری پرداخت",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 4.698790194330086
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "DEV-47b00da2082c46bc90afce9630622ae9",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "اشتراک سی‌روزه مطالعه",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "۱۴۰۵/۸/۲۸ · اشتراک مطالعه",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "پرداخت تأییدشده",
+      "foreground": "rgb(72, 102, 68)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 5.4619620720388715
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "۳۰۰٬۰۰۰ ریال",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "جزئیات و بررسی سفارش",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "اطلاعات سفارش",
+      "foreground": "rgb(61, 86, 103)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 7.705319578871759
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "نوع خرید",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 4.698790194330086
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "اشتراک مطالعه · ۳۰ روز",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "مبلغ سفارش",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 4.698790194330086
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "۳۰۰٬۰۰۰ ریال",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "تاریخ سفارش",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 4.698790194330086
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "۱۴۰۵/۸/۲۸",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "روش پرداخت",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 4.698790194330086
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "پرداخت آزمایشی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "شناسه سفارش",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 4.698790194330086
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "d83cd3bd-2b84-422d-97a5-f2b75b50ccab",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "کد پیگیری پرداخت",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 4.698790194330086
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "DEV-d83cd3bd2b84422d97a5f2b75b50ccab",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "درس‌نامه و تمرین ریاضی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "۱۴۰۵/۸/۲۸ · خرید تکی",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 5.343818409408496
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "پرداخت تأییدشده",
+      "foreground": "rgb(72, 102, 68)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 5.4619620720388715
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "۲۵۰٬۰۰۱ ریال",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "خرید تکی · دائمی",
+      "foreground": "rgb(52, 77, 50)",
+      "background": "rgb(232, 238, 230)",
+      "ratio": 7.899999447094375
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "جزئیات و بررسی سفارش",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 12.721653350429932
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "اطلاعات سفارش",
+      "foreground": "rgb(61, 86, 103)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 7.705319578871759
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "نوع خرید",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 4.698790194330086
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "آموزش تکی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "مبلغ سفارش",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 4.698790194330086
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "۲۵۰٬۰۰۱ ریال",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "تاریخ سفارش",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 4.698790194330086
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "۱۴۰۵/۸/۲۸",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "روش پرداخت",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 4.698790194330086
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "پرداخت آزمایشی",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "شناسه سفارش",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 4.698790194330086
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "کد پیگیری پرداخت",
+      "foreground": "rgb(94, 109, 119)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 4.698790194330086
+    },
+    {
+      "theme": "light",
+      "path": "/student/profile",
+      "text": "DEV-6cb75c5a6be24e2f864463115c71c3a3",
+      "foreground": "rgb(41, 52, 60)",
+      "background": "rgb(237, 241, 242)",
+      "ratio": 11.186079959869605
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "منابع یادگیری ایتاتست",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "منابع یادگیری ایتاتست",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "منبع مناسب مسیرت رو انتخاب کن",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "منبع مناسب مسیرت رو انتخاب کن",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "یاد بگیر، اونطور که خودت راحتی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "یاد بگیر، اونطور که خودت راحتی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "منابع و دسترسی آموزشی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 15.190344709396944
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "خرید تکی برای دسترسی دائمی؛ اشتراک برای مطالعه در مدت اعتبار",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 9.078757389006908
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "Local notes verification",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "خرید تکی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "خرید تکی · دائمی",
+      "foreground": "rgb(198, 216, 194)",
+      "background": "rgb(48, 61, 52)",
+      "ratio": 7.598662017479065
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "Local notes verification",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "درس‌نامه‌ها و تمرین‌های منبع اصلی ریاضی. دسترسی خریداری‌شده ",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "۱۰٬۰۰۰ ریال",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "در کتابخانه من",
+      "foreground": "rgb(24, 33, 39)",
+      "background": "rgb(156, 184, 201)",
+      "ratio": 7.86604004163575
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "جزئیات منبع",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "Local study return verification",
+      "foreground": "rgb(198, 216, 194)",
+      "background": "rgb(48, 61, 52)",
+      "ratio": 7.598662017479065
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "Local study return verification",
+      "foreground": "rgb(198, 216, 194)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 8.025655371716
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "خرید تکی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "خرید تکی · دائمی",
+      "foreground": "rgb(198, 216, 194)",
+      "background": "rgb(48, 61, 52)",
+      "ratio": 7.598662017479065
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "Local study return verification",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "درس‌نامه‌ها و تمرین‌های منبع اصلی ریاضی. دسترسی خریداری‌شده ",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "۱۰٬۰۰۰ ریال",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "در کتابخانه من",
+      "foreground": "rgb(24, 33, 39)",
+      "background": "rgb(156, 184, 201)",
+      "ratio": 7.86604004163575
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "جزئیات منبع",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "درس‌نامه و تمرین ریاضی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "خرید تکی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "خرید تکی · دائمی",
+      "foreground": "rgb(198, 216, 194)",
+      "background": "rgb(48, 61, 52)",
+      "ratio": 7.598662017479065
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "درس‌نامه و تمرین ریاضی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "درس‌نامه‌ها و تمرین‌های منبع اصلی ریاضی. دسترسی خریداری‌شده ",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "۲۵۰٬۰۰۱ ریال",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "در کتابخانه من",
+      "foreground": "rgb(24, 33, 39)",
+      "background": "rgb(156, 184, 201)",
+      "ratio": 7.86604004163575
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "جزئیات منبع",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "درس‌نامه و تمرین منطق و تحلیل داده",
+      "foreground": "rgb(198, 216, 194)",
+      "background": "rgb(48, 61, 52)",
+      "ratio": 7.598662017479065
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "درس‌نامه و تمرین منطق و تحلیل داده",
+      "foreground": "rgb(198, 216, 194)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 8.025655371716
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "خرید تکی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "دسترسی فعلی به مطالعه",
+      "foreground": "rgb(198, 216, 194)",
+      "background": "rgb(48, 61, 52)",
+      "ratio": 7.598662017479065
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "درس‌نامه و تمرین منطق و تحلیل داده",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "درس‌نامه‌ها و تمرین‌های منبع اصلی منطق و تحلیل داده. دسترسی ",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "۳۵۰٬۰۰۱ ریال",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "مطالعه با دسترسی فعلی",
+      "foreground": "rgb(24, 33, 39)",
+      "background": "rgb(156, 184, 201)",
+      "ratio": 7.86604004163575
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "جزئیات منبع",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "خرید دسترسی دائمی",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "درس‌نامه و تمرین زیست‌شناسی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "خرید تکی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "دسترسی فعلی به مطالعه",
+      "foreground": "rgb(198, 216, 194)",
+      "background": "rgb(48, 61, 52)",
+      "ratio": 7.598662017479065
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "درس‌نامه و تمرین زیست‌شناسی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "درس‌نامه‌ها و تمرین‌های منبع اصلی زیست‌شناسی. دسترسی خریداری",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "۴۵۰٬۰۰۱ ریال",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "مطالعه با دسترسی فعلی",
+      "foreground": "rgb(24, 33, 39)",
+      "background": "rgb(156, 184, 201)",
+      "ratio": 7.86604004163575
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "جزئیات منبع",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "خرید دسترسی دائمی",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "درس‌ها و سرفصل‌های منتشرشده",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 15.190344709396944
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "شیمی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "1 درس‌نامه · 5 فصل · 5 مبحث",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "31 سؤال با پاسخ تشریحی",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "مشاهده فصل‌ها و درس‌ها",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "فیزیک",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "6 درس‌نامه · 6 فصل · 68 مبحث",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "204 سؤال با پاسخ تشریحی",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "مشاهده فصل‌ها و درس‌ها",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/package",
+      "text": "مطالعه داخل حساب ایتاتست انجام می‌شه؛ فایل PDF برای دانلود ا",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 9.078757389006908
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "ریاضی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "منبع آموزشی",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(44, 61, 73)",
+      "ratio": 5.405810492755233
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "ریاضی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(44, 61, 73)",
+      "ratio": 10.439321994800173
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "ریاضی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "خرید تکی · دائمی",
+      "foreground": "rgb(198, 216, 194)",
+      "background": "rgb(48, 61, 52)",
+      "ratio": 7.598662017479065
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "داخل اشتراک",
+      "foreground": "rgb(198, 216, 194)",
+      "background": "rgb(48, 61, 52)",
+      "ratio": 7.598662017479065
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "درس‌نامه‌ها و تمرین‌های منبع اصلی ریاضی. دسترسی خریداری‌شده ",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(44, 61, 73)",
+      "ratio": 6.239231137255542
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "تعیین سطح این درس",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "تمرین این درس",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "درس‌نامه‌های منبع",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "مسترکلاس ریاضی: پایه‌های محاسباتی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۱۴ صفحه یا بخش مطالعه",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "شروع مطالعه",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "معادلات، نامعادلات و هندسهٔ مختصات",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۱۵ صفحه یا بخش مطالعه",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "شروع مطالعه",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "توابع (Functions)",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۱۴ صفحه یا بخش مطالعه",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "شروع مطالعه",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "مثلثات؛ از رادیان تا حل معادله",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۱۰ صفحه یا بخش مطالعه",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "شروع مطالعه",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "هندسه از صفر تا تشابه و مختصات",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۸ صفحه یا بخش مطالعه",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "شروع مطالعه",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "ترکیبات و احتمال",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۱۱ صفحه یا بخش مطالعه",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "شروع مطالعه",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "آمار (Statistics)",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۸ صفحه یا بخش مطالعه",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "شروع مطالعه",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "فصل‌ها و مهارت‌ها",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "مسترکلاس ریاضی: پایه‌های محاسباتی",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "معماری اعداد: مجموعه‌های تو در تو",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "اعداد اعشاری و نمایش علمی (Scientific Notation)",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "مقایسه اعداد، تخمین و تلهٔ اعداد منفی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "عوامل، مضرب‌ها، اعداد اول و تجزیه",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "بخش‌پذیری اعداد (Divisibility Rules)",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "درصدها: زبان تغییرات",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "قوانین پایهٔ توان‌ها (۷ قانون طلایی)",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "ریشه‌ها و رادیکال‌ها: ضرب، تقسیم و ساده‌سازی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "ترتیب عملیات (BODMAS/PEMDAS)",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "عبارت‌های جبری",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۹ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "اتحادهای جبری و فاکتورگیری",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "معادلات، نامعادلات و هندسهٔ مختصات",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "معادلات درجهٔ یک (Linear Equations)",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "نامعادلات درجهٔ یک (Linear Inequalities)",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "معادلات درجهٔ دو (Quadratic Equations)",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "آشنایی با تعیین علامت (Sign Analysis)",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "نامعادلات درجهٔ دو (Quadratic Inequalities)",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "دستگاه معادلات دو مجهولی (System of Equations)",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "دستگاه مختصات (Coordinate System) و معادلهٔ خط (Equation of ",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "وضعیت دو خط نسبت به هم (Position of Two Lines)",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "فاصلهٔ دو نقطه (Distance Between Two Points) و میانهٔ پاره‌خ",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "فاصلهٔ نقطه از خط (Distance from a Point to a Line) و دو خط ",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "مرکز ثقل مثلث (Centroid of a Triangle) و متوازی‌الاضلاع (Par",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "معادلهٔ دایره (Equation of a Circle)",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "توابع (Functions)",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "مفهوم تابع، دامنه، برد و ویژگی‌های پایه",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "توابع پایه و آناتومی نماد لگاریتم",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "معادلهٔ درجه دوم و نمودار سهمی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "قدرمطلق — معادله و نامعادله کامل",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "معادلات گویا و گنگ",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "تابع نمایی (Exponential)",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "تابع لگاریتمی (کامل)",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "تبدیلات نمودار توابع",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "ترکیب توابع و تابع وارون",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "حل معادله و نامعادله با نمودار — تعیین علامت کامل",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "مثلثات؛ از رادیان تا حل معادله",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "رادیان، درجه، طول کمان و مساحت مطاع",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "نسبت‌های مثلثاتی در مثلث قائم‌الزاویه",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "دایرهٔ مثلثاتی، علامت نسبت‌ها و زوایای ویژه",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "فرمول‌های تبدیل زاویه (زوایای وتری)",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "فرمول‌های مجموع، تفاضل و زاویهٔ دوبرابر",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "معادلات مثلثاتی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "توابع مثلثاتی: نمودار، دامنه و برد",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "هندسه از صفر تا تشابه و مختصات",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "مفاهیم پایهٔ هندسه",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "مثلث و چندضلعی‌ها",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "دایره",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "اشکال فضایی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "تشابه اشکال و مختصات دکارتی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "ترکیبات و احتمال",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "اصل ضرب و اصل متمم",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "جایگشت (Permutations)",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "ترکیب (Combinations)",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "فضای نمونه، پیشامد و احتمال پایه",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "قوانین احتمال",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "احتمال شرطی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "آمار (Statistics)",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "جامعه و نمونه، انواع متغیرها",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "جدول‌های فراوانی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "نمودارها",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "شاخص‌های مرکزی: میانگین، میانه و مد",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "شاخص‌های پراکندگی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "۳ سؤال",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "سنجش این مبحث",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "دسترسی به مطالعه",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "این منبع رو قبلاً خریده‌ای",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(44, 61, 73)",
+      "ratio": 5.405810492755233
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "رفتن به کتابخانه",
+      "foreground": "rgb(24, 33, 39)",
+      "background": "rgb(156, 184, 201)",
+      "ratio": 7.86604004163575
+    },
+    {
+      "theme": "dark",
+      "path": "/courses/math",
+      "text": "مطالعه داخل حساب ایتاتست انجام می‌شه؛ فایل PDF برای دانلود ا",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "منابع یادگیری ایتاتست",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "dark",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "منابع یادگیری ایتاتست",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "منبع مناسب مسیرت رو انتخاب کن",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "dark",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "منبع مناسب مسیرت رو انتخاب کن",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "یاد بگیر، اونطور که خودت راحتی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(77, 104, 122)",
+      "ratio": 5.460291980680298
+    },
+    {
+      "theme": "dark",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "یاد بگیر، اونطور که خودت راحتی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "منابع و دسترسی آموزشی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 15.190344709396944
+    },
+    {
+      "theme": "dark",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "خرید تکی برای دسترسی دائمی؛ اشتراک برای مطالعه در مدت اعتبار",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 9.078757389006908
+    },
+    {
+      "theme": "dark",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "اشتراک مدت‌دار",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "اشتراک سی‌روزه مطالعه",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "مطالعه آموزش‌های مشمول اشتراک",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "دسترسی به آزمون‌های شبیه‌ساز در مدت اعتبار",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "تمدید فقط با خرید دوباره؛ بدون تمدید خودکار",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "۳۰۰٬۰۰۰ ریال",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "خرید دوره بعدی",
+      "foreground": "rgb(24, 33, 39)",
+      "background": "rgb(156, 184, 201)",
+      "ratio": 7.86604004163575
+    },
+    {
+      "theme": "dark",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "اشتراک مدت‌دار",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "اشتراک نودروزه مطالعه",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "مطالعه آموزش‌های مشمول اشتراک",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "دسترسی به آزمون‌های شبیه‌ساز در مدت اعتبار",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "تمدید فقط با خرید دوباره؛ بدون تمدید خودکار",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "۹۰۰٬۰۰۰ ریال",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "خرید دوره بعدی",
+      "foreground": "rgb(24, 33, 39)",
+      "background": "rgb(156, 184, 201)",
+      "ratio": 7.86604004163575
+    },
+    {
+      "theme": "dark",
+      "path": "/package?kind=SUBSCRIPTION",
+      "text": "مطالعه داخل حساب ایتاتست انجام می‌شه؛ فایل PDF برای دانلود ا",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 9.078757389006908
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f",
+      "text": "خرید آموزشی",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 7.86604004163575
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f",
+      "text": "مرور و پرداخت",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 15.190344709396944
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f",
+      "text": "جزئیات خریدت رو بررسی کن و بعد ادامه بده.",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 9.078757389006908
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f",
+      "text": "اشتراک سی‌روزه مطالعه",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f",
+      "text": "اشتراک با مدت مشخص",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f",
+      "text": "پرداخت آزمایشی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f",
+      "text": "مدت طرح: 30 روز. تمدید خودکار نیست؛ دوره جدید پس از پایان پو",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f",
+      "text": "ادامه و پرداختدر حال آماده‌سازی پرداخت…",
+      "foreground": "rgb(24, 33, 39)",
+      "background": "rgb(156, 184, 201)",
+      "ratio": 7.86604004163575
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f",
+      "text": "مطالعه داخل حساب ایتاتست انجام می‌شه؛ فایل PDF برای دانلود ا",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f",
+      "text": "خلاصه سفارش",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f",
+      "text": "اشتراک سی‌روزه مطالعه",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f",
+      "text": "۳۰۰٬۰۰۰ ریال",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f",
+      "text": "قیمت فعلی از سرور دریافت شده؛ مبلغ سفارش پس از ثبت، توسط سرو",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f",
+      "text": "دسترسی به آموزش‌های داخل اشتراک و آزمون‌های شبیه‌ساز در مدت ",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout?product=510c5496-b444-4c78-ae64-d6d253edf55f",
+      "text": "سوابق خرید و وضعیت اشتراک",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "پیگیری خرید",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 7.86604004163575
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "وضعیت سفارش",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 15.190344709396944
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "پرداخت تأییدشده",
+      "foreground": "rgb(168, 198, 162)",
+      "background": "rgb(48, 61, 52)",
+      "ratio": 6.1127483538937115
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "پرداختت تأیید شد",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "وضعیت پرداخت از سرور دریافت شده. دسترسی مطالعه جداگانه بر اس",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "درس‌نامه و تمرین ریاضی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "۲۵۰٬۰۰۱ ریال",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "جزئیات سفارش",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "نوع خرید",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 6.690106769140596
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "آموزش تکی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "مبلغ سفارش",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 6.690106769140596
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "۲۵۰٬۰۰۱ ریال",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "تاریخ سفارش",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 6.690106769140596
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "۱۴۰۵/۸/۲۸",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "روش پرداخت",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 6.690106769140596
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "پرداخت آزمایشی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "شناسه سفارش",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 6.690106769140596
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "کد پیگیری پرداخت",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 6.690106769140596
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "DEV-6cb75c5a6be24e2f864463115c71c3a3",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "مطالعه از کتابخانه",
+      "foreground": "rgb(24, 33, 39)",
+      "background": "rgb(156, 184, 201)",
+      "ratio": 7.86604004163575
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "بررسی دوباره",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/checkout/success?order=6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "text": "سوابق خرید",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "حساب کاربری من",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 15.190344709396944
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "وضعیت اشتراک و سوابق خریدت رو اینجا بررسی کن.",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 9.078757389006908
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "بازبین خرید",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "حساب دانش‌آموزی",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "نام و نام خانوادگی",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "بازبین خرید",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "ایمیل حساب",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "commerce-d2d85341-368d-405e-9512-c0b17d0bed29@example.test",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "کتابخانه من",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "اشتراکت فعاله",
+      "foreground": "rgb(198, 216, 194)",
+      "background": "rgb(48, 61, 52)",
+      "ratio": 7.598662017479065
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "اشتراک، دسترسی مدت‌دار به آموزش‌های مشمول و آزمون‌های شبیه‌س",
+      "foreground": "rgb(198, 216, 194)",
+      "background": "rgb(48, 61, 52)",
+      "ratio": 7.598662017479065
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "دوره جاری",
+      "foreground": "rgb(198, 216, 194)",
+      "background": "rgb(48, 61, 52)",
+      "ratio": 7.598662017479065
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "دوره بعدی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "دیدن طرح‌ها و خرید دوره بعدی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "سوابق خرید",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 15.190344709396944
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "وضعیت پرداخت با مجوز فعلی مطالعه تفاوت داره.",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(24, 33, 39)",
+      "ratio": 9.078757389006908
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "اشتراک نودروزه مطالعه",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "۱۴۰۵/۸/۲۸ · اشتراک مطالعه",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "پرداخت تأییدشده",
+      "foreground": "rgb(168, 198, 162)",
+      "background": "rgb(48, 61, 52)",
+      "ratio": 6.1127483538937115
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "۹۰۰٬۰۰۰ ریال",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "جزئیات و بررسی سفارش",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "اطلاعات سفارش",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "نوع خرید",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 6.690106769140596
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "اشتراک مطالعه · ۹۰ روز",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "مبلغ سفارش",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 6.690106769140596
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "۹۰۰٬۰۰۰ ریال",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "تاریخ سفارش",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 6.690106769140596
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "۱۴۰۵/۸/۲۸",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "روش پرداخت",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 6.690106769140596
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "پرداخت آزمایشی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "شناسه سفارش",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 6.690106769140596
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "47b00da2-082c-46bc-90af-ce9630622ae9",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "کد پیگیری پرداخت",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 6.690106769140596
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "DEV-47b00da2082c46bc90afce9630622ae9",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "اشتراک سی‌روزه مطالعه",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "۱۴۰۵/۸/۲۸ · اشتراک مطالعه",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "پرداخت تأییدشده",
+      "foreground": "rgb(168, 198, 162)",
+      "background": "rgb(48, 61, 52)",
+      "ratio": 6.1127483538937115
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "۳۰۰٬۰۰۰ ریال",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "جزئیات و بررسی سفارش",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "اطلاعات سفارش",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "نوع خرید",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 6.690106769140596
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "اشتراک مطالعه · ۳۰ روز",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "مبلغ سفارش",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 6.690106769140596
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "۳۰۰٬۰۰۰ ریال",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "تاریخ سفارش",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 6.690106769140596
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "۱۴۰۵/۸/۲۸",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "روش پرداخت",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 6.690106769140596
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "پرداخت آزمایشی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "شناسه سفارش",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 6.690106769140596
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "d83cd3bd-2b84-422d-97a5-f2b75b50ccab",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "کد پیگیری پرداخت",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 6.690106769140596
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "DEV-d83cd3bd2b84422d97a5f2b75b50ccab",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "درس‌نامه و تمرین ریاضی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "۱۴۰۵/۸/۲۸ · خرید تکی",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 7.8087479221606255
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "پرداخت تأییدشده",
+      "foreground": "rgb(168, 198, 162)",
+      "background": "rgb(48, 61, 52)",
+      "ratio": 6.1127483538937115
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "۲۵۰٬۰۰۱ ریال",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "خرید تکی · دائمی",
+      "foreground": "rgb(198, 216, 194)",
+      "background": "rgb(48, 61, 52)",
+      "ratio": 7.598662017479065
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "جزئیات و بررسی سفارش",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 13.0653973450195
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "اطلاعات سفارش",
+      "foreground": "rgb(156, 184, 201)",
+      "background": "rgb(34, 45, 53)",
+      "ratio": 6.765675212902057
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "نوع خرید",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 6.690106769140596
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "آموزش تکی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "مبلغ سفارش",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 6.690106769140596
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "۲۵۰٬۰۰۱ ریال",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "تاریخ سفارش",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 6.690106769140596
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "۱۴۰۵/۸/۲۸",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "روش پرداخت",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 6.690106769140596
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "پرداخت آزمایشی",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "شناسه سفارش",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 6.690106769140596
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "6cb75c5a-6be2-4e2f-8644-63115c71c3a3",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "کد پیگیری پرداخت",
+      "foreground": "rgb(183, 195, 202)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 6.690106769140596
+    },
+    {
+      "theme": "dark",
+      "path": "/student/profile",
+      "text": "DEV-6cb75c5a6be24e2f864463115c71c3a3",
+      "foreground": "rgb(245, 247, 247)",
+      "background": "rgb(43, 56, 65)",
+      "ratio": 11.193715572680583
+    }
+  ],
+  "errors": []
+}

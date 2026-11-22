@@ -1,6 +1,7 @@
-/* global sessionStorage, document, innerWidth, console, setTimeout */
+/* global sessionStorage, document, innerWidth, console */
 import assert from 'node:assert/strict'
 import { writeFileSync } from 'node:fs'
+import process from 'node:process'
 import { URL } from 'node:url'
 import { chromium } from 'playwright'
 import { root, artifact, browserOptions } from './environment.mjs'
@@ -16,7 +17,7 @@ const browser = await chromium.launch(browserOptions)
 const passed = []
 
 async function fixture(options = {}) {
-  const context = await browser.newContext({ viewport: { width: 1440, height: 1000 } })
+  const context = await browser.newContext({ colorScheme: process.env.ITATEST_TEST_THEME || 'light', viewport: { width: 1440, height: 1000 } })
   const page = await context.newPage()
   const calls = { start: 0, complete: [], password: [], logout: [], pageErrors: [] }
   page.on('pageerror', error => calls.pageErrors.push(error.message))
@@ -24,10 +25,13 @@ async function fixture(options = {}) {
   await context.route('**/api/cent/v1/**', async route => {
     const request = route.request(), path = new URL(request.url()).pathname.split('/api/cent/v1')[1]
     const send = (body, status = 200) => route.fulfill({ status, contentType: 'application/json', body: JSON.stringify(body) })
+    if (path === '/auth/google/config') return send({ enabled: true, mode: 'AuthorizationCode', clientId: 'synthetic.apps.googleusercontent.com' })
     if (path === '/auth/google/start') {
       calls.start++
       if (options.startUnavailable) return send({ code: 'google_unavailable', message: 'Unavailable' }, 503)
-      await new Promise(resolve => setTimeout(resolve, 150))
+      // Hold the response until loading UI has committed, avoiding a navigation race.
+      await page.getByRole('status').getByText('در حال انتقال به گوگل…').waitFor()
+      assert.equal(await page.getByRole('button', { name: /^(ورود به حساب|ساخت حساب)$/ }).isDisabled(), true)
       return send({ authorizationUrl, state, codeVerifier, expiresAt: new Date(Date.now() + 300_000).toISOString() })
     }
     if (path === '/auth/google/complete') {
@@ -43,6 +47,7 @@ async function fixture(options = {}) {
     }
     if (path === '/auth/logout') { calls.logout.push(request.headers().authorization); return route.fulfill({ status: 204 }) }
     if (path === '/me') return send(user)
+    if (path === '/me/mastery') return send({ courses: [] })
     if (path === '/me/library') return send(library)
     if (path === '/curriculum') return send({ courses: [], chapters: [], topics: [], documents: [] })
     if (path === '/catalog') return send({ trainings: [], products: [] })
@@ -59,8 +64,6 @@ async function startOn(page, registration = false) {
   const button = page.getByRole('button', { name: registration ? 'ثبت‌نام با گوگل' : 'ورود با گوگل', exact: true })
   // A double activation must produce one start, even with blank required password fields.
   await button.evaluate(element => { element.click(); element.click() })
-  await page.getByRole('status').getByText('در حال انتقال به گوگل…').waitFor()
-  assert.equal(await page.getByRole('button', { name: registration ? 'ساخت حساب' : 'ورود به حساب', exact: true }).isDisabled(), true)
   await page.waitForURL(authorizationUrl)
 }
 
@@ -177,7 +180,7 @@ try {
     await page.goto(root + '/login')
     await page.getByRole('button', { name: 'ورود با گوگل', exact: true }).waitFor()
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true)
-    await page.screenshot({ path: artifact('google-auth-mobile.png'), fullPage: true })
+    if (process.env.ITATEST_TEST_CAPTURE !== '0') await page.screenshot({ path: artifact('google-auth-mobile.png'), fullPage: true })
     passed.push('mobile Google sign-in layout fits the viewport')
     await context.close()
   }

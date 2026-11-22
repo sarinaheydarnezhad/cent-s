@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "checks": [
+    "Gated library skeleton, injected library503 with real reload and no false empty state; injected unreadable metadata removes reading actions, retains existing access links and never invents positions",
+    "Assertion-only long RTL/LTR notes/scientific notation/title wrap without shell overflow; compact long-title header; existing context-menu prevention, injected visibility concealment and print suppression retained",
+    "Real revision409 preserves local draft and server note/revision, no false success; native dirty-new-note cancel preserves text, confirm resets editor; existing4000-character limit; temporary conflict note deleted"
+  ],
+  "browserErrors": [],
+  "injected": [
+    "pending library",
+    "library503",
+    "unreadable library metadata",
+    "long note/title",
+    "document visibility event"
+  ],
+  "actual": [
+    "note revision conflict",
+    "native draft confirmations",
+    "protected rendering/context-menu/print"
+  ]
+}

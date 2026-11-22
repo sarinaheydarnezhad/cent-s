@@ -1,0 +1,12 @@
+{
+  "images": 92,
+  "referenceImages": 45,
+  "consumerImages": 35,
+  "beforeImages": 12,
+  "contrastPairs": 48,
+  "responsiveObservations": 46,
+  "finalMockExecutions": 75,
+  "focusedLintErrors": 0,
+  "authoredLintErrors": 90,
+  "srcLintErrors": 6
+}

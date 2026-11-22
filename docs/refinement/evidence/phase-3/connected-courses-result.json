@@ -1,0 +1,20 @@
+{
+  "success": true,
+  "courses": [
+    "math",
+    "logic",
+    "biology",
+    "chemistry",
+    "physics"
+  ],
+  "sourceDocuments": 39,
+  "verified": [
+    "public-home",
+    "catalog",
+    "course-introduction",
+    "all-course-outlines",
+    "mobile",
+    "api-error-without-demo-fallback",
+    "lesson-access-protection"
+  ]
+}

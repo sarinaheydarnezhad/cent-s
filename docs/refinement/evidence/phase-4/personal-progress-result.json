@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "scores": [
+    0,
+    100
+  ],
+  "recentAccuracy": 50,
+  "change": 100,
+  "subjectProgress": 2,
+  "distinctEvidence": 9,
+  "checked": [
+    "empty account",
+    "actual practice results",
+    "updated mastery",
+    "comparable improvement",
+    "subject filter",
+    "mobile",
+    "account isolation"
+  ],
+  "browserErrors": []
+}

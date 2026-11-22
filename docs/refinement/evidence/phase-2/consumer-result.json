@@ -1,0 +1,474 @@
+{
+  "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+  "screenshots": [
+    {
+      "file": "after-final-login-light-390.png",
+      "route": "/login",
+      "theme": "light",
+      "width": 390,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    },
+    {
+      "file": "after-final-login-dark-390.png",
+      "route": "/login",
+      "theme": "dark",
+      "width": 390,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    },
+    {
+      "file": "after-final-login-light-1440.png",
+      "route": "/login",
+      "theme": "light",
+      "width": 1440,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    },
+    {
+      "file": "after-final-login-dark-1440.png",
+      "route": "/login",
+      "theme": "dark",
+      "width": 1440,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    },
+    {
+      "file": "after-final-catalog-light-390.png",
+      "route": "/package",
+      "theme": "light",
+      "width": 390,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    },
+    {
+      "file": "after-final-catalog-dark-390.png",
+      "route": "/package",
+      "theme": "dark",
+      "width": 390,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    },
+    {
+      "file": "after-final-catalog-light-1440.png",
+      "route": "/package",
+      "theme": "light",
+      "width": 1440,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    },
+    {
+      "file": "after-final-catalog-dark-1440.png",
+      "route": "/package",
+      "theme": "dark",
+      "width": 1440,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    },
+    {
+      "file": "after-final-course-light-390.png",
+      "route": "/courses/math",
+      "theme": "light",
+      "width": 390,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    },
+    {
+      "file": "after-final-course-dark-390.png",
+      "route": "/courses/math",
+      "theme": "dark",
+      "width": 390,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    },
+    {
+      "file": "after-final-course-light-1440.png",
+      "route": "/courses/math",
+      "theme": "light",
+      "width": 1440,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    },
+    {
+      "file": "after-final-course-dark-1440.png",
+      "route": "/courses/math",
+      "theme": "dark",
+      "width": 1440,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    },
+    {
+      "file": "after-public-menu-dark-390.png",
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data"
+    },
+    {
+      "file": "injected-course-recovery-dark-1440.png",
+      "kind": "Actual application render with deliberately injected local HTTP503 response; not a naturally occurring backend failure"
+    },
+    {
+      "file": "after-final-dashboard-light-390.png",
+      "route": "/student",
+      "theme": "light",
+      "width": 390,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    },
+    {
+      "file": "after-final-dashboard-dark-390.png",
+      "route": "/student",
+      "theme": "dark",
+      "width": 390,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    },
+    {
+      "file": "after-final-dashboard-light-1440.png",
+      "route": "/student",
+      "theme": "light",
+      "width": 1440,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    },
+    {
+      "file": "after-final-dashboard-dark-1440.png",
+      "route": "/student",
+      "theme": "dark",
+      "width": 1440,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    },
+    {
+      "file": "after-final-learning-light-390.png",
+      "route": "/student/analysis",
+      "theme": "light",
+      "width": 390,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    },
+    {
+      "file": "after-final-learning-dark-390.png",
+      "route": "/student/analysis",
+      "theme": "dark",
+      "width": 390,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    },
+    {
+      "file": "after-final-learning-light-1440.png",
+      "route": "/student/analysis",
+      "theme": "light",
+      "width": 1440,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    },
+    {
+      "file": "after-final-learning-dark-1440.png",
+      "route": "/student/analysis",
+      "theme": "dark",
+      "width": 1440,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    },
+    {
+      "file": "after-final-results-light-390.png",
+      "route": "/student/results",
+      "theme": "light",
+      "width": 390,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    },
+    {
+      "file": "after-final-results-dark-390.png",
+      "route": "/student/results",
+      "theme": "dark",
+      "width": 390,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    },
+    {
+      "file": "after-final-results-light-1440.png",
+      "route": "/student/results",
+      "theme": "light",
+      "width": 1440,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    },
+    {
+      "file": "after-final-results-dark-1440.png",
+      "route": "/student/results",
+      "theme": "dark",
+      "width": 1440,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    },
+    {
+      "file": "after-final-recommendation-light-390.png",
+      "route": "/student/results/3b368b18-cdde-4f32-a905-dc333d4ad64d",
+      "theme": "light",
+      "width": 390,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    },
+    {
+      "file": "after-final-recommendation-dark-390.png",
+      "route": "/student/results/3b368b18-cdde-4f32-a905-dc333d4ad64d",
+      "theme": "dark",
+      "width": 390,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    },
+    {
+      "file": "after-final-recommendation-light-1440.png",
+      "route": "/student/results/3b368b18-cdde-4f32-a905-dc333d4ad64d",
+      "theme": "light",
+      "width": 1440,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    },
+    {
+      "file": "after-final-recommendation-dark-1440.png",
+      "route": "/student/results/3b368b18-cdde-4f32-a905-dc333d4ad64d",
+      "theme": "dark",
+      "width": 1440,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    },
+    {
+      "file": "after-student-menu-dark-390.png",
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data"
+    },
+    {
+      "file": "after-final-admin-light-390.png",
+      "route": "/admin",
+      "theme": "light",
+      "width": 390,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    },
+    {
+      "file": "after-final-admin-dark-390.png",
+      "route": "/admin",
+      "theme": "dark",
+      "width": 390,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    },
+    {
+      "file": "after-final-admin-light-1440.png",
+      "route": "/admin",
+      "theme": "light",
+      "width": 1440,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    },
+    {
+      "file": "after-final-admin-dark-1440.png",
+      "route": "/admin",
+      "theme": "dark",
+      "width": 1440,
+      "kind": "Actual rendered local Cent.Preview responses; local synthetic test accounts; no production data",
+      "overflow": false
+    }
+  ],
+  "checks": [
+    "Public mobile disclosure: hidden closed content, expanded/controls, Escape restoration, outside dismissal, desktop remains visible",
+    "Shared recovery notice renders injected503; actual retry restores real course content",
+    "Student sidebar: named trigger, safe open focus, Escape return, hidden links cannot receive focus"
+  ],
+  "responsive": [
+    {
+      "name": "login",
+      "theme": "light",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "name": "login",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "name": "login",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "name": "login",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "name": "catalog",
+      "theme": "light",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "name": "catalog",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "name": "catalog",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "name": "catalog",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "name": "course",
+      "theme": "light",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "name": "course",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "name": "course",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "name": "course",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "name": "dashboard",
+      "theme": "light",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "name": "dashboard",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "name": "dashboard",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "name": "dashboard",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "name": "learning",
+      "theme": "light",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "name": "learning",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "name": "learning",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "name": "learning",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "name": "results",
+      "theme": "light",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "name": "results",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "name": "results",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "name": "results",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "name": "recommendation",
+      "theme": "light",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "name": "recommendation",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "name": "recommendation",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "name": "recommendation",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "name": "admin",
+      "theme": "light",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "name": "admin",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "name": "admin",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "name": "admin",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "success": true
+}

@@ -1,6 +1,8 @@
+/* global fetch, crypto, sessionStorage, document, innerWidth, console */
 import { chromium } from 'playwright'
 import assert from 'node:assert/strict'
 import { writeFileSync } from 'node:fs'
+import process from 'node:process'
 import { api, root, artifact, browserOptions, requireLocalPreview } from './environment.mjs'
 
 await requireLocalPreview()
@@ -59,10 +61,10 @@ try {
   assert.equal(await page.locator('[data-result-attempt]').count(), 0)
   await page.getByLabel('فیلتر نتایج بر اساس درس').selectOption('math')
   assert.equal(await page.locator('[data-result-attempt]').count(), 2)
-  await page.screenshot({ path: artifact('personal-progress-desktop.png'), fullPage: true })
+  if (process.env.ITATEST_TEST_CAPTURE !== '0') await page.screenshot({ path: artifact('personal-progress-desktop.png'), fullPage: true })
   await page.setViewportSize({ width: 390, height: 844 })
   assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1))
-  await page.screenshot({ path: artifact('personal-progress-mobile.png'), fullPage: true })
+  if (process.env.ITATEST_TEST_CAPTURE !== '0') await page.screenshot({ path: artifact('personal-progress-mobile.png'), fullPage: true })
   // Switching accounts must never display another learner's results.
   await page.evaluate(token => sessionStorage.setItem('cent:session:v1', token), other.token)
   await page.reload()

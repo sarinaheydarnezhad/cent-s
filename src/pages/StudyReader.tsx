@@ -1,9 +1,9 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
-import { Link, useParams, useSearchParams } from 'react-router-dom'
-import { ArrowLeft, ArrowRight, BookOpen, Check, ChevronLeft, Maximize2, MessageSquare, Minus, Plus, Save, Trash2, X } from 'lucide-react'
+import { useParams, useSearchParams } from 'react-router-dom'
 import { cent, type StudyNote, type SourceSection } from '../services/cent'
 import { useAppState } from '../state/AppState'
-import { LoadState, useRemote } from '../components/CentUI'
+import { useRemote } from '../components/CentUI'
+import { ReaderExperience } from '../components/ReaderExperience'
 
 export function StudyReader() {
   const { id = '' } = useParams()
@@ -36,16 +36,25 @@ function Reader({ id }: { id: string }) {
 
   useEffect(() => {
     if (!remote.data) return
+    const data = remote.data
+    let active = true
     const requested = Number(params.get('page'))
-    setPage(Number.isInteger(requested) && requested >= 1 && requested <= remote.data.document.pageCount ? requested : remote.data.progress?.lastPage || 1)
-    setNotes(remote.data.notes)
+    void Promise.resolve().then(() => { if (!active) return
+      setPage(Number.isInteger(requested) && requested >= 1 && requested <= data.document.pageCount ? requested : data.progress?.lastPage || 1)
+      setNotes(data.notes)
+    })
+    return () => { active = false }
   }, [remote.data, params])
 
   useEffect(() => {
     if (!page) return
-    newNoteId.current = crypto.randomUUID()
-    setEditing(null); setAnchorY(0.15); setSaveState('')
-    try { setDraft(localStorage.getItem(draftKey) || '') } catch { setDraft('') }
+    let active = true
+    void Promise.resolve().then(() => { if (!active) return
+      newNoteId.current = crypto.randomUUID()
+      setEditing(null); setAnchorY(0.15); setSaveState('')
+      try { setDraft(localStorage.getItem(draftKey) || '') } catch { setDraft('') }
+    })
+    return () => { active = false }
   }, [draftKey, page])
 
   useEffect(() => {
@@ -60,8 +69,13 @@ function Reader({ id }: { id: string }) {
   useEffect(() => {
     if (!sourceId) return
     let disposed = false
-    setPageBusy(true); setPageError('')
-    cent.sourceSections(id).then(rows => { if (!disposed) setSourceSections(rows) }).catch(e => { if (!disposed) setPageError(e.message) }).finally(() => { if (!disposed) setPageBusy(false) })
+    void Promise.resolve().then(async () => {
+      if (disposed) return
+      setPageBusy(true); setPageError('')
+      try { const rows = await cent.sourceSections(id); if (!disposed) setSourceSections(rows) }
+      catch (e) { if (!disposed) setPageError(e instanceof Error ? e.message : 'درس بارگذاری نشد.') }
+      finally { if (!disposed) setPageBusy(false) }
+    })
     return () => { disposed = true }
   }, [id, sourceId, retryPage])
   useEffect(() => {
@@ -69,7 +83,7 @@ function Reader({ id }: { id: string }) {
     const controller = new AbortController()
     let url: string | undefined
     let disposed = false
-    setPageBusy(true); setPageError('')
+    void Promise.resolve().then(() => { if (!disposed) { setPageBusy(true); setPageError('') } })
     const surface = canvas.current
     if (surface) { const ctx = surface.getContext('2d'); ctx?.clearRect(0, 0, surface.width, surface.height) }
     cent.page(id, page, controller.signal).then(blob => new Promise<HTMLImageElement>((resolve, reject) => {
@@ -133,9 +147,6 @@ function Reader({ id }: { id: string }) {
     if (dirty && !window.confirm('نوشته ثبت‌نشده با این یادداشت جایگزین شود؟')) return
     setEditing(note); setDraft(note.body); setAnchorY(note.anchorY); setSaveState('')
   }
-  function changePage(next: number) { if (saving) return; setPage(next); pageStage.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }) }
-  const currentNotes = notes.filter(n => n.page === page).sort((a, b) => a.anchorY - b.anchorY)
-  return <div className={`cent-reader ${notesOpen ? '' : 'notes-closed'}`}><header className="cent-reader-header"><Link to="/student/content"><ArrowRight size={18}/> کتابخانه من</Link><div><span>فضای مطالعه</span><h1>{remote.data?.document.title || 'آموزش'}</h1></div><button className="button button-secondary button-small" onClick={() => setNotesOpen(o => !o)}><MessageSquare size={16}/> یادداشت‌ها</button></header><LoadState {...remote} retry={remote.reload}/>{remote.error && <Link className="button button-primary" to="/package">خرید یا تمدید دسترسی</Link>}{remote.data && <><div className="cent-reader-toolbar"><div className="cent-reader-pagination"><button aria-label="صفحه قبل" disabled={page <= 1 || saving} onClick={() => changePage(page - 1)}><ArrowRight size={18}/></button><label>صفحه <select aria-label="انتخاب صفحه" value={page} onChange={e => changePage(Number(e.target.value))}>{Array.from({ length: remote.data.document.pageCount }, (_, i) => <option key={i + 1} value={i + 1}>{i + 1}</option>)}</select> از {remote.data.document.pageCount}</label><button aria-label="صفحه بعد" disabled={page >= remote.data.document.pageCount || saving} onClick={() => changePage(page + 1)}><ArrowLeft size={18}/></button></div><div className="cent-reader-zoom"><button aria-label="کوچک‌نمایی" disabled={zoom <= 75} onClick={() => setZoom(z => z - 25)}><Minus size={16}/></button><span>{zoom}٪</span><button aria-label="بزرگ‌نمایی" disabled={zoom >= 200} onClick={() => setZoom(z => z + 25)}><Plus size={16}/></button><button aria-label="اندازه معمول" onClick={() => setZoom(100)}><Maximize2 size={16}/></button></div></div><div className="cent-reader-layout"><main className="cent-reading-area" ref={pageStage}><div className="cent-page-shell" style={{ width: `${zoom}%` }} onContextMenu={e => e.preventDefault()}><div className={`cent-page-content ${hidden || pageBusy || pageError ? 'concealed' : ''}`} onClick={e => {
-    const bounds = e.currentTarget.getBoundingClientRect(); setAnchorY(Math.max(0, Math.min(1, (e.clientY - bounds.top) / bounds.height))); setNotesOpen(true)
-  }}>{sourceId && <article className="cent-source-text"><small>{watermark}</small><h2>{sourceSections[page - 1]?.heading}</h2><div>{sourceSections[page - 1]?.text}</div>{sourceSections[page - 1]?.topicId && <Link className="button button-secondary" to={`/student/practice?topic=${sourceSections[page - 1].topicId}&returnTo=${encodeURIComponent(`/student/study/${id}?page=${page}`)}`}>تمرین این مبحث</Link>}</article>}<canvas hidden={!!sourceId} ref={canvas} role="img" aria-label={`صفحه ${page} از ${remote.data.document.title}`} draggable={false}/>{currentNotes.map((note, i) => <button key={note.id} className={`cent-note-pin ${editing?.id === note.id ? 'selected' : ''}`} style={{ top: `${note.anchorY * 100}%` }} aria-label={`یادداشت ${i + 1}`} onClick={e => { e.stopPropagation(); selectNote(note); setNotesOpen(true) }}>{i + 1}</button>)}</div>{(pageBusy || pageError) && <div className="cent-page-overlay"><LoadState busy={pageBusy} error={pageError} retry={() => setRetryPage(x => x + 1)}/>{pageError && <Link to="/package">بررسی دسترسی</Link>}</div>}</div><div className="cent-page-footer"><span><BookOpen size={14}/> صفحه {page} · برای ثبت نکته روی بخش موردنظر بزن</span><span>نمایش شخصی برای {user?.name}</span></div></main><aside className="cent-reader-notes"><div className="cent-reader-notes-title"><div><MessageSquare size={18}/><h2>کنار این صفحه</h2><span>{currentNotes.length}</span></div><button className="icon-button" aria-label="بستن یادداشت‌ها" onClick={() => setNotesOpen(false)}><X size={16}/></button></div>{remote.data.sections.length > 0 && <label className="cent-section-select">فهرست درس<select value={remote.data.sections.filter(s => s.startPage <= page).at(-1)?.startPage || ''} onChange={e => changePage(Number(e.target.value))}><option value="" disabled>انتخاب بخش</option>{remote.data.sections.map(s => <option key={`${s.startPage}:${s.title}`} value={s.startPage}>{s.title} · صفحه {s.startPage}</option>)}</select></label>}<div className="cent-note-editor"><span className="eyebrow">{editing ? 'ویرایش یادداشت' : 'نکته تازه'} · صفحه {page}</span><textarea disabled={saving} aria-label="متن یادداشت" placeholder="اینجا چه چیزی یاد گرفتی؟ سؤالت چیست؟" maxLength={4000} value={draft} onChange={e => updateDraft(e.target.value)}/><label className="cent-anchor-label">محل یادداشت روی صفحه<input disabled={saving} type="range" min="0" max="100" value={Math.round(anchorY * 100)} onChange={e => setAnchorY(Number(e.target.value) / 100)}/></label><div className="cent-note-editor-actions"><button className="button button-primary button-small" disabled={!draft.trim() || saving} onClick={save}>{saveState === 'در حساب شما ذخیره شد' ? <Check size={15}/> : <Save size={15}/>} {saving ? 'در حال ثبت…' : 'ثبت یادداشت'}</button>{editing && <button className="button button-ghost button-small" disabled={saving} onClick={startNewNote}>یادداشت جدید</button>}</div><small role="status" className="cent-save-status">{saveState || 'یادداشت‌ها فقط برای خودت قابل مشاهده‌اند.'}</small></div><div className="cent-page-notes">{currentNotes.length === 0 && <div className="cent-notes-empty"><MessageSquare/><p>اولین فکر کنار این صفحه را بنویس.</p></div>}{currentNotes.map((note, i) => <article key={note.id} className={editing?.id === note.id ? 'active' : ''}><button className="cent-note-text" onClick={() => selectNote(note)}><span>یادداشت {i + 1} <ChevronLeft size={14}/></span><p>{note.body}</p></button><button className="cent-note-delete" disabled={saving} aria-label="حذف یادداشت" onClick={() => remove(note)}><Trash2 size={14}/></button></article>)}</div><Link className="text-link" to="/student/notes">همه یادداشت‌های من <ArrowLeft size={15}/></Link></aside></div></>}</div>
+  function changePage(next: number) { if (saving) return; setPage(next); pageStage.current?.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'start' }) }
+  return <ReaderExperience id={id} remote={remote} page={page} zoom={zoom} notes={notes} editing={editing} draft={draft} anchorY={anchorY} saveState={saveState} saving={saving} pageBusy={pageBusy} pageError={pageError} notesOpen={notesOpen} hidden={hidden} sourceSections={sourceSections} userName={user?.name} canvas={canvas} pageStage={pageStage} changePage={changePage} setZoom={setZoom} setNotesOpen={setNotesOpen} setAnchorY={setAnchorY} updateDraft={updateDraft} save={save} startNewNote={startNewNote} selectNote={selectNote} remove={remove} retry={() => setRetryPage(x => x + 1)}/>
 }

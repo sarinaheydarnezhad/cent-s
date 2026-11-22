@@ -1,0 +1,10 @@
+{
+  "status": {
+    "service": "Cent",
+    "payments": "DEVELOPMENT_MOCK",
+    "screenshotBlocking": false
+  },
+  "binary": "D:/app/itatest/.preview-artifacts/bin/Cent.Preview/debug/Cent.Preview.dll",
+  "database": "D:/app/itatest/.preview-artifacts/bin/Cent.Preview/debug/App_Data/preview.db",
+  "qualification": "Existing isolated frontend-local binary/database; no rebuild, migration or backend source edit."
+}
