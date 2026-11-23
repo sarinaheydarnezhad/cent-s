@@ -1,76 +1,42 @@
-import { isAdminRole } from '../../services/admin'
-import { useCallback, useEffect, useRef, useState, type FormEvent } from 'react'
+import { useCallback, useRef, useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
-import { BookOpen, NotebookPen, ShieldCheck, ClipboardCheck } from 'lucide-react'
+import { ShieldCheck } from 'lucide-react'
+import { isAdminRole } from '../../services/admin'
 import { useAppState } from '../../state/AppState'
-import { cent, type AuthSession } from '../../services/cent'
-import { safeReturnTo } from '../../services/google-auth'
+import type { AuthSession } from '../../services/cent'
+import { safeReturnTo } from '../../services/auth-navigation'
 import { GoogleSignIn } from '../../components/GoogleSignIn'
-import { Button, FilterGroup, Notice } from '../../components/UI'
-import { InputField } from '../../components/Fields'
-
+import { SmsSignIn } from '../../components/SmsSignIn'
 export function LoginPage() {
-  const [tab, setTab] = useState<'login' | 'register'>('login')
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-  const [name, setName] = useState('')
   const [busy, setBusy] = useState(false)
-  const [googleBusy, setGoogleBusy] = useState(false)
   const submitting = useRef(false)
-  const [error, setError] = useState('')
   const { authenticated } = useAppState()
   const navigate = useNavigate()
   const location = useLocation()
   const next = safeReturnTo((location.state as { from?: string } | null)?.from)
-  const finishSignIn = useCallback((result: AuthSession) => {
+  const success = useCallback((result: AuthSession) => {
     authenticated(result.user, result.token, result.expiresAt)
     navigate(next || (isAdminRole(result.user.role) ? '/admin' : '/student'), { replace: true })
   }, [authenticated, navigate, next])
-  const beginGoogle = useCallback(() => {
+  const begin = useCallback(() => {
     if (submitting.current) return false
-    submitting.current = true; setGoogleBusy(true); setError(''); return true
+    submitting.current = true; setBusy(true); return true
   }, [])
-  const releaseGoogle = useCallback(() => { submitting.current = false; setGoogleBusy(false) }, [])
-  useEffect(() => {
-    const resume = (event: PageTransitionEvent) => {
-      if (event.persisted) { submitting.current = false; setGoogleBusy(false) }
-    }
-    window.addEventListener('pageshow', resume)
-    return () => window.removeEventListener('pageshow', resume)
-  }, [])
-  async function submit(event: FormEvent) {
-    event.preventDefault()
-    if (submitting.current) return
-    submitting.current = true; setBusy(true); setError('')
-    try {
-      const result = await cent.authenticate(tab, { email, password, name })
-      finishSignIn(result)
-    } catch (e) { setError(e instanceof Error ? e.message : 'ورود انجام نشد.') }
-    finally { submitting.current = false; setBusy(false) }
-  }
-  const disabled = busy || googleBusy
+  const release = useCallback(() => { submitting.current = false; setBusy(false) }, [])
   return <div className="auth-page public-auth">
     <aside className="auth-visual"><div className="auth-visual-content">
-      <span className="eyebrow">فضای یادگیری تو در ایتاتست</span><h2>از همون‌جایی که مونده بودی، ادامه بده</h2>
-      <p>درس‌نامه‌ها، یادداشت‌ها و نتیجه ارزیابی‌ات رو در حسابت داشته باش؛ برای قدم بعدی، با دید روشن‌تر.</p>
-      <div className="public-auth-study" aria-hidden="true"><div className="public-auth-study-head"><BookOpen/><span>یک مسیر، قدم‌های خودت</span></div><div className="public-auth-study-row"><BookOpen/><span>درس‌نامه‌هات رو بخون</span></div><div className="public-auth-study-row"><NotebookPen/><span>نکته‌هات رو کنار درس نگه دار</span></div><div className="public-auth-study-row"><ClipboardCheck/><span>نتیجه ارزیابی‌ات رو مرور کن</span></div></div>
-      <div className="public-auth-note"><span>یاد بگیر، اونطور که خودت راحتی</span></div>
+      <span className="eyebrow">ایتاتست · CEnT-S</span><h2>مسیر یادگیری‌ات را ادامه بده</h2>
+      <p>درس‌ها، یادداشت‌ها و نتیجه آزمون‌هایت در حساب ایتاتست محفوظ می‌مانند.</p>
       <Link className="text-link" to="/exam">آشنایی با مسیر آمادگی</Link>
     </div></aside>
-    <div className="auth-panel"><form className="auth-card" onSubmit={submit} aria-busy={disabled} aria-labelledby="auth-title">
-      <FilterGroup className="auth-tabs" label="ورود یا ثبت‌نام" value={tab} options={[{value:'login',label:'ورود'},{value:'register',label:'ثبت‌نام'}]} disabled={disabled} onChange={value => { setTab(value); setError('') }}/>
-      <h1 id="auth-title">{tab === 'login' ? 'خوش برگشتی' : 'حساب ایتاتست خودت رو بساز'}</h1>
-      <p className="public-auth-description">{tab === 'login' ? 'وارد شو و مسیر یادگیری‌ات رو ادامه بده.' : 'برای ذخیره نتیجه‌ها و ادامه مطالعه، حسابت رو بساز.'}</p>
-      <GoogleSignIn intent={tab} disabled={disabled} returnTo={next} begin={beginGoogle} release={releaseGoogle} success={finishSignIn}/>
-      <div className="auth-divider"><span>یا با ایمیل</span></div>
-      <div className="cent-form">
-        {tab === 'register' && <InputField label="نام و نام خانوادگی" autoComplete="name" value={name} maxLength={120} disabled={disabled} onChange={e => setName(e.target.value)} required/>}
-        <InputField label="ایمیل" type="email" dir="ltr" autoComplete="email" value={email} maxLength={256} disabled={disabled} onChange={e => setEmail(e.target.value)} required/>
-        <InputField label="رمز عبور" type="password" dir="ltr" autoComplete={tab === 'login' ? 'current-password' : 'new-password'} value={password} minLength={10} maxLength={128} disabled={disabled} onChange={e => setPassword(e.target.value)} required hint="حداقل ۱۰ نویسه"/>
-        {error && <Notice tone="error" live="assertive">{error}</Notice>}
-        <Button type="submit" fullWidth disabled={disabled} loading={busy} loadingLabel="در حال بررسی…">{tab === 'login' ? 'ورود به حساب' : 'ساخت حساب'}</Button>
-      </div>
-      <p className="auth-security"><ShieldCheck aria-hidden="true"/> حساب و دسترسی‌های آموزشی‌ات مخصوص ایتاتسته.</p>
-    </form></div>
+    <div className="auth-panel"><section className="auth-card" aria-labelledby="auth-title">
+      <Link className="eyebrow" to="/">ایتاتست</Link>
+      <h1 id="auth-title">ورود یا ثبت‌نام</h1>
+      <p className="public-auth-description">با شماره موبایل یا حساب گوگل وارد شوید. اگر حساب ندارید، برایتان ساخته می‌شود.</p>
+      <SmsSignIn disabled={busy} begin={begin} release={release} success={success}/>
+      <div className="auth-divider"><span>یا با گوگل ادامه دهید</span></div>
+      <GoogleSignIn disabled={busy} begin={begin} release={release} success={success}/>
+      <p className="auth-security"><ShieldCheck aria-hidden="true"/> حساب و دسترسی‌های آموزشی شما مخصوص ایتاتست است.</p>
+    </section></div>
   </div>
 }

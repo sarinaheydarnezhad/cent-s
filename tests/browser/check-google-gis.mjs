@@ -126,11 +126,10 @@ try {
     })
     assert.deepEqual(options.options, { client_id: clientId, nonce: 'N'.repeat(42) + 'A', ux_mode: 'popup', auto_select: false, button_auto_select: false, use_fedcm_for_button: true })
     assert.equal(options.count, 1)
-    if (newUser) await page.getByRole('button', { name: 'ثبت‌نام', exact: true }).click()
     await page.getByRole('button', { name: 'ادامه با Google' }).click()
     await emit(page, { duplicate: true })
     assert.equal(await page.evaluate(() => sessionStorage.getItem('cent:session:v1')), null, 'No session before backend confirmation')
-    assert.equal(await page.getByRole('button', { name: newUser ? 'ساخت حساب' : 'ورود به حساب', exact: true }).isDisabled(), true)
+    assert.equal(await page.getByRole('button', { name: 'ارسال کد تأیید', exact: true }).isDisabled(), true)
     releaseCompletion()
     await page.waitForURL(root + '/student/profile?source=purchase')
     await page.getByRole('heading', { name: newUser ? 'کاربر تازه' : user.name, exact: true }).waitFor()
@@ -140,7 +139,7 @@ try {
     await page.reload()
     await page.getByRole('heading', { name: newUser ? 'کاربر تازه' : user.name, exact: true }).waitFor()
     await noSecrets(page, calls)
-    assert.equal(await page.locator('meta[name="referrer"]').getAttribute('content'), 'no-referrer')
+    assert.equal(await page.locator('meta[name="referrer"]').getAttribute('content'), 'strict-origin-when-cross-origin')
     await page.getByRole('button', { name: 'خروج از حساب' }).click()
     await page.waitForURL(url => [root, root + '/login'].includes(url.href.replace(/\/$/, '')))
     assert.equal(await page.evaluate(() => sessionStorage.getItem('cent:session:v1')), null)
@@ -148,7 +147,7 @@ try {
     passed.push(newUser ? 'new Google user, profile/session/navigation/restore/logout' : 'existing Google user, duplicate callback, profile/session/navigation/restore/logout')
     await context.close()
   }
-  for (const [option, text] of [['sdkFailure', 'بارگذاری'], ['challengeFailure', 'ثانیه'], ['discoveryFailure', 'ثانیه'], ['verificationFailure', 'معتبر نیست'], ['conflict', 'روش قبلی'], ['rateLimit', '60']]) {
+  for (const [option, text] of [['sdkFailure', 'بارگذاری'], ['challengeFailure', 'ثانیه'], ['discoveryFailure', 'ثانیه'], ['verificationFailure', 'معتبر نیست'], ['conflict', 'تداخل'], ['rateLimit', '60']]) {
     const { context, page, calls } = await fixture({ [option]: true })
     if (['verificationFailure', 'conflict', 'rateLimit'].includes(option)) { await ready(page); await emit(page) }
     else await page.goto(root + '/login')
@@ -190,25 +189,9 @@ try {
     await page.waitForFunction(() => window.gisFixture.initializations.length === 2)
     await emit(page, { index: 0 })
     assert.equal(calls.complete.length, 0)
-    assert.equal(await page.getByRole('button', { name: 'ورود به حساب', exact: true }).isEnabled(), true)
+    assert.equal(await page.getByRole('button', { name: 'ارسال کد تأیید', exact: true }).isEnabled(), true)
     await noSecrets(page, calls)
-    passed.push('explicit popup dismissal recovery releases password UI and rejects stale credential')
-    await context.close()
-  }
-  for (const registration of [false, true]) {
-    const { context, page, calls } = await fixture()
-    await ready(page)
-    if (registration) {
-      await page.getByRole('button', { name: 'ثبت‌نام', exact: true }).click()
-      await page.getByLabel('نام و نام خانوادگی').fill(user.name)
-    }
-    await page.getByLabel('ایمیل', { exact: true }).fill(user.email)
-    await page.getByLabel('رمز عبور').fill('existing-password')
-    await page.getByRole('button', { name: registration ? 'ساخت حساب' : 'ورود به حساب', exact: true }).click()
-    await page.waitForURL(root + '/student')
-    assert.deepEqual(calls.password, [registration ? '/auth/register' : '/auth/login'])
-    assert.equal(calls.complete.length, 0)
-    passed.push(registration ? 'password registration with GIS enabled' : 'password login with GIS enabled')
+    passed.push('explicit popup dismissal recovery releases SMS UI and rejects stale credential')
     await context.close()
   }
   {
@@ -239,8 +222,8 @@ try {
     await page.goto(root + '/login')
     await page.getByRole('status').filter({ hasText: 'در دسترس نیست' }).waitFor()
     assert.equal(calls.sdk, 0); assert.equal(calls.challenge.length, 0)
-    assert.equal(await page.getByRole('button', { name: 'ورود به حساب', exact: true }).isEnabled(), true)
-    passed.push('disabled mode keeps password login available without SDK or challenges')
+    assert.equal(await page.getByRole('button', { name: 'ارسال کد تأیید', exact: true }).isEnabled(), true)
+    passed.push('disabled mode keeps SMS login available without SDK or challenges')
     await context.close()
   }
   writeFileSync(artifact('google-gis-result.json'), JSON.stringify({ success: true, root, passed }, null, 2))

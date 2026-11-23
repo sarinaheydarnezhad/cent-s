@@ -4,13 +4,15 @@
 intercepted official-SDK test double and mocked Cent endpoints. It covers
 existing/new Google users, session/navigation/logout, duplicate/stale callbacks,
 expiry and explicit dismissal recovery, safe Persian errors, rate limits,
-password compatibility, disabled mode, mobile RTL and no credential persistence.
+SMS coexistence, disabled mode, mobile RTL and no credential persistence.
 Start Vite only; no backend, real Google credentials or database writes are used.
 Set `CENT_TEST_WEB_URL=http://localhost:5180` to test a locally served root-path
 production build instead. See [GOOGLE-GIS.md](../../GOOGLE-GIS.md) for commands,
 limitations and real sign-in checks.
 
-`npm.cmd --prefix tests/browser run test:google-auth` tests Google/password login and registration, loading states, duplicate activation/callback handling under React StrictMode, state validation, cancellation, conflicts, disabled configuration, session expiration/restoration, logout, and mobile layout. Start only the Vite frontend for this check: it mocks all Cent and Google requests in isolated browser contexts and never contacts Google or creates database records. It also verifies callback response headers; use Vite development or preview, or a production server configured with the documented callback headers. The screenshot and result report use synthetic test data.
+`npm.cmd --prefix tests/browser run test:auth` covers Iranian number validation, OTP focus/paste, resend, errors, refresh recovery, protected return destinations, session restoration/logout and 320/390/1440px RTL layouts. All APIs are mocked; no SMS is sent.
+
+The broader historical preview scripts below were not run in this authentication repair. Some still require the retired password registration fixtures; they need explicit disposable fixture sessions before reuse. The current authentication regressions are the two suites above.
 
 This optional test package is kept separate from the frontend application's dependencies. Its manifest, lockfile and test sources belong to the Cent Git repository. Normal frontend installation, build and runtime do not need this package.
 

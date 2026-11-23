@@ -46,7 +46,7 @@ describe('GIS attempt lifecycle', () => {
     expect(callbacks.success).not.toHaveBeenCalled()
     await completion
     await vi.advanceTimersByTimeAsync(0)
-    expect(verifyGoogleCredential).toHaveBeenCalledWith(challenge, 'synthetic', expect.any(AbortSignal))
+    expect(verifyGoogleCredential).toHaveBeenCalledWith(challenge, 'synthetic', expect.any(AbortSignal), false)
     expect(callbacks.success).toHaveBeenCalledWith({ ...session, user: { ...session.user, id } })
     expect(callbacks.release).toHaveBeenCalledTimes(1)
   })

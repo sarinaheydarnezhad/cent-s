@@ -28,22 +28,11 @@ npm.cmd run dev
 
 Preview Swagger is at `http://127.0.0.1:5108/swagger/index.html`. The local administrator is `admin@cent.local` / `cent-local-preview-only`. The preview uses simulated payments and an ignored SQLite database inside the backend checkout; source files are included in Git. No application dependency points to a workspace tools directory.
 
-## Google sign-in
+## Authentication
 
-Both tabs on `/login` support Google sign-in alongside password login and registration. The frontend discovers the backend-selected mode and existing public client ID from `/auth/google/config`. `GisIdToken` uses the official Google Identity Services button, a server nonce/challenge and a single backend verification request; no Google credential is persisted. `AuthorizationCode` retains the backend-generated authorization URL, OAuth state, S256 PKCE verifier and callback flow described below. Both use the same Cent bearer session, expiration, logout, `/me` restoration and intended destination as password sign-in. Existing sessions without a stored expiration remain supported. See [GOOGLE-GIS.md](GOOGLE-GIS.md) for the frontend contract integration, security, local/Cloudflare setup, tests, deployment dependencies and rollback. No new frontend Google environment variable or secret is required.
+The login page supports Iranian mobile SMS OTP and the official Google Identity Services button. Both issue the existing Cent session. Email/password login and Google authorization-code/PKCE routes have been removed; existing account and purchase records remain intact.
 
-The local callback is **`http://localhost:5173/cent-s/auth/google/callback`**. Use `localhost` consistently: a flow started at `127.0.0.1` cannot read a `localhost` tab's storage. Changing `VITE_BASE_PATH` changes the callback path, so update the backend and Google registration together.
-
-For AuthorizationCode mode only, operator configuration if not already set:
-
-1. Configure a Google **Web application** OAuth client and consent screen (including test users while in Testing). Register `http://localhost:5173` as the local JavaScript origin and the exact local callback above as an authorized redirect URI.
-2. On the backend set `Cent__Google__Enabled=true`, `Cent__Google__ClientId`, **`Cent__Google__ClientSecret` (backend secret environment only)**, `Cent__Google__RedirectUri` to the callback, and `Cent__AllowedOrigins__0=http://localhost:5173`. HTTP loopback callbacks require the backend Development environment. The verified SQLite upgrade needs no further frontend migration.
-3. For production use the actual HTTPS frontend origin and callback in Google and the backend, and configure the existing public API URL as usual. Serve direct callback requests/reloads with the application HTML. Set **`Cache-Control: no-store`** and **`Referrer-Policy: no-referrer`** on callback HTML responses (including SPA fallbacks); exclude the callback from analytics, third-party scripts, service-worker caching and URL logging. Vite development and preview already set these headers; the HTML also contains a `no-referrer` policy. The current GitHub Pages workflow cannot set custom response headers, so use hosting or a proxy that can enforce them for production Google authentication.
-4. Verify one real Google round trip with your configured test account: new/returning user, cancellation, existing-password-email conflict, session restoration and logout. Automated tests use synthetic codes and mocked API/Google navigation; they do not authenticate a real Google account.
-
-The callback removes its query before React mounts and consumes the saved attempt before completion. Failures and reloads require a new start. Google email conflicts direct users to their existing sign-in method; accounts are never linked by the frontend. The exact server contracts and setup are documented in the backend repository's `docs/CENT-GOOGLE-AUTHENTICATION.md`.
-
-Run `npm.cmd test` for callback/API/session tests. The optional `npm.cmd --prefix tests/browser run test:google-auth` check exercises the rendered login/register UI, callback, session reload, logout and failure paths using isolated browser mocks without modifying the backend database.
+See [AUTHENTICATION.md](AUTHENTICATION.md) for configuration, API contracts, security, migration and verification details. No Google client secret belongs in this frontend.
 
 ## Commerce
 

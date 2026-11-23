@@ -2,7 +2,6 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App'
 import { AppStateProvider } from './state/AppState'
-import { captureGoogleCallback, googleCallbackPath } from './services/google-auth'
 import './foundations.css'
 import './styles.css'
 import '@fontsource/vazirmatn/400.css'
@@ -19,6 +18,5 @@ import './reading.css'
 import './commerce.css'
 import './admin.css'
 
-if (window.location.pathname === googleCallbackPath()) captureGoogleCallback()
 
 createRoot(document.getElementById('root')!).render(<StrictMode><AppStateProvider><App/></AppStateProvider></StrictMode>)

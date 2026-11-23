@@ -6,7 +6,6 @@ import { HomePage } from './pages/public/HomePage'
 import { ExamPage } from './pages/public/ExamPage'
 import { DiagnosticIntroPage } from './pages/public/DiagnosticIntroPage'
 import { LoginPage } from './pages/public/LoginPage'
-import { GoogleCallbackPage } from './pages/public/GoogleCallbackPage'
 import { NotFoundPage } from './pages/public/NotFoundPage'
 import { AccountPage, CentCheckoutResult, LibraryPage, NotesPage } from './pages/CommercePages'
 import { CheckoutPage, DevelopmentPaymentPage, SubjectCatalogPage } from './pages/SubjectCommercePages'
@@ -21,7 +20,6 @@ import { AdminOverviewPage, AdminUsersPage, AdminResourcesPage, AdminContentPage
 
 export default function App() {
   return <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '') || '/'}><Routes>
-    <Route path="/auth/google/callback" element={<GoogleCallbackPage/>}/>
     <Route element={<PublicLayout/>}>
       <Route path="/" element={<HomePage/>}/><Route path="/exam" element={<ExamPage/>}/>
       <Route path="/courses/:code" element={<CourseDetails/>}/>

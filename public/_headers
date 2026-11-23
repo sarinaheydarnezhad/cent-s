@@ -12,10 +12,10 @@
   Cross-Origin-Opener-Policy: same-origin-allow-popups
   Cache-Control: no-store
 
-# Retain code/PKCE callback protections for direct requests and SPA fallback.
-/auth/google/callback*
+# Authenticated identity linking also uses the official GIS popup fallback.
+/student/profile
+  Cross-Origin-Opener-Policy: same-origin-allow-popups
   Cache-Control: no-store
-  Referrer-Policy: no-referrer
-/cent-s/auth/google/callback*
+/cent-s/student/profile
+  Cross-Origin-Opener-Policy: same-origin-allow-popups
   Cache-Control: no-store
-  Referrer-Policy: no-referrer

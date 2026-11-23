@@ -18,8 +18,6 @@ export interface MasteryTopic { id: string; chapterId: string; title: string; ev
 export interface MasteryReport { courses: { code: string; title: string; totalTopics: number; assessedTopics: number; coveragePercentage: number; confirmedProgressPercentage: number; assessedAccuracyPercentage: number | null; topics: MasteryTopic[] }[] }
 export interface SourceSection { id: string; topicId: string | null; heading: string; sortOrder: number; text: string }
 export interface AuthSession { token: string; expiresAt: string; user: SessionUser }
-export interface GoogleAuthStart { authorizationUrl: string; state: string; codeVerifier: string; expiresAt: string }
-export type GoogleAuthComplete = { state: string; codeVerifier: string } & ({ code: string; error?: never } | { error: string; code?: never })
 
 export const centApiBase = (import.meta.env.VITE_CENT_API_URL || '/api/cent/v1').replace(/\/$/, '')
 const tokenKey = 'cent:session:v1'
@@ -85,9 +83,6 @@ async function loadCurriculum(): Promise<Curriculum> {
   return data
 }
 export const cent = {
-  authenticate: (mode: 'login' | 'register', input: { email: string; password: string; name?: string }) => post<AuthSession>(`/auth/${mode}`, input),
-  googleStart: () => post<GoogleAuthStart>('/auth/google/start', {}),
-  googleComplete: (input: GoogleAuthComplete) => post<AuthSession>('/auth/google/complete', input),
   me: () => centRequest<SessionUser>('/me'),
   logout: () => post<void>('/auth/logout', {}),
   catalog: () => centRequest<{ trainings: Training[]; products: StoreProduct[] }>('/catalog'),

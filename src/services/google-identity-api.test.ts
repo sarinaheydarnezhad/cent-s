@@ -12,7 +12,26 @@ beforeEach(() => { vi.resetModules(); fetchMock = vi.fn(); vi.stubGlobal('fetch'
 afterEach(() => { vi.unstubAllGlobals(); vi.restoreAllMocks(); vi.useRealTimers() })
 
 describe('documented Google identity transport', () => {
-  it.each(['AuthorizationCode', 'GisIdToken'])('discovers %s without cookies, auth headers, body, preflight header or caching', async mode => {
+  it('sends the Cent bearer only to authenticated linking, never public GIS sign-in', async () => {
+    const values = new Map<string, string>()
+    vi.stubGlobal('sessionStorage', { getItem: (key: string) => values.get(key) ?? null, setItem: (key: string, value: string) => values.set(key, value), removeItem: (key: string) => values.delete(key) })
+    const { session } = await import('./cent')
+    session.set('C'.repeat(64), new Date(Date.now() + 60_000).toISOString())
+    response(auth); response(auth)
+    const { verifyGoogleCredential } = await import('./google-identity-api')
+    await verifyGoogleCredential(challenge, 'synthetic')
+    await verifyGoogleCredential(challenge, 'synthetic', undefined, true)
+    expect(fetchMock.mock.calls[0][1].headers.Authorization).toBeUndefined()
+    expect(fetchMock.mock.calls[1][0]).toBe('/api/cent/v1/auth/identities/google/gis/complete')
+    expect(fetchMock.mock.calls[1][1].headers.Authorization).toBe('Bearer ' + 'C'.repeat(64))
+    expect(fetchMock.mock.calls[1][1].credentials).toBe('omit')
+  })
+  it.each(['SuperAdmin', 'UserManager', 'ContentManager', 'ExamManager', 'FinanceManager'])('accepts the existing Cent role %s', async role => {
+    response({ ...auth, user: { ...auth.user, role } })
+    const { verifyGoogleCredential } = await import('./google-identity-api')
+    expect((await verifyGoogleCredential(challenge, 'synthetic')).user.role).toBe(role)
+  })
+  it.each(['GisIdToken'])('discovers %s without cookies, auth headers, body, preflight header or caching', async mode => {
     response({ enabled: true, mode, clientId })
     const { discoverGoogle } = await import('./google-identity-api')
     expect(await discoverGoogle()).toEqual({ enabled: true, mode, clientId })

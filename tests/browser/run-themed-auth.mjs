@@ -3,7 +3,7 @@ import { chromium } from 'playwright'
 import { argv } from 'node:process'
 const colorScheme=argv[2]
 const suite=argv[3]
-if(!['light','dark'].includes(colorScheme)||!['google-gis','google-auth'].includes(suite))throw Error('Expected light|dark google-gis|google-auth')
+if(!['light','dark'].includes(colorScheme)||!['google-gis','auth'].includes(suite))throw Error('Expected light|dark google-gis|auth')
 const launch=chromium.launch.bind(chromium)
 chromium.launch=async options=>{
   const browser=await launch(options)

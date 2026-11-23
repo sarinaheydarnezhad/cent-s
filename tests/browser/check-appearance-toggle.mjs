@@ -9,7 +9,7 @@ const checks = []
 const toggle = page => page.locator('.appearance-toggle').first()
 const theme = page => page.locator('html').getAttribute('data-theme')
 async function mock(context) {
-  await context.route('**/api/cent/v1/**', route => route.fulfill({ status:200, contentType:'application/json', body:JSON.stringify(route.request().url().endsWith('/google/config') ? {enabled:false,mode:'AuthorizationCode',clientId:null} : {}) }))
+  await context.route('**/api/cent/v1/**', route => route.fulfill({ status:200, contentType:'application/json', body:JSON.stringify(route.request().url().endsWith('/google/config') ? {enabled:false,mode:'GisIdToken',clientId:null} : {}) }))
   await context.addInitScript(() => document.addEventListener('DOMContentLoaded', () => { window.__themeAtDomReady = document.documentElement.dataset.theme }, {once:true}))
 }
 try {

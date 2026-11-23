@@ -13,7 +13,7 @@ interface Callbacks {
 
 // One controller per mounted login view. Neither proof nor credential leaves memory
 // except for the single documented verification POST. Disposing invalidates callbacks.
-export function googleIdentityAttempt(clientId: string, target: HTMLElement, callbacks: Callbacks): { dispose: () => void; checkExpiry: () => void } {
+export function googleIdentityAttempt(clientId: string, target: HTMLElement, callbacks: Callbacks, link = false): { dispose: () => void; checkExpiry: () => void } {
   const abort = new AbortController()
   let active = true, submitted = false, locked = false
   let sdk: GoogleIdentitySdk | undefined
@@ -40,7 +40,7 @@ export function googleIdentityAttempt(clientId: string, target: HTMLElement, cal
     target.replaceChildren()
     callbacks.stage('verifying')
     try {
-      const result = await verifyGoogleCredential(challenge, response.credential as string, abort.signal)
+      const result = await verifyGoogleCredential(challenge, response.credential as string, abort.signal, link)
       if (active) callbacks.success(result)
     } catch (error) { fail(error) }
     finally { if (active) release() }
@@ -52,7 +52,7 @@ export function googleIdentityAttempt(clientId: string, target: HTMLElement, cal
       sdk = await loadGoogleIdentitySdk()
       if (!active) return
       callbacks.stage('challenge')
-      attempt = await createGoogleChallenge(abort.signal)
+      attempt = await createGoogleChallenge(abort.signal, link)
       if (!active) { attempt = undefined; return }
       sdk.cancel()
       sdk.initialize({

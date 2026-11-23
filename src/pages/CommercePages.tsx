@@ -1,3 +1,4 @@
+import { IdentitySettings } from '../components/IdentitySettings'
 import { useCallback, useRef, useState } from 'react'
 import { Link, Navigate, useLocation, useSearchParams } from 'react-router-dom'
 import { ArrowLeft, CheckCircle2, Clock3, CreditCard } from 'lucide-react'
@@ -150,5 +151,5 @@ export function AccountPage() {
   const { user } = useAppState()
   const access = useCommerceAccess()
   const remote = useRemote(cent.orders)
-  return <div className="commerce-account"><PageHeader title="حساب کاربری من" description="دسترسی درس‌ها و سوابق خریدت رو اینجا بررسی کن."/><Card className="student-account-profile"><h2>{user?.name}</h2><p><bdi dir="ltr">{user?.email}</bdi></p><Link className="button button-secondary" to="/student/content">کتابخانهٔ من</Link></Card><SubjectAccessList/><CommerceLoading {...access} retry={access.reload}/>{access.library?.entitlements.some(e => e.kind === 'SUBSCRIPTION') && <SubscriptionSummary library={access.library}/>}<div className="commerce-section-title"><h2>سوابق خرید</h2><CreditCard aria-hidden="true"/></div><CommerceLoading {...remote} retry={remote.reload}/>{remote.data && !remote.busy && !remote.error && <OrderHistory orders={remote.data} library={access.error || access.busy ? null : access.library}/>}</div>
+  return <div className="commerce-account"><PageHeader title="حساب کاربری من" description="دسترسی درس‌ها و سوابق خریدت رو اینجا بررسی کن."/><Card className="student-account-profile"><h2>{user?.name}</h2><p><bdi dir="ltr">{user?.email}</bdi></p><Link className="button button-secondary" to="/student/content">کتابخانهٔ من</Link></Card><IdentitySettings/><SubjectAccessList/><CommerceLoading {...access} retry={access.reload}/>{access.library?.entitlements.some(e => e.kind === 'SUBSCRIPTION') && <SubscriptionSummary library={access.library}/>}<div className="commerce-section-title"><h2>سوابق خرید</h2><CreditCard aria-hidden="true"/></div><CommerceLoading {...remote} retry={remote.reload}/>{remote.data && !remote.busy && !remote.error && <OrderHistory orders={remote.data} library={access.error || access.busy ? null : access.library}/>}</div>
 }

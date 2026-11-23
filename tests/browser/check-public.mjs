@@ -35,10 +35,9 @@ try {
   },selectors)
   for(const pair of pairs){result.contrast.push({theme:await page.locator('html').getAttribute('data-theme'),...pair});assert.ok(pair.ratio>=pair.minimum,`${pair.selector}: ${pair.ratio}`)}save()
  }
- const routes=[['home','/'],['exam','/exam'],['intro','/diagnostic/intro'],['course','/courses/math'],['login','/login'],['register','/login'],['callback','/auth/google/callback?error=access_denied'],['not-found','/missing-page']]
+ const routes=[['home','/'],['exam','/exam'],['intro','/diagnostic/intro'],['course','/courses/math'],['login','/login'],['not-found','/missing-page']]
  for(const [name,route] of routes)for(const theme of ['light','dark']){
   await page.goto(root+route);await page.evaluate(t=>window.ItatestAppearance.setPreference(t),theme)
-  if(name==='register')await page.getByRole('button',{name:'ثبت‌نام',exact:true}).click()
   await page.waitForLoadState('networkidle');await page.evaluate(()=>document.fonts.ready)
   assert.equal(await page.locator('h1').count(),1,`${name} one main heading`)
   assert.equal(await page.getByRole('main').count(),1)
@@ -79,19 +78,11 @@ try {
    assert.equal(await page.locator('#public-main').evaluate(el=>el===document.activeElement),true)
   }
   if(name==='login'){
-   await measure([['.public-auth h1'],['.public-auth-description'],['.public-auth .ui-field-label'],['.public-auth .ui-field-hint'],['.public-auth .auth-security'],['.public-auth .ui-input','borderTopColor',3],['.auth-tabs .active']])
-   const email=page.getByLabel('ایمیل',{exact:true}),password=page.getByLabel('رمز عبور',{exact:true})
-   assert.equal(await email.getAttribute('dir'),'ltr');assert.equal(await password.getAttribute('minlength'),'10');assert.equal(await password.getAttribute('maxlength'),'128')
-   const hint=await password.getAttribute('aria-describedby');assert.ok(await page.locator(`[id="${hint}"]`).textContent())
-   await email.fill('invalid');await page.getByRole('button',{name:'ورود به حساب',exact:true}).click()
-   assert.equal(await email.evaluate(el=>el.validity.typeMismatch),true)
-   assert.equal(await email.evaluate(el=>el===document.activeElement),true)
-   await page.setViewportSize({width:390,height:900});await capture(`native-validation-${theme}.png`,page,'Actual native invalid email presentation; no request')
-  }
-  if(name==='register'){
-   assert.equal(await page.getByLabel('نام و نام خانوادگی',{exact:true}).getAttribute('required'),'')
-   await page.getByRole('button',{name:'ساخت حساب',exact:true}).click()
-   assert.equal(await page.getByLabel('نام و نام خانوادگی',{exact:true}).evaluate(el=>el===document.activeElement),true)
+   await measure([['.public-auth h1'],['.public-auth-description'],['.public-auth .ui-field-label'],['.public-auth .auth-security'],['.public-auth .ui-input','borderTopColor',3]])
+   const phone=page.getByLabel('شماره موبایل',{exact:true})
+   assert.equal(await phone.getAttribute('dir'),'ltr')
+   await phone.fill('invalid');await page.getByRole('button',{name:'ارسال کد تأیید',exact:true}).click()
+   await page.getByRole('alert').filter({hasText:'معتبر'}).waitFor()
   }
  }
  check('Eight public/auth states: one h1/main, Persian RTL, 112 responsive observations across seven widths, light/dark matched evidence')

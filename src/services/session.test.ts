@@ -46,20 +46,12 @@ describe('Cent bearer session', () => {
     expect(session.expiresAt()).toBeNull()
     expect(() => session.clear()).not.toThrow()
   })
-  it('keeps password login/registration responses and logout on the existing API', async () => {
-    const result = { token: 'password-token', expiresAt: new Date(Date.now() + 1000).toISOString(), user: { id: 'id', email: 'test@example.test', name: 'Test', role: 'STUDENT' } }
-    const fetchMock = vi.fn()
-      .mockResolvedValueOnce(new Response(JSON.stringify(result)))
-      .mockResolvedValueOnce(new Response(JSON.stringify(result)))
-      .mockResolvedValueOnce(new Response(null, { status: 204 }))
+  it('uses the existing bearer session for logout', async () => {
+    const fetchMock = vi.fn().mockResolvedValueOnce(new Response(null, { status: 204 }))
     vi.stubGlobal('fetch', fetchMock)
-    const input = { email: result.user.email, password: 'unchanged-password', name: result.user.name }
-    expect(await cent.authenticate('login', input)).toEqual(result)
-    expect(await cent.authenticate('register', input)).toEqual(result)
-    session.set(result.token, result.expiresAt)
+    session.set('synthetic-token', new Date(Date.now() + 10000).toISOString())
     await cent.logout()
-    expect(fetchMock.mock.calls.map(call => call[0])).toEqual(['/api/cent/v1/auth/login', '/api/cent/v1/auth/register', '/api/cent/v1/auth/logout'])
-    expect(JSON.parse(fetchMock.mock.calls[0][1].body)).toEqual(input)
-    expect(fetchMock.mock.calls[2][1].headers.get('Authorization')).toBe('Bearer password-token')
+    expect(fetchMock.mock.calls[0][0]).toBe('/api/cent/v1/auth/logout')
+    expect(fetchMock.mock.calls[0][1].headers.get('Authorization')).toBe('Bearer synthetic-token')
   })
 })
