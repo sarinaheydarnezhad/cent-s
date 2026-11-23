@@ -139,7 +139,7 @@ try {
     await page.reload()
     await page.getByRole('heading', { name: newUser ? 'کاربر تازه' : user.name, exact: true }).waitFor()
     await noSecrets(page, calls)
-    assert.equal(await page.locator('meta[name="referrer"]').getAttribute('content'), 'strict-origin-when-cross-origin')
+    assert.equal(await page.locator('meta[name="referrer"]').getAttribute('content'), new URL(root).protocol === 'http:' && new URL(root).hostname === 'localhost' ? 'no-referrer-when-downgrade' : 'strict-origin-when-cross-origin')
     await page.getByRole('button', { name: 'خروج از حساب' }).click()
     await page.waitForURL(url => [root, root + '/login'].includes(url.href.replace(/\/$/, '')))
     assert.equal(await page.evaluate(() => sessionStorage.getItem('cent:session:v1')), null)

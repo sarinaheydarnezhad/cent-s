@@ -1,11 +1,11 @@
 import type { AIAnalysis, DiagnosticResult, SessionUser } from '../types'
 
 export interface Training { id: string; title: string; description: string; includedInSubscription: boolean; published: boolean }
-export interface StoreProduct { id: string; title: string; kind: 'TRAINING' | 'SUBSCRIPTION'; trainingId: string | null; priceRial: number; durationDays: number | null; active: boolean }
+export interface StoreProduct { id: string; title: string; kind: 'TRAINING' | 'SUBSCRIPTION' | 'SUBJECT'; trainingId: string | null; priceRial: number; durationDays: number | null; active: boolean }
 export interface StudyDocument { id: string; trainingId: string; sourceId?: string | null; title: string; pageCount: number; sortOrder: number; published?: boolean }
 export interface StudyNote { id: string; documentId: string; documentTitle?: string; page: number; anchorY: number; body: string; revision: number; updatedAt: string }
 export interface StudyProgress { documentId: string; lastPage: number; furthestPage: number; updatedAt: string }
-export interface Entitlement { id: string; orderId?: string; kind: 'TRAINING' | 'SUBSCRIPTION'; trainingId: string | null; startsAt: string; expiresAt: string | null; revokedAt: string | null }
+export interface Entitlement { id: string; orderId?: string; kind: 'TRAINING' | 'SUBSCRIPTION' | 'SUBJECT_ORDER'; trainingId: string | null; startsAt: string; expiresAt: string | null; revokedAt: string | null }
 export interface Library { trainings: Training[]; documents: StudyDocument[]; notes: { documentId: string; count: number }[]; progress: StudyProgress[]; entitlements: Entitlement[]; subjectAccess?: { subjectId: string; startsAt: string; expiresAt: string; revokedAt: string | null }[]; hasSubscription: boolean; readableTrainingIds: string[]; readableDocumentIds?: string[] }
 export interface PurchaseOrder { id: string; title: string; kind: string; amountRial: number; status: string; provider: string; reference: string | null; createdAt: string; paidAt?: string | null; productId?: string; requestId?: string; trainingId?: string | null; durationDays?: number | null }
 export interface CheckoutResponse { id: string; redirectUrl: string; status?: string; amountRial?: number }
