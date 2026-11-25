@@ -11,13 +11,14 @@ const profile = { id: '00000000-0000-0000-0000-000000000001', name: 'کاربر 
 async function fixture(width = 390, failure) {
   const context = await browser.newContext({ viewport: { width, height: 1000 } })
   const page = await context.newPage()
-  const calls = { request: 0, verify: 0, errors: [] }
+  const calls = { request: 0, verify: 0, errors: [], password: [] }
   page.on('pageerror', error => calls.errors.push(error.message))
   await context.route('**/api/cent/v1/**', async route => {
     const path = new URL(route.request().url()).pathname.split('/api/cent/v1')[1]
     const send = (body, status = 200, headers = {}) => route.fulfill({ status, contentType: 'application/json', headers, body: JSON.stringify(body) })
     if (path === '/auth/google/config') return send({ enabled: false, mode: 'GisIdToken', clientId: null })
-    if (path.endsWith('/sms/request')) {
+    if (path.endsWith('/sms/request') || path === '/auth/password/reset/request') {
+      if (path === '/auth/password/reset/request') calls.password.push([path, route.request().postDataJSON()])
       calls.request++
       assert.deepEqual(route.request().postDataJSON(), { phone: '+989123456789' })
       if (failure === 'network') return route.abort()
@@ -29,8 +30,14 @@ async function fixture(width = 390, failure) {
     if (path.endsWith('/sms/verify')) {
       calls.verify++
       const body = route.request().postDataJSON()
+      if (body.password) calls.password.push([path, body])
       assert.equal(body.challengeId, (calls.request === 1 ? 'C' : 'D').repeat(64))
       if (body.code !== '123456') return send({ code: 'invalid_sms_code', message: 'کد معتبر نیست یا مهلت آن پایان یافته است.' }, 401)
+      return send({ token, expiresAt: new Date(Date.now() + 604800000).toISOString(), user: profile })
+    }
+    if (path === '/auth/password/reset/verify' || path === '/auth/password/login') {
+      calls.password.push([path, route.request().postDataJSON()])
+      if (path.endsWith('/verify')) return route.fulfill({ status: 204 })
       return send({ token, expiresAt: new Date(Date.now() + 604800000).toISOString(), user: profile })
     }
     if (path === '/me') return route.request().headers().authorization ? send(profile) : send({}, 401)
@@ -105,6 +112,45 @@ try {
     await page.getByLabel('شماره موبایل').waitFor()
     assert.equal(await page.locator('input[autocomplete="one-time-code"]').count(), 0)
     passed.push('refresh discards challenge and OTP safely')
+    await context.close()
+  }
+  {
+    const { context, page, calls } = await fixture()
+    await page.goto(root + '/login')
+    await page.getByRole('button', { name: 'ثبت‌نام با رمز عبور' }).click()
+    await page.getByLabel('شماره موبایل').fill('۰۹۱۲۳۴۵۶۷۸۹')
+    await page.getByRole('button', { name: 'ارسال کد تأیید', exact: true }).click()
+    await page.getByLabel('کد تأیید', { exact: true }).fill('۱۲۳۴۵۶')
+    await page.getByLabel('رمز عبور حساب جدید').fill('synthetic initial password')
+    await page.getByRole('button', { name: 'تأیید و ورود', exact: true }).click()
+    await page.waitForURL(root + '/student')
+    assert.deepEqual(calls.password, [
+      ['/auth/sms/verify', { challengeId: 'C'.repeat(64), code: '123456', password: 'synthetic initial password' }],
+    ])
+    passed.push('Phone registration sends password only with SMS verification')
+    await context.close()
+  }
+  {
+    const { context, page, calls } = await fixture()
+    await page.goto(root + '/student/profile')
+    await page.getByRole('button', { name: 'فراموشی یا تنظیم رمز عبور' }).click()
+    await page.getByLabel('شماره موبایل').fill('۰۹۱۲۳۴۵۶۷۸۹')
+    await page.getByRole('button', { name: 'ارسال کد تأیید', exact: true }).click()
+    await page.getByLabel('کد تأیید', { exact: true }).fill('۱۲۳۴۵۶')
+    await page.getByLabel('رمز عبور جدید').fill('synthetic recovery password')
+    await page.getByRole('button', { name: 'ذخیره رمز عبور جدید', exact: true }).click()
+    await page.getByText('رمز عبور ذخیره شد. با رمز جدید وارد شوید.').waitFor()
+    assert.equal(await page.evaluate(() => sessionStorage.getItem('cent:session:v1')), null)
+    await page.getByLabel('شماره موبایل').fill('۰۹۱۲۳۴۵۶۷۸۹')
+    await page.getByLabel('رمز عبور', { exact: true }).fill('synthetic recovery password')
+    await page.getByRole('button', { name: 'ورود با رمز عبور', exact: true }).click()
+    await page.waitForURL(root + '/student/profile')
+    assert.deepEqual(calls.password, [
+      ['/auth/password/reset/request', { phone: '+989123456789' }],
+      ['/auth/password/reset/verify', { challengeId: 'C'.repeat(64), code: '123456', password: 'synthetic recovery password' }],
+      ['/auth/password/login', { phone: '+989123456789', password: 'synthetic recovery password' }],
+    ])
+    passed.push('Password reset uses dedicated endpoints, then password login restores the requested page')
     await context.close()
   }
   writeFileSync(artifact('sms-auth-result.json'), JSON.stringify({ success: true, passed }, null, 2))

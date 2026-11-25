@@ -1,6 +1,6 @@
 # Itatest authentication
 
-The application exposes two login methods: Iranian mobile SMS OTP and Google's official GIS button. They issue the same Cent bearer session. The profile page can link a proven mobile or Google identity to the current account. Accounts never merge automatically by email or phone.
+The application supports Iranian mobile SMS, mobile and password, and Google's official GIS button. All methods issue the same Cent bearer session. New users can set a password when they verify their mobile number during registration. Existing users can set or reset their password after verifying a linked mobile number through the recovery form. The profile page can link a proven mobile or Google identity to the current account. Accounts never merge automatically by email or phone.
 
 The complete English implementation report (root causes, architecture, endpoints, settings, tests, migration, rollback, account recovery and Lerona isolation) is in the adjacent backend repository at docs/CENT-AUTHENTICATION.md.
 
@@ -18,4 +18,4 @@ Phone and OTP inputs accept Persian/Arabic digits and use numeric mobile keyboar
 
 Run npm.cmd test, npm.cmd run lint and npm.cmd run build. Start a local Vite server, then run npm.cmd --prefix tests/browser run test:auth and npm.cmd --prefix tests/browser run test:google-gis with CENT_TEST_WEB_URL set to that local base URL. Browser checks intercept APIs and GIS and send no real SMS or Google credentials. They do not establish real provider or production behavior.
 
-Email/password login and Authorization Code/PKCE are removed. Existing accounts, IDs and purchase associations remain intact. Signed-in users can link an identity from their profile. Signed-out password-only users require operator-supervised ownership recovery against the original account; never silently attach a matching Google email.
+Mobile password sign-in and recovery require a verified Cent mobile identity. A password reset keeps the original account and purchase associations, invalidates its existing sessions, and returns the user to sign-in. Signed-out legacy accounts without a verified identity require operator-assisted ownership recovery against the original account.
