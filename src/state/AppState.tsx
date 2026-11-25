@@ -13,6 +13,7 @@ interface AppStateValue {
   library: Library | null
   hasPackage: boolean
   authenticated: (user: SessionUser, token: string, expiresAt?: string) => void
+  updateName: (name: string) => Promise<void>
   logout: () => void
   refresh: () => Promise<void>
   setDiagnostic: (result: DiagnosticResult, analysis: AIAnalysis) => void
@@ -32,6 +33,11 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
   const authenticated = useCallback((u: SessionUser, token: string, expiresAt?: string) => {
     session.set(token, expiresAt)
     setLibrary(null); setOrders([]); setResult(null); setAnalysis(null); setSessionError(''); setUser(u); setLoading(false)
+  }, [])
+  const updateName = useCallback(async (name: string) => {
+    const expectedToken = session.get()
+    const updated = await cent.updateName(name)
+    if (session.get() === expectedToken) setUser(updated)
   }, [])
   const refresh = useCallback(async () => {
     const expectedToken = session.get()
@@ -72,11 +78,11 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
   }, [user, clear])
   const value = useMemo<AppStateValue>(() => ({ user, loading, sessionError, retrySession: () => { setSessionError(''); setLoading(true); setRestoreRevision(r => r + 1) }, diagnosticResult, aiAnalysis, orders, library,
     hasPackage: library?.hasSubscription ?? false,
-    authenticated,
+    authenticated, updateName,
     logout: () => { void cent.logout().catch(() => {}); clear() }, refresh,
     setDiagnostic: (result, analysis) => { setResult(result); setAnalysis(analysis) },
     addOrder: () => { void refresh() },
-  }), [user, loading, sessionError, diagnosticResult, aiAnalysis, orders, library, refresh, clear, authenticated])
+  }), [user, loading, sessionError, diagnosticResult, aiAnalysis, orders, library, refresh, clear, authenticated, updateName])
   return <AppState.Provider value={value}>{children}</AppState.Provider>
 }
 // eslint-disable-next-line react-refresh/only-export-components

@@ -65,7 +65,7 @@ input:disabled,textarea:disabled,select:disabled { color: var(--color-text-disab
 .auth-google:hover { background: #F2F2F2; }
 /* The Google SDK iframe and its provider-owned button are deliberately untouched. */
 .appearance-control { display: inline-flex; align-items: center; gap: var(--space-2); color: var(--color-text); flex-shrink: 0; }
-.appearance-toggle { display:inline-grid; place-items:center; width:48px; height:48px; padding:0; color:var(--color-action); background:var(--color-surface); border:1px solid var(--color-border); cursor:pointer; transition:background var(--motion-normal),color var(--motion-normal); }
+.appearance-toggle { display:inline-grid; place-items:center; width:44px; height:44px; padding:0; color:var(--color-action); background:var(--color-surface); border:1px solid var(--color-border); cursor:pointer; transition:background var(--motion-normal),color var(--motion-normal); }
 .appearance-toggle:hover { background:var(--color-hover); }
 .appearance-toggle:active { background:var(--color-interactive-selected); }
 .appearance-toggle svg { flex:none; }

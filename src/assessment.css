@@ -99,7 +99,7 @@
 .assessment-page.cent-exam { max-width: 1120px; padding-block: var(--space-4) var(--space-8); }
 .assessment-topline { display: flex; justify-content: space-between; align-items: center; min-height: 44px; }
 .assessment-topline .back-link { margin: 0; }
-.assessment-topline .appearance-toggle { border: 0; background: transparent; width: 44px; height: 44px; }
+.assessment-topline .appearance-toggle { border: 0; background: transparent; }
 .assessment-setup { display: grid; grid-template-columns: minmax(0,1.2fr) minmax(0,1fr); gap: var(--space-8); }
 .assessment-config { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: var(--space-4); margin-bottom: var(--space-4); }
 .assessment-config select { width: 100%; min-width: 0; }

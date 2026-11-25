@@ -35,6 +35,9 @@ async function fixture(options = {}) {
   let releaseCompletion
   const completionGate = options.holdCompletion ? new Promise(resolve => { releaseCompletion = resolve }) : Promise.resolve()
   const calls = { config: 0, sdk: 0, challenge: [], complete: [], password: [], logout: [], errors: [], console: [], urls: [] }
+  let profile = options.link ? { ...user, email: '', phone: '+989123456789', hasGoogle: false, hasPassword: true } : user
+  if (options.newUser) profile = { ...profile, id: 'new-user', name: 'کاربر تازه' }
+  if (options.admin) profile = { ...profile, role: 'ADMIN' }
   page.on('pageerror', error => calls.errors.push(error.message))
   page.on('console', message => calls.console.push(message.text()))
   page.on('request', request => calls.urls.push(request.url()))
@@ -49,8 +52,6 @@ async function fixture(options = {}) {
     const headers = { 'access-control-allow-origin': new URL(root).origin, 'access-control-allow-methods': 'GET, POST, OPTIONS', 'access-control-allow-headers': 'content-type,x-cent-gis,authorization', 'cache-control': 'private, no-store, max-age=0' }
     const send = (body, status = 200, extra = {}) => route.fulfill({ status, headers: { ...headers, ...extra }, contentType: 'application/json', body: JSON.stringify(body) })
     if (request.method() === 'OPTIONS') return route.fulfill({ status: 204, headers })
-    const profile = options.newUser ? { ...user, id: 'new-user', name: 'کاربر تازه' } : options.admin ? { ...user, role: 'ADMIN' } : user
-    const auth = { token: centToken, expiresAt: new Date(Date.now() + 604_800_000).toISOString(), user: profile }
     if (path === '/auth/google/config') {
       calls.config++
       assert.equal(request.headers().authorization, undefined)
@@ -58,28 +59,31 @@ async function fixture(options = {}) {
       if (options.discoveryFailure) return send({ code: 'google_unavailable' }, 503)
       return send({ enabled: !options.disabled, mode: 'GisIdToken', clientId: options.disabled ? null : clientId })
     }
-    if (path.startsWith('/auth/google/gis/')) {
+    const linking = path.startsWith('/auth/identities/google/gis/')
+    if (path.startsWith('/auth/google/gis/') || linking) {
+      assert.equal(linking, Boolean(options.link))
       assert.equal(request.headers()['x-cent-gis'], '1')
       assert.equal(request.headers()['content-type'], 'application/json')
-      assert.equal(request.headers().authorization, undefined)
+      assert.equal(request.headers().authorization, linking ? 'Bearer ' + centToken : undefined)
       assert.equal(request.headers().cookie, undefined)
       assert.equal(request.headers().origin, new URL(root).origin)
     }
-    if (path === '/auth/google/gis/challenge') {
+    if (path.endsWith('/google/gis/challenge')) {
       calls.challenge.push(request.postDataJSON())
       assert.deepEqual(request.postDataJSON(), {})
       if (options.challengeFailure) return send({ code: 'temporarily_unavailable' }, 503)
       return send({ challengeId: (calls.challenge.length === 1 ? 'C' : 'D').repeat(42) + 'A', nonce: (calls.challenge.length === 1 ? 'N' : 'M').repeat(42) + 'A', browserBinding: proof, expiresAt: new Date(Date.now() + 300_000).toISOString() })
     }
-    if (path === '/auth/google/gis/complete') {
+    if (path.endsWith('/google/gis/complete')) {
       calls.complete.push(request.postDataJSON())
       await completionGate
       if (options.verificationFailure) return send({ code: 'invalid_google_credentials', message: 'RAW INTERNAL ERROR' }, 401)
       if (options.conflict) return send({ code: 'google_account_conflict' }, 409)
       if (options.rateLimit) return send({}, 429)
-      return send(auth)
+      if (linking) profile = { ...profile, googleEmail: user.email, hasGoogle: true }
+      return send({ token: centToken, expiresAt: new Date(Date.now() + 604_800_000).toISOString(), user: profile })
     }
-    if (path === '/auth/login' || path === '/auth/register') { calls.password.push(path); return send(auth) }
+    if (path === '/auth/password/login' || path.endsWith('/sms/verify')) { calls.password.push(path); return send({}, 400) }
     if (path === '/auth/logout') { calls.logout.push(request.headers().authorization); return route.fulfill({ status: 204, headers }) }
     if (path === '/me/orders/synthetic-order/verify') return request.headers().authorization ? send({ paid: false }) : send({}, 401)
     if (path === '/me') return send(profile)
@@ -129,7 +133,7 @@ try {
     await page.getByRole('button', { name: 'ادامه با Google' }).click()
     await emit(page, { duplicate: true })
     assert.equal(await page.evaluate(() => sessionStorage.getItem('cent:session:v1')), null, 'No session before backend confirmation')
-    assert.equal(await page.getByRole('button', { name: 'ارسال کد تأیید', exact: true }).isDisabled(), true)
+    assert.equal(await page.getByRole('button', { name: 'ورود با رمز عبور', exact: true }).isDisabled(), true)
     releaseCompletion()
     await page.waitForURL(root + '/student/profile?source=purchase')
     await page.getByRole('heading', { name: newUser ? 'کاربر تازه' : user.name, exact: true }).waitFor()
@@ -139,12 +143,27 @@ try {
     await page.reload()
     await page.getByRole('heading', { name: newUser ? 'کاربر تازه' : user.name, exact: true }).waitFor()
     await noSecrets(page, calls)
-    assert.equal(await page.locator('meta[name="referrer"]').getAttribute('content'), new URL(root).protocol === 'http:' && new URL(root).hostname === 'localhost' ? 'no-referrer-when-downgrade' : 'strict-origin-when-cross-origin')
+    assert.equal(await page.locator('meta[name="referrer"]').getAttribute('content'), 'no-referrer')
     await page.getByRole('button', { name: 'خروج از حساب' }).click()
     await page.waitForURL(url => [root, root + '/login'].includes(url.href.replace(/\/$/, '')))
     assert.equal(await page.evaluate(() => sessionStorage.getItem('cent:session:v1')), null)
     assert.deepEqual(calls.logout, ['Bearer ' + centToken])
     passed.push(newUser ? 'new Google user, profile/session/navigation/restore/logout' : 'existing Google user, duplicate callback, profile/session/navigation/restore/logout')
+    await context.close()
+  }
+  {
+    const { context, page, calls } = await fixture({ link: true })
+    await page.addInitScript(token => sessionStorage.setItem('cent:session:v1', token), centToken)
+    await page.goto(root + '/student/profile')
+    await page.getByRole('button', { name: 'افزودن گوگل' }).click()
+    await page.getByRole('button', { name: 'ادامه با Google' }).click()
+    await emit(page)
+    await page.getByText(user.email, { exact: true }).waitFor()
+    await page.getByText('+989123456789', { exact: true }).waitFor()
+    assert.equal(calls.complete.length, 1)
+    assert.equal(await page.getByRole('button', { name: 'افزودن گوگل' }).count(), 0)
+    await noSecrets(page, calls)
+    passed.push('authenticated phone account links Google and shows both verified identities')
     await context.close()
   }
   for (const [option, text] of [['sdkFailure', 'بارگذاری'], ['challengeFailure', 'ثانیه'], ['discoveryFailure', 'ثانیه'], ['verificationFailure', 'معتبر نیست'], ['conflict', 'تداخل'], ['rateLimit', '60']]) {
@@ -189,9 +208,9 @@ try {
     await page.waitForFunction(() => window.gisFixture.initializations.length === 2)
     await emit(page, { index: 0 })
     assert.equal(calls.complete.length, 0)
-    assert.equal(await page.getByRole('button', { name: 'ارسال کد تأیید', exact: true }).isEnabled(), true)
+    assert.equal(await page.getByRole('button', { name: 'ورود با رمز عبور', exact: true }).isEnabled(), true)
     await noSecrets(page, calls)
-    passed.push('explicit popup dismissal recovery releases SMS UI and rejects stale credential')
+    passed.push('explicit popup dismissal recovery releases password sign-in and rejects stale credential')
     await context.close()
   }
   {
@@ -222,8 +241,8 @@ try {
     await page.goto(root + '/login')
     await page.getByRole('status').filter({ hasText: 'در دسترس نیست' }).waitFor()
     assert.equal(calls.sdk, 0); assert.equal(calls.challenge.length, 0)
-    assert.equal(await page.getByRole('button', { name: 'ارسال کد تأیید', exact: true }).isEnabled(), true)
-    passed.push('disabled mode keeps SMS login available without SDK or challenges')
+    assert.equal(await page.getByRole('button', { name: 'ورود با رمز عبور', exact: true }).isEnabled(), true)
+    passed.push('disabled mode keeps password sign-in available without SDK or challenges')
     await context.close()
   }
   writeFileSync(artifact('google-gis-result.json'), JSON.stringify({ success: true, root, passed }, null, 2))

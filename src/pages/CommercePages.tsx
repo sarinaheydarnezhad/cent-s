@@ -6,7 +6,7 @@ import { ApiError, cent, session } from '../services/cent'
 import { checkPayment, clearPaidIntent, ownsTraining, paymentFeedback, paymentMethod, purchaseIntent, recoverableOrder, rememberIntent } from '../services/commerce'
 import { useAppState } from '../state/AppState'
 import { useRemote } from '../components/CentUI'
-import { Badge, Button, Card, EmptyState, FilterGroup, Notice, PageHeader, Skeleton } from '../components/UI'
+import { Badge, Button, EmptyState, FilterGroup, Notice, PageHeader, Skeleton } from '../components/UI'
 import { CommerceHero, CommerceLoading, OnlineAccessNotice, OrderSummary, Price, ProductCard, SubscriptionSummary, OrderHistory } from '../components/CommerceUI'
 import { CourseCatalog } from './CourseCatalog'
 import { useCommerceAccess } from '../services/useCommerceAccess'
@@ -148,8 +148,16 @@ export function CentCheckoutResult() {
 }
 
 export function AccountPage() {
-  const { user } = useAppState()
   const access = useCommerceAccess()
   const remote = useRemote(cent.orders)
-  return <div className="commerce-account"><PageHeader title="حساب کاربری من" description="دسترسی درس‌ها و سوابق خریدت رو اینجا بررسی کن."/><Card className="student-account-profile"><h2>{user?.name}</h2><p><bdi dir="ltr">{user?.email}</bdi></p><Link className="button button-secondary" to="/student/content">کتابخانهٔ من</Link></Card><IdentitySettings/><SubjectAccessList/><CommerceLoading {...access} retry={access.reload}/>{access.library?.entitlements.some(e => e.kind === 'SUBSCRIPTION') && <SubscriptionSummary library={access.library}/>}<div className="commerce-section-title"><h2>سوابق خرید</h2><CreditCard aria-hidden="true"/></div><CommerceLoading {...remote} retry={remote.reload}/>{remote.data && !remote.busy && !remote.error && <OrderHistory orders={remote.data} library={access.error || access.busy ? null : access.library}/>}</div>
+  return <div className="commerce-account">
+    <PageHeader title="حساب کاربری من" action={<Link className="button button-secondary" to="/student/content">کتابخانهٔ من</Link>}/>
+    <IdentitySettings/>
+    <SubjectAccessList/>
+    <CommerceLoading {...access} retry={access.reload}/>
+    {access.library?.entitlements.some(e => e.kind === 'SUBSCRIPTION') && <SubscriptionSummary library={access.library}/>}
+    <div className="commerce-section-title"><h2>سوابق خرید</h2><CreditCard aria-hidden="true"/></div>
+    <CommerceLoading {...remote} retry={remote.reload}/>
+    {remote.data && !remote.busy && !remote.error && <OrderHistory orders={remote.data} library={access.error || access.busy ? null : access.library}/>}
+  </div>
 }

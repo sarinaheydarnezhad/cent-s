@@ -51,6 +51,10 @@ export interface SessionUser {
   id: string
   name: string
   email: string
+  phone?: string | null
+  googleEmail?: string | null
+  hasGoogle?: boolean
+  hasPassword?: boolean
   role: 'STUDENT' | 'ADMIN' | 'SuperAdmin' | 'UserManager' | 'ContentManager' | 'ExamManager' | 'FinanceManager'
 }
 

@@ -6,7 +6,52 @@
 .commerce-page h1 { font-size: var(--type-page); }
 .commerce-page h2, .commerce-account h2 { font-size: 1.25rem; }
 .commerce-page h3, .commerce-account h3 { font-size: 1rem; }
-.commerce-page .page-header { margin: 0; }
+.account-settings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
+  gap: var(--space-6);
+  align-items: start;
+}
+.account-settings-card {
+  display: grid;
+  gap: var(--space-4);
+  min-width: 0;
+  padding: clamp(16px, 3vw, 28px);
+}
+.account-settings-card p { margin: 0; overflow-wrap: anywhere; }
+.account-settings-heading { display: flex; align-items: center; gap: var(--space-3); }
+.account-name-avatar {
+  display: grid;
+  place-items: center;
+  inline-size: 48px;
+  block-size: 48px;
+  flex: 0 0 auto;
+  border-radius: var(--radius-control);
+  background: var(--color-learning-surface);
+  color: var(--color-learning-text);
+  font-size: 1.35rem;
+  font-weight: var(--weight-semibold);
+}
+.account-method {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  background: var(--color-surface-subtle);
+  border: 1px solid var(--color-divider);
+  border-radius: var(--radius-control);
+}
+.account-method > svg { width: 20px; flex-shrink: 0; color: var(--color-text-secondary); }
+.account-method > div { flex: 1 1 120px; min-width: 0; overflow-wrap: anywhere; }
+.account-method-status {
+  display: inline-flex;
+  gap: var(--space-1);
+  align-items: center;
+  color: var(--color-success);
+  font-size: var(--type-label);
+}
+.commerce-page .page-header, .commerce-account .page-header { margin: 0; }
 .commerce-hero { background: linear-gradient(125deg, var(--brand-slate), var(--color-strong-surface)); color: var(--color-on-strong); border-radius: var(--radius-dialog); padding: 32px 40px; display: flex; align-items: center; justify-content: space-between; gap: 24px; overflow: hidden; }
 .commerce-hero h1 { font-size: clamp(1.5rem, 3vw, 2rem); margin-block: 8px; }
 .commerce-hero p, .commerce-hero .eyebrow { color: var(--color-on-strong); margin: 0; }

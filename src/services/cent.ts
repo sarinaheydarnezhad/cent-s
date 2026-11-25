@@ -87,6 +87,9 @@ async function loadCurriculum(): Promise<Curriculum> {
 }
 export const cent = {
   me: () => centRequest<SessionUser>('/me'),
+  updateName: (name: string) => centRequest<SessionUser>('/me', {
+    method: 'PATCH', body: JSON.stringify({ name }), signal: AbortSignal.timeout(15_000),
+  }),
   logout: () => post<void>('/auth/logout', {}),
   catalog: () => centRequest<{ trainings: Training[]; products: StoreProduct[] }>('/catalog'),
   status: () => centRequest<{ payments: string }>('/status'),

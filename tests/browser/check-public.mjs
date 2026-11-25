@@ -81,7 +81,8 @@ try {
    await measure([['.public-auth h1'],['.public-auth-description'],['.public-auth .ui-field-label'],['.public-auth .auth-security'],['.public-auth .ui-input','borderTopColor',3]])
    const phone=page.getByLabel('شماره موبایل',{exact:true})
    assert.equal(await phone.getAttribute('dir'),'ltr')
-   await phone.fill('invalid');await page.getByRole('button',{name:'ارسال کد تأیید',exact:true}).click()
+   await phone.fill('invalid');await page.getByLabel('رمز عبور',{exact:true}).fill('synthetic test password')
+   await page.getByRole('button',{name:'ورود با رمز عبور',exact:true}).click()
    await page.getByRole('alert').filter({hasText:'معتبر'}).waitFor()
   }
  }

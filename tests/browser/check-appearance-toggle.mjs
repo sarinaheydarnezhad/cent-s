@@ -32,12 +32,14 @@ try {
     await page.keyboard.press('Enter'); assert.equal(await theme(page),opposite)
     assert.equal(await toggle(page).evaluate(el => el===document.activeElement),true)
     const focus = await toggle(page).evaluate(el => ({outline:getComputedStyle(el).outlineStyle,width:el.getBoundingClientRect().width,height:el.getBoundingClientRect().height}))
-    assert.notEqual(focus.outline,'none'); assert.ok(focus.width>=44 && focus.height>=44)
+    assert.notEqual(focus.outline,'none'); assert.equal(focus.width,44); assert.equal(focus.height,44)
     await page.getByRole('link',{name:'ایتاتست — صفحه اصلی'}).first().click(); assert.equal(await theme(page),opposite)
     for(const selected of ['light','dark']) {
       if(await theme(page)!==selected) await toggle(page).click()
       for(const width of [320,375,390,768,1024,1280,1440]) {
         await page.setViewportSize({width,height:900})
+        const box = await toggle(page).boundingBox()
+        assert.deepEqual([box.width, box.height], [44, 44], `${selected} theme toggle at ${width}px`)
         assert.ok(await page.evaluate(() => document.documentElement.scrollWidth<=innerWidth+1),`${selected} home overflow ${width}`)
       }
     }

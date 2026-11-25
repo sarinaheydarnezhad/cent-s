@@ -7,11 +7,14 @@ import { root, artifact, browserOptions } from './environment.mjs'
 const browser = await chromium.launch(browserOptions)
 const passed = []
 const token = 'B'.repeat(64)
-const profile = { id: '00000000-0000-0000-0000-000000000001', name: 'کاربر آزمایشی', email: '', role: 'STUDENT' }
-async function fixture(width = 390, failure) {
+const profile = { id: '00000000-0000-0000-0000-000000000001', name: 'کاربر آزمایشی', email: '', role: 'STUDENT', phone: '+989123456789', hasGoogle: false, hasPassword: true }
+const registrationPassword = 'Cent-one'
+const recoveryPassword = 'Cent-two'
+async function fixture(width = 390, failure, initialAccount = profile) {
   const context = await browser.newContext({ viewport: { width, height: 1000 } })
   const page = await context.newPage()
   const calls = { request: 0, verify: 0, errors: [], password: [] }
+  let account = initialAccount
   page.on('pageerror', error => calls.errors.push(error.message))
   await context.route('**/api/cent/v1/**', async route => {
     const path = new URL(route.request().url()).pathname.split('/api/cent/v1')[1]
@@ -33,14 +36,24 @@ async function fixture(width = 390, failure) {
       if (body.password) calls.password.push([path, body])
       assert.equal(body.challengeId, (calls.request === 1 ? 'C' : 'D').repeat(64))
       if (body.code !== '123456') return send({ code: 'invalid_sms_code', message: 'کد معتبر نیست یا مهلت آن پایان یافته است.' }, 401)
-      return send({ token, expiresAt: new Date(Date.now() + 604800000).toISOString(), user: profile })
+      if (path.startsWith('/auth/identities/')) {
+        assert.equal(route.request().headers().authorization, 'Bearer ' + token)
+        account = { ...account, phone: profile.phone }
+      } else {
+        account = { ...account, name: body.name }
+      }
+      return send({ token, expiresAt: new Date(Date.now() + 604800000).toISOString(), user: account })
     }
     if (path === '/auth/password/reset/verify' || path === '/auth/password/login') {
       calls.password.push([path, route.request().postDataJSON()])
       if (path.endsWith('/verify')) return route.fulfill({ status: 204 })
-      return send({ token, expiresAt: new Date(Date.now() + 604800000).toISOString(), user: profile })
+      return send({ token, expiresAt: new Date(Date.now() + 604800000).toISOString(), user: account })
     }
-    if (path === '/me') return route.request().headers().authorization ? send(profile) : send({}, 401)
+    if (path === '/me') {
+      if (!route.request().headers().authorization) return send({}, 401)
+      if (route.request().method() === 'PATCH') account = { ...account, ...route.request().postDataJSON() }
+      return send(account)
+    }
     if (path === '/auth/logout') return route.fulfill({ status: 204 })
     if (path === '/me/library') return send({ trainings: [], documents: [], notes: [], progress: [], entitlements: [], readableTrainingIds: [], hasSubscription: false })
     if (path === '/curriculum') return send({ courses: [], chapters: [], topics: [], documents: [] })
@@ -54,7 +67,13 @@ try {
     const { context, page, calls } = await fixture(width)
     await page.clock.install()
     await page.goto(root + '/student/profile?source=sms')
-    await page.getByRole('heading', { name: 'ورود یا ثبت‌نام' }).waitFor()
+    await page.getByRole('heading', { name: 'ورود به حساب' }).waitFor()
+    assert.equal(await page.getByRole('button', { name: 'ارسال کد تأیید', exact: true }).count(), 0)
+    if (width !== 320) {
+      await page.evaluate(() => document.fonts.ready)
+      await page.screenshot({ path: artifact(`password-login-${width}.png`), fullPage: true, animations: 'disabled' })
+    }
+    await page.getByRole('button', { name: 'ثبت‌نام', exact: true }).click()
     await page.getByLabel('شماره موبایل').fill('08123456789')
     await page.getByRole('button', { name: 'ارسال کد تأیید', exact: true }).click()
     await page.getByRole('alert').filter({ hasText: 'معتبر' }).waitFor()
@@ -65,8 +84,10 @@ try {
     await otp.waitFor()
     assert.equal(await otp.evaluate(element => document.activeElement === element), true)
     assert.equal(await page.getByRole('button', { name: 'ارسال دوباره کد' }).isDisabled(), true)
+    await page.getByLabel('نام و نام خانوادگی').fill(profile.name)
+    await page.getByLabel('رمز عبور حساب جدید').fill(registrationPassword)
     await otp.fill('111111')
-    await page.getByRole('button', { name: 'تأیید و ورود', exact: true }).click()
+    await page.getByRole('button', { name: 'ساخت حساب و ورود', exact: true }).click()
     await page.getByRole('alert').filter({ hasText: 'کد معتبر نیست' }).waitFor()
     assert.equal(await page.evaluate(() => sessionStorage.getItem('cent:session:v1')), null)
     await page.clock.runFor(61000)
@@ -76,23 +97,37 @@ try {
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true)
     if (width === 390) await page.screenshot({ path: artifact('sms-otp-mobile.png'), fullPage: true })
     await otp.fill('۱۲۳۴۵۶')
-    await page.getByRole('button', { name: 'تأیید و ورود', exact: true }).click()
+    await page.getByRole('button', { name: 'ساخت حساب و ورود', exact: true }).click()
     await page.waitForURL(root + '/student/profile?source=sms')
-    await page.getByRole('heading', { name: profile.name, exact: true }).waitFor()
+    const settings = page.getByRole('region', { name: 'اطلاعات شخصی' })
+    await settings.getByText(profile.name, { exact: true }).waitFor()
+    await page.getByText(profile.phone, { exact: true }).waitFor()
+    assert.equal(await page.getByRole('button', { name: 'افزودن شماره' }).count(), 0)
+    if (width !== 320) await page.screenshot({ path: artifact(`account-settings-${width}.png`), fullPage: true, animations: 'disabled' })
+    await page.getByRole('button', { name: 'افزودن گوگل' }).click()
+    await page.getByText('اتصال حساب گوگل فعلاً در دسترس نیست.').waitFor()
+    const updatedName = 'نام ویرایش‌شده'
+    await settings.getByLabel('نام و نام خانوادگی').fill(updatedName)
+    await settings.getByRole('button', { name: 'ذخیره نام' }).click()
+    await settings.getByText('نام شما ذخیره شد.').waitFor()
     assert.equal(await page.evaluate(() => sessionStorage.getItem('cent:session:v1')), token)
     await page.reload()
-    await page.getByRole('heading', { name: profile.name, exact: true }).waitFor()
+    await settings.getByText(updatedName, { exact: true }).waitFor()
+    await page.getByText(profile.phone, { exact: true }).waitFor()
+    assert.equal(await page.getByRole('button', { name: 'افزودن شماره' }).count(), 0)
+    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true)
     if (await page.getByRole('button', { name: 'نمایش منو' }).isVisible()) await page.getByRole('button', { name: 'نمایش منو' }).click()
     await page.getByRole('button', { name: 'خروج از حساب' }).click()
     await page.waitForURL(url => [root, root + '/login'].includes(url.href.replace(/\/$/, '')))
     assert.equal(await page.evaluate(() => sessionStorage.getItem('cent:session:v1')), null)
     assert.deepEqual(calls.errors, [])
-    passed.push(`SMS validation, focus, Persian digits/paste, incorrect code, countdown/resend, return destination, restoration/logout, RTL ${width}px`)
+    passed.push(`Registration, resend, profile name/linked methods, restoration/logout, RTL ${width}px`)
     await context.close()
   }
   for (const failure of ['network', 'provider', 'rate']) {
     const { context, page, calls } = await fixture(390, failure)
     await page.goto(root + '/login')
+    await page.getByRole('button', { name: 'ثبت‌نام', exact: true }).click()
     await page.getByLabel('شماره موبایل').fill('09123456789')
     await page.getByRole('button', { name: 'ارسال کد تأیید', exact: true }).click()
     await page.getByRole('alert').waitFor()
@@ -105,6 +140,7 @@ try {
   {
     const { context, page } = await fixture()
     await page.goto(root + '/login')
+    await page.getByRole('button', { name: 'ثبت‌نام', exact: true }).click()
     await page.getByLabel('شماره موبایل').fill('09123456789')
     await page.getByRole('button', { name: 'ارسال کد تأیید', exact: true }).click()
     await page.getByLabel('کد تأیید', { exact: true }).waitFor()
@@ -117,38 +153,68 @@ try {
   {
     const { context, page, calls } = await fixture()
     await page.goto(root + '/login')
-    await page.getByRole('button', { name: 'ثبت‌نام با رمز عبور' }).click()
+    await page.getByRole('button', { name: 'ثبت‌نام', exact: true }).click()
     await page.getByLabel('شماره موبایل').fill('۰۹۱۲۳۴۵۶۷۸۹')
     await page.getByRole('button', { name: 'ارسال کد تأیید', exact: true }).click()
     await page.getByLabel('کد تأیید', { exact: true }).fill('۱۲۳۴۵۶')
-    await page.getByLabel('رمز عبور حساب جدید').fill('synthetic initial password')
-    await page.getByRole('button', { name: 'تأیید و ورود', exact: true }).click()
+    await page.getByLabel('نام و نام خانوادگی').fill('  نام واقعی  ')
+    await page.getByLabel('رمز عبور حساب جدید').fill(registrationPassword)
+    await page.getByRole('button', { name: 'ساخت حساب و ورود', exact: true }).click()
     await page.waitForURL(root + '/student')
     assert.deepEqual(calls.password, [
-      ['/auth/sms/verify', { challengeId: 'C'.repeat(64), code: '123456', password: 'synthetic initial password' }],
+      ['/auth/sms/verify', { challengeId: 'C'.repeat(64), code: '123456', name: 'نام واقعی', password: registrationPassword }],
     ])
-    passed.push('Phone registration sends password only with SMS verification')
+    passed.push('Phone registration sends the chosen name and password with SMS verification')
+    await context.close()
+  }
+  {
+    const googleAccount = { ...profile, email: 'student@example.test', phone: null, hasGoogle: true, hasPassword: false }
+    const { context, page } = await fixture(390, undefined, googleAccount)
+    await page.addInitScript(value => sessionStorage.setItem('cent:session:v1', value), token)
+    await page.goto(root + '/student/profile')
+    await page.getByText(googleAccount.email, { exact: true }).waitFor()
+    assert.equal(await page.getByRole('button', { name: 'افزودن گوگل' }).count(), 0)
+    await page.getByRole('button', { name: 'افزودن شماره' }).click()
+    await page.getByLabel('شماره موبایل').fill('09123456789')
+    await page.getByRole('button', { name: 'ارسال کد تأیید', exact: true }).click()
+    await page.getByLabel('کد تأیید', { exact: true }).fill('123456')
+    await page.getByRole('button', { name: 'تأیید و اتصال شماره', exact: true }).click()
+    await page.getByText(profile.phone, { exact: true }).waitFor()
+    await page.getByRole('link', { name: 'تنظیم رمز عبور برای ورود با موبایل' }).click()
+    await page.getByRole('heading', { name: 'بازیابی رمز عبور' }).waitFor()
+    passed.push('Google account shows its email, links a verified mobile, and offers password setup')
+    await context.close()
+  }
+  {
+    const { context, page } = await fixture(390, undefined, { ...profile, phone: undefined })
+    await page.addInitScript(value => sessionStorage.setItem('cent:session:v1', value), token)
+    await page.goto(root + '/student/profile')
+    await page.getByText('شماره موبایل در اطلاعات حساب نمایش داده نمی‌شود.').waitFor()
+    assert.equal(await page.getByRole('button', { name: 'افزودن شماره' }).count(), 0)
+    passed.push('A legacy API response without a phone field does not offer phone linking')
     await context.close()
   }
   {
     const { context, page, calls } = await fixture()
     await page.goto(root + '/student/profile')
-    await page.getByRole('button', { name: 'فراموشی یا تنظیم رمز عبور' }).click()
+    await page.getByRole('button', { name: 'رمز عبور را فراموش کرده‌اید؟' }).click()
     await page.getByLabel('شماره موبایل').fill('۰۹۱۲۳۴۵۶۷۸۹')
     await page.getByRole('button', { name: 'ارسال کد تأیید', exact: true }).click()
     await page.getByLabel('کد تأیید', { exact: true }).fill('۱۲۳۴۵۶')
-    await page.getByLabel('رمز عبور جدید').fill('synthetic recovery password')
+    await page.getByLabel('رمز عبور جدید').fill(recoveryPassword)
     await page.getByRole('button', { name: 'ذخیره رمز عبور جدید', exact: true }).click()
     await page.getByText('رمز عبور ذخیره شد. با رمز جدید وارد شوید.').waitFor()
     assert.equal(await page.evaluate(() => sessionStorage.getItem('cent:session:v1')), null)
     await page.getByLabel('شماره موبایل').fill('۰۹۱۲۳۴۵۶۷۸۹')
-    await page.getByLabel('رمز عبور', { exact: true }).fill('synthetic recovery password')
+    await page.getByLabel('رمز عبور', { exact: true }).fill(recoveryPassword)
     await page.getByRole('button', { name: 'ورود با رمز عبور', exact: true }).click()
     await page.waitForURL(root + '/student/profile')
+    await page.getByText(profile.phone, { exact: true }).waitFor()
+    assert.equal(await page.getByRole('button', { name: 'افزودن شماره' }).count(), 0)
     assert.deepEqual(calls.password, [
       ['/auth/password/reset/request', { phone: '+989123456789' }],
-      ['/auth/password/reset/verify', { challengeId: 'C'.repeat(64), code: '123456', password: 'synthetic recovery password' }],
-      ['/auth/password/login', { phone: '+989123456789', password: 'synthetic recovery password' }],
+      ['/auth/password/reset/verify', { challengeId: 'C'.repeat(64), code: '123456', password: recoveryPassword }],
+      ['/auth/password/login', { phone: '+989123456789', password: recoveryPassword }],
     ])
     passed.push('Password reset uses dedicated endpoints, then password login restores the requested page')
     await context.close()

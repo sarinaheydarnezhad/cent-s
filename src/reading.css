@@ -72,7 +72,7 @@
 .reading-workspace .cent-reader-header .button { min-height: 44px; font-size: var(--type-label); flex-shrink: 0; }
 .reading-workspace .reading-note-count { color: inherit; font-size: var(--type-small); }
 .reading-workspace .appearance-control { flex: 0; border: 0; padding: 0; }
-.reading-workspace .appearance-toggle { width: 44px; height: 44px; border: 0; background: transparent; color: var(--color-text-secondary); }
+.reading-workspace .appearance-toggle { border: 0; background: transparent; color: var(--color-text-secondary); }
 .reading-workspace .appearance-toggle:hover { background: var(--color-hover); }
 .reading-workspace .cent-reader-toolbar { gap: var(--space-2); padding: var(--space-1) var(--space-4); background: var(--color-surface); }
 .reading-workspace .cent-reader-toolbar button { min-width: 44px; width: 44px; height: 44px; border: 0; color: var(--color-link); background: transparent; border-radius: var(--radius-control); }

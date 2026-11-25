@@ -9,16 +9,19 @@ interface Props {
   begin: () => boolean
   release: () => void
   success: (session: AuthSession) => void
-  link?: boolean
-  register?: boolean
+  mode: 'link' | 'register' | 'recovery'
   onPasswordReset?: () => void
 }
 // No OTP or challenge proof is persisted. A refresh safely returns to number entry.
-export function SmsSignIn({ disabled, begin, release, success, link = false, register = false, onPasswordReset }: Props) {
+export function SmsSignIn({ disabled, begin, release, success, mode, onPasswordReset }: Props) {
+  const link = mode === 'link'
+  const register = mode === 'register'
+  const recovery = mode === 'recovery'
   const [phone, setPhone] = useState('')
   const [challenge, setChallenge] = useState<SmsChallenge>()
   const [code, setCode] = useState('')
   const [password, setPassword] = useState('')
+  const [name, setName] = useState('')
   const [error, setError] = useState('')
   const [busy, setBusy] = useState(false)
   const [deadline, setDeadline] = useState(0)
@@ -38,20 +41,21 @@ export function SmsSignIn({ disabled, begin, release, success, link = false, reg
     if (!normalized) { setError('شماره موبایل معتبر ایران وارد کنید.'); return }
     if (resend && seconds > 0) return
     if (challenge && !resend && !/^[0-9]{6}$/.test(code)) { setError('کد شش‌رقمی را وارد کنید.'); return }
+    if (challenge && !resend && register && !name.trim()) { setError('نام خود را وارد کنید.'); return }
     if (!begin()) return
     setBusy(true); setError('')
     try {
       if (!challenge || resend) {
-        const result = await (onPasswordReset ? requestPasswordReset(normalized) : requestSms(normalized, link))
+        const result = await (recovery ? requestPasswordReset(normalized) : requestSms(normalized, link))
         if (mounted.current) {
           setChallenge(result); setCode('')
           setDeadline(performance.now() + Math.max(0, Date.parse(result.resendAt) - Date.parse(result.serverTime)))
         }
-      } else if (onPasswordReset) {
+      } else if (recovery) {
         await resetPassword(challenge.challengeId, code, password)
-        if (mounted.current) onPasswordReset()
+        if (mounted.current) onPasswordReset?.()
       } else {
-        const session = await verifySms(challenge.challengeId, code, link, register ? password : undefined)
+        const session = await verifySms(challenge.challengeId, code, link, register ? { password, name: name.trim() } : undefined)
         if (mounted.current) { setChallenge(undefined); setCode(''); success(session) }
       }
     } catch (reason) {
@@ -63,14 +67,15 @@ export function SmsSignIn({ disabled, begin, release, success, link = false, reg
   }
   return <form className="cent-form" onSubmit={submit} aria-busy={busy}>
     {!challenge ? <InputField label="شماره موبایل" type="tel" inputMode="tel" dir="ltr" autoComplete="tel" placeholder="09123456789" value={phone} maxLength={14} disabled={disabled} onChange={event => setPhone(latinDigits(event.target.value))} required/> : <>
-      <p>{onPasswordReset ? 'کد بازیابی به' : 'کد ورود به'} <bdi dir="ltr">{challenge.phone}</bdi> ارسال شد. کد دو دقیقه اعتبار دارد.</p>
+      <p>کد تأیید به <bdi dir="ltr">{challenge.phone}</bdi> ارسال شد. کد دو دقیقه اعتبار دارد.</p>
       <label className="ui-field">کد تأیید
         <input key={challenge.challengeId} ref={input} className="ui-input" type="text" inputMode="numeric" autoComplete="one-time-code" dir="ltr" value={code} maxLength={6} pattern="[0-9]{6}" disabled={disabled} onChange={event => setCode(latinDigits(event.target.value).replace(/[^0-9]/g, '').slice(0, 6))} required/>
       </label>
-      {(register || onPasswordReset) && <InputField label={onPasswordReset ? 'رمز عبور جدید' : 'رمز عبور حساب جدید'} type="password" autoComplete="new-password" dir="ltr" minLength={15} maxLength={128} hint="حداقل ۱۵ نویسه" value={password} disabled={disabled} onChange={event => setPassword(event.target.value)} required/>}
+      {register && <InputField label="نام و نام خانوادگی" autoComplete="name" maxLength={120} value={name} disabled={disabled} onChange={event => setName(event.target.value)} required/>}
+      {(register || recovery) && <InputField label={recovery ? 'رمز عبور جدید' : 'رمز عبور حساب جدید'} type="password" autoComplete="new-password" dir="ltr" minLength={8} maxLength={128} hint="حداقل ۸ نویسه" value={password} disabled={disabled} onChange={event => setPassword(event.target.value)} required/>}
     </>}
     {error && <Notice tone="error" live="assertive">{error}</Notice>}
-    <Button type="submit" fullWidth disabled={disabled || (!challenge && seconds > 0)} loading={busy} loadingLabel="در حال بررسی…">{challenge ? onPasswordReset ? 'ذخیره رمز عبور جدید' : link ? 'تأیید و اتصال شماره' : 'تأیید و ورود' : 'ارسال کد تأیید'}</Button>
+    <Button type="submit" fullWidth disabled={disabled || (!challenge && seconds > 0)} loading={busy} loadingLabel="در حال بررسی…">{challenge ? { recovery: 'ذخیره رمز عبور جدید', link: 'تأیید و اتصال شماره', register: 'ساخت حساب و ورود' }[mode] : 'ارسال کد تأیید'}</Button>
     {seconds > 0 && <p role="status">ارسال دوباره پس از {seconds} ثانیه</p>}
     {challenge && <div className="auth-sms-actions">
       <button className="button button-ghost" type="button" disabled={disabled || seconds > 0} onClick={() => void submit(undefined, true)}>ارسال دوباره کد</button>

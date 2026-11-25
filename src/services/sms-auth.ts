@@ -11,7 +11,7 @@ export function normalizeIranPhone(input: string): string | undefined {
 export interface SmsChallenge { challengeId: string; phone: string; expiresAt: string; resendAt: string; serverTime: string }
 const path = (link: boolean) => link ? '/auth/identities/sms' : '/auth/sms'
 export const requestSms = (phone: string, link: boolean) => centRequest<SmsChallenge>(path(link) + '/request', { method: 'POST', body: JSON.stringify({ phone }), signal: AbortSignal.timeout(20_000) })
-export const verifySms = (challengeId: string, code: string, link: boolean, password?: string) => centRequest<AuthSession>(path(link) + '/verify', { method: 'POST', body: JSON.stringify({ challengeId, code, password }), signal: AbortSignal.timeout(20_000) })
+export const verifySms = (challengeId: string, code: string, link: boolean, registration?: { password: string; name: string }) => centRequest<AuthSession>(path(link) + '/verify', { method: 'POST', body: JSON.stringify({ challengeId, code, ...registration }), signal: AbortSignal.timeout(20_000) })
 
 const passwordRequest = <T>(path: string, data: object) => centRequest<T>('/auth/password' + path, {
   method: 'POST', body: JSON.stringify(data), signal: AbortSignal.timeout(20_000),

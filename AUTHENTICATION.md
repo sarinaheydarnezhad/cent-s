@@ -1,6 +1,8 @@
 # Itatest authentication
 
-The application supports Iranian mobile SMS, mobile and password, and Google's official GIS button. All methods issue the same Cent bearer session. New users can set a password when they verify their mobile number during registration. Existing users can set or reset their password after verifying a linked mobile number through the recovery form. The profile page can link a proven mobile or Google identity to the current account. Accounts never merge automatically by email or phone.
+The login page offers Iranian mobile and password sign-in and Google's official GIS button. SMS verifies mobile registration, password recovery, and mobile numbers added in profile settings. Mobile registration collects the student's name and password. Existing users can set or reset their password after verifying a linked mobile number through the recovery form. Profile settings let students edit their name and connect a verified mobile or Google identity to the current account. Accounts never merge automatically by email or phone.
+
+The frontend sends `name` and `password` with `POST /auth/sms/verify` during registration. Name edits use `PATCH /me` with `{ name }` and expect the updated session user. The login method cards use `phone`, `hasPassword`, `hasGoogle`, and `googleEmail` on the session user returned by `GET /me` and authentication responses. Deploy with a Cent API that supports these fields and enforces registration-only behavior on the signed-out SMS verification endpoint.
 
 The complete English implementation report (root causes, architecture, endpoints, settings, tests, migration, rollback, account recovery and Lerona isolation) is in the adjacent backend repository at docs/CENT-AUTHENTICATION.md.
 

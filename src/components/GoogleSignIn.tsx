@@ -72,7 +72,7 @@ export function GoogleSignIn({ disabled, link = false, begin, release, success }
   return <div className="auth-google-section">
     {/* Google owns the button contents and branding. Inert blocks interaction during verification requests. */}
     <div ref={target} className="auth-google-sdk" inert={disabled || !gis || !!error || stage === 'expired'} hidden={!gis || !!error || stage === 'expired'} />
-    {error ? <p className="inline-error" role="alert">{error}</p> : config && !config.enabled ? <p className="auth-google-status" role="status">ورود با گوگل فعلاً در دسترس نیست. می‌توانید با شماره موبایل وارد شوید.</p> :
+    {error ? <p className="inline-error" role="alert">{error}</p> : config && !config.enabled ? <p className="auth-google-status" role="status">{link ? 'اتصال حساب گوگل فعلاً در دسترس نیست.' : 'ورود با گوگل فعلاً در دسترس نیست. می‌توانید با شماره موبایل وارد شوید.'}</p> :
       <p className="auth-google-status" role="status" aria-live="polite">{messages[stage]}</p>}
     {canRetry && <button type="button" className="button button-ghost button-block" disabled={retrySeconds > 0 || (disabled && stage !== 'waiting')} onClick={retry}>
       {retrySeconds ? `تلاش دوباره پس از ${retrySeconds} ثانیه` : stage === 'waiting' ? 'لغو و تلاش دوباره' : 'تلاش دوباره برای ورود با گوگل'}
