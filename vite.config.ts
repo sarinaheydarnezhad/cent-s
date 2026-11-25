@@ -18,10 +18,11 @@ export default defineConfig(({ mode }) => {
     },
   },
   server: {
+    fs: { deny: ['.env', '.env.*', '*.{crt,pem}', '**/.git/**', '**/docs/**', '**/.preview-artifacts/**', '**/Backend/**', '**/Content/**', '**/*.zip', '**/*.db', '**/*.bak', '**/provenance/**'] },
     port: 5173,
     headers: { 'Referrer-Policy': 'no-referrer', 'Cache-Control': 'no-store' },
     proxy: { '/api/cent': env.CENT_BACKEND_URL || 'http://127.0.0.1:5108' },
   },
-  preview: { headers: { 'Referrer-Policy': 'no-referrer', 'Cache-Control': 'no-store' } },
+  preview: { headers: { 'Referrer-Policy': 'no-referrer', 'Cache-Control': 'no-store' }, proxy: { '/api/cent': env.CENT_BACKEND_URL || 'http://127.0.0.1:5108' } },
   }
 })

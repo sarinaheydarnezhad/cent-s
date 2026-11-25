@@ -6,6 +6,7 @@ import { LoadState, useRemote } from '../components/CentUI'
 import type { AnswerMap } from '../types'
 import { studyReturnPath } from '../services/study-return'
 import { ExamExperience } from '../components/ExamExperience'
+import { ReviewedAssessmentPicker } from '../components/ReviewedAssessmentPicker'
 export { CentResultPage, CentSimulatorsPage } from './AssessmentResults'
 export { PersonalResults as CentResultsPage } from './PersonalResults'
 
@@ -14,11 +15,12 @@ export { StudentDashboard as CentDashboard } from './StudentDashboard'
 export function CentExamPage({ kind = 'diagnostic' }: { kind?: 'diagnostic' | 'simulator' | 'practice' }) {
   const { user, loading, setDiagnostic } = useAppState()
   const [params] = useSearchParams()
+  const assessment = kind === 'practice' ? params.get('assessment') : null
   const returnToStudy = studyReturnPath(params.get('returnTo'))
   const catalog = useRemote(cent.curriculum)
   const [course, setCourse] = useState(params.get('course') || '')
   const [topic, setTopic] = useState(params.get('topic') || '')
-  const storageKey = `cent:exam:${user?.id}:${kind}:${course}:${topic}`
+  const storageKey = `cent:exam:${user?.id}:${kind}:${course}:${topic}${assessment ? ':' + assessment : ''}`
   const [attempt, setAttempt] = useState<ExamAttempt | null>(null)
   const [answers, setAnswers] = useState<AnswerMap>({})
   const [index, setIndex] = useState(0)
@@ -48,7 +50,7 @@ export function CentExamPage({ kind = 'diagnostic' }: { kind?: 'diagnostic' | 's
   if (!user) return <Navigate to="/login" replace state={{ from: location.pathname + location.search }}/>
   async function start() {
     setBusy(true); setError('')
-    try { setAttempt(await cent.startExam(kind, requestId.current, course || undefined, topic || undefined)); setIndex(0); setAnswers({}) }
+    try { setAttempt(assessment ? await cent.startReviewedAssessment(assessment, requestId.current) : await cent.startExam(kind, requestId.current, course || undefined, topic || undefined)); setIndex(0); setAnswers({}) }
     catch (e) { setError(e instanceof Error ? e.message : 'آزمون آماده نشد.') } finally { setBusy(false) }
   }
   async function submit() {
@@ -61,5 +63,5 @@ export function CentExamPage({ kind = 'diagnostic' }: { kind?: 'diagnostic' | 's
       navigate(`/student/results/${attempt.id}${returnToStudy ? `?returnTo=${encodeURIComponent(returnToStudy)}` : ''}`)
     } catch (e) { setError(e instanceof Error ? e.message : 'ثبت نتیجه انجام نشد؛ پاسخ‌هایت حفظ شده‌اند.'); setBusy(false) }
   }
-  return <ExamExperience kind={kind} returnToStudy={returnToStudy} catalog={catalog} course={course} setCourse={setCourse} topic={topic} setTopic={setTopic} configurationChanged={() => { requestId.current = crypto.randomUUID() }} attempt={attempt} answers={answers} setAnswers={setAnswers} index={index} setIndex={setIndex} busy={busy} error={error} remaining={remaining} start={start} submit={submit} restart={() => { sessionStorage.removeItem(storageKey); requestId.current = crypto.randomUUID(); setAttempt(null) }}/>
+  return <>{kind === 'practice' && !attempt && !assessment && <ReviewedAssessmentPicker/>}<ExamExperience kind={kind} returnToStudy={returnToStudy} catalog={catalog} course={course} setCourse={setCourse} topic={topic} setTopic={setTopic} configurationChanged={() => { requestId.current = crypto.randomUUID() }} attempt={attempt} answers={answers} setAnswers={setAnswers} index={index} setIndex={setIndex} busy={busy} error={error} remaining={remaining} start={start} submit={submit} restart={() => { sessionStorage.removeItem(storageKey); requestId.current = crypto.randomUUID(); setAttempt(null) }}/></>
 }

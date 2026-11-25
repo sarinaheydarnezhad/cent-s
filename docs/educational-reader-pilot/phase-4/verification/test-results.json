@@ -1,0 +1,171 @@
+{
+  "frontend": {
+    "passed": 219,
+    "files": 22,
+    "lint": true,
+    "typecheckAndBuild": true
+  },
+  "cent": {
+    "fullRun": {
+      "file": "cent-phase4-verified.trx",
+      "total": 164,
+      "passed": 162,
+      "failed": 2
+    },
+    "correctiveRun": {
+      "file": "reviewed-phase4-final.trx",
+      "total": 5,
+      "passed": 5,
+      "failed": 0
+    },
+    "uniqueTestsWithLatestPassingOutcome": 164,
+    "note": "Full run had two invalid fixture-price failures. The final reviewed-content run supersedes those outcomes; overlapping tests are counted once."
+  },
+  "centExam": {
+    "file": "cent-exams-phase4-verified.trx",
+    "total": 90,
+    "passed": 90,
+    "failed": 0
+  },
+  "browser": {
+    "passed": true,
+    "catalogSha256": "bd18a836a248b04e80b45007829ccd3118648e8da318c06bf3bb0a1a3d0b3644",
+    "subjects": [
+      {
+        "subject": "math",
+        "selectedSectionId": "173aa4d0-8d41-bda4-46fb-faa3cf9111b0",
+        "contentRevision": "E6DA60BDA168BCBEFB7AA2C3",
+        "sections": 15,
+        "assetsInSample": 5,
+        "mobileDiagramZoom": true,
+        "annotationRestored": true,
+        "reattachedWithoutChangingIdOrText": true,
+        "mobileOverflow": false
+      },
+      {
+        "subject": "physics",
+        "selectedSectionId": "66087478-6d10-22a7-86cf-03378d36e889",
+        "contentRevision": "4625C25664F8A97141F26378",
+        "sections": 13,
+        "assetsInSample": 1,
+        "mobileDiagramZoom": true,
+        "annotationRestored": true,
+        "reattachedWithoutChangingIdOrText": true,
+        "mobileOverflow": false
+      },
+      {
+        "subject": "chemistry",
+        "selectedSectionId": "bd48ef51-c553-51e1-b711-ff14e8b3aad5",
+        "contentRevision": "576B2861C368D7E5B3C9F1D0",
+        "sections": 50,
+        "assetsInSample": 2,
+        "mobileDiagramZoom": true,
+        "annotationRestored": true,
+        "reattachedWithoutChangingIdOrText": true,
+        "mobileOverflow": false
+      },
+      {
+        "subject": "biology",
+        "selectedSectionId": "2598b7ac-6e6e-feef-88f0-b01e85294634",
+        "contentRevision": "2EF201A5C91596C1FA394976",
+        "sections": 15,
+        "assetsInSample": 1,
+        "mobileDiagramZoom": true,
+        "annotationRestored": true,
+        "reattachedWithoutChangingIdOrText": true,
+        "mobileOverflow": false
+      },
+      {
+        "subject": "logic",
+        "selectedSectionId": "7adb9ad8-f936-273f-953c-205138d1d101",
+        "contentRevision": "0DC215D3AFEE181790A63502",
+        "sections": 9,
+        "assetsInSample": 1,
+        "mobileDiagramZoom": true,
+        "annotationRestored": true,
+        "reattachedWithoutChangingIdOrText": true,
+        "mobileOverflow": false
+      },
+      {
+        "subject": "reading",
+        "selectedSectionId": "d5da0b2f-39fd-281b-0f2d-320fb22458b7",
+        "contentRevision": "D63AB527E08D05532ED0A87F",
+        "sections": 8,
+        "assetsInSample": 0,
+        "mobileDiagramZoom": null,
+        "annotationRestored": true,
+        "reattachedWithoutChangingIdOrText": true,
+        "mobileOverflow": false
+      }
+    ],
+    "errors": []
+  },
+  "pdfPage": {
+    "passed": true,
+    "syntheticRenderedPdfPage": true,
+    "canvasDecoded": true,
+    "draftRestored": true,
+    "noteRestored": true,
+    "privateNoStore": true,
+    "anonymousDenied": true,
+    "originalPdfUnavailable": true
+  },
+  "httpSecurity": {
+    "passed": true,
+    "concurrentRequests": 18,
+    "statuses": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      429,
+      429,
+      429,
+      429,
+      429,
+      429,
+      429,
+      429,
+      429,
+      429,
+      429,
+      429,
+      429
+    ],
+    "burstElapsedMs": 436,
+    "totalElapsedMs": 571,
+    "assessmentDefinitions": 42,
+    "readingKeysHidden": true,
+    "anonymousDenied": true,
+    "privateBuildPathsExcluded": true
+  },
+  "sqlitePerformance": {
+    "passed": true,
+    "provider": "SQLite isolated development, not SQL Server certification",
+    "legacyImportMs": 18139,
+    "reviewedUpgradeMs": 12070,
+    "idempotentRepeatMs": 995,
+    "beforeBytes": 12836864,
+    "afterBytes": 13062144,
+    "growthBytes": 225280,
+    "assetRetrievals": 50,
+    "meanGuardMs": 245.26298599999998,
+    "p95GuardMs": 291.5796,
+    "budgetRows": 2,
+    "budgetJsonBytes": 9334,
+    "expiredRowsRemoved": 2,
+    "rowsAfterCleanup": 0,
+    "backupFile": "isolated-25922dd08fe4406d96cf924b4b5efbcc.db.before-reviewed.bak",
+    "backupSha256": "D04E81688784FDE9326512F8376F6EAF67903927FE0600B8AFA80B26B2BEA6E6",
+    "backupIntegrity": "ok"
+  },
+  "sqlServer": {
+    "passed": false,
+    "database": "ItatestReaderPhase4_619378e9fb474678a59ee96f5c96d227",
+    "elapsedMs": 18392,
+    "error": "A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 50 - Local Database Runtime error occurred. Unexpected error occurred while trying to access the LocalDB instance registry configuration. See the Windows Application event log for error details.\r\n)"
+  },
+  "releaseReady": false,
+  "rolloutEnabledByDefault": false
+}

@@ -1,0 +1,71 @@
+.pilot-lesson{position:relative;box-sizing:border-box;max-width:82ch;margin:auto;padding:28px 64px 32px 26px;background:var(--color-surface);color:var(--color-text);font-size:1.025rem;line-height:1.95;text-align:start;user-select:text}
+.pilot-imprint{color:var(--primary);font-size:.76rem;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:20px;display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:space-between}
+.pilot-imprint small{color:var(--muted);direction:ltr;unicode-bidi:isolate;font: .65rem monospace;overflow-wrap:anywhere}
+.pilot-lesson h2{font-size:clamp(1.3rem,2.4vw,1.8rem);line-height:1.65;margin:0;color:var(--primary)}
+.pilot-lesson .card{background:none;border:0;border-radius:0;box-shadow:none;padding:0;margin:26px 0;transform:none}
+.pilot-lesson .card-title{font-weight:800;font-size:1.12em;margin-bottom:8px;color:var(--primary)}
+.pilot-lesson p{margin:10px 0}.pilot-lesson .ltr{direction:ltr;unicode-bidi:isolate;display:inline-block;white-space:nowrap;max-width:100%;overflow-x:auto;vertical-align:middle;font-family:Cambria,'Times New Roman',serif;font-size:1.15em;font-variant-numeric:lining-nums tabular-nums;letter-spacing:.015em;line-height:1.6}
+.pilot-lesson .frac{display:inline-flex;flex-direction:column;text-align:center;vertical-align:middle;line-height:1.2;margin:0 .16em}.pilot-lesson .frac>.num{border-bottom:1px solid currentColor;padding:0 .22em .1em}.pilot-lesson .frac>.den{padding:.1em .22em 0}
+.pilot-lesson .formula-box{background:var(--primary-soft);text-align:center;padding:12px;margin:14px 0;font-size:1.2em;overflow-x:auto}
+.pilot-lesson .example{border-inline-start:2px solid var(--brand-sage);padding-inline-start:16px}
+.pilot-lesson .steps{display:grid;gap:6px;margin-block:12px}
+.pilot-lesson .steps>div{padding:0;line-height:1.85;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);align-items:center;gap:12px}
+.pilot-lesson .ans-steps .solution-math{padding-block:0}.pilot-lesson .solution-math{display:block;direction:ltr;text-align:left;max-width:100%;overflow-x:auto;padding:2px 0 2px 8px;line-height:1.7}
+.pilot-lesson .result,.pilot-lesson .final-ans{font-weight:750;color:var(--primary);margin-top:10px;padding:6px 10px;background:var(--primary-soft);width:fit-content;max-width:100%}
+.pilot-lesson .mistake,.pilot-lesson .examtip{padding:4px 14px;border-inline-start:2px solid var(--line)}
+.pilot-lesson .examtip{border-color:var(--brand-sage)}
+.pilot-lesson ul,.pilot-lesson ol{padding-inline-start:24px;margin-block:8px}.pilot-lesson li{margin-block:4px}
+.pilot-lesson .q-block{padding:14px 0;border-top:1px solid var(--line)}.pilot-lesson .q{font-weight:650}.pilot-lesson summary{cursor:pointer;color:var(--primary);font-weight:650;min-height:44px;display:list-item;align-content:center}.pilot-lesson .ans-steps{padding:8px 12px;border-inline-start:2px solid var(--brand-sage)}
+.pilot-pin{position:absolute;right:8px;z-index:2;width:44px;height:44px;border-radius:50%;background:var(--primary-soft);color:var(--primary);border:1px solid var(--line);cursor:pointer;transform:translateY(-50%);font-size:.8rem;font-weight:750;display:flex;align-items:center;justify-content:center;direction:ltr;gap:1px}
+.pilot-pin{scroll-margin:100px}.pilot-pin sup{font-size:.6rem}.pilot-pin[aria-pressed=true]{background:var(--primary);color:var(--color-on-strong)}.pilot-pin:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
+.pilot-lesson [data-block]{scroll-margin:100px}.pilot-lesson .pilot-anchor-selected{background:var(--primary-soft);outline:2px solid var(--brand-sage);outline-offset:3px;border-radius:2px}
+.pilot-anchor-status{font-size:.8rem;color:var(--muted)}
+.pilot-lesson .sec-head{display:flex;align-items:center;gap:10px;margin-bottom:22px}.pilot-lesson .sec-badge{background:var(--brand-sage);color:var(--brand-charcoal);border-radius:50%;flex:0 0 30px;text-align:center;font-size:.85rem}.pilot-lesson .sec-label{font-size:.75rem;color:var(--muted)}
+.pilot-lesson bdi{display:inline-block;direction:ltr;unicode-bidi:isolate;white-space:nowrap}
+.reading-workspace.reader-pilot-active .cent-page-shell{background:var(--color-surface);max-width:100%;width:100%!important}
+.reading-workspace.reader-pilot-active .pilot-lesson{font-size:calc(1.025rem * var(--pilot-scale,1))}
+@media(max-width:760px){
+.pilot-lesson{padding:20px 58px 24px 14px;line-height:1.9}.reading-workspace.reader-pilot-active .pilot-lesson{font-size:calc(.96rem * var(--pilot-scale,1))}
+.pilot-lesson .steps>div{display:block}.pilot-lesson .solution-math{padding-block:0}.pilot-lesson .example{padding-inline-start:10px}.pilot-lesson .card{margin:22px 0}.pilot-lesson .sec-head{align-items:start;gap:8px}.pilot-lesson .sec-badge{flex-basis:26px}.pilot-pin{right:6px}
+.reading-workspace.reader-pilot-active .cent-reader-header{min-height:56px;padding-block:4px;gap:4px}.reading-workspace.reader-pilot-active .cent-reader-header .button{font-size:.72rem;gap:3px}
+.reading-workspace.reader-pilot-active .cent-reader-toolbar{flex-wrap:nowrap;gap:4px;column-gap:6px;padding:2px 4px;justify-content:space-between}.reading-workspace.reader-pilot-active .cent-reader-toolbar button{min-width:36px;width:36px;height:44px}.reading-workspace.reader-pilot-active .cent-reader-pagination,.reading-workspace.reader-pilot-active .cent-reader-zoom{gap:0}
+.reading-workspace.reader-pilot-active .cent-reader-pagination label{gap:3px;font-size:.72rem}.reading-workspace.reader-pilot-active .cent-reader-zoom span{font-size:.75rem}
+.reading-workspace.reader-pilot-active .cent-reader-notes{position:fixed;z-index:40;bottom:0;top:auto;left:0;right:0;height:min(60dvh,520px);overflow:auto;box-shadow:0 -8px 24px #0002;border-radius:14px 14px 0 0;padding:14px;scroll-margin:0}.reading-workspace.reader-pilot-active.notes-closed .cent-reader-notes{display:none}.reading-workspace.reader-pilot-active .cent-reader-notes .cent-section-select{display:none}.reading-workspace.reader-pilot-active .cent-note-editor textarea{min-height:90px}.reading-workspace.reader-pilot-active .cent-page-footer{flex-wrap:wrap}
+}
+
+.reader-pilot-active .pilot-header-trace{display:block;font:.6rem/1.6 monospace;color:var(--muted);unicode-bidi:isolate;overflow-wrap:anywhere}
+@media(max-width:760px){.reader-pilot-active .reading-title h1{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:.75rem}.reader-pilot-active .pilot-header-trace{font-size:.48rem}}
+
+.pilot-lesson h1{font-size:1.65em;line-height:1.6;color:var(--primary)}
+.pilot-lesson h3,.pilot-lesson h4,.pilot-lesson h5,.pilot-lesson h6{color:var(--primary);margin:18px 0 8px}
+.pilot-lesson .box,.pilot-lesson .ex-block,.pilot-lesson .qbox,.pilot-lesson .concept-item{margin-block:20px;padding-block:8px;border-block-start:1px solid var(--line)}
+.pilot-lesson .bh,.pilot-lesson .card-head,.pilot-lesson .box-label,.pilot-lesson .lab{font-weight:750;color:var(--primary);margin-block:6px}
+.pilot-lesson .steps>.step{grid-template-columns:28px minmax(0,1fr);align-items:start}
+.pilot-lesson .step>.n{font-size:.8em;color:var(--muted);text-align:center}
+.pilot-lesson .final-line,.pilot-lesson .final-answer{border-inline-start:2px solid var(--brand-sage);padding:6px 12px;margin-block:10px;background:var(--primary-soft)}
+.pilot-lesson .lesson-ltr{direction:ltr;unicode-bidi:isolate;font-family:Cambria,'Times New Roman',serif;max-width:100%;overflow-x:auto}
+.pilot-lesson .en-block,.pilot-lesson .passage,.pilot-lesson .problem,.pilot-lesson .q-text{direction:ltr;unicode-bidi:isolate;text-align:start;line-height:1.75}
+.pilot-lesson .english-run{display:inline;white-space:normal;overflow-wrap:anywhere}
+.pilot-lesson .lesson-table-scroll{max-width:100%;overflow:auto;margin-block:14px}
+.pilot-lesson table{border-collapse:collapse;min-width:100%;font-size:.9em}
+.pilot-lesson th,.pilot-lesson td{border:1px solid var(--line);padding:8px 10px;text-align:start;vertical-align:top}
+.pilot-lesson th{background:var(--primary-soft);font-weight:750}
+.pilot-lesson figure{margin:16px 0;max-width:100%}
+.pilot-lesson .lesson-asset{display:block;max-width:100%;height:auto;min-height:40px;background:#fff;border-radius:4px}
+.pilot-lesson figcaption{font-size:.8em;color:var(--muted);margin-top:8px}
+.pilot-lesson details{margin-block:10px;border-block-start:1px solid var(--line)}
+.pilot-lesson .opts,.pilot-lesson .options{margin:10px 0;padding-inline-start:14px}
+.pilot-lesson .flow,.pilot-lesson .concept-grid,.pilot-lesson .grid2,.pilot-lesson .grid3{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))}
+.pilot-lesson li>p:first-child{display:inline}.pilot-lesson li>p+*{margin-block-start:6px}
+.pilot-lesson .sec-num,.pilot-lesson .sec-badge,.pilot-lesson .sec-label,.pilot-lesson .num-badge{margin-inline-end:.5em}
+.pilot-lesson .lesson-heading-marker{display:inline-block;margin-inline-end:.5em;unicode-bidi:isolate}
+.pilot-lesson .cycle>.step{display:flex;align-items:baseline;gap:.65em;margin-block:8px}.pilot-lesson .cycle>.step>.num{flex:0 0 1.6em;white-space:nowrap}.pilot-lesson .cycle>.step>p{margin:0}
+.pilot-lesson .steps>div{grid-template-columns:fit-content(55%) fit-content(45%);justify-content:start;gap:12px}
+.pilot-lesson .lesson-asset{cursor:zoom-in}.pilot-lesson .lesson-asset:focus-visible{outline:2px solid var(--primary);outline-offset:4px}
+.lesson-image-dialog{box-sizing:border-box;width:min(96vw,1400px);max-width:96vw;max-height:94dvh;padding:16px;border:1px solid var(--line);border-radius:12px;background:var(--color-surface);color:var(--color-text);overflow:auto}
+.lesson-image-dialog::backdrop{background:#101c1bbf}.lesson-image-toolbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:12px;position:sticky;top:0;z-index:1;background:var(--color-surface);padding-block:6px}
+.lesson-image-toolbar .button{min-height:44px}.lesson-image-viewport{max-height:65dvh;overflow:auto;direction:ltr;touch-action:pan-x pan-y pinch-zoom;overscroll-behavior:contain;background:white}.lesson-image-viewport img{display:block;height:auto;min-width:100%}
+.lesson-image-dialog small{display:block;overflow-wrap:anywhere;color:var(--muted)}
+.reader-pilot-active .button-secondary,.lesson-image-dialog .button-secondary{background:var(--color-surface);color:var(--color-text);border-color:var(--color-border-interactive)}
+.reader-pilot-active .button-secondary:hover,.lesson-image-dialog .button-secondary:hover{background:var(--color-hover)}
+@media(max-width:760px){.pilot-lesson .steps>div{display:block}.lesson-image-dialog{padding:10px}.lesson-image-toolbar{gap:4px;font-size:.8rem}}

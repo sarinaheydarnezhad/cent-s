@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "subjects": [
+    {
+      "subject": "math",
+      "sections": 15,
+      "assetsInSample": 0,
+      "annotationRestored": true,
+      "reattachedWithoutChangingIdOrText": true,
+      "mobileOverflow": false
+    },
+    {
+      "subject": "physics",
+      "sections": 13,
+      "assetsInSample": 1,
+      "annotationRestored": true,
+      "reattachedWithoutChangingIdOrText": true,
+      "mobileOverflow": false
+    },
+    {
+      "subject": "chemistry",
+      "sections": 6,
+      "assetsInSample": 4,
+      "annotationRestored": true,
+      "reattachedWithoutChangingIdOrText": true,
+      "mobileOverflow": false
+    },
+    {
+      "subject": "biology",
+      "sections": 15,
+      "assetsInSample": 0,
+      "annotationRestored": true,
+      "reattachedWithoutChangingIdOrText": true,
+      "mobileOverflow": false
+    },
+    {
+      "subject": "logic",
+      "sections": 9,
+      "assetsInSample": 1,
+      "annotationRestored": true,
+      "reattachedWithoutChangingIdOrText": true,
+      "mobileOverflow": false
+    },
+    {
+      "subject": "reading",
+      "sections": 8,
+      "assetsInSample": 0,
+      "annotationRestored": true,
+      "reattachedWithoutChangingIdOrText": true,
+      "mobileOverflow": false
+    }
+  ],
+  "errors": []
+}

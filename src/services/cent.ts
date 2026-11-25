@@ -3,7 +3,7 @@ import type { AIAnalysis, DiagnosticResult, SessionUser } from '../types'
 export interface Training { id: string; title: string; description: string; includedInSubscription: boolean; published: boolean }
 export interface StoreProduct { id: string; title: string; kind: 'TRAINING' | 'SUBSCRIPTION' | 'SUBJECT'; trainingId: string | null; priceRial: number; durationDays: number | null; active: boolean }
 export interface StudyDocument { id: string; trainingId: string; sourceId?: string | null; title: string; pageCount: number; sortOrder: number; published?: boolean }
-export interface StudyNote { id: string; documentId: string; documentTitle?: string; page: number; anchorY: number; body: string; revision: number; updatedAt: string }
+export interface StudyNote { id: string; documentId: string; documentTitle?: string; page: number; anchorY: number; anchorJson?: string | null; body: string; revision: number; updatedAt: string }
 export interface StudyProgress { documentId: string; lastPage: number; furthestPage: number; updatedAt: string }
 export interface Entitlement { id: string; orderId?: string; kind: 'TRAINING' | 'SUBSCRIPTION' | 'SUBJECT_ORDER'; trainingId: string | null; startsAt: string; expiresAt: string | null; revokedAt: string | null }
 export interface Library { trainings: Training[]; documents: StudyDocument[]; notes: { documentId: string; count: number }[]; progress: StudyProgress[]; entitlements: Entitlement[]; subjectAccess?: { subjectId: string; startsAt: string; expiresAt: string; revokedAt: string | null }[]; hasSubscription: boolean; readableTrainingIds: string[]; readableDocumentIds?: string[] }
@@ -16,7 +16,7 @@ export interface ExamOutcome { result: DiagnosticResult; analysis: AIAnalysis; c
 export interface Curriculum { syllabusRevisionId?: string | null; courses: { code: string; title: string; trainingId: string; supportsLegacyAssessment?: boolean }[]; chapters: { id: string; title: string; courseCode: string }[]; topics: { id: string; chapterId: string; courseCode: string; title: string; questionCount: number; contentContract?: 'passage-v1' | null }[]; documents: StudyDocument[] }
 export interface MasteryTopic { id: string; chapterId: string; title: string; evidenceQuestions: number; availableQuestions: number; accuracyPercentage: number | null; masteryPercentage: number | null; status: string }
 export interface MasteryReport { courses: { code: string; title: string; totalTopics: number; assessedTopics: number; coveragePercentage: number; confirmedProgressPercentage: number; assessedAccuracyPercentage: number | null; topics: MasteryTopic[] }[] }
-export interface SourceSection { id: string; topicId: string | null; heading: string; sortOrder: number; text: string }
+export interface SourceSection { id: string; topicId: string | null; heading: string; sortOrder: number; text: string; pilotHtml?: string | null; delivery?: string | null; pilot?: boolean; contentRevision?: string; watermark?: string; assets?: { id: string; mime: string; alt: string }[]; findings?: string[]; subject?: string }
 export interface AuthSession { token: string; expiresAt: string; user: SessionUser }
 
 export const centApiBase = (import.meta.env.VITE_CENT_API_URL || '/api/cent/v1').replace(/\/$/, '')
@@ -59,8 +59,11 @@ export async function centRequest<T>(path: string, init: RequestInit = {}, retry
   if (token) headers.set('Authorization', `Bearer ${token}`)
   const response = await fetch(centApiBase + path, { ...init, headers, cache: 'no-store', credentials: 'omit' })
   if (!response.ok) {
-    if ((!init.method || init.method === 'GET') && [429, 503].includes(response.status) && retry < 2 && !init.signal?.aborted) {
-      const delay = Math.min(5, Number(response.headers.get('Retry-After')) || 1) * 1000
+    const sectionDelivery = /^\/documents\/[^/]+\/(source-sections\/[^/]+(\/assets\/[a-f0-9]+)?|pages\/\d+)$/i.test(path)
+    const delaySeconds = Number(response.headers.get('Retry-After')) || 1
+    // Long pilot cooldowns go to the retry UI; never retry earlier than the server permits.
+    if ((!init.method || init.method === 'GET') && [429, 503].includes(response.status) && retry < 2 && !init.signal?.aborted && (!sectionDelivery || delaySeconds <= 120)) {
+      const delay = Math.min(sectionDelivery ? 120 : 5, delaySeconds) * 1000
       await new Promise(resolve => setTimeout(resolve, delay))
       if (session.get() === token) return centRequest<T>(path, init, retry + 1)
     }
@@ -91,6 +94,8 @@ export const cent = {
   orders: () => centRequest<PurchaseOrder[]>('/me/orders'),
   notes: () => centRequest<StudyNote[]>('/me/notes'),
   document: (id: string) => centRequest<StudyData>(`/documents/${id}`),
+  sourceSection: (id: string, section: string, signal?: AbortSignal) => centRequest<SourceSection>(`/documents/${id}/source-sections/${section}`, { signal }),
+  asset: (id: string, section: string, asset: string, signal: AbortSignal) => centRequest<Blob>(`/documents/${id}/source-sections/${section}/assets/${asset}`, { signal }),
   sourceSections: (id: string) => centRequest<SourceSection[]>(`/documents/${id}/source-sections`),
   curriculum: loadCurriculum,
   mastery: async () => {
@@ -98,7 +103,7 @@ export const cent = {
     return centRequest<MasteryReport>(`/me/mastery${curriculum.syllabusRevisionId ? `?syllabusRevisionId=${encodeURIComponent(curriculum.syllabusRevisionId)}` : ''}`)
   },
   page: (id: string, page: number, signal: AbortSignal) => centRequest<Blob>(`/documents/${id}/pages/${page}`, { signal }),
-  saveNote: (note: Pick<StudyNote, 'id' | 'documentId' | 'page' | 'anchorY' | 'body' | 'revision'>) => centRequest<StudyNote>(`/notes/${note.id}`, { method: 'PUT', body: JSON.stringify(note) }),
+  saveNote: (note: Pick<StudyNote, 'id' | 'documentId' | 'page' | 'anchorY' | 'anchorJson' | 'body' | 'revision'>) => centRequest<StudyNote>(`/notes/${note.id}`, { method: 'PUT', body: JSON.stringify(note) }),
   deleteNote: (note: StudyNote) => centRequest<void>(`/notes/${note.id}?revision=${note.revision}`, { method: 'DELETE' }),
   progress: (id: string, page: number) => centRequest<StudyProgress>(`/documents/${id}/progress`, { method: 'PUT', body: JSON.stringify({ page }) }),
   checkout: (productId: string, requestId: string) => post<CheckoutResponse>('/checkout', { productId, requestId }),
@@ -109,6 +114,8 @@ export const cent = {
     return post<ExamAttempt>('/attempts/', { kind, requestId, course, topicId, ...(passageAware ? { contentContract: 'passage-v1' } : {}) })
   },
   submitExam: (id: string, answers: Record<string, number | null>) => post<ExamOutcome>(`/attempts/${id}/submit`, { answers }),
+  reviewedAssessments: () => centRequest<{ id: string; subject: string; title: string; durationMinutes: number; questionCount: number }[]>('/reviewed-assessments/'),
+  startReviewedAssessment: (id: string, requestId: string) => post<ExamAttempt>(`/reviewed-assessments/${encodeURIComponent(id)}/start`, { requestId }),
   outcome: (id: string) => centRequest<ExamOutcome>(`/attempts/${id}`),
   attempts: () => centRequest<{ id: string; kind: string; createdAt: string; resultJson: string }[]>('/attempts/'),
 }

@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "concurrentRequests": 18,
+  "statuses": [
+    200,
+    200,
+    200,
+    200,
+    200,
+    429,
+    429,
+    429,
+    429,
+    429,
+    429,
+    429,
+    429,
+    429,
+    429,
+    429,
+    429,
+    429
+  ],
+  "burstElapsedMs": 436,
+  "totalElapsedMs": 571,
+  "assessmentDefinitions": 42,
+  "readingKeysHidden": true,
+  "anonymousDenied": true,
+  "privateBuildPathsExcluded": true
+}

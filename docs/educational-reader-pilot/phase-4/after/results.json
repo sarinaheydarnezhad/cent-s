@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "catalogSha256": "bd18a836a248b04e80b45007829ccd3118648e8da318c06bf3bb0a1a3d0b3644",
+  "subjects": [
+    {
+      "subject": "math",
+      "selectedSectionId": "173aa4d0-8d41-bda4-46fb-faa3cf9111b0",
+      "contentRevision": "E6DA60BDA168BCBEFB7AA2C3",
+      "sections": 15,
+      "assetsInSample": 5,
+      "mobileDiagramZoom": true,
+      "annotationRestored": true,
+      "reattachedWithoutChangingIdOrText": true,
+      "mobileOverflow": false
+    },
+    {
+      "subject": "physics",
+      "selectedSectionId": "66087478-6d10-22a7-86cf-03378d36e889",
+      "contentRevision": "4625C25664F8A97141F26378",
+      "sections": 13,
+      "assetsInSample": 1,
+      "mobileDiagramZoom": true,
+      "annotationRestored": true,
+      "reattachedWithoutChangingIdOrText": true,
+      "mobileOverflow": false
+    },
+    {
+      "subject": "chemistry",
+      "selectedSectionId": "bd48ef51-c553-51e1-b711-ff14e8b3aad5",
+      "contentRevision": "576B2861C368D7E5B3C9F1D0",
+      "sections": 50,
+      "assetsInSample": 2,
+      "mobileDiagramZoom": true,
+      "annotationRestored": true,
+      "reattachedWithoutChangingIdOrText": true,
+      "mobileOverflow": false
+    },
+    {
+      "subject": "biology",
+      "selectedSectionId": "2598b7ac-6e6e-feef-88f0-b01e85294634",
+      "contentRevision": "2EF201A5C91596C1FA394976",
+      "sections": 15,
+      "assetsInSample": 1,
+      "mobileDiagramZoom": true,
+      "annotationRestored": true,
+      "reattachedWithoutChangingIdOrText": true,
+      "mobileOverflow": false
+    },
+    {
+      "subject": "logic",
+      "selectedSectionId": "7adb9ad8-f936-273f-953c-205138d1d101",
+      "contentRevision": "0DC215D3AFEE181790A63502",
+      "sections": 9,
+      "assetsInSample": 1,
+      "mobileDiagramZoom": true,
+      "annotationRestored": true,
+      "reattachedWithoutChangingIdOrText": true,
+      "mobileOverflow": false
+    },
+    {
+      "subject": "reading",
+      "selectedSectionId": "d5da0b2f-39fd-281b-0f2d-320fb22458b7",
+      "contentRevision": "D63AB527E08D05532ED0A87F",
+      "sections": 8,
+      "assetsInSample": 0,
+      "mobileDiagramZoom": null,
+      "annotationRestored": true,
+      "reattachedWithoutChangingIdOrText": true,
+      "mobileOverflow": false
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "actualSource": "math/chapter2.html#section-02",
+  "examples": 3,
+  "exercises": 3,
+  "annotations": "create/reload/reflow/zoom/edit/delete",
+  "access": "401/403/no-store",
+  "neighbourLegacy": true,
+  "errors": []
+}

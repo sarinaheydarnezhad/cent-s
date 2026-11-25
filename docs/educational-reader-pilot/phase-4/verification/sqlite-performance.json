@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "provider": "SQLite isolated development, not SQL Server certification",
+  "legacyImportMs": 18139,
+  "reviewedUpgradeMs": 12070,
+  "idempotentRepeatMs": 995,
+  "beforeBytes": 12836864,
+  "afterBytes": 13062144,
+  "growthBytes": 225280,
+  "assetRetrievals": 50,
+  "meanGuardMs": 245.26298599999998,
+  "p95GuardMs": 291.5796,
+  "budgetRows": 2,
+  "budgetJsonBytes": 9334,
+  "expiredRowsRemoved": 2,
+  "rowsAfterCleanup": 0,
+  "backupFile": "isolated-25922dd08fe4406d96cf924b4b5efbcc.db.before-reviewed.bak",
+  "backupSha256": "D04E81688784FDE9326512F8376F6EAF67903927FE0600B8AFA80B26B2BEA6E6",
+  "backupIntegrity": "ok"
+}

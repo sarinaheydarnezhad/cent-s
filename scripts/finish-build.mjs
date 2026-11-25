@@ -1,4 +1,13 @@
-import { copyFileSync, rmSync } from 'node:fs'
+import { copyFileSync, rmSync, readdirSync } from 'node:fs'
+
+function assertPrivateContentExcluded(directory) {
+  for (const entry of readdirSync(directory, { withFileTypes: true })) {
+    const target = new URL(entry.name + (entry.isDirectory() ? '/' : ''), directory)
+    if (/^(?:Lessons|provenance|figures|Content|docs|\.preview-artifacts)$/i.test(entry.name) || /\.(?:zip|db|bak|mdf|ldf)(?:$|\.)/i.test(entry.name) || /^(?:reviewed-v4|curriculum.*|.*answers.*|mock-exams|lesson-sections)\.(?:json|md|html|txt)$/i.test(entry.name)) throw new Error(`Private educational content in frontend build: ${entry.name}`)
+    if (entry.isDirectory()) assertPrivateContentExcluded(target)
+  }
+}
+assertPrivateContentExcluded(new URL('../dist/', import.meta.url))
 
 const fallback = new URL('../dist/404.html', import.meta.url)
 if (process.env.CENT_HOSTING === 'cloudflare' || process.env.CLOUDFLARE_PAGES === '1') {

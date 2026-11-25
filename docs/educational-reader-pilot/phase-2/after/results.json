@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "source": "math/chapter2.html#section-02",
+  "examples": 3,
+  "exercises": 3,
+  "westernMathDigits": true,
+  "marginMarkers": true,
+  "sanitization": true,
+  "answerAnchors": true,
+  "nearbyGrouping": true,
+  "draftAnchorRestored": true,
+  "legacyAndRevisionFallback": true,
+  "ownership": true,
+  "bulkDeliveryClosed": true,
+  "bulkThrottle": {
+    "status": 429,
+    "retryAfter": 10,
+    "recovered": true
+  },
+  "watermark": "opaque audit-mapped identifier",
+  "errors": []
+}
