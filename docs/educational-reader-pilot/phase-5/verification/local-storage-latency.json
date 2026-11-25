@@ -1,0 +1,20 @@
+{
+  "capturedUtc": "2026-11-25T09:22:45.477138+00:00",
+  "provider": "SQLite; NOT SQL Server capacity evidence",
+  "beforeFileBytes": 13697024,
+  "afterFileBytes": 14016512,
+  "growthBytes": 319488,
+  "walBytes": 2315472,
+  "auditRowsBefore": 56,
+  "auditRowsAfter": 369,
+  "auditPayloadUtf8Bytes": 34022,
+  "budgetRows": 5,
+  "budgetJsonBytes": 12091,
+  "auditMeasurementLimit": "Payload estimate excludes row/index/page allocation; WAL is recorded separately. Includes acceptance activity.",
+  "pacedSectionLatencyMs": {
+    "samples": 8,
+    "mean": 44.040324999999655,
+    "max": 63.009500000000116,
+    "p95NearestRank": 63.009500000000116
+  }
+}

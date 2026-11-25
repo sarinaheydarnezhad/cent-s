@@ -11,3 +11,5 @@ tests/browser/artifacts/
 .preview-artifacts/
 
 *.trx
+tools/**/bin/
+tools/**/obj/

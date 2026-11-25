@@ -1,0 +1,75 @@
+{
+  "checks": [
+    {
+      "requirement": "math-lesson-interactions",
+      "status": "PASS",
+      "table": true,
+      "formulaMarkup": true,
+      "keyboardSelfCheckReveal": true,
+      "mobileViewport": true,
+      "reviewRole": "ADMIN",
+      "scientificApproval": false
+    },
+    {
+      "requirement": "physics-lesson-interactions",
+      "status": "PASS",
+      "table": true,
+      "formulaMarkup": false,
+      "keyboardSelfCheckReveal": true,
+      "mobileViewport": true,
+      "reviewRole": "ADMIN",
+      "scientificApproval": false
+    },
+    {
+      "requirement": "chemistry-lesson-interactions",
+      "status": "PASS",
+      "table": false,
+      "formulaMarkup": false,
+      "keyboardSelfCheckReveal": true,
+      "mobileViewport": true,
+      "reviewRole": "ADMIN",
+      "scientificApproval": false
+    },
+    {
+      "requirement": "biology-lesson-interactions",
+      "status": "PASS",
+      "table": true,
+      "formulaMarkup": true,
+      "keyboardSelfCheckReveal": true,
+      "mobileViewport": true,
+      "reviewRole": "ADMIN",
+      "scientificApproval": false
+    },
+    {
+      "requirement": "logic-lesson-interactions",
+      "status": "PASS",
+      "table": true,
+      "formulaMarkup": false,
+      "keyboardSelfCheckReveal": false,
+      "mobileViewport": true,
+      "reviewRole": "ADMIN",
+      "scientificApproval": false
+    },
+    {
+      "requirement": "reading-lesson-interactions",
+      "status": "PASS",
+      "table": false,
+      "formulaMarkup": false,
+      "keyboardSelfCheckReveal": false,
+      "mobileViewport": true,
+      "reviewRole": "ADMIN",
+      "scientificApproval": false
+    },
+    {
+      "requirement": "reading-assessment-browser-journey",
+      "status": "PASS",
+      "passageVisible": true,
+      "answerSelection": true,
+      "submitted": true,
+      "resultVisible": true,
+      "remainingAnswersBlank": true
+    }
+  ],
+  "errors": [],
+  "realDevice": false
+}

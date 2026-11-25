@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "verifiedCurrentBackup": "D:\\Lerona\\itatest\\.preview-artifacts\\phase5\\normal-after-acceptance-20261125T092029857534Z.db.bak",
+  "sha256": "77c82110a16de9093bc9ea53f2c2aac6bee9dbf312e38f5187500cc55eb5e0b9",
+  "historicalPositionsRestored": 0,
+  "ownIncompleteProbeNotesRemoved": 0,
+  "originalNotesDeleted": 0,
+  "originalAttemptsDeleted": 0,
+  "newMockReadingAccessRetained": true
+}

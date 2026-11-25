@@ -1,0 +1,29 @@
+{
+  "checks": [
+    {
+      "path": "/cent-s/.env.local",
+      "httpStatus": 403,
+      "status": "PASS",
+      "privateBytesExposed": false
+    },
+    {
+      "path": "/cent-s/.preview-artifacts/phase5/local-review-sessions.json",
+      "httpStatus": 403,
+      "status": "PASS",
+      "privateBytesExposed": false
+    },
+    {
+      "path": "/cent-s/docs/educational-reader-pilot/phase-5/after/admin-preview-mobile-after.png",
+      "httpStatus": 403,
+      "status": "PASS",
+      "privateBytesExposed": false
+    },
+    {
+      "path": "/@fs/D:/Lerona/Backend/backend/Cent.Module/Content/reviewed-v4.json",
+      "httpStatus": 404,
+      "status": "PASS",
+      "privateBytesExposed": false
+    }
+  ],
+  "status": "PASS"
+}

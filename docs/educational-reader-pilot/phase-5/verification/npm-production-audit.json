@@ -1,0 +1,7 @@
+{
+  "status": "BLOCKED",
+  "auditCompleted": false,
+  "rawEvidence": "npm-production-audit.raw.log",
+  "error": "npm.cmd : npm warn audit request to https://registry.npmjs.org/-/npm/v1/security/advisories/bulk failed, reason: \r\nAt line:2 char:1\r\n+ npm.cmd audit --omit=dev --json --fetch-retries=0 --fetch-timeout=150 ...\r\n+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : NotSpecified: (npm warn audit ...ailed, reason: :String) [], RemoteException\r\n    + FullyQualifiedErrorId : NativeCommandError\r\n \r\nnpm error audit endpoint returned an error\r\n{\r\n  \"message\": \"request to https://registry.npmjs.org/-/npm/v1/security/advisories/bulk failed, reason: \",\r\n  \"error\": {\r\n    \"summary\": \"\",\r\n    \"detail\": \"\"\r\n  }\r\n}\r\nnpm error Log files were not written due to an error writing to the directory: C:\\Users\\KIAN \r\nRAYANEH\\AppData\\Local\\npm-cache\\_logs\r\nnpm error You can rerun the command with `--loglevel=verbose` to see the logs in your terminal",
+  "meaning": "Connectivity failure; no clean vulnerability result."
+}

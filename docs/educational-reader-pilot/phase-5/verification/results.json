@@ -1,0 +1,363 @@
+{
+  "capturedUtc": "2026-11-25T09:22:45.655378+00:00",
+  "productionStatus": "BLOCKED",
+  "localManualAcceptanceStatus": "PASS",
+  "localLimit": "New chemistry and logic documents remain drafts; live provider login unverified; private existing-account sessions available.",
+  "productionDeployed": false,
+  "leronaModified": false,
+  "canonicalContentSha256": "bd18a836a248b04e80b45007829ccd3118648e8da318c06bf3bb0a1a3d0b3644",
+  "tests": [
+    {
+      "evidence": "frontend-resumed.log",
+      "status": "PASS",
+      "passed": 221,
+      "files": 22
+    },
+    {
+      "evidence": "cent-final.trx",
+      "status": "PASS",
+      "passed": 171,
+      "total": 171,
+      "overlapsFullCentSuite": false
+    },
+    {
+      "evidence": "cent-exams-resumed.trx",
+      "status": "PASS",
+      "passed": 90,
+      "total": 90,
+      "overlapsFullCentSuite": false
+    },
+    {
+      "evidence": "content-preview-final.trx",
+      "status": "PASS",
+      "passed": 1,
+      "total": 1,
+      "overlapsFullCentSuite": true
+    }
+  ],
+  "finalBuildEvidence": [
+    "build-resumed.log",
+    "lint-resumed.log",
+    "cent-release-build.log",
+    "preview-resumed-build.log",
+    "release-tool-build.log"
+  ],
+  "normalEnvironmentEvidence": [
+    "normal-local-acceptance.json",
+    "normal-http-security.json",
+    "normal-interactions.json",
+    "normal-pdf.json",
+    "final-health.json"
+  ],
+  "requirements": [
+    {
+      "requirement": "Read/reuse Phase 4 implementation; no redesign",
+      "status": "PASS",
+      "evidenceOrLimit": "Existing Slate & Sage renderer, importer, accounts and workflows retained"
+    },
+    {
+      "requirement": "Normal local development environment",
+      "status": "PASS",
+      "evidenceOrLimit": "Persistent `Cent.Preview/App_Data/preview.db`, API 5108, Vite 5173; no isolated/fixture flags"
+    },
+    {
+      "requirement": "Enable all six reader subjects locally",
+      "status": "PASS",
+      "evidenceOrLimit": "Ignored `.env.local`; Enabled/AllSubjects true; old pilot false"
+    },
+    {
+      "requirement": "Create and verify backup before DDL/import",
+      "status": "PASS",
+      "evidenceOrLimit": "`verification/local-backup.json`, integrity/FK checks, SHA-256; additional pre-DDL/import backups in logs"
+    },
+    {
+      "requirement": "Add current schema to normal SQLite preview",
+      "status": "PASS",
+      "evidenceOrLimit": "Explicit backed-up upgrade, including corrected nullable notes AnchorJson and budget storage"
+    },
+    {
+      "requirement": "Import all six reviewed packages transactionally",
+      "status": "PASS",
+      "evidenceOrLimit": "Normal importer; 53 sources, 538 sections, 1,037 exercises, 1,471 questions"
+    },
+    {
+      "requirement": "Existing student access to all six subjects",
+      "status": "PASS",
+      "evidenceOrLimit": "Existing subscription plus Reading development mock checkout; no account replacement or academic offer approval"
+    },
+    {
+      "requirement": "Student publication of new chemistry/logic drafts",
+      "status": "BLOCKED",
+      "evidenceOrLimit": "Deliberately unpublished pending approval; local student review is explicitly scoped to Development; publication approval is still pending"
+    },
+    {
+      "requirement": "Authorized draft review and administrator management",
+      "status": "PASS",
+      "evidenceOrLimit": "Protected preview, resource inventory, role denial, private assets, preview audits; new documents remain drafts; the allowlisted local student can review them"
+    },
+    {
+      "requirement": "Preserve historical users/notes/purchases/progress/results",
+      "status": "PASS",
+      "evidenceOrLimit": "`local-preservation.json`; historical positions restored after acceptance, original notes/attempts untouched"
+    },
+    {
+      "requirement": "Exact local links and startup instructions",
+      "status": "PASS",
+      "evidenceOrLimit": "LOCAL_ACCESS.md and `verification/local-links.json`"
+    },
+    {
+      "requirement": "LocalDB diagnosis and isolated create/start retry",
+      "status": "PASS",
+      "evidenceOrLimit": "`localdb-diagnostics.json`, installed 16.0 engine; effective sandbox identity lacks instance registry"
+    },
+    {
+      "requirement": "Repair LocalDB safely within available permissions",
+      "status": "BLOCKED",
+      "evidenceOrLimit": "Registry access fails; no machine-wide ACL/registry change or unrelated instance modification"
+    },
+    {
+      "requirement": "Execute all nine migrations on isolated SQL Server",
+      "status": "BLOCKED",
+      "evidenceOrLimit": "SQL Network Interfaces error 50 / LocalDB registry configuration; generated SQL alone is not execution"
+    },
+    {
+      "requirement": "SQL Server historical upgrade, conflict rollback and import replay",
+      "status": "BLOCKED",
+      "evidenceOrLimit": "SQLite regression passes are separate evidence"
+    },
+    {
+      "requirement": "SQL Server distributed locking, contention/deadlocks",
+      "status": "BLOCKED",
+      "evidenceOrLimit": "No working SQL Server connection; not established by HTTP/SQLite probes"
+    },
+    {
+      "requirement": "SQL Server lease expiry and cleanup races",
+      "status": "BLOCKED",
+      "evidenceOrLimit": "Component coverage passes on SQLite only"
+    },
+    {
+      "requirement": "SQL Server response latency, capacity, growth and audit storage",
+      "status": "BLOCKED",
+      "evidenceOrLimit": "No production-compatible measurements available"
+    },
+    {
+      "requirement": "Local paced reading / deliberate burst",
+      "status": "PASS",
+      "evidenceOrLimit": "Eight deliveries two seconds apart, no 429; separate 18-request burst returns 200/429, positive Retry-After, no 500"
+    },
+    {
+      "requirement": "Local latency/storage measurements",
+      "status": "PASS",
+      "evidenceOrLimit": "`local-storage-latency.json`; explicitly SQLite and local load only"
+    },
+    {
+      "requirement": "npm full / production-only / browser audit retry",
+      "status": "BLOCKED",
+      "evidenceOrLimit": "Registry advisory endpoint unreachable in sandbox; no clean audit claim"
+    },
+    {
+      "requirement": "NuGet vulnerability audit retry",
+      "status": "BLOCKED",
+      "evidenceOrLimit": "Forbidden socket access to `api.nuget.org:443`; cached restore/build is not vulnerability clearance"
+    },
+    {
+      "requirement": "Development advisory exposure classification",
+      "status": "PASS",
+      "evidenceOrLimit": "Prior 13 moderate reports trace to development ESLint/minimatch; current minimatch 10.2.6; no verified compatible fix applied"
+    },
+    {
+      "requirement": "Resolve all applicable dependency advisories",
+      "status": "BLOCKED",
+      "evidenceOrLimit": "Successful online audit and compatible fix/accepted mitigation still required; no speculative major updates"
+    },
+    {
+      "requirement": "Authorization and entitlement expiry",
+      "status": "PASS",
+      "evidenceOrLimit": "Cent regressions plus normal HTTP denial probes; provider sign-in listed separately"
+    },
+    {
+      "requirement": "Protected assets and anti-scraping",
+      "status": "PASS",
+      "evidenceOrLimit": "Private media, ownership, anonymous/unentitled denial, watermark, burst limits; SQL replica behavior still blocked"
+    },
+    {
+      "requirement": "HTML/SVG sanitization and private caching",
+      "status": "PASS",
+      "evidenceOrLimit": "All imported sections/assets regression; normal HTTP private/no-store and safe media contracts"
+    },
+    {
+      "requirement": "Note ownership / revisions / historical notes",
+      "status": "PASS",
+      "evidenceOrLimit": "Regression tests, normal note round trips, owner denial, original-row comparison"
+    },
+    {
+      "requirement": "Protected content/ZIPs/keys/backups/evidence absent from public build",
+      "status": "PASS",
+      "evidenceOrLimit": "Postbuild guard and `public-artifact-scan.json`; deploy only dist"
+    },
+    {
+      "requirement": "Assessment keys withheld until submission",
+      "status": "PASS",
+      "evidenceOrLimit": "Normal HTTP probes; result route before submission denied; eight representative reviewed definitions including all five supplied subject mocks"
+    },
+    {
+      "requirement": "Cleanup and audit retention behavior",
+      "status": "PASS",
+      "evidenceOrLimit": "Bounded cleanup/active lease/non-reader audit regression; worker enabled locally, audit deletion unset; SQL execution still blocked"
+    },
+    {
+      "requirement": "Authorized extraction/screenshot/OCR/slow scraping risks documented",
+      "status": "PASS",
+      "evidenceOrLimit": "REPORT.md and runbook; no complete copy-protection claim"
+    },
+    {
+      "requirement": "Live Google/SMS login on normal environment",
+      "status": "BLOCKED",
+      "evidenceOrLimit": "Offline/provider connectivity; local existing-account maintenance sessions do not establish provider authentication"
+    },
+    {
+      "requirement": "Session restoration, library, subject/lesson navigation",
+      "status": "PASS",
+      "evidenceOrLimit": "Normal persistent environment Chromium checks"
+    },
+    {
+      "requirement": "Educational content, formulas, tables, diagrams and zoom",
+      "status": "PASS",
+      "evidenceOrLimit": "Six-subject render checks and selected rich-lesson administrator previews; chemistry draft stays unpublished and review-only"
+    },
+    {
+      "requirement": "Notes, anchors, drafts and reattachment",
+      "status": "PASS",
+      "evidenceOrLimit": "All six: save/reload/draft restore/same ID and body after anchor revision; no guessed cross-document migration"
+    },
+    {
+      "requirement": "Reading positions/bookmarks",
+      "status": "PASS",
+      "evidenceOrLimit": "Current LastPage/FurthestPage contract; tests restore original positions afterward"
+    },
+    {
+      "requirement": "Exercises and answer reveal",
+      "status": "PASS",
+      "evidenceOrLimit": "Existing renderer details/summary keyboard reveal in subjects with supplied self-check markup; no fabricated exercise in Reading/Logic samples"
+    },
+    {
+      "requirement": "Chapter reviews and subject mocks",
+      "status": "PASS",
+      "evidenceOrLimit": "Representative available definitions via normal API; no new mathematics mock supplied; eight selected definitions cover available categories"
+    },
+    {
+      "requirement": "Passage-dependent Reading and assessment UI submission/results",
+      "status": "PASS",
+      "evidenceOrLimit": "`normal-interactions.json` and `normal-http-security.json`; passage visible, option selected, submission/result rendered and server scoring checked"
+    },
+    {
+      "requirement": "Desktop/mobile viewport; light/dark",
+      "status": "PASS",
+      "evidenceOrLimit": "Chromium 1440\u00d71000 and 390\u00d7844 emulation, not real-device verification"
+    },
+    {
+      "requirement": "Chromium",
+      "status": "PASS",
+      "evidenceOrLimit": "Installed Chrome 158.0.8127.38"
+    },
+    {
+      "requirement": "Firefox",
+      "status": "BLOCKED",
+      "evidenceOrLimit": "Playwright Firefox executable missing; install on a connected acceptance machine"
+    },
+    {
+      "requirement": "WebKit",
+      "status": "BLOCKED",
+      "evidenceOrLimit": "Playwright WebKit executable missing; install on a connected acceptance machine"
+    },
+    {
+      "requirement": "Real iOS/Android/Safari devices",
+      "status": "NOT TESTED",
+      "evidenceOrLimit": "No physical device acceptance performed"
+    },
+    {
+      "requirement": "Limited keyboard/accessibility checks",
+      "status": "PASS",
+      "evidenceOrLimit": "Focusable controls, keyboard image dialog/Escape, details/summary reveal, labeled section selector; no comprehensive WCAG claim"
+    },
+    {
+      "requirement": "Screen-reader/full WCAG audit",
+      "status": "NOT TESTED",
+      "evidenceOrLimit": "Requires assistive-technology and specialist acceptance"
+    },
+    {
+      "requirement": "Existing PDF reader compatibility",
+      "status": "PASS",
+      "evidenceOrLimit": "Existing published normal-local PDF, protected canvas, draft restore/save, mobile viewport; `normal-pdf.json`"
+    },
+    {
+      "requirement": "Administrator publication/academic gate regressions",
+      "status": "PASS",
+      "evidenceOrLimit": "Existing publication completeness/immutability and content-approval tests; no normal draft published"
+    },
+    {
+      "requirement": "Actually approve/publish supplied new documents",
+      "status": "BLOCKED",
+      "evidenceOrLimit": "Requires independent academic decision; intentionally not performed"
+    },
+    {
+      "requirement": "Academic structure/mapping checks",
+      "status": "PASS",
+      "evidenceOrLimit": "1,471 IDs, options/keys, explanations, 42 memberships, 15 passages, mapping limits recorded"
+    },
+    {
+      "requirement": "Specialist scientific/answer/difficulty certification",
+      "status": "BLOCKED",
+      "evidenceOrLimit": "Independent sign-offs absent for every subject; ACADEMIC_REVIEW.md"
+    },
+    {
+      "requirement": "Production runbook and guarded import preparation",
+      "status": "PASS",
+      "evidenceOrLimit": "DEPLOYMENT_RUNBOOK.md; Cent-only SQL/import helper builds and refuses unconfigured import; target import/restore rehearsal not executed"
+    },
+    {
+      "requirement": "Production backup/restore rehearsal and smoke/load acceptance",
+      "status": "NOT TESTED",
+      "evidenceOrLimit": "No production target or approved deployment was used"
+    },
+    {
+      "requirement": "Keep production rollout disabled / no deployment",
+      "status": "PASS",
+      "evidenceOrLimit": "No production mutation, publication, hosting upload or activation"
+    },
+    {
+      "requirement": "Scope: Itatest/Cent only",
+      "status": "PASS",
+      "evidenceOrLimit": "No Lerona frontend/backend source, configuration, database or migration changes"
+    },
+    {
+      "requirement": "Final frontend tests, type check, lint and build",
+      "status": "PASS",
+      "evidenceOrLimit": "221 tests; final build includes TypeScript; lint logs and artifact guard"
+    },
+    {
+      "requirement": "Final Cent tests and release build",
+      "status": "PASS",
+      "evidenceOrLimit": "171 Cent + 90 exam/commerce tests; separate 1-test preview confirmation overlaps Cent; Cent.Module Release build"
+    },
+    {
+      "requirement": "Leave normal environment running",
+      "status": "PASS",
+      "evidenceOrLimit": "Final loopback health evidence in `verification/final-health.json`; startup instructions provided"
+    }
+  ],
+  "statusCounts": {
+    "PASS": 41,
+    "BLOCKED": 15,
+    "NOT TESTED": 3
+  },
+  "doNotSumOverlappingRuns": true,
+  "residualRisks": [
+    "SQL Server execution/locking/deadlocks/expiry/load/storage unverified",
+    "Online npm/NuGet audits blocked",
+    "Independent academic sign-offs absent",
+    "Firefox/WebKit binaries unavailable",
+    "Real devices and full assistive-technology acceptance not tested",
+    "Authorized extraction, screenshots, OCR and slow scraping remain possible"
+  ]
+}

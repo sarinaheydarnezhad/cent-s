@@ -14,7 +14,7 @@ function resolveBlock(article: HTMLElement, a: Anchor | null) {
 const emptyAssets: LessonAsset[] = []
 
 type Position = { id: string; top: number; fallback: boolean }
-export function PilotLesson({ html, sectionId, revision, notes, watermark, placeNote, selectNote, selectedId, draftAnchor, assets = emptyAssets, documentId, reattaching, startReattach }: { assets?: LessonAsset[]; documentId?: string; reattaching?: boolean; startReattach?: () => void; selectedId?: string; draftAnchor?: string | null; revision?: string; html: string; sectionId: string; notes: StudyNote[]; watermark: string; placeNote: (value: string, y: number) => void; selectNote: (note: StudyNote) => void }) {
+export function PilotLesson({ html, sectionId, revision, notes, watermark, placeNote, selectNote, selectedId, draftAnchor, assets = emptyAssets, documentId, previewAssets = false, reattaching, startReattach }: { previewAssets?: boolean; assets?: LessonAsset[]; documentId?: string; reattaching?: boolean; startReattach?: () => void; selectedId?: string; draftAnchor?: string | null; revision?: string; html: string; sectionId: string; notes: StudyNote[]; watermark: string; placeNote: (value: string, y: number) => void; selectNote: (note: StudyNote) => void }) {
   const content = useMemo(() => prepareLesson(html, sectionId, assets), [html, sectionId, assets])
   const root = useRef<HTMLElement>(null)
   const [positions, setPositions] = useState<Position[]>([])
@@ -28,7 +28,7 @@ export function PilotLesson({ html, sectionId, revision, notes, watermark, place
     const pump = () => {
       while (!controller.signal.aborted && active < 3 && queue.length) {
         const image = queue.shift()!; active++
-        cent.asset(documentId, sectionId, image.dataset.asset!, controller.signal).then(blob => {
+        cent.asset(documentId, sectionId, image.dataset.asset!, controller.signal, previewAssets).then(blob => {
           if (controller.signal.aborted) return
           const expected = assets.find(a => a.id === image.dataset.asset)?.mime
           if (blob.type !== expected) throw new Error('Educational image media type mismatch.')
@@ -43,7 +43,7 @@ export function PilotLesson({ html, sectionId, revision, notes, watermark, place
     }, { rootMargin: '600px' })
     root.current!.querySelectorAll<HTMLImageElement>('img[data-asset]').forEach(image => observer.observe(image))
     return () => { controller.abort(); observer.disconnect(); urls.forEach(url => URL.revokeObjectURL(url)) }
-  }, [documentId, sectionId, assets, content, assetRetry])
+  }, [documentId, sectionId, assets, content, assetRetry, previewAssets])
   const selected = notes.find(n => n.id === selectedId)
   const selectedAnchor = parseAnchor(draftAnchor ?? selected?.anchorJson)
   const unresolved = !!selected && positions.some(p => p.id === selected.id && p.fallback)

@@ -51,6 +51,7 @@ describe('documented Google identity transport', () => {
     expect(fetchMock).toHaveBeenCalledTimes(1)
   })
   it('posts the empty challenge with the exact JSON/header contract and leaves Origin to the browser', async () => {
+    vi.spyOn(performance, 'now').mockReturnValue(1000)
     response(challenge)
     const { createGoogleChallenge } = await import('./google-identity-api')
     const started = performance.now()

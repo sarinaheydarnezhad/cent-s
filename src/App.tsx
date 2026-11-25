@@ -16,6 +16,7 @@ import { CourseDetails } from './pages/CourseCatalog'
 import { MockAttemptPage, MockExamsPage, MockResultPage } from './pages/MockExams'
 import { CentDashboard, CentExamPage, CentResultPage, CentResultsPage, CentSimulatorsPage } from './pages/PracticePages'
 import { AdminLayout } from './pages/admin/AdminLayout'
+import { ContentPreview } from './pages/admin/ContentPreview'
 import { AdminOverviewPage, AdminUsersPage, AdminResourcesPage, AdminContentPage, AdminAssessmentsPage, AdminQuestionsPage, AdminOrdersPage, AdminSubscriptionsPage, AdminProductsPage, AdminReportsPage, AdminRolesPage, AdminSettingsPage } from './pages/admin/AdminPages'
 
 export default function App() {
@@ -42,6 +43,7 @@ export default function App() {
       <Route path="/student/study/:id" element={<StudyReader/>}/>
     </Route>
     <Route element={<ProtectedRoute role="ADMIN"/>}>
+      <Route path="/admin/content-preview/:id" element={<ContentPreview/>}/>
       <Route path="/admin" element={<AdminLayout/>}>
         <Route index element={<AdminOverviewPage/>}/><Route path="users" element={<AdminUsersPage/>}/>
         <Route path="resources" element={<AdminResourcesPage/>}/><Route path="content" element={<AdminContentPage/>}/>

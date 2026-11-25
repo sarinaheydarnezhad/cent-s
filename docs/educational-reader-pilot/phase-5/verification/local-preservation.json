@@ -1,0 +1,124 @@
+{
+  "status": "PASS",
+  "intentionalAcceptanceChanges": [
+    "Added Reading DEVELOPMENT_MOCK order and entitlement",
+    "Owner PurchaseVersion incremented by checkout; excluded from identity comparison"
+  ],
+  "purchaseVersionDeltas": [
+    2
+  ],
+  "tables": {
+    "cent_users": {
+      "status": "PASS",
+      "before": {
+        "count": 52,
+        "sha256": "63efbc5b751fa25218be663cb308378d88c92747a509030dcdcda4153618a63f"
+      },
+      "after": {
+        "count": 52,
+        "sha256": "63efbc5b751fa25218be663cb308378d88c92747a509030dcdcda4153618a63f"
+      }
+    },
+    "cent_notes": {
+      "status": "PASS",
+      "before": {
+        "count": 35,
+        "sha256": "afc429da222391835a0045bcf71a37d00392534c0560e29fd82b7b4f882d5cd0"
+      },
+      "after": {
+        "count": 35,
+        "sha256": "afc429da222391835a0045bcf71a37d00392534c0560e29fd82b7b4f882d5cd0"
+      }
+    },
+    "cent_orders": {
+      "status": "PASS",
+      "before": {
+        "count": 31,
+        "sha256": "eb5c735a6a04551da6d8d7f3a5a2ba5699f13930e8e723d00a418b3a2eab0f0c"
+      },
+      "after": {
+        "count": 31,
+        "sha256": "eb5c735a6a04551da6d8d7f3a5a2ba5699f13930e8e723d00a418b3a2eab0f0c"
+      }
+    },
+    "cent_entitlements": {
+      "status": "PASS",
+      "before": {
+        "count": 31,
+        "sha256": "b6a1c28d5161475a9abb115d50e479daad03c9c27d870036f525e56c180c1776"
+      },
+      "after": {
+        "count": 31,
+        "sha256": "b6a1c28d5161475a9abb115d50e479daad03c9c27d870036f525e56c180c1776"
+      }
+    },
+    "cent_study_progress": {
+      "status": "PASS",
+      "before": {
+        "count": 20,
+        "sha256": "0c3b90e60b272470c623379910f701d9e042c8c70d5f12c63c868b43f510715e"
+      },
+      "after": {
+        "count": 20,
+        "sha256": "0c3b90e60b272470c623379910f701d9e042c8c70d5f12c63c868b43f510715e"
+      }
+    },
+    "cent_subject_access": {
+      "status": "PASS",
+      "before": {
+        "count": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "after": {
+        "count": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    },
+    "cent_subject_orders": {
+      "status": "PASS",
+      "before": {
+        "count": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "after": {
+        "count": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    },
+    "cent_attempts": {
+      "status": "PASS",
+      "before": {
+        "count": 41,
+        "sha256": "1c6dfddf18fca3582223cb21560663d50c23baf862442e8b986c2aaf3f4e928d"
+      },
+      "after": {
+        "count": 41,
+        "sha256": "1c6dfddf18fca3582223cb21560663d50c23baf862442e8b986c2aaf3f4e928d"
+      }
+    },
+    "cent_attempt_questions": {
+      "status": "PASS",
+      "before": {
+        "count": 444,
+        "sha256": "b21081d2ccffcdfc03b14155ea590a1a62ff2c0367f8f9731bf8a3634755547a"
+      },
+      "after": {
+        "count": 444,
+        "sha256": "b21081d2ccffcdfc03b14155ea590a1a62ff2c0367f8f9731bf8a3634755547a"
+      }
+    },
+    "cent_mock_attempts": {
+      "status": "PASS",
+      "before": {
+        "count": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "after": {
+        "count": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    }
+  },
+  "integrityCheck": "ok",
+  "foreignKeyViolations": 0
+}

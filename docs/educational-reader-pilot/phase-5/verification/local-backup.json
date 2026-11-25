@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "database": "D:\\Lerona\\Backend\\backend\\Cent.Preview\\App_Data\\preview.db",
+  "backup": "D:\\Lerona\\itatest\\.preview-artifacts\\phase5\\normal-preview-before-activation-20261125T080354376983Z.db.bak",
+  "sha256": "99b954d0abc583b48241581043e5a8af9fc6497cfa47e9fca502b71d42e13d9b",
+  "bytes": 13697024,
+  "integrityCheck": "ok",
+  "foreignKeyViolations": 0,
+  "protectedTables": {
+    "cent_users": {
+      "count": 52,
+      "sha256": "aa7720893a14ec01d4d555f5c286dbdfda9d7e1e08e3761f0b3d2e178c39b768"
+    },
+    "cent_notes": {
+      "count": 35,
+      "sha256": "afc429da222391835a0045bcf71a37d00392534c0560e29fd82b7b4f882d5cd0"
+    },
+    "cent_orders": {
+      "count": 31,
+      "sha256": "eb5c735a6a04551da6d8d7f3a5a2ba5699f13930e8e723d00a418b3a2eab0f0c"
+    },
+    "cent_entitlements": {
+      "count": 31,
+      "sha256": "b6a1c28d5161475a9abb115d50e479daad03c9c27d870036f525e56c180c1776"
+    },
+    "cent_study_progress": {
+      "count": 20,
+      "sha256": "0c3b90e60b272470c623379910f701d9e042c8c70d5f12c63c868b43f510715e"
+    },
+    "cent_subject_access": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "cent_subject_orders": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "cent_attempts": {
+      "count": 41,
+      "sha256": "1c6dfddf18fca3582223cb21560663d50c23baf862442e8b986c2aaf3f4e928d"
+    },
+    "cent_attempt_questions": {
+      "count": 444,
+      "sha256": "b21081d2ccffcdfc03b14155ea590a1a62ff2c0367f8f9731bf8a3634755547a"
+    },
+    "cent_mock_attempts": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  }
+}

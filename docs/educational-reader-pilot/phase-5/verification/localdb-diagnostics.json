@@ -1,0 +1,30 @@
+{
+  "status": "BLOCKED",
+  "engine": "SQL Server 2022 LocalDB 16.0.1000.6",
+  "attempts": [
+    {
+      "output": "Microsoft SQL Server 2022 (16.0.1000.6)\r\n",
+      "exitCode": 0,
+      "command": "SqlLocalDB versions"
+    },
+    {
+      "output": "MSSQLLocalDB\r\n",
+      "exitCode": 0,
+      "command": "SqlLocalDB info"
+    },
+    {
+      "output": "SqlLocalDB.exe : Creation of LocalDB instance \"ItatestPhase5\" failed because of the following error:\r\nAt line:2 char:305\r\n+ ... ase4'))) { $phase5Output = & SqlLocalDB @phase5Arguments 2>&1 | Out-S ...\r\n+                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : NotSpecified: (Creation of Loc...ollowing error::String) [], RemoteException\r\n    + FullyQualifiedErrorId : NativeCommandError\r\n \r\n\r\nUnexpected error occurred while trying to access the LocalDB instance registry configuration. See the Windows \r\nApplication event log for error details.\r\n\r\n",
+      "exitCode": 0,
+      "command": "SqlLocalDB create ItatestPhase5 16.0"
+    },
+    {
+      "output": "SqlLocalDB.exe : Start of LocalDB instance \"ItatestPhase4\" failed because of the following error:\r\nAt line:2 char:305\r\n+ ... ase4'))) { $phase5Output = & SqlLocalDB @phase5Arguments 2>&1 | Out-S ...\r\n+                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : NotSpecified: (Start of LocalD...ollowing error::String) [], RemoteException\r\n    + FullyQualifiedErrorId : NativeCommandError\r\n \r\n\r\nUnexpected error occurred while trying to access the LocalDB instance registry configuration. See the Windows \r\nApplication event log for error details.\r\n\r\n",
+      "exitCode": 0,
+      "command": "SqlLocalDB start ItatestPhase4"
+    }
+  ],
+  "machineWideChanges": false,
+  "unrelatedInstancesTouched": false,
+  "effectiveIdentity": "desktop-agk4npd\\codexsandboxoffline",
+  "instanceRegistryPresentInEffectiveProfile": false
+}

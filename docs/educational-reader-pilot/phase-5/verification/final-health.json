@@ -1,0 +1,30 @@
+{
+  "capturedUtc": "2026-11-25T09:21:48.631Z",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "frontend",
+      "url": "http://127.0.0.1:5173/cent-s/",
+      "status": "PASS",
+      "httpStatus": 200
+    },
+    {
+      "name": "api",
+      "url": "http://127.0.0.1:5108/api/cent/v1/status",
+      "status": "PASS",
+      "httpStatus": 200
+    },
+    {
+      "name": "ADMIN existing-account authorization",
+      "status": "PASS",
+      "httpStatus": 200,
+      "sessionExpiresAt": "2026-11-26T08:09:50.977114+00:00"
+    },
+    {
+      "name": "STUDENT existing-account authorization",
+      "status": "PASS",
+      "httpStatus": 200,
+      "sessionExpiresAt": "2026-11-26T08:09:50.977114+00:00"
+    }
+  ]
+}

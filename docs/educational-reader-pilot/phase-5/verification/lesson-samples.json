@@ -1,0 +1,56 @@
+[
+  {
+    "subject": "math",
+    "documentId": "6d7121b2-4929-1b2b-b2c3-f290ec70c69b",
+    "sectionId": "d5fd7383-fe94-5566-edd6-8da8ef5aa0a3",
+    "hasTable": true,
+    "hasDetails": true,
+    "hasFigure": true,
+    "hasFormulaMarkup": true
+  },
+  {
+    "subject": "physics",
+    "documentId": "0edda12b-31e3-3fcb-fc06-59caf8dcedef",
+    "sectionId": "03b20f6f-a46f-4ea7-1b96-a96824efd631",
+    "hasTable": true,
+    "hasDetails": true,
+    "hasFigure": true,
+    "hasFormulaMarkup": false
+  },
+  {
+    "subject": "chemistry",
+    "documentId": "3e9aa405-a3f1-3974-be40-9d1a5d11dc4b",
+    "sectionId": "bd48ef51-c553-51e1-b711-ff14e8b3aad5",
+    "hasTable": false,
+    "hasDetails": true,
+    "hasFigure": true,
+    "hasFormulaMarkup": false
+  },
+  {
+    "subject": "biology",
+    "documentId": "e1e81fc8-642b-94e5-24b8-663cb39c2e29",
+    "sectionId": "8d5d896a-21d2-22e1-8d7f-ae8833dd3349",
+    "hasTable": true,
+    "hasDetails": true,
+    "hasFigure": true,
+    "hasFormulaMarkup": true
+  },
+  {
+    "subject": "logic",
+    "documentId": "7b7194c1-8de6-e33f-6af0-a7d1f7a6caa1",
+    "sectionId": "898a6714-b541-209e-bdf2-c14e1d3655bc",
+    "hasTable": true,
+    "hasDetails": false,
+    "hasFigure": false,
+    "hasFormulaMarkup": false
+  },
+  {
+    "subject": "reading",
+    "documentId": "a0d4befd-9766-b599-0ed2-ae9dafc569ec",
+    "sectionId": "d5da0b2f-39fd-281b-0f2d-320fb22458b7",
+    "hasTable": false,
+    "hasDetails": false,
+    "hasFigure": false,
+    "hasFormulaMarkup": false
+  }
+]

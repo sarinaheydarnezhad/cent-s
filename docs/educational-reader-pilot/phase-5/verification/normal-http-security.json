@@ -1,0 +1,555 @@
+{
+  "provider": "SQLite normal local environment; no SQL Server claim",
+  "checks": [
+    {
+      "requirement": "reading-delivery-security",
+      "status": "PASS",
+      "anonymousDenied": true,
+      "unentitledDenied": true,
+      "privateCache": true,
+      "noteOwnerOnly": true
+    },
+    {
+      "requirement": "math-delivery-security",
+      "status": "PASS",
+      "anonymousDenied": true,
+      "unentitledDenied": true,
+      "privateCache": true,
+      "noteOwnerOnly": true
+    },
+    {
+      "requirement": "logic-delivery-security",
+      "status": "PASS",
+      "anonymousDenied": true,
+      "unentitledDenied": true,
+      "privateCache": true,
+      "noteOwnerOnly": true
+    },
+    {
+      "requirement": "biology-delivery-security",
+      "status": "PASS",
+      "anonymousDenied": true,
+      "unentitledDenied": true,
+      "privateCache": true,
+      "noteOwnerOnly": true
+    },
+    {
+      "requirement": "chemistry-delivery-security",
+      "status": "PASS",
+      "anonymousDenied": true,
+      "unentitledDenied": true,
+      "privateCache": true,
+      "noteOwnerOnly": true
+    },
+    {
+      "requirement": "physics-delivery-security",
+      "status": "PASS",
+      "anonymousDenied": true,
+      "unentitledDenied": true,
+      "privateCache": true,
+      "noteOwnerOnly": true
+    },
+    {
+      "requirement": "reading-reading-itatest-mock-01",
+      "status": "PASS",
+      "attemptId": "f4604afd-b30c-4ca5-ab7f-15645a6d445f",
+      "preSubmissionKeysAbsent": true,
+      "resultBeforeSubmitDenied": true,
+      "scoreVerified": true,
+      "submissionIdempotent": true,
+      "passages": 2,
+      "assessmentKind": "subject-mock"
+    },
+    {
+      "requirement": "logic-logic-itatest-mock-v1",
+      "status": "PASS",
+      "attemptId": "c0572ac0-69d5-4eea-a7d0-e6d1be35381c",
+      "preSubmissionKeysAbsent": true,
+      "resultBeforeSubmitDenied": true,
+      "scoreVerified": true,
+      "submissionIdempotent": true,
+      "passages": 0,
+      "assessmentKind": "subject-mock"
+    },
+    {
+      "requirement": "biology-ab4b296a-112c-5ad7-b8ec-97f8f40359dc",
+      "status": "PASS",
+      "attemptId": "21abaab2-50e7-43e0-b1ea-27ea8534139b",
+      "preSubmissionKeysAbsent": true,
+      "resultBeforeSubmitDenied": true,
+      "scoreVerified": true,
+      "submissionIdempotent": true,
+      "passages": 0,
+      "assessmentKind": "chapter-review"
+    },
+    {
+      "requirement": "biology-0bac857c-b920-5a49-b5f0-c36d52ad324d",
+      "status": "PASS",
+      "attemptId": "2b965a7f-eb0e-4869-aad8-c35fc50db21a",
+      "preSubmissionKeysAbsent": true,
+      "resultBeforeSubmitDenied": true,
+      "scoreVerified": true,
+      "submissionIdempotent": true,
+      "passages": 0,
+      "assessmentKind": "subject-mock"
+    },
+    {
+      "requirement": "chemistry-310e0036-94ef-5f28-82ff-873cd82552ea",
+      "status": "PASS",
+      "attemptId": "c8ed078a-7fe9-44b6-b2fc-38854466798a",
+      "preSubmissionKeysAbsent": true,
+      "resultBeforeSubmitDenied": true,
+      "scoreVerified": true,
+      "submissionIdempotent": true,
+      "passages": 0,
+      "assessmentKind": "chapter-review"
+    },
+    {
+      "requirement": "physics-39f3b01b-c335-5f6b-95a1-14a73e05548f",
+      "status": "PASS",
+      "attemptId": "da2794ab-dfbd-4adc-aa6f-c91702ae0b18",
+      "preSubmissionKeysAbsent": true,
+      "resultBeforeSubmitDenied": true,
+      "scoreVerified": true,
+      "submissionIdempotent": true,
+      "passages": 0,
+      "assessmentKind": "chapter-review"
+    },
+    {
+      "requirement": "legitimate-session",
+      "status": "PASS",
+      "intervalSeconds": 2,
+      "successfulDeliveries": 8,
+      "latencyMs": [
+        36.26870000000008,
+        48.35289999999986,
+        63.009500000000116,
+        46.710299999998824,
+        37.75699999999961,
+        36.704399999998714,
+        49.65819999999985,
+        33.86160000000018
+      ]
+    },
+    {
+      "requirement": "concurrent-burst",
+      "status": "PASS",
+      "accepted": 4,
+      "throttled": 14,
+      "noServerErrors": true
+    },
+    {
+      "requirement": "chemistry-3617a155-14f9-5a1f-8d79-79cb4a19f837",
+      "status": "PASS",
+      "assessmentKind": "subject-mock",
+      "attemptId": "2e845153-ff28-4eac-9263-90c08c2a6b49",
+      "preSubmissionKeysAbsent": true,
+      "resultBeforeSubmitDenied": true,
+      "scoreVerified": true,
+      "passages": 0
+    },
+    {
+      "requirement": "physics-8392d936-e208-5dce-a673-cffbc5fc210d",
+      "status": "PASS",
+      "assessmentKind": "subject-mock",
+      "attemptId": "afc98857-f34b-4df9-b3d2-a63cab26f4d6",
+      "preSubmissionKeysAbsent": true,
+      "resultBeforeSubmitDenied": true,
+      "scoreVerified": true,
+      "passages": 0
+    }
+  ],
+  "timing": [
+    {
+      "path": "/me/library",
+      "milliseconds": 250.5053,
+      "status": 200
+    },
+    {
+      "path": "/curriculum",
+      "milliseconds": 42.293000000000006,
+      "status": 200
+    },
+    {
+      "path": "/documents/{id}/source-sections",
+      "milliseconds": 37.65330000000006,
+      "status": 200
+    },
+    {
+      "path": "/documents/{id}/source-sections/{id}",
+      "milliseconds": 56.531799999999976,
+      "status": 200
+    },
+    {
+      "path": "/documents/{id}/source-sections/{id}",
+      "milliseconds": 23.52049999999997,
+      "status": 401
+    },
+    {
+      "path": "/documents/{id}/source-sections/{id}",
+      "milliseconds": 20.044199999999933,
+      "status": 403
+    },
+    {
+      "path": "/notes/{id}",
+      "milliseconds": 33.1545000000001,
+      "status": 200
+    },
+    {
+      "path": "/notes/{id}",
+      "milliseconds": 18.180600000000027,
+      "status": 403
+    },
+    {
+      "path": "/notes/{id}?revision=1",
+      "milliseconds": 9.692199999999957,
+      "status": 204
+    },
+    {
+      "path": "/documents/{id}/source-sections",
+      "milliseconds": 21.417500000000018,
+      "status": 200
+    },
+    {
+      "path": "/documents/{id}/source-sections/{id}",
+      "milliseconds": 68.22979999999995,
+      "status": 200
+    },
+    {
+      "path": "/documents/{id}/source-sections/{id}",
+      "milliseconds": 41.83969999999999,
+      "status": 401
+    },
+    {
+      "path": "/documents/{id}/source-sections/{id}",
+      "milliseconds": 8.542299999999955,
+      "status": 403
+    },
+    {
+      "path": "/notes/{id}",
+      "milliseconds": 16.968899999999962,
+      "status": 200
+    },
+    {
+      "path": "/notes/{id}",
+      "milliseconds": 36.54230000000007,
+      "status": 403
+    },
+    {
+      "path": "/notes/{id}?revision=1",
+      "milliseconds": 26.45709999999997,
+      "status": 204
+    },
+    {
+      "path": "/documents/{id}/source-sections",
+      "milliseconds": 29.849300000000085,
+      "status": 200
+    },
+    {
+      "path": "/documents/{id}/source-sections/{id}",
+      "milliseconds": 71.76469999999995,
+      "status": 200
+    },
+    {
+      "path": "/documents/{id}/source-sections/{id}",
+      "milliseconds": 10.293699999999944,
+      "status": 401
+    },
+    {
+      "path": "/documents/{id}/source-sections/{id}",
+      "milliseconds": 22.91319999999996,
+      "status": 403
+    },
+    {
+      "path": "/notes/{id}",
+      "milliseconds": 24.776000000000067,
+      "status": 200
+    },
+    {
+      "path": "/notes/{id}",
+      "milliseconds": 28.484399999999823,
+      "status": 403
+    },
+    {
+      "path": "/notes/{id}?revision=1",
+      "milliseconds": 28.595100000000002,
+      "status": 204
+    },
+    {
+      "path": "/documents/{id}/source-sections",
+      "milliseconds": 22.345000000000027,
+      "status": 200
+    },
+    {
+      "path": "/documents/{id}/source-sections/{id}",
+      "milliseconds": 51.62110000000007,
+      "status": 200
+    },
+    {
+      "path": "/documents/{id}/source-sections/{id}",
+      "milliseconds": 3.0474999999999,
+      "status": 401
+    },
+    {
+      "path": "/documents/{id}/source-sections/{id}",
+      "milliseconds": 14.576199999999972,
+      "status": 403
+    },
+    {
+      "path": "/notes/{id}",
+      "milliseconds": 18.473000000000184,
+      "status": 200
+    },
+    {
+      "path": "/notes/{id}",
+      "milliseconds": 15.92060000000015,
+      "status": 403
+    },
+    {
+      "path": "/notes/{id}?revision=1",
+      "milliseconds": 30.84030000000007,
+      "status": 204
+    },
+    {
+      "path": "/documents/{id}/source-sections",
+      "milliseconds": 29.411399999999958,
+      "status": 200
+    },
+    {
+      "path": "/documents/{id}/source-sections/{id}",
+      "milliseconds": 30.44939999999997,
+      "status": 200
+    },
+    {
+      "path": "/documents/{id}/source-sections/{id}",
+      "milliseconds": 7.5677999999998065,
+      "status": 401
+    },
+    {
+      "path": "/documents/{id}/source-sections/{id}",
+      "milliseconds": 13.439699999999903,
+      "status": 403
+    },
+    {
+      "path": "/notes/{id}",
+      "milliseconds": 29.26879999999983,
+      "status": 200
+    },
+    {
+      "path": "/notes/{id}",
+      "milliseconds": 11.344900000000052,
+      "status": 403
+    },
+    {
+      "path": "/notes/{id}?revision=1",
+      "milliseconds": 12.785100000000057,
+      "status": 204
+    },
+    {
+      "path": "/documents/{id}/source-sections",
+      "milliseconds": 18.794600000000173,
+      "status": 200
+    },
+    {
+      "path": "/documents/{id}/source-sections/{id}",
+      "milliseconds": 31.825900000000047,
+      "status": 200
+    },
+    {
+      "path": "/documents/{id}/source-sections/{id}",
+      "milliseconds": 4.575400000000172,
+      "status": 401
+    },
+    {
+      "path": "/documents/{id}/source-sections/{id}",
+      "milliseconds": 24.13239999999996,
+      "status": 403
+    },
+    {
+      "path": "/notes/{id}",
+      "milliseconds": 40.6429999999998,
+      "status": 200
+    },
+    {
+      "path": "/notes/{id}",
+      "milliseconds": 31.895700000000033,
+      "status": 403
+    },
+    {
+      "path": "/notes/{id}?revision=1",
+      "milliseconds": 26.227100000000064,
+      "status": 204
+    },
+    {
+      "path": "/reviewed-assessments/",
+      "milliseconds": 51.34289999999987,
+      "status": 200
+    },
+    {
+      "path": "/reviewed-assessments/reading-itatest-mock-01/start",
+      "milliseconds": 33.438899999999876,
+      "status": 200
+    },
+    {
+      "path": "/attempts/{id}",
+      "milliseconds": 20.717800000000125,
+      "status": 404
+    },
+    {
+      "path": "/attempts/{id}/submit",
+      "milliseconds": 31.245799999999917,
+      "status": 200
+    },
+    {
+      "path": "/attempts/{id}/submit",
+      "milliseconds": 38.08990000000017,
+      "status": 200
+    },
+    {
+      "path": "/reviewed-assessments/logic-itatest-mock-v1/start",
+      "milliseconds": 48.537199999999984,
+      "status": 200
+    },
+    {
+      "path": "/attempts/{id}",
+      "milliseconds": 17.365800000000036,
+      "status": 404
+    },
+    {
+      "path": "/attempts/{id}/submit",
+      "milliseconds": 30.998499999999922,
+      "status": 200
+    },
+    {
+      "path": "/attempts/{id}/submit",
+      "milliseconds": 23.980399999999918,
+      "status": 200
+    },
+    {
+      "path": "/reviewed-assessments/{id}/start",
+      "milliseconds": 41.54090000000019,
+      "status": 200
+    },
+    {
+      "path": "/attempts/{id}",
+      "milliseconds": 21.311899999999696,
+      "status": 404
+    },
+    {
+      "path": "/attempts/{id}/submit",
+      "milliseconds": 46.64900000000034,
+      "status": 200
+    },
+    {
+      "path": "/attempts/{id}/submit",
+      "milliseconds": 19.609100000000126,
+      "status": 200
+    },
+    {
+      "path": "/reviewed-assessments/{id}/start",
+      "milliseconds": 29.65610000000015,
+      "status": 200
+    },
+    {
+      "path": "/attempts/{id}",
+      "milliseconds": 7.522400000000289,
+      "status": 404
+    },
+    {
+      "path": "/attempts/{id}/submit",
+      "milliseconds": 20.76449999999977,
+      "status": 200
+    },
+    {
+      "path": "/attempts/{id}/submit",
+      "milliseconds": 22.887700000000223,
+      "status": 200
+    },
+    {
+      "path": "/reviewed-assessments/{id}/start",
+      "milliseconds": 32.89150000000018,
+      "status": 200
+    },
+    {
+      "path": "/attempts/{id}",
+      "milliseconds": 24.172499999999673,
+      "status": 404
+    },
+    {
+      "path": "/attempts/{id}/submit",
+      "milliseconds": 36.45879999999988,
+      "status": 200
+    },
+    {
+      "path": "/attempts/{id}/submit",
+      "milliseconds": 16.658699999999953,
+      "status": 200
+    },
+    {
+      "path": "/reviewed-assessments/{id}/start",
+      "milliseconds": 23.42380000000003,
+      "status": 200
+    },
+    {
+      "path": "/attempts/{id}",
+      "milliseconds": 7.931500000000142,
+      "status": 404
+    },
+    {
+      "path": "/attempts/{id}/submit",
+      "milliseconds": 41.0310999999997,
+      "status": 200
+    },
+    {
+      "path": "/attempts/{id}/submit",
+      "milliseconds": 19.691699999999855,
+      "status": 200
+    },
+    {
+      "path": "/documents/{id}/source-sections",
+      "milliseconds": 11.88839999999982,
+      "status": 200
+    },
+    {
+      "path": "/documents/{id}/source-sections/{id}",
+      "milliseconds": 30.756700000000365,
+      "status": 200
+    },
+    {
+      "path": "/documents/{id}/source-sections/{id}",
+      "milliseconds": 41.748899999999594,
+      "status": 200
+    },
+    {
+      "path": "/documents/{id}/source-sections/{id}",
+      "milliseconds": 62.324399999999514,
+      "status": 200
+    },
+    {
+      "path": "/documents/{id}/source-sections/{id}",
+      "milliseconds": 41.04160000000047,
+      "status": 200
+    },
+    {
+      "path": "/documents/{id}/source-sections/{id}",
+      "milliseconds": 26.715799999999945,
+      "status": 200
+    },
+    {
+      "path": "/documents/{id}/source-sections/{id}",
+      "milliseconds": 29.58719999999994,
+      "status": 200
+    },
+    {
+      "path": "/documents/{id}/source-sections/{id}",
+      "milliseconds": 42.5562000000009,
+      "status": 200
+    },
+    {
+      "path": "/documents/{id}/source-sections/{id}",
+      "milliseconds": 25.447799999998097,
+      "status": 200
+    }
+  ],
+  "errors": []
+}

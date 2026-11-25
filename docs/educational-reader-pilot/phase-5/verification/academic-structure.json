@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "scientificCertification": "NOT TESTED; independent specialists required",
+  "catalogSha256": "bd18a836a248b04e80b45007829ccd3118648e8da318c06bf3bb0a1a3d0b3644",
+  "questionCount": 1471,
+  "subjects": {
+    "biology": 421,
+    "chemistry": 391,
+    "logic": 94,
+    "physics": 281,
+    "math": 201,
+    "reading": 83
+  },
+  "assessments": 42,
+  "passages": 15,
+  "verified": [
+    "unique question IDs",
+    "distinct options",
+    "answer bounds",
+    "nonempty explanations",
+    "assessment membership and subject consistency",
+    "reading passage relationships"
+  ],
+  "limits": [
+    "No scientific validation",
+    "No independent answer/distractor judgment",
+    "No calibrated difficulty or official score normalization"
+  ]
+}

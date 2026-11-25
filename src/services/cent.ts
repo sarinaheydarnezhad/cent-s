@@ -59,7 +59,7 @@ export async function centRequest<T>(path: string, init: RequestInit = {}, retry
   if (token) headers.set('Authorization', `Bearer ${token}`)
   const response = await fetch(centApiBase + path, { ...init, headers, cache: 'no-store', credentials: 'omit' })
   if (!response.ok) {
-    const sectionDelivery = /^\/documents\/[^/]+\/(source-sections\/[^/]+(\/assets\/[a-f0-9]+)?|pages\/\d+)$/i.test(path)
+    const sectionDelivery = /^\/documents\/[^/]+\/(source-sections\/[^/]+(\/assets\/[a-f0-9]+)?|pages\/\d+)$/i.test(path) || /^\/admin\/documents\/[^/]+\/preview\/[^/]+(\/assets\/[a-f0-9]+)?$/i.test(path)
     const delaySeconds = Number(response.headers.get('Retry-After')) || 1
     // Long pilot cooldowns go to the retry UI; never retry earlier than the server permits.
     if ((!init.method || init.method === 'GET') && [429, 503].includes(response.status) && retry < 2 && !init.signal?.aborted && (!sectionDelivery || delaySeconds <= 120)) {
@@ -94,8 +94,10 @@ export const cent = {
   orders: () => centRequest<PurchaseOrder[]>('/me/orders'),
   notes: () => centRequest<StudyNote[]>('/me/notes'),
   document: (id: string) => centRequest<StudyData>(`/documents/${id}`),
+  contentPreview: (id: string) => centRequest<{ document: StudyDocument; sections: { id: string; heading: string; sortOrder: number }[] }>(`/admin/documents/${id}/preview/`),
+  previewSection: (id: string, section: string) => centRequest<SourceSection>(`/admin/documents/${id}/preview/${section}`),
   sourceSection: (id: string, section: string, signal?: AbortSignal) => centRequest<SourceSection>(`/documents/${id}/source-sections/${section}`, { signal }),
-  asset: (id: string, section: string, asset: string, signal: AbortSignal) => centRequest<Blob>(`/documents/${id}/source-sections/${section}/assets/${asset}`, { signal }),
+  asset: (id: string, section: string, asset: string, signal: AbortSignal, preview = false) => centRequest<Blob>(preview ? `/admin/documents/${id}/preview/${section}/assets/${asset}` : `/documents/${id}/source-sections/${section}/assets/${asset}`, { signal }),
   sourceSections: (id: string) => centRequest<SourceSection[]>(`/documents/${id}/source-sections`),
   curriculum: loadCurriculum,
   mastery: async () => {

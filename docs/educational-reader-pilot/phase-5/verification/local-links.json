@@ -1,0 +1,8 @@
+{
+  "reading": "http://127.0.0.1:5173/cent-s/student/study/a0d4befd-9766-b599-0ed2-ae9dafc569ec",
+  "math": "http://127.0.0.1:5173/cent-s/student/study/6d7121b2-4929-1b2b-b2c3-f290ec70c69b",
+  "logic": "http://127.0.0.1:5173/cent-s/student/study/ffe2a411-780c-14cc-099d-a3d3dc867430",
+  "biology": "http://127.0.0.1:5173/cent-s/student/study/e1e81fc8-642b-94e5-24b8-663cb39c2e29",
+  "chemistry": "http://127.0.0.1:5173/cent-s/student/study/3e9aa405-a3f1-3974-be40-9d1a5d11dc4b",
+  "physics": "http://127.0.0.1:5173/cent-s/student/study/ca0f7ca0-403b-cab5-4e97-063d5f074475"
+}

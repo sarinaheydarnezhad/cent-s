@@ -24,6 +24,13 @@ it('presents long configured cooldowns without an early automatic retry', async 
   expect(fetch).toHaveBeenCalledTimes(1)
 })
 
+it.each(['/admin/documents/document/preview/section', '/admin/documents/document/preview/section/assets/abcdef'])('respects long protected administrator preview cooldowns: %s', async preview => {
+  const fetch = vi.fn().mockResolvedValue(throttled(300))
+  vi.stubGlobal('fetch', fetch)
+  await expect(centRequest(preview)).rejects.toMatchObject({ status: 429, retryAfterMs: 300000 })
+  expect(fetch).toHaveBeenCalledTimes(1)
+})
+
 it('honors the complete cooldown for protected diagram hashes from the server', async () => {
   vi.useFakeTimers()
   const fetch = vi.fn().mockResolvedValueOnce(throttled(10)).mockResolvedValueOnce(new Response('<svg/>', { headers: { 'Content-Type': 'image/svg+xml' } }))

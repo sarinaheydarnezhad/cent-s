@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "capturedUtc": "2026-11-25T09:22:45.320194+00:00",
+  "files": 260,
+  "bytes": 7216717,
+  "privatePathViolations": [],
+  "privateQuestionIdsInTextAssets": [],
+  "privateQuestionStemsInTextAssets": [],
+  "policy": "Publish only dist; protected evidence, sessions, databases, archives and backups remain private."
+}

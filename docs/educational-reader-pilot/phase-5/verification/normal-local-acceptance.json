@@ -1,0 +1,184 @@
+{
+  "environment": "normal Cent.Preview/App_Data/preview.db",
+  "providerLogin": "NOT TESTED: offline maintenance sessions for existing accounts",
+  "browsers": [
+    {
+      "name": "chromium",
+      "status": "PASS",
+      "version": "158.0.8127.38"
+    },
+    {
+      "name": "firefox",
+      "status": "BLOCKED",
+      "error": "browserType.launch: Executable doesn't exist at C:\\Users\\KIAN RAYANEH\\AppData\\Local\\ms-playwright\\firefox-1572\\firefox\\firefox.exe\n\u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557\n\u2551 Looks like Playwright was just installed or updated.       \u2551\n\u2551 Please run the following command to download new browsers: \u2551\n\u2551                                                            \u2551\n\u2551     npx playwright install                                 \u2551\n\u2551                                                            \u2551\n\u2551 <3 Playwright Team                                         \u2551\n\u255a\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u255d"
+    },
+    {
+      "name": "webkit",
+      "status": "BLOCKED",
+      "error": "browserType.launch: Executable doesn't exist at C:\\Users\\KIAN RAYANEH\\AppData\\Local\\ms-playwright\\webkit-2388\\Playwright.exe\n\u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557\n\u2551 Looks like Playwright was just installed or updated.       \u2551\n\u2551 Please run the following command to download new browsers: \u2551\n\u2551                                                            \u2551\n\u2551     npx playwright install                                 \u2551\n\u2551                                                            \u2551\n\u2551 <3 Playwright Team                                         \u2551\n\u255a\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u255d"
+    }
+  ],
+  "subjects": [
+    {
+      "browser": "chromium",
+      "subject": "reading",
+      "documentId": "a0d4befd-9766-b599-0ed2-ae9dafc569ec",
+      "status": "PASS",
+      "granularContent": true,
+      "notesRoundTrip": true,
+      "draftRestored": true,
+      "anchoredNoteRestored": true,
+      "reattachedSameIdAndBody": true,
+      "imageZoom": false,
+      "progress": true,
+      "keyboardFocus": true,
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "viewports": [
+        1440,
+        390
+      ],
+      "realDevice": false
+    },
+    {
+      "browser": "chromium",
+      "subject": "math",
+      "documentId": "6d7121b2-4929-1b2b-b2c3-f290ec70c69b",
+      "status": "PASS",
+      "granularContent": true,
+      "notesRoundTrip": true,
+      "draftRestored": true,
+      "anchoredNoteRestored": true,
+      "reattachedSameIdAndBody": true,
+      "imageZoom": true,
+      "progress": true,
+      "keyboardFocus": true,
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "viewports": [
+        1440,
+        390
+      ],
+      "realDevice": false
+    },
+    {
+      "browser": "chromium",
+      "subject": "logic",
+      "documentId": "ffe2a411-780c-14cc-099d-a3d3dc867430",
+      "status": "PASS",
+      "granularContent": true,
+      "notesRoundTrip": true,
+      "draftRestored": true,
+      "anchoredNoteRestored": true,
+      "reattachedSameIdAndBody": true,
+      "imageZoom": false,
+      "progress": true,
+      "keyboardFocus": true,
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "viewports": [
+        1440,
+        390
+      ],
+      "realDevice": false
+    },
+    {
+      "browser": "chromium",
+      "subject": "biology",
+      "documentId": "e1e81fc8-642b-94e5-24b8-663cb39c2e29",
+      "status": "PASS",
+      "granularContent": true,
+      "notesRoundTrip": true,
+      "draftRestored": true,
+      "anchoredNoteRestored": true,
+      "reattachedSameIdAndBody": true,
+      "imageZoom": true,
+      "progress": true,
+      "keyboardFocus": true,
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "viewports": [
+        1440,
+        390
+      ],
+      "realDevice": false
+    },
+    {
+      "browser": "chromium",
+      "subject": "chemistry",
+      "documentId": "3e9aa405-a3f1-3974-be40-9d1a5d11dc4b",
+      "status": "PASS",
+      "granularContent": true,
+      "notesRoundTrip": true,
+      "draftRestored": true,
+      "anchoredNoteRestored": true,
+      "reattachedSameIdAndBody": true,
+      "imageZoom": true,
+      "progress": true,
+      "keyboardFocus": true,
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "viewports": [
+        1440,
+        390
+      ],
+      "realDevice": false
+    },
+    {
+      "browser": "chromium",
+      "subject": "physics",
+      "documentId": "ca0f7ca0-403b-cab5-4e97-063d5f074475",
+      "status": "PASS",
+      "granularContent": true,
+      "notesRoundTrip": true,
+      "draftRestored": true,
+      "anchoredNoteRestored": true,
+      "reattachedSameIdAndBody": true,
+      "imageZoom": true,
+      "progress": true,
+      "keyboardFocus": true,
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "viewports": [
+        1440,
+        390
+      ],
+      "realDevice": false
+    }
+  ],
+  "checks": [
+    {
+      "requirement": "draft-admin-preview",
+      "documentId": "3e9aa405-a3f1-3974-be40-9d1a5d11dc4b",
+      "status": "PASS",
+      "remainsDraft": true,
+      "explicitLocalStudentReview": true,
+      "otherIdentityDenied": true
+    },
+    {
+      "requirement": "draft-admin-preview",
+      "documentId": "ffe2a411-780c-14cc-099d-a3d3dc867430",
+      "status": "PASS",
+      "remainsDraft": true,
+      "explicitLocalStudentReview": true,
+      "otherIdentityDenied": true
+    },
+    {
+      "requirement": "normal-local-six-subject-journey",
+      "status": "PASS"
+    }
+  ],
+  "errors": []
+}
