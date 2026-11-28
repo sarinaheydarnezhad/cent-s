@@ -1,5 +1,0 @@
-{"Suite":"test","ExitCode":1,"StartedUtc":"2026-11-18T15:28:14.8413811+00:00","FinishedUtc":"2026-11-18T15:29:25.0241960+00:00"}
-{"Suite":"test:courses","ExitCode":0,"StartedUtc":"2026-11-18T15:29:25.4348004+00:00","FinishedUtc":"2026-11-18T15:29:51.7670424+00:00"}
-{"Suite":"test:curriculum","ExitCode":0,"StartedUtc":"2026-11-18T15:29:51.7760381+00:00","FinishedUtc":"2026-11-18T15:30:26.3176454+00:00"}
-{"Suite":"test:study-return","ExitCode":1,"StartedUtc":"2026-11-18T15:30:26.3276456+00:00","FinishedUtc":"2026-11-18T15:30:38.3325618+00:00"}
-{"Suite":"test:progress","ExitCode":0,"StartedUtc":"2026-11-18T15:30:38.3389975+00:00","FinishedUtc":"2026-11-18T15:30:51.6452351+00:00"}

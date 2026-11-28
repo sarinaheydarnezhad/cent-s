@@ -1,9 +1,0 @@
-{
-  "status": {
-    "service": "Cent",
-    "payments": "DEVELOPMENT_MOCK",
-    "screenshotBlocking": false
-  },
-  "source": "Existing local service; no backend repository access",
-  "isolation": "Prior verified frontend-local Cent.Preview SQLite; read-only public GET captures only at baseline"
-}

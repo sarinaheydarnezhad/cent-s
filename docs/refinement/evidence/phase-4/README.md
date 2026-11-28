@@ -1,9 +1,0 @@
-# Phase 4 evidence
-
-Open [AFTER review gallery](index.html) or [Phase 4 report](../../PHASE_4_REPORT.md).
-
-13 new AFTER captures only; no new before captures or matched pairs. Connected screenshots use synthetic isolated-preview students with real saved local API data. Purchase setup is DEVELOPMENT_MOCK only. Injected loading/failure/mapping states are explicitly labeled. Four additional injected states (assessment unavailable, mastery unavailable, incomplete guidance and owned resources without history) are assertion-only to minimize screenshots. Tokens/credentials and fixture session records remain in ignored .preview-artifacts, outside this evidence folder.
-
-[Summary](validation-summary.json), [development dashboard](dashboard-development-result.json), [root dashboard](dashboard-root-result.json), [development accessibility](accessibility-development-result.json), [root accessibility](accessibility-root-result.json), [protected boundaries](delivery-verification.json), [focused lint](focused-lint.json). Unit/build/auth/appearance and connected personal-progress logs are retained beside these files. Legacy assessment lint and its exact HEAD baseline are recorded separately; they are not new failures.
-
-Initial checks exposed whitespace in actual recommendation codes, an inherited sidebar caption color, and inherited visibility transitions interfering with focus. All corrected in the tested final presentation; the shared disclosure hook remains unchanged. An intermediate injection helper attempted to parse a raced routed response; injected variants now use explicit snapshots of actual connected fixture data. The authentication mocks now return the correct empty mastery contract rather than a generic array, correcting an intermediate mock-only dashboard render error. All 75 auth executions were repeated; existing assertions remain intact.
